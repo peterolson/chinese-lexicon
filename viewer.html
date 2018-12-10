@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <title>Hanzi etymologies</title>
+    <style>
+        #charListContainer {
+            height: 100%;
+            overflow: auto;
+            float: left;
+            padding-right: 25px;
+        }
+
+        #etymologyChar {
+            font-size: 100px;
+            font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+            border: 1px solid #EEE;
+        }
+
+        #etymologyInfo,
+        .etymologyComponentInfo {
+            width: 400px;
+        }
+
+        .etymologyComponent,
+        .etymologyComponentInfo,
+        #etymologyInfo,
+        #etymologyChar {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #etymologyImages {
+            text-align: center;
+        }
+
+        #etymologyImages div {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        #etymologyImages div.img {
+            height: 75px;
+            width: 75px;
+            background-position: 50% 50%;
+            background-size: 75px 75px;
+            background-repeat: no-repeat;
+        }
+
+        .etymologyComponentInfo {
+            padding-left: 5px;
+        }
+
+        .etymologyComponentContainer {
+            padding: 10px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="charListContainer">
+        <ul id="charList"></ul>
+    </div>
+    <div id="etymologyDisplay">
+        <div id="etymologyChar"></div>
+        <div id="etymologyInfo">
+            <div id="etymologyDefinition"></div>
+            <div id="etymologyNotes"></div>
+            <div id="etymologyImages"></div>
+        </div>
+        <div id="etymologyComponents"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@1.1/dist/hanzi-writer.min.js"></script>
+    <script src="etymologyImages.js"></script>
+    <script src="etymologies.js"></script>
+    <script src="etymologyData.js"></script>
+    <script src="dictionary.js"></script>
+    <script>
+        let charList = document.getElementById("charList");
+        for (let char in etymologies) {
+            let charItem = document.createElement("li");
+            charItem.innerHTML = `<a href="#${char}">${char}</a>`;
+            charItem.onclick = function () {
+                renderEtymology(char);
+            }
+            charList.appendChild(charItem);
+        }
+
+        let componentColors = {
+            meaning: "#f00",
+            sound: "#00f",
+            iconic: "#0f0",
+            simplified: "#0ff",
+            unknown: "#555",
+            none: "#000",
+            faded: "#eee"
+        };
+        let componentTitles = {
+            meaning: "Meaning component",
+            sound: "Sound component",
+            iconic: "Iconic component",
+            unknown: "Unknown component",
+            simplified: "Simplified component"
+        }
+
+        renderEtymology("是");
+
+        function renderEtymology(char) {
+            let etymology = etymologies[char];
+            let etymologyDefinition = document.getElementById("etymologyDefinition");
+            let etymologyNotes = document.getElementById("etymologyNotes");
+            let etymologyComponents = document.getElementById("etymologyComponents");
+            let etymologyChar = document.getElementById("etymologyChar");
+            let etymologyImages = document.getElementById("etymologyImages");
+            etymologyDefinition.innerHTML = etymology.definition;
+            etymologyNotes.innerHTML = etymology.notes;
+            etymologyImages.innerHTML = "";
+            for (let image of etymology.images) {
+                let box = document.createElement("div");
+                box.innerHTML = `<div class="img" style='background-image: ${image.url}'></div><br>${image.caption}`;
+                etymologyImages.appendChild(box);
+            }
+            if (etymology.components.length) {
+                etymologyComponents.innerHTML = "<h2>Components</h2>";
+            } else {
+                etymologyComponents.innerHTML = "";
+            }
+            for (let component of etymology.components) {
+                let target = document.createElement("div");
+                target.className = "etymologyComponent";
+                renderChar(char, target, [component.fragment], [componentColors[component.type]], 75);
+                let container = document.createElement("div");
+                container.className = "etymologyComponentContainer";
+                container.appendChild(target);
+                let componentInfo = document.createElement("div");
+                componentInfo.className = "etymologyComponentInfo";
+                componentInfo.innerHTML = `<h3>${componentTitles[component.type]}</h3>${component.char} ${(etymologies[component.char] || {}).definition || ""}<br>${component.notes || ""}`;
+                container.appendChild(componentInfo);
+                etymologyComponents.appendChild(container);
+            }
+            if (etymology.components.length) {
+                let fragments = etymology.components.map(x => x.fragment);
+                let fragmentColors = etymology.components.map(x => componentColors[x.type]);
+                renderChar(char, etymologyChar, fragments, fragmentColors, 100, true);
+            } else {
+                etymologyChar.innerHTML = char;
+            }
+        }
+
+        function renderChar(char, target, fragments, colors, size, showAll) {
+            HanziWriter.loadCharacterData(char).then(function (charData) {
+                var strokesPortion = charData.strokes;
+                let strokes = strokesPortion,
+                    strokeColors = strokes.map(x => showAll ? componentColors.none : componentColors.faded);
+                for (let i = 0; i < fragments.length; i++) {
+                    let fragment = fragments[i],
+                        color = colors[i];
+                    for (let j = 0; j < fragment.length; j += 2) {
+                        let strokeFragment = strokesPortion.slice(fragment[j], fragment[j + 1]);
+                        strokeColors.splice(fragment[j], strokeFragment.length, ...strokeFragment.map(x => color));
+                    }
+                }
+                renderStrokes(target, strokes, strokeColors, size);
+            });
+
+            function renderStrokes(target, strokes, colors, size) {
+                var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.style.width = size + 'px';
+                svg.style.height = size + 'px';
+                if (!showAll) svg.style.border = '1px solid #EEE'
+                svg.style.marginRight = '3px'
+                target.innerHTML = '';
+                target.appendChild(svg);
+                var group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+
+                var transformData = HanziWriter.getScalingTransform(size, size);
+                group.setAttributeNS(null, 'transform', transformData.transform);
+                svg.appendChild(group);
+
+                strokes.forEach(function (strokePath, i) {
+                    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttributeNS(null, 'd', strokePath);
+                    path.style.fill = colors[i];
+                    group.appendChild(path);
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
