@@ -8,6 +8,11 @@
             overflow: auto;
             float: left;
             padding-right: 25px;
+            width: 300px;
+        }
+
+        #charListContainer div {
+            display: inline-block;
         }
 
         #etymologyChar {
@@ -65,7 +70,7 @@
 
 <body>
     <div id="charListContainer">
-        <ul id="charList"></ul>
+        <div id="charList"></div>
     </div>
     <div id="etymologyDisplay">
         <div id="etymologyChar"></div>
@@ -84,7 +89,7 @@
     <script>
         let charList = document.getElementById("charList");
         for (let char in etymologies) {
-            let charItem = document.createElement("li");
+            let charItem = document.createElement("div");
             charItem.innerHTML = `<a href="#${char}">${char}</a>`;
             charItem.onclick = function () {
                 renderEtymology(char);
@@ -131,10 +136,11 @@
             } else {
                 etymologyComponents.innerHTML = "";
             }
+            let colorCounts = {};
             for (let component of etymology.components) {
                 let target = document.createElement("div");
                 target.className = "etymologyComponent";
-                renderChar(char, target, [component.fragment], [componentColors[component.type]], 75);
+                renderChar(char, target, [component.fragment], [componentColors[component.type]], 75, false, colorCounts);
                 let container = document.createElement("div");
                 container.className = "etymologyComponentContainer";
                 container.appendChild(target);
@@ -153,7 +159,8 @@
             }
         }
 
-        function renderChar(char, target, fragments, colors, size, showAll) {
+        function renderChar(char, target, fragments, colors, size, showAll, colorCounts) {
+            colorCounts = colorCounts || {};
             HanziWriter.loadCharacterData(char).then(function (charData) {
                 var strokesPortion = charData.strokes;
                 let strokes = strokesPortion,
@@ -161,6 +168,10 @@
                 for (let i = 0; i < fragments.length; i++) {
                     let fragment = fragments[i],
                         color = colors[i];
+                    colorCounts[color] = (colorCounts[color] || 0) + 1;
+                    if (colorCounts[color] > 1) {
+                        color = "#" + color.slice(1).split("").map(x => parseInt(x, 16)).map(x => Math.floor(x * (1 - 0.2 * colorCounts[color])).toString(16)).join("");
+                    }
                     for (let j = 0; j < fragment.length; j += 2) {
                         let strokeFragment = strokesPortion.slice(fragment[j], fragment[j + 1]);
                         strokeColors.splice(fragment[j], strokeFragment.length, ...strokeFragment.map(x => color));

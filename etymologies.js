@@ -1,3 +1,5 @@
+let O = "◎";
+
 let etymologies = {};
 function addEtymology(char, definition, notes, components, images) {
     components = components || [];
@@ -6,11 +8,17 @@ function addEtymology(char, definition, notes, components, images) {
             component.notes = radicalNote(component.char) + (component.notes || "");
         }
     }
+    images = images || "";
+    let charForImage = char;
+    if (images.split(":").length > 1) {
+        charForImage = images.split(":")[0];
+        images = images.split(":")[1];
+    }
     etymologies[char] = {
         notes: notes || "",
         definition: definition || "",
         components: components || [],
-        images: getImages(images, char)
+        images: getImages(images, charForImage)
     }
 }
 
@@ -57,7 +65,7 @@ function semphon(char, left, right, leftStrokes, definition, notes, isObsoleteSo
         type: "sound",
         char: right,
         fragment: fragments.right,
-        notes: (isObsoleteSound ? obsoleteSound(char, right) : "") + (isSoundAndMeaning ? alsoMeaning(char) : "")
+        notes: (isObsoleteSound ? obsoleteSound(char, right) : "") + (isSoundAndMeaning ? alsoMeaning(right) : "")
     }], images)
 }
 
@@ -132,7 +140,7 @@ function unknownComponent(char, fragment, notes) {
         type: "unknown",
         char,
         fragment,
-        notes: unknownComonentNote() + (notes || "")
+        notes: (char !== O ? unknownComonentNote() : "") + (notes || "")
     }
 }
 
@@ -160,7 +168,8 @@ let radicals = {
         "冄": "冉",
         "衤": "衣",
         "飠": "食",
-        "饣": "食"
+        "饣": "食",
+        "𤣩": "玉"
     },
     right: {
         "刂": "刀",
