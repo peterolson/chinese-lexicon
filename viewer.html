@@ -170,7 +170,7 @@
                         color = colors[i];
                     colorCounts[color] = (colorCounts[color] || 0) + 1;
                     if (colorCounts[color] > 1) {
-                        color = "#" + color.slice(1).split("").map(x => parseInt(x, 16)).map(x => Math.floor(x * (1 - 0.2 * colorCounts[color])).toString(16)).join("");
+                        color = "#" + color.slice(1).split("").map(x => parseInt(x, 16)).map(x => Math.floor(x * (1 - 0.125 * colorCounts[color])).toString(16)).join("");
                     }
                     for (let j = 0; j < fragment.length; j += 2) {
                         let strokeFragment = strokesPortion.slice(fragment[j], fragment[j + 1]);

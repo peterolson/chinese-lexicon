@@ -346,6 +346,45 @@ phonsem("幫", "封", "帛", 9, "help; support", obsoleteMeaning("upper part of 
 phonsem("帮", "邦", "巾", 6, "help; support", simplified("幫") + " " + obsoleteMeaning("upper part of a shoe"));
 icon("亡", "die; flee", "Pictograph of the tip of a knife blade.", "bs");
 semphon("忙", "忄", "亡", 3, "busy");
+semsem("戔", "戈", "戈", 4, "narrow; small", `Combination of two weapons (戈), based on the original meaning "destroy", now written as 殘.`);
+simp("戋", "戔", [[0, 1], [1]]);
+icon("歹", "bad; evil", "Origin unclear. Possibly represents remnants from a carcass.", "o");
+semphon("殘", "歹", "戔", 4, "destroy; injure");
+simp("残", "殘");
+semphon("錢", "金", "戔", 8, "money");
+simp("钱", "錢", [[0, 5], [5]]);
+icon("䧹", "eagle (yīng)", "Pictograph of an eagle perched on a branch. Original form of 鷹.", "o", [iconComponent("爿", [0, 5], "Depicts a branch."), iconComponent("隹", [5])]);
+icon("片", "slice; thin piece", "Pictograph of a slice of a tree, taken from the right half of 木 (tree).");
+icon("爿", "piece of wood", "Mirror image of 片 (slice; thin piece). Pictograph of a slice of a tree, taken from the left half of 木 (tree).")
+icon("鳥", "bird", "Pictograph of a bird.", "obs");
+simp("鸟", "鳥");
+phonsem("鷹", "䧹", "鳥", 13, "eagle; hawk; falcon", "", false, true);
+phonsem("鹰", "䧹", "鸟", 13, "eagle; hawk; falcon", simplified("鷹"), false, true);
+phonsem("應", "䧹", "心", 13, "should; must; agree");
+simp("应", "應", [[6], [0, 6]]);
+semphon("該", "言", "亥", 7, "should; ought; probably");
+simp("该", "該", [[0, 2], [2]]);
+icon("垂", "hang down; droop", "Pictograph of drooping branches.", "os");
+semphon("睡", "目", "垂", 5, "sleep");
+semphon("跟", "足", "艮", 7, "follow; together with; heel");
+semphon("吧", "口", "巴", 3, "[suggestion particle]");
+icon("己", "self", "Origin unclear.");
+icon("已", "already; finish", "Origin unclear.");
+icon("自", "self; from; since", "Pictograph of a nose. In China, when people point to themselves, they typically point to their nose.", "obs");
+icon("走", "walk; go", "Pictograph of a person swaying their arms while walking.", "bs", [iconComponent(O, [0, 3], "Depicts a person swaying their arms."), meaningComponent("龰", [3])]);
+semphon("起", "走", "己", 7, "rise; get up");
+icon("㐅", "five", "Archaic variant of 五 (five).");
+let 學_msg = `Originally composed of the numbers five (㐅) and six (六), representing study of arithmetic. 
+Later two hands (又) were added on the left and right side of the character, possibly depicting counting with fingers or hands-on teaching.
+Finally a child (子) was added to the bottom, depicting a child being educated.
+The bottom part of 六 (six) was reanalyzed as 宀 (roof) and interpreted as a building for learning.`;
+icon("學", "learn; study", 學_msg, "obs", [iconComponent("㐅", [4, 6]), iconComponent("六", [6, 8]), iconComponent("又", [0, 4]), iconComponent("又", [8, 11]), iconComponent("宀", [11, 13]), iconComponent("子", [13])]);
+icon("学", "learn; study", simplified("學") + " " + 學_msg, "學:obs", [simplifiedComponent(O, [0, 3], "Shorthand form of the 㐅 (five), 六 (six), and 又 (hand) components in the top part of the traditional character 學."), iconComponent("宀", [3, 5]), iconComponent("子", [5])]);
+phonsem("覺", "學", "見", 13, "think; perceive; sleep", "Only the top part of 學 is used, which prevents the character from being too crowded.");
+phonsem("觉", "学", "见", 5, "think; perceive; sleep", simplified("學") + " Only the top part of 学 is used, which prevents the character from being too crowded.");
+icon("襄", "help; assist", "Origin unclear.", "b");
+semphon("讓", "言", "襄", 7, "let; permit");
+semphon("让", "讠", "上", 2, "let; permit", simplified("讓"));
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -353,53 +392,14 @@ for (let direction in radicals) {
     }
 }
 
-
-// by difficulty
-// 应该睡觉起走跟吧让所
-// 等谈和工作发生学读只
-// 过但间情请找正从它同
-// 意已经两年件重最后告
-// 诉相信给许下雨前面久
-// 待直着住房将次希望机
-// 错气难必须确定如果兴
-// 非常喜欢法国中午床每
-// 英语够用完成全当把打
-// 电开始更车决自己比离
-// 美长关然任何感谢失接
-// 助种愿讲分钟星期先东
-// 西老名字叫少系衣服坐
-// 因律师视影进站爸买医
-// 写动脑喝客漂亮第院岁
-// 热飞身地方块姐新冷静
-// 公司外习惯校思店商杯
-// 而场边狗米表准备体喂
-// 旅馆于其实员永远北路
-// 眼睛头汉堡玩笑努桌试
-// 处理幸运色菜报张消息
-// 或者干租乐啊放教猫零
-// 随便之带送参加解茶丈
-// 夫安椅号记主办室结束
-// 穿变特礼物总被位务无
-// 拿向跑通球提算病苹步
-// 考虑像刚混蛋黑且死清
-// 楚游戏哥世界共求部受
-// 活弟害怕标根简单声音
-// 使班近条保证跳照片卖
-// 介药休除千万迎管红亲
-// 此周选择慢平舞花懂洗
-// 合票注计划担查数妻奇
-// 怪空职业歌并性坏利原
-// 切牛包护入左右恢复满
-// 风容易纸调船唱建议妹
-// 似乎酒化旁轻节奶指终
-// 命差忘鸡半贵极课留内
-// 据精神敢底收交度由演
-// 阴谋整掉示段咖啡汽刻
-// 趣肯换抱歉城市控制雪
-// 绍光反伤持图超级讨论
-// 越傻瓜脸代象拉停克尽
-// 历婚姓绝集继续颜突顾
-// 角圆遇羊背急约却阿
+// 所等谈和工发生学读过
+// 但间情请找正从它同意
+// 已经两年件重最后告诉
+// 信给许前面久待着住房
+// 将次希望机错难必须确
+// 定如果兴非常喜欢法国
+// 中午床每英语够用完成
+// 全当把打电开始更车决自己比离美长关然任何感谢失接助种愿讲分钟星期先东西老名字叫少系服坐因律师视影进站爸买医写动脑喝客漂亮第院岁热飞身地方块姐新冷静公司外习惯校思店商杯场边狗表准备体喂旅馆于其实员永远北路眼睛头汉堡玩笑努桌试处理幸运色菜报张消息或干租乐啊放教猫零随便之带送参加解茶丈夫安椅号记主办室结束穿变特礼物总被位务无拿向跑通球提算病苹步考虑像刚混蛋且死清楚游戏哥界共求部受活弟害怕标根简单声班近条保证跳照片卖介药休除千万迎管红亲周选择慢平舞花懂洗票注计划担查数妻奇怪空职业歌并性坏利原牛包护入左右恢复满风容易纸调船唱建议妹似乎酒化旁轻节奶指
 
 // common components
 //阝阝鳥鸟衤酉马禾车馬貝米車隹宀頁广礻飠饣欠穴页巾攵羊耳令雨非舟方衣各歹者工且革莫圭青皿鬼台气尚占肖田票羽辟艮合比冫牛交走昜俞包亥乍巴皮斤丁甫龙弓卑娄分昆扁奇尞尧此耒毛里周吾可见吉屯灬干召句由其果堇齒加
