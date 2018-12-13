@@ -79,6 +79,7 @@ semphon("說", "言", "兌", 7, "speak; say");
 icon("力", "strength; power", "Pictograph of a plow, representing strength", "bs");
 addEtymology("另", "besides; different; separate", "Origin unclear. Possibly derived from the left side of 別, which has a related meaning.", [unknownComponent("口", [0, 3]), unknownComponent("力", [3])]);
 icon("冎", "bone", "Pictograph of bones.", "s");
+semsem("咼", "冎", "口", 6, "jaw");
 icon("骨", "bone", "Pictograph of a bone (冎) with muscle (⺼) attached to it.", "s", [iconComponent("冎", [0, 5]), iconComponent("⺼", [5])]);
 icon("別", "different; separate; don't", "Pictograph depicting cutting meat off of a bone.", "s", [iconComponent("冎", [0, 5], "Here written similar to 另."), iconComponent("刂", [5])]);
 simp("别", "別");
@@ -248,7 +249,7 @@ addEtymology("点", "dot; point; choose", simplified("點"), [soundComponent("�
 icon("袁", "long robe", "The meaning of the part of the character above 衣 (clothes) is unclear.", "", [unknownComponent(O, [0, 5], unknownComonentNote()), iconComponent("衣", [5])]);
 semphon("睘", "目", "袁", 5, "gaze in terror");
 phonsem("還", "睘", "辶", 13, "still; return", "", true);
-addEtymology("还", "still; return", simplified("還"), [simplifiedComponent("不", [0, 4], "Shorthand for the 睘 component in the traditional character 還."), meaningComponent("辶", [4])]);
+addEtymology("还", "still; return", simplified("還"), [simplifiedComponent("不", [0, 4], shorthand("睘", "還")), meaningComponent("辶", [4])]);
 icon("以", "use; by means of", "Origin unclear. The right component is 人 (person).", "obs", [unknownComponent(O, [0, 2], unknownComonentNote()), iconComponent("人", [2])]);
 icon("米", "rice", "Pictograph of grains of rice.", "o");
 icon("气", "gas; air; weather", "Pictograph of air.", "s");
@@ -403,9 +404,38 @@ icon("网", "net", "Pictograph of a net.", "o");
 semphon("罔", "网", "亡", 5, "net");
 semphon("網", "糹", "罔", 6, "net", "", false, true);
 phonsem("頭", "豆", "頁", 7, "head");
-addEtymology("头", "head", "Phonosemantic compound. 頁 represents the meaning and 豆 represents the sound. The simplified character 头 was adapted from the cursive form of the traditional character 頭.", [simplifiedComponent("豆", [0, 2]), simplifiedComponent("頁", [2])], "頭:tc");
+addEtymology("头", "head", "Phonosemantic compound. 頁 represents the meaning and 豆 represents the sound. " + cursive("头", "頭"), [simplifiedComponent("豆", [0, 2]), simplifiedComponent("頁", [2])], "頭:tc");
 icon("買", "buy", "Pictograph of money (貝) coming out of a netted bag (网).", "obs", [iconComponent("网", [0, 5]), iconComponent("貝", [5], "Shells were used as currency in ancient China.")]);
-simp("买", "買", [[0, 1], [1]]);
+simp("买", "買", [[0, 1], [1]], {}, { "貝": "头" }, true);
+semphon("賣", "出", "買", 3, "sell", "", false, true, false, "s");
+semphon("卖", "出", "买", 2, "sell", simplified("賣"), false, true, false, "賣:s");
+semphon("讀", "言", "賣", 7, "read", "", true);
+semphon("读", "讠", "卖", 2, "read", simplified("讀"), true);
+phonsem("過", "咼", "辶", 9, "go over; cross");
+simp("过", "過", [[3], [0, 3]], {}, { 咼: "寸" }, true);
+icon("旦", "dawn; morning", "Pictograph of the sun rising above the horizon.", "", [iconComponent("日", [0, 4]), iconComponent(O, [4], "Depicts the horizon.")]);
+semphon("但", "亻", "旦", 2, "but; only");
+icon("間", "between; space; gap", "Depicts sunlight (日) shining through the gap in a door (門).", "", [iconComponent("門", [0, 8]), iconComponent("日", [8])]);
+simp("间", "間", [[0, 3], [3]], { 門: "门" });
+semphon("簡", "⺮", "間", 6, "simple", obsoleteMeaning("bamboo strips for writing"));
+simp("简", "簡", [[0, 6], [6]], { 間: "间" });
+icon("井", "water well", "Pictograph of a well.", "o");
+semphon("青", "生", "井", 4, "color of nature; green; blue");
+semphon("情", "忄", "青", 3, "feeling; situation");
+semphon("請", "言", "青", 7, "ask; invite; please");
+simp("请", "請", [[0, 2], [2]], { 言: "讠" });
+semphon("找", "扌", "戈", 3, "find; look for", "", true);
+icon("正", "straight; correct", `Pictograph of a foot (止) heading toward a city. Based on the original meaning "go on a military campaign", now written as 征. The meaning later shifted to "power", "rule" (政), and "correct" (正).`, "ob", [iconComponent(O, [0, 1], "Depicts a city."), iconComponent("止", [1])]);
+semphon("征", "彳", "正", 3, "journey; campaign; attack", "Originally written as 正.");
+phonsem("政", "正", "攵", 5);
+icon("从", "from; follow", "Pictograph of one person following another.", "s");
+icon("從", "from; follow", "Originally a pictograph of one person following another (从).  Later the 彳 and 止 components were added to indicate movement.", "b", [iconComponent("彳", [0, 3]), iconComponent("从", [3, 7], "Depicts one person following another."), iconComponent("止", [7])]);
+icon("它", "it", "Pictograph of a snake, now written as 蛇. The current use as a pronoun is a phonetic loan.", "ob");
+semphon("蛇", "虫", "它", 6, "snake", "Originally written as 它.");
+icon("同", "same; together", "Pictograph of a bucket or tube, now written as 筒. " + mouthedNote, "obs", [iconComponent(O, [0, 3], "Depicts a bucket or tube. This meaning is now represented by 筒."), meaningComponent("口", [3])]);
+semphon("筒", "⺮", "同", 6, "tube; cylinder", "Originally written as 同.");
+phonsem("意", "音", "心", 9, "idea; thought; wish");
+
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -413,9 +443,7 @@ for (let direction in radicals) {
     }
 }
 
-// 读讀 卖賣 買买  过
-// 但间情请找正从它同意
-// 已经两年件重最后告诉
+// 经經两年件重最后告诉
 // 信给许前面久待着住房
 // 将次希望机错难必须确
 // 定如果兴非常喜欢法国

@@ -236,17 +236,38 @@ function simplifyMerge(simp, trad, meaning) {
     return `In simplified Chinese ${simp} is also used to mean "${meaning}", while in traditional Chinese this meaning is written with a separate character ${trad}.`;
 }
 
-function simp(simplifiedChar, traditionalChar, fragments) {
+function cursive(simp, trad) {
+    return `The simplified character ${simp} was adapted from the cursive form of the traditional character ${trad}.`;
+}
+
+function shorthand(component, trad) {
+    return `Shorthand for the ${component} component in the traditional character ${trad}.`;
+}
+
+function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, changedComponents, isCursive) {
     let simplifiedEtymology = { ...etymologies[traditionalChar] };
-    simplifiedEtymology.notes = simplified(traditionalChar) + (simplifiedEtymology.notes || "");
+    simplifiedEtymology.notes = [simplified(traditionalChar), simplifiedEtymology.notes, (isCursive ? cursive(simplifiedChar, traditionalChar) : "")].filter(x => x).join(" ");
     if (fragments) {
         simplifiedEtymology.components = simplifiedEtymology.components.slice();
         fragments.forEach((fragment, i) => {
             let component = simplifiedEtymology.components[i];
             component = { ...component };
             component.fragment = fragment;
+            if (simpleReplacements && simpleReplacements[component.char]) {
+                component.char = simpleReplacements[component.char];
+                if (isRadicalForm(component.char)) {
+                    component.notes = (radicalNote(component.char) + " " + (component.notes || "")).trim();
+                }
+            }
+            if (changedComponents && changedComponents[component.char]) {
+                component.notes = (shorthand(component.char, traditionalChar) + " " + (component.notes || "")).trim();
+                component.char = changedComponents[component.char];
+            }
             simplifiedEtymology.components[i] = component;
         });
+    }
+    if (isCursive) {
+        simplifiedEtymology.images = (simplifiedEtymology.images || []).concat(getImages("tc", traditionalChar));
     }
     etymologies[simplifiedChar] = simplifiedEtymology;
 }
