@@ -76,12 +76,16 @@ function phonsem(char, left, right, leftStrokes, definition, notes, isObsoleteSo
 let types = {
     o: "oracle",
     b: "bronze",
-    s: "seal"
+    s: "seal",
+    c: "cursive",
+    t: "traditional"
 };
 let captions = {
     o: "Oracle bone script",
     b: "Bronze script",
-    s: "Seal script"
+    s: "Seal script",
+    c: "Cursive script",
+    t: "Traditional script"
 }
 
 function getImages(abbr, char) {

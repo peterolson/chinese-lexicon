@@ -278,7 +278,8 @@ icon("上", "up", `Originally a small line or dot above a longer line, indicatin
 icon("下", "down", `Originally a small line or dot below a longer line, indicating "down". The vertical line was added to distinguish the character from 二 (two).`, "ob");
 icon("尸", "corpse", "Pictograph of a bent-over human.", "obs");
 semphon("尼", "尸", "匕", 3, "near; nun");
-semphon("呢", "口", "尼", 3, "[particle]", `口 (mouth) indicates that the character is only "mouthed", i.e. only used for its phonetic value.`);
+let mouthedNote = `口 (mouth) indicates that the character is only "mouthed", i.e. only used for its phonetic value.`;
+semphon("呢", "口", "尼", 3, "[particle]", mouthedNote);
 icon("玉", "jade; gem", `Pictograph of a ritual object made out of several pieces of jade joined together by a string. A dot was later added to 玉 to distinguish it from 王 (king).`, "ob");
 addEtymology("現", "appear; now", "", [unknownComponent("𤣩", [0, 4]), soundComponent("見", [4], "Also serves as a meaning component.")]);
 simp("现", "現");
@@ -385,6 +386,26 @@ phonsem("觉", "学", "见", 5, "think; perceive; sleep", simplified("學") + " 
 icon("襄", "help; assist", "Origin unclear.", "b");
 semphon("讓", "言", "襄", 7, "let; permit");
 semphon("让", "讠", "上", 2, "let; permit", simplified("讓"));
+icon("戶", "door", "Pictograph of a door, taken from the left half of 門.", "os");
+phonsem("所", "戶", "斤", 4, "place; that which", "The contribution of 斤 (axe) to the meaning is unclear.", true);
+semsem("等", "⺮", "寺", 6, "class; rank; wait", "Higher-class people in ancient China who worked in temples (寺) wrote on bamboo (⺮) strips.");
+semphon("談", "言", "炎", 7, "chat; discuss", "", true);
+semphon("谈", "讠", "炎", 2, "chat; discuss", simplified("談"), true);
+icon("禾", "grain", "Pictograph of grain.", "ob");
+phonsem("和", "禾", "口", 5, "and; together; harmony", mouthedNote);
+icon("工", "work; craft", "Pictograph of a carpenter's tool.", "ob");
+icon("弓", "bow (archery)", "Pictograph of a curved bow.", "bs");
+icon("發", "send out; to issue", `Depicts a person standing on their two feet, pulling back a bowstring, about to shoot an arrow. Conveys the meaning "shoot; send out".`, "os", [iconComponent("止", [0, 2], "Left foot. Mirror image of 止."), iconComponent("止", [2, 5], "Right foot."), iconComponent("弓", [5, 8]), iconComponent(O, [8, 10], "Depicts a bowstring being pulled back."), iconComponent("又", [10])]);
+icon("髮", "hair", "Originally a combination of 首 (head) and 犬 (dog), both of which are hairy. Later the top part of 首 (head) was separated into a separate component 彡 (hair).", "bs", [iconComponent("首", [0, 7]), iconComponent("彡", [7, 10]), iconComponent("犬", [10])]);
+icon("发", "send out; hair", "Simplified form of both 發 (send out; to issue) and 髮 (hair). Derived from 犬 (dog), the bottom component of 髮.");
+icon("生", "be born; life", "Pictograph of a sprout emerging from the ground.", "obs");
+icon("网", "net", "Pictograph of a net.", "o");
+semphon("罔", "网", "亡", 5, "net");
+semphon("網", "糹", "罔", 6, "net", "", false, true);
+phonsem("頭", "豆", "頁", 7, "head");
+addEtymology("头", "head", "Phonosemantic compound. 頁 represents the meaning and 豆 represents the sound. The simplified character 头 was adapted from the cursive form of the traditional character 頭.", [simplifiedComponent("豆", [0, 2]), simplifiedComponent("頁", [2])], "頭:tc");
+icon("買", "buy", "Pictograph of money (貝) coming out of a netted bag (网).", "obs", [iconComponent("网", [0, 5]), iconComponent("貝", [5], "Shells were used as currency in ancient China.")]);
+simp("买", "買", [[0, 1], [1]]);
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -392,7 +413,7 @@ for (let direction in radicals) {
     }
 }
 
-// 所等谈和工发生学读过
+// 读讀 卖賣 買买  过
 // 但间情请找正从它同意
 // 已经两年件重最后告诉
 // 信给许前面久待着住房
