@@ -41,7 +41,7 @@ function getFragments(leftStrokes, isReversed) {
     return fragments;
 }
 
-function semsem(char, left, right, leftStrokes, definition, notes) {
+function semsem(char, left, right, leftStrokes, definition, notes, images) {
     addEtymology(char, definition, notes, [{
         type: "meaning",
         char: left,
@@ -50,7 +50,7 @@ function semsem(char, left, right, leftStrokes, definition, notes) {
         type: "meaning",
         char: right,
         fragment: [leftStrokes]
-    }])
+    }], images);
 }
 
 function semphon(char, left, right, leftStrokes, definition, notes, isObsoleteSound, isSoundAndMeaning, isReversed, images) {
@@ -246,7 +246,7 @@ function shorthand(component, trad) {
 
 function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, changedComponents, isCursive) {
     let simplifiedEtymology = { ...etymologies[traditionalChar] };
-    simplifiedEtymology.notes = [simplified(traditionalChar), simplifiedEtymology.notes, (isCursive ? cursive(simplifiedChar, traditionalChar) : "")].filter(x => x).join(" ");
+    simplifiedEtymology.notes = [(isCursive ? "" : simplified(traditionalChar)), simplifiedEtymology.notes, (isCursive ? cursive(simplifiedChar, traditionalChar) : "")].filter(x => x).join(" ");
     if (fragments) {
         simplifiedEtymology.components = simplifiedEtymology.components.slice();
         fragments.forEach((fragment, i) => {
@@ -256,6 +256,9 @@ function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, ch
             if (simpleReplacements && simpleReplacements[component.char]) {
                 component.char = simpleReplacements[component.char];
                 if (isRadicalForm(component.char)) {
+                    if (component.notes && component.notes.includes("component form of")) {
+                        component.notes = component.notes.split(".")[1].trim();
+                    }
                     component.notes = (radicalNote(component.char) + " " + (component.notes || "")).trim();
                 }
             }

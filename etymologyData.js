@@ -109,7 +109,7 @@ icon("火", "fire", "Pictograph of fire.", "os");
 icon("犬", "dog", "Pictograph of a dog.", "obs");
 icon("石", "stone; rock", "Pictograph of a stone chime.", "o");
 icon("足", "foot; leg", "Pictograph of a foot attached to a leg.", "os", [iconComponent(O, [0, 3], "Depicts a leg."), iconComponent("龰", [3])]);
-icon("糸", "silk", "Pictograph of twisted silk threads.", "obs");
+icon("糸", "silk; thread", "Pictograph of twisted silk threads.", "obs");
 icon("能", "can; able", "Pictograph of a bear holding meat in its mouth. " + shiftMeaning("ability; power", "bear"), "os", [iconComponent(O, [0, 2], "Depicts the head of the bear."), iconComponent("⺼", [2, 6]), iconComponent(O, [6], "Depicts the four legs and tail of the bear.")]);
 icon("熊", "bear", "Pictograph of a bear holding meat in its mouth. Based on 能, with four dots added at the bottom to differentiate it, representing four legs.", "s", [iconComponent("能", [0, 10], "Here used as a pictograph of a bear."), iconComponent("灬", [10], "Here used to represent four legs.")]);
 icon("四", "four", "In ancient texts the character 亖 (four horizontal strokes) was used. The origin of the current form is unclear.");
@@ -435,7 +435,51 @@ semphon("蛇", "虫", "它", 6, "snake", "Originally written as 它.");
 icon("同", "same; together", "Pictograph of a bucket or tube, now written as 筒. " + mouthedNote, "obs", [iconComponent(O, [0, 3], "Depicts a bucket or tube. This meaning is now represented by 筒."), meaningComponent("口", [3])]);
 semphon("筒", "⺮", "同", 6, "tube; cylinder", "Originally written as 同.");
 phonsem("意", "音", "心", 9, "idea; thought; wish");
-
+icon("經", "pass through; undergo; classics", "Pictograph of a loom for weaving. In a loom threads have to pass through each other.", "bs", [meaningComponent("糹", [0, 6]), iconComponent(O, [6], "Depicts a loom.")]);
+simp("经", "經", [[0, 3], [3]], { 糹: "纟" });
+icon("丙", "3rd heavenly stem", "Origin unclear. Variously explained as a table or pedestal, or a fish tail.", "obs");
+icon("兩", "two", "Combination of two 丙 characters. The significance of 丙 is unclear.");
+simp("两", "兩");
+icon("車", "car; vehicle", "Pictograph of a chariot.", "obs");
+simp("车", "車", null, {}, {}, true);
+icon("年", "year", "Pictograph of a person (卩) harvesting grain (禾). The harvest season is a yearly event. The components are not obvious in the modern form.", "obs", [iconComponent("禾", [0, 2, 4, 5]), iconComponent("卩", [2, 4, 5])]);
+icon("牛", "cow", "Pictograph of the head of a cow.", "ob");
+semsem("件", "亻", "牛", 2, "item", "The correspondence between the components 亻(person) 牛 (cow) and the character 件 (item) is unclear.");
+icon("東", "east", `Pictograph of a basket or a bag. The current meaning "east" is a phonetic loan.`, "obs");
+simp("东", "東", null, {}, {}, true);
+icon("重", "heavy; repeat", "Pictograph of a person (亻) carrying a heavy basket (東).", "bs", [iconComponent("亻", [0, 1, 6, 7]), iconComponent("東", [1, 6, 7], "Here used to depict a basket.")]);
+icon("取", "take; get", "Pictograph of a hand (又) grabbing an ear (耳). In ancient China, the ears of opponents in battle were cut off and collected as tokens of victory.", "ob", [iconComponent("耳", [0, 6]), iconComponent("又", [6])]);
+semphon("最", "冃", "取", 4, "most; -est", "冃 is used here since a hat is placed at the highest part of the head.", true);
+icon("后", "empress; (simp.) after, behind", "后 (empress) and its mirror image 司 (take charge) were originally used interchangeably. The origin of both characters is unclear. " + simplifyMerge("后", "後", "after, behind"));
+icon("司", "take charge; manage", "司 (take charge) and its mirror image 后 (empress) were originally used interchangeably. The origin of both characters is unclear.");
+addEtymology("後", "after; behind", "Phonosemantic compound. 幺 represents the sound, and 彳 (walk) and 夂 (foot) are used together to depict following behind someone.", [meaningComponent("彳", [0, 3]), soundComponent("幺", [3, 6]), meaningComponent("夂", [6])]);
+icon("告", "tell; say", "Pictograph of a tongue extending from an open mouth. Graphically similar to 舌 (tongue).", "os", [iconComponent(O, [0, 4], "Depicts a tongue extending from an open mouth."), iconComponent("口", [4])]);
+icon("屰", "contrary; oppose", "Pictograph of an upside-down person. Original form of 逆.", "obs");
+semsem("逆", "屰", "辶", 6, "contrary; oppose; go against", "Originally written as 屰, a pictograph of an upside-down person. The 辶 (walk) component was added later.", "b");
+addEtymology("斥", "blame; reprimand", "Originally written as 㡿. Composed of 广 (roof) and 屰 (contrary; oppose). The purpose of the 广 component is unclear.", [unknownComponent("广", [0, 2]), meaningComponent("屰", [2], "Shorthand form of 屰 (contrary; oppose).")], "s");
+addEtymology("㡿", "blame; reprimand", "Archaic variant of 斥. Composed of 广 (roof) and 屰 (contrary; oppose).", [], "斥:s")
+semphon("訴", "言", "斥", 7, "tell; accuse; complain", "", true, true);
+simp("诉", "訴", [[0, 2], [2]], { 言: "讠" });
+semsem("信", "亻", "言", 2, "trust; letter; information", "Conveys trusting (信) what a person (人) says (言).");
+semphon("給", "糹", "合", 6, "give; for; provide", "The 糸 (silk) component is used because silk is a precious material often given as a gift.", true);
+simp("给", "給", [[0, 3], [3]], { 糹: "纟" });
+icon("午", "noon; 7th earthly branch", "Pictograph of a pestle used for pounding rice, now written as 杵. The current meaning \"noon\" is a phonetic loan.", "obs");
+semphon("杵", "木", "午", 4, "pestle; poke", "Originally written as 午, a pictograph of a pestle used for pounding rice.");
+semphon("許", "言", "午", 7, "allow; perhaps");
+simp("许", "許", [[0, 2], [2]], { 言: "讠" });
+icon("舟", "boat", "Pictograph of a boat.", "obs");
+icon("前", "forward; before", "Depicts a boat (舟) moving (止) forward (前).", "obs", [iconComponent("止", [0, 3]), iconComponent("舟", [3])]);
+icon("面", "face; side; surface; (simp.) noodles", "Pictograph of the outline of a face, with an eye (目) in the middle. " + simplifyMerge("面", "麵", "noodles"), "os", [iconComponent(O, [0, 4, 8], "Depicts the outline of a face."), iconComponent("目", [4, 8])]);
+semphon("麵", "麥", "面", 11, "noodles");
+icon("久", "long time", "Origin unclear");
+semphon("待", "彳", "寺", 3, "wait; stay", "", true);
+semphon("著", "艹", "者", 3, "[progress particle]; touch, wear; show");
+simp("着", "著", [[0, 3], [3]]);
+icon("主", "owner; master; main", "Pictograph of a torch, now written as 炷. The current meaning is a phonetic loan.", "os");
+semphon("炷", "火", "主", 4, "wick for oil lamp; burn; incense stick", "Originally written as 主, a pictograph of a torch.");
+semphon("住", "亻", "主", 2, "live; stay");
+icon("方", "square; direction; side", "Origin unclear. Variously explained as a pictograph of a square tool, a part of a knife, or a raft.", "obs");
+semphon("房", "戶", "方", 4, "room; house");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -443,8 +487,6 @@ for (let direction in radicals) {
     }
 }
 
-// 经經两年件重最后告诉
-// 信给许前面久待着住房
 // 将次希望机错难必须确
 // 定如果兴非常喜欢法国
 // 中午床每英语够用完成
