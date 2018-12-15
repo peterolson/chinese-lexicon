@@ -173,7 +173,8 @@ let radicals = {
         "衤": "衣",
         "飠": "食",
         "饣": "食",
-        "𤣩": "玉"
+        "𤣩": "玉",
+        "丬": "爿"
     },
     right: {
         "刂": "刀",
@@ -244,9 +245,13 @@ function shorthand(component, trad) {
     return `Shorthand for the ${component} component in the traditional character ${trad}.`;
 }
 
-function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, changedComponents, isCursive) {
+function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, changedComponents, isCursive, mergeChar, mergeMeaning) {
     let simplifiedEtymology = { ...etymologies[traditionalChar] };
-    simplifiedEtymology.notes = [(isCursive ? "" : simplified(traditionalChar)), simplifiedEtymology.notes, (isCursive ? cursive(simplifiedChar, traditionalChar) : "")].filter(x => x).join(" ");
+    simplifiedEtymology.notes = [
+        (isCursive ? "" : simplified(traditionalChar)),
+        simplifiedEtymology.notes,
+        (isCursive ? cursive(simplifiedChar, traditionalChar) : ""),
+        (mergeChar ? simplifyMerge(simplifiedChar, mergeChar, mergeMeaning) : "")].filter(x => x).join(" ");
     if (fragments) {
         simplifiedEtymology.components = simplifiedEtymology.components.slice();
         fragments.forEach((fragment, i) => {

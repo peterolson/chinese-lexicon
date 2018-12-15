@@ -480,6 +480,35 @@ semphon("炷", "火", "主", 4, "wick for oil lamp; burn; incense stick", "Origi
 semphon("住", "亻", "主", 2, "live; stay");
 icon("方", "square; direction; side", "Origin unclear. Variously explained as a pictograph of a square tool, a part of a knife, or a raft.", "obs");
 semphon("房", "戶", "方", 4, "room; house");
+addEtymology("將", "will; use; take", `Depicts a hand (寸) taking a piece of meat (肉), conveying the meaning "take". 爿 (qiáng) is a sound component.`, [soundComponent("爿", [0, 4]), iconComponent("肉", [4, 8]), iconComponent("寸", [8], "Used here to depict a hand.")]);
+simp("将", "將", [[0, 3], [3, 6], [6]], { 爿: "丬" });
+icon("欠", "yawn; lack; owe", "Pictograph of a person opening their mouth to yawn.", "os", [iconComponent(O, [0, 2], "Depicts an open mouth."), iconComponent("人", [2])]);
+addEtymology("次", "time; next; second", "", [meaningComponent("二", [0, 2]), unknownComponent("欠", [2])]);
+icon("父", "father", "Pictograph of a hand holding something. There are various theories about what the object being held is, including a hatchet (now written as 斧), or a rod.", "bs");
+phonsem("斧", "父", "斤", 4, "hatchet");
+phonsem("布", "父", "巾", 2, "cloth; declare", "In the modern form it is not obvious that the top component is 父.", false, false, "b");
+icon("爻", "intertwined cross shape; diagram for divination", "Pictograph of two X shapes.");
+addEtymology("希", "hope", `Composed of 爻 (intertwined cross shape) and 巾 (cloth). Conveys a rare type of stitched cloth, corresponding to the original meaning "sparse; rare". The meaning later shifted to "hope".`, [iconComponent("爻", [0, 4]), meaningComponent("巾", [4])]);
+addEtymology("望", "hope; expect; gaze", "Pictograph of a person standing up (𡈼) and gazing at the moon (月). 亡 is a sound component that was added later.", [soundComponent("亡", [0, 3]), iconComponent("月", [3, 7]), iconComponent("𡈼", [7])], "os");
+semphon("機", "木", "幾", 4, "machine; opportunity");
+simp("机", "機", [[0, 4], [4]], { 幾: "几" });
+icon("昔", "former times; ancient", "Pictograph of the sun (日) having passed through many cycles of rising and setting.", "b", [iconComponent(O, [0, 4], "Depicts cycles of rising and setting."), iconComponent("日", [4])]);
+semphon("錯", "金", "昔", 8, "mistake; wrong; complex", `The character is based on the original meaning "grind stone", which later shifted to "mix", "be in disorder", and "wrong".`, true);
+simp("错", "錯", [[0, 5], [5]], { 金: "钅" });
+icon("堇", "clay", "Pictograph of a person over a fire with their mouth open upwards. The original meaning of this character is unclear.", "bs", [iconComponent("口", [0, 4], "Depicts a mouth open upwards."), iconComponent("人", [4, 10], "Stick figure of a person."), iconComponent("火", [10])]);
+semphon("漢", "氵", "堇", 3, "Han river; Chinese", "", true);
+semphon("僅", "亻", "堇", 2, "only");
+phonsem("難", "堇", "隹", 11, "difficult", obsoleteMeaning("type of bird"), true);
+simp("汉", "漢", [[0, 3], [3]], {}, { 堇: "又" }, true);
+simp("仅", "僅", [[0, 2], [2]], {}, { 堇: "又" }, true);
+simp("难", "難", [[0, 2], [2]], {}, { 堇: "又" }, true);
+icon("必", "certainly; must", "Pictograph of a weapon, now written as 柲. The current meaning is a phonetic loan.", "b");
+addEtymology("柲", "bamboo weapon handle", `Phonosemantic compound. 木 represents the meaning and 必 represents the sound. Originally written as 必, a pictograph of a weapon.`);
+icon("須", "must", "Pictograph of a person with a bearded face. The current meaning is a phonetic loan.", "ob", [iconComponent("彡", [0, 3]), iconComponent("頁", [3], "Depicts a head.")]);
+icon("鬚", "beard", "Originally written as 須, a pictograph of a person with a bearded face. The 首 and top-right 彡 components were added later.", "", [iconComponent("首", [0, 7]), iconComponent("彡", [7, 10]), soundComponent("須", [10])]);
+simp("须", "須", [[0, 3], [3]], { 頁: "页" }, {}, false, "鬚", "beard");
+icon("角", "horn; corner; angle", "Pictograph of a horn.", "obs");
+semphon("确", "石", "角", 5, "solid; firm; real; true");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -487,10 +516,37 @@ for (let direction in radicals) {
     }
 }
 
-// 将次希望机错难必须确
 // 定如果兴非常喜欢法国
 // 中午床每英语够用完成
-// 全当把打电开始更车决自己比离美长关然任何感谢失接助种愿讲分钟星期先东西老名字叫少系服坐因律师视影进站爸买医写动脑喝客漂亮第院岁热飞身地方块姐新冷静公司外习惯校思店商杯场边狗表准备体喂旅馆于其实员永远北路眼睛头汉堡玩笑努桌试处理幸运色菜报张消息或干租乐啊放教猫零随便之带送参加解茶丈夫安椅号记主办室结束穿变特礼物总被位务无拿向跑通球提算病苹步考虑像刚混蛋且死清楚游戏哥界共求部受活弟害怕标根简单声班近条保证跳照片卖介药休除千万迎管红亲周选择慢平舞花懂洗票注计划担查数妻奇怪空职业歌并性坏利原牛包护入左右恢复满风容易纸调船唱建议妹似乎酒化旁轻节奶指
+// 全当把打电开始更车决
+// 星期比离美长关然任何
+// 感谢失接助种愿讲分钟
+
+// 先东西老名字叫少
+// 系服坐因律师视影进站
+// 爸买医写动脑喝客漂亮
+// 第院岁热飞身地方块姐
+// 新冷静公司外习惯校思
+// 店商杯场边狗表准备体
+// 喂旅馆于其实员永远北
+// 路眼睛头汉堡玩笑努桌
+// 试处理幸运色菜报张消
+// 息或干租乐啊放教猫零
+// 随便之带送参加解茶丈
+// 夫安椅号记主办室结束
+// 穿变特礼物总被位务无
+// 拿向跑通球提算病苹步
+// 考虑像刚混蛋且死清楚
+// 游戏哥界共求部受活弟
+// 害怕标根简单声班近条
+// 保证跳照片卖介药休除
+// 千万迎管红亲周选择慢
+// 平舞花懂洗票注计划担
+// 查数妻奇怪空职业歌并
+// 性坏利原牛包护入左右
+// 恢复满风容易纸调船唱
+// 建议妹似乎酒化旁轻节
+// 奶指
 
 // common components
 //阝阝鳥鸟衤酉马禾车馬貝米車隹宀頁广礻飠饣欠穴页巾攵羊耳令雨非舟方衣各歹者工且革莫圭青皿鬼台气尚占肖田票羽辟艮合比冫牛交走昜俞包亥乍巴皮斤丁甫龙弓卑娄分昆扁奇尞尧此耒毛里周吾可见吉屯灬干召句由其果堇齒加
