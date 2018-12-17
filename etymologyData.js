@@ -509,6 +509,23 @@ icon("鬚", "beard", "Originally written as 須, a pictograph of a person with a
 simp("须", "須", [[0, 3], [3]], { 頁: "页" }, {}, false, "鬚", "beard");
 icon("角", "horn; corner; angle", "Pictograph of a horn.", "obs");
 semphon("确", "石", "角", 5, "solid; firm; real; true");
+semphon("定", "宀", "正", 3, "stable; fixed; determine", "", true);
+phonsem("如", "女", "口", 3, "if; as", mouthedNote, true);
+icon("果", "fruit", "Pictograph of fruit growing on a tree.", "obs", [iconComponent(O, [0, 4], "Depicts fruit. Unrelated to the visually similar character 田 (field)."), iconComponent("木", [4])]);
+icon("舁", "lift; raise", "Pictograph of four hands working together to lift something.", "bs", [iconComponent("又", [0, 3, 5, 6]), iconComponent("又", [3, 6]), iconComponent("又", [6, 8]), iconComponent("又", [6, 7, 8])]);
+addEtymology("興", "rise; flourish; excitement", "Depicts four hands (舁) working together (同) to raise something.", [meaningComponent("舁", [0, 4, 10]), meaningComponent("同", [4, 10])], "bs");
+simp("兴", "興", [[0, 1, 2], [1, 2]], {}, { 舁: "舁", 同: "同" }, true);
+icon("非", "not", "Pictograph of two wings facing opposite directions.", "s");
+phonsem("裳", "尚", "衣", 8, "lower garment", "Originally used interchangeably with 常.");
+phonsem("常", "尚", "巾", 8, "often; ordinary", `Based on the original meaning, "lower garment", now written as 裳. The current meaning is a phonetic loan.`);
+semsem("喜", "壴", "口", 9, "Depicts merriment from beating on a drum (壴) and singing with the mouth (口).");
+icon("雚", "stork; heron", "Pictograph of a stork", "obs", [iconComponent("隹", [9])]);
+phonsem("歡", "雚", "欠", 18, "joyous; happy", "欠 (yawn) is a pictograph of a person with an open mouth. Likely used here to represent a person joyfully laughing.");
+simp("欢", "歡", [[2], [0, 2]], {}, { 雚: "又" });
+semphon("法", "氵", "去", 3, "law; method; way", "The water (氵) component is used to represent the way water follows a defined path e.g. in rivers.");
+icon("或", "maybe; or", "Originally a pictograph of a weapon. The current meaning is a phonetic loan.", "ob", [iconComponent("戈", [0, 1, 4]), meaningComponent("口", [1, 4], mouthedNote)]);
+semphon("國", "囗", "或", [[0, 2, 10], [2, 10]], "country");
+simp("国", "國", [[0, 2, 7], [2, 7]], {}, { 或: "玉" });
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -516,7 +533,6 @@ for (let direction in radicals) {
     }
 }
 
-// 定如果兴非常喜欢法国
 // 中午床每英语够用完成
 // 全当把打电开始更车决
 // 星期比离美长关然任何
