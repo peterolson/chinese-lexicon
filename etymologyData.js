@@ -501,7 +501,7 @@ semphon("僅", "亻", "堇", 2, "only");
 phonsem("難", "堇", "隹", 11, "difficult", obsoleteMeaning("type of bird"), true);
 simp("汉", "漢", [[0, 3], [3]], {}, { 堇: "又" }, true);
 simp("仅", "僅", [[0, 2], [2]], {}, { 堇: "又" }, true);
-simp("难", "難", [[0, 2], [2]], {}, { 堇: "又" }, true);
+simp("难", "難", [[2], [0, 2]], {}, { 堇: "又" }, true);
 icon("必", "certainly; must", "Pictograph of a weapon, now written as 柲. The current meaning is a phonetic loan.", "b");
 addEtymology("柲", "bamboo weapon handle", `Phonosemantic compound. 木 represents the meaning and 必 represents the sound. Originally written as 必, a pictograph of a weapon.`);
 icon("須", "must", "Pictograph of a person with a bearded face. The current meaning is a phonetic loan.", "ob", [iconComponent("彡", [0, 3]), iconComponent("頁", [3], "Depicts a head.")]);
@@ -526,6 +526,29 @@ semphon("法", "氵", "去", 3, "law; method; way", "The water (氵) component i
 icon("或", "maybe; or", "Originally a pictograph of a weapon. The current meaning is a phonetic loan.", "ob", [iconComponent("戈", [0, 1, 4]), meaningComponent("口", [1, 4], mouthedNote)]);
 semphon("國", "囗", "或", [[0, 2, 10], [2, 10]], "country");
 simp("国", "國", [[0, 2, 7], [2, 7]], {}, { 或: "玉" });
+icon("中", "middle; center", `A line passing through the middle of a box, representing the meaning "middle".`);
+phonsem("床", "广", "木", 3, "bed");
+icon("母", "mother", `Pictograph of a woman kneeling, with two dots representing the two nipples that mothers use to feed their young.`, "obs");
+icon("每", "each; every", "Pictograph of a woman (母) with a hairpin in her hair. Original represented a young woman who had reached marriagable age. The current meaning is a phonetic loan.", "obs", [iconComponent(O, [0, 2], "Depicts a hairpin."), iconComponent("母", [2])]);
+icon("央", "beg; finish; middle", "Pictograph of a person (大) with a cangue (torture device for punishing criminals) around his neck. People wearing such devices were not able to reach their mouth with their own hands, and were forced to beg for food.", "os", [iconComponent(O, [0, 2], "Depicts a cangue (torture device for punishing criminals worn around the neck)."), iconComponent("大", [2], "Here used as a pictograph of a person")]);
+semphon("英", "艹", "央", 3, "blossom; outstanding; hero");
+phonsem("吾", "五", "口", 4, "(archaic) I; me");
+semphon("語", "言", "吾", 7, "language; speech");
+simp("语", "語", [[0, 2], [2]], { 言: "讠" });
+icon("丩", "entangle; gather", "Pictograph of two ropes entangled together, now written as 糾.", "os");
+semphon("糾", "糹", "丩", 6, "entangle; gather", "Originally written as 丩, a pictograph of two ropes entangled together.");
+simp("纠", "糾", [[0, 3], [3]], { 糹: "纟" });
+semphon("叫", "口", "丩", 3, "call; shout");
+phonsem("句", "丩", "口", 2, "sentence; phrase");
+semphon("夠", "多", "句", 6, "enough");
+phonsem("够", "句", "多", 5, "enough");
+icon("用", "use", `Originally a pictograph of a bucket with a handle on the right side. The current meaning "use" is a phonetic loan.`, "bs");
+icon("元", "first; primary; currency unit", `Pictograph of a person with two lines added at the head area, representing the meaning the meaning "head" or "first".`, "ob");
+semphon("完", "宀", "元", 3, "complete; finish", "The 宀 component is used because putting on a roof completes the process of constructing a building.");
+icon("戊", "fifth Heavenly stem; battle-axe", "Pictograph of an axe. Similar to 戈.", "obs");
+phonsem("成", "丁", "戊", [[2, 3], [0, 2, 3]], "complete; succeed", `The 戊 (axe) component is used to represent defending a city. Based on the original meaning "city", now written as 城. The meaning later shifted to "build", "accomplish", and "complete".`, true);
+semphon("城", "土", "成", 3, "city; city walls");
+
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -533,8 +556,7 @@ for (let direction in radicals) {
     }
 }
 
-// 中午床每英语够用完成
-// 全当把打电开始更车决
+// 全当把打电开始更决
 // 星期比离美长关然任何
 // 感谢失接助种愿讲分钟
 

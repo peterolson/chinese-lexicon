@@ -270,6 +270,7 @@ function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, ch
             if (changedComponents && changedComponents[component.char]) {
                 component.notes = (shorthand(component.char, traditionalChar) + " " + (component.notes || "")).trim();
                 component.char = changedComponents[component.char];
+                component.type = "simplified";
             }
             simplifiedEtymology.components[i] = component;
         });
