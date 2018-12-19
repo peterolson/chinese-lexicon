@@ -397,7 +397,7 @@ phonsem("和", "禾", "口", 5, "and; together; harmony", mouthedNote);
 icon("工", "work; craft", "Pictograph of a carpenter's tool.", "ob");
 icon("弓", "bow (archery)", "Pictograph of a curved bow.", "bs");
 icon("發", "send out; to issue", `Depicts a person standing on their two feet, pulling back a bowstring, about to shoot an arrow. Conveys the meaning "shoot; send out".`, "os", [iconComponent("止", [0, 2], "Left foot. Mirror image of 止."), iconComponent("止", [2, 5], "Right foot."), iconComponent("弓", [5, 8]), iconComponent(O, [8, 10], "Depicts a bowstring being pulled back."), iconComponent("又", [10])]);
-icon("髮", "hair", "Originally a combination of 首 (head) and 犬 (dog), both of which are hairy. Later the top part of 首 (head) was separated into a separate component 彡 (hair).", "bs", [iconComponent("首", [0, 7]), iconComponent("彡", [7, 10]), iconComponent("犬", [10])]);
+icon("髮", "hair", "Originally a combination of 首 (head) and 犬 (dog), both of which are hairy. Later the 首 (head) component was separated into the separate components 镸 (long) and 彡 (hair).", "bs", [iconComponent("镸", [0, 7]), iconComponent("彡", [7, 10]), iconComponent("犬", [10])]);
 icon("发", "send out; hair", "Simplified form of both 發 (send out; to issue) and 髮 (hair). Derived from 犬 (dog), the bottom component of 髮.");
 icon("生", "be born; life", "Pictograph of a sprout emerging from the ground.", "obs");
 icon("网", "net", "Pictograph of a net.", "o");
@@ -505,7 +505,7 @@ simp("难", "難", [[2], [0, 2]], {}, { 堇: "又" }, true);
 icon("必", "certainly; must", "Pictograph of a weapon, now written as 柲. The current meaning is a phonetic loan.", "b");
 addEtymology("柲", "bamboo weapon handle", `Phonosemantic compound. 木 represents the meaning and 必 represents the sound. Originally written as 必, a pictograph of a weapon.`);
 icon("須", "must", "Pictograph of a person with a bearded face. The current meaning is a phonetic loan.", "ob", [iconComponent("彡", [0, 3]), iconComponent("頁", [3], "Depicts a head.")]);
-icon("鬚", "beard", "Originally written as 須, a pictograph of a person with a bearded face. The 首 and top-right 彡 components were added later.", "", [iconComponent("首", [0, 7]), iconComponent("彡", [7, 10]), soundComponent("須", [10])]);
+icon("鬚", "beard", "Originally written as 須, a pictograph of a person with a bearded face. The components 镸 (long) 彡 (hair) were added later.", "", [iconComponent("镸", [0, 7]), iconComponent("彡", [7, 10]), soundComponent("須", [10])]);
 simp("须", "須", [[0, 3], [3]], { 頁: "页" }, {}, false, "鬚", "beard");
 icon("角", "horn; corner; angle", "Pictograph of a horn.", "obs");
 semphon("确", "石", "角", 5, "solid; firm; real; true");
@@ -548,7 +548,51 @@ semphon("完", "宀", "元", 3, "complete; finish", "The 宀 component is used b
 icon("戊", "fifth Heavenly stem; battle-axe", "Pictograph of an axe. Similar to 戈.", "obs");
 phonsem("成", "丁", "戊", [[2, 3], [0, 2, 3]], "complete; succeed", `The 戊 (axe) component is used to represent defending a city. Based on the original meaning "city", now written as 城. The meaning later shifted to "build", "accomplish", and "complete".`, true);
 semphon("城", "土", "成", 3, "city; city walls");
-
+icon("入", "enter; go in", "Origin unclear. Variously explained a a pictograph of an entrance to a tent, or an arrow pointing forward.", "ob");
+addEtymology("全", "complete; whole", "Origin unclear.", [unknownComponent("入", [0, 2]), unknownComponent("玉", [2])]);
+semphon("把", "扌", "巴", 3, "hold; take; handle");
+semphon("打", "扌", "丁", 3, "beat; hit", "", true);
+phonsem("當", "尚", "田", 8, "be; act as; face; during", "The contribution of the 田 (field) component to the meaning is unclear.");
+simp("当", "當", [[3], [0, 3]], {}, { 尚: "尚", 田: "田" }, true);
+icon("廾", "two hands", "Pictograph of two hands.", "o");
+icon("開", "open", "Pictograph of two hands opening the bolt on a door.", "s", [iconComponent("門", [0, 8]), iconComponent(O, [8, 9], "Depicts a bolt on a door."), iconComponent("廾", [9])]);
+simp("开", "開", [[0, 0], [0, 1], [1]]);
+icon("申", "extend; state; explain", "Pictograph of a lightning bolt. The current meaning is a phonetic loan.", "obs");
+icon("电", "electricity; lightning", "Originally a variant form of 申, a pictograph of a lightning bolt. The traditional form 電 adds the 雨 (rain) component.", "申:obs");
+semsem("電", "雨", "电", 8, "electricity, lightning", "Depicts lightning (电) during a rainstorm (雨).");
+phonsem("台", "以", "口", 2, "platform; station; (simp.) table; counter", mouthedNote + " " + simplifyMerge("台", "檯", "table; counter"), true);
+semphon("室", "宀", "至", 3, "room");
+semsem("臺", "高", "室", 6, "platform; station", "Only part of the 高 (tall) component is used, preventing the character from being too crowded.");
+semphon("檯", "木", "臺", 4, "table; counter");
+semphon("始", "女", "台", 3, "start; begin", "The 女 (woman) component is used because life begins inside a woman.", true);
+phonsem("更", "丙", "攴", [[0, 5], [5]], "change; even more", "", true, false, "s");
+icon("冰", "ice", "Pictograph of ice cubes (冫) next to a river of water (水).", "b", [iconComponent("冫", [0, 2], "Depicts ice cubes."), meaningComponent("水", [2])]);
+semphon("決", "氵", "夬", 3, "decide; determine", `Based on the original meaning "burst open". The meaning later shifted to "clear", "cut off", "decide" and "judge".`, true, true);
+simp("决", "決", [[0, 2], [2]], {}, { 氵: "冫" });
+semphon("星", "日", "生", 4, "star; celestial object");
+icon("其", "its; their; that", "Pictograph of a basket, now written as 箕. The current meaning is a phonetic loan.", "s");
+semphon("箕", "⺮", "其", 6, "winnow basket", "Originally written as 其, a pictograph of a basket.");
+phonsem("期", "其", "月", 8, "period of time");
+icon("比", "compare", `Pictograph of two people side-by-side, conveying the meaning "to put together", "match", or "compare".`, "bs", [iconComponent("人", [0, 2]), iconComponent("人", [2])]);
+icon("离", "mythical beast; (simp.) leave; depart; away from", "Pictograph of a legendary mountain demon with horns and a tail beween its legs, now written as 魑. The traditional character 離 (leave; depart; away from) was simplified to 离 by deleting the 隹 (bird) component.", "s");
+phonsem("離", "离", "隹", 10, "leave; depart; away from", "The 隹 (bird) component alludes to a bird flying away.");
+icon("鬼", "ghost; demon", "Pictograph of a human-like being with an unnatural head and a tail.", "obs", [iconComponent(O, [0, 5], "Depicts the head of a ghost/demon."), iconComponent("人", [5, 7]), iconComponent(O, [7], "Depicts a tail.")]);
+semphon("魑", "鬼", "离", 9, "mountain demon");
+icon("美", "beautiful", "Pictograph of a person with ornamental headwar.", "obs", [iconComponent(O, [0, 6], "Depicts ornamental headwear."), iconComponent("大", [6], "Used here as a pictograph of a person.")]);
+icon("長", "long; grow; elder", "Pictograph of a person with long hair.", "obs");
+simp("长", "長", null, {}, {}, true);
+icon("丱", "two tufts of hair; young", "Pictograph of a child's hairstyle with two tufts.");
+icon("𢇇", "weave threads - guān", "Depicts weaving threads (𢆶) through a weaving shuttle (丱).");
+semphon("關", "門", "𢇇", 8, "shut; turn off; involve");
+simp("关", "關", [[0, 0], [0]], {}, { "𢇇": "关" }, true);
+semphon("聯", "耳", "𢇇", 6, "connect; join; unite", "Depicts earrings joined to the ear.", true);
+simp("联", "聯", [[0, 6], [6]], {}, { "𢇇": "关" });
+semsem("肰", "⺼", "犬", 4, "dog meat", "Depicts the meat (⺼) of a dog (犬).");
+phonsem("然", "肰", "灬", 8, "correct; so; thus", `Based on the original meaning "ignite; burn", now written as 燃. The current meaning is a phonetic loan.`);
+semphon("燃", "火", "然", 4, "ignite; burn");
+icon("壬", "ninth Heavenly stem", "Origin unclear.", "obs");
+semphon("任", "亻", "壬", 2, "assign; appoint; responsibility", "", false);
+semphon("何", "亻", "可", 2, "what; how; why");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -556,9 +600,7 @@ for (let direction in radicals) {
     }
 }
 
-// 全当把打电开始更决
-// 星期比离美长关然任何
-// 感谢失接助种愿讲分钟
+// 感戌 咸鹹 鹵卤 谢謝 射 失 接妾 妻 助且 种種重 愿願 讲講冓 分 钟鐘童
 
 // 先东西老名字叫少
 // 系服坐因律师视影进站

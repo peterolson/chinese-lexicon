@@ -161,6 +161,7 @@ let radicals = {
         "⺼": "肉",
         "讠": "言",
         "氵": "水",
+        "冫": "冰",
         "扌": "手",
         "钅": "金",
         "釒": "金",
@@ -174,7 +175,8 @@ let radicals = {
         "飠": "食",
         "饣": "食",
         "𤣩": "玉",
-        "丬": "爿"
+        "丬": "爿",
+        "镸": "長"
     },
     right: {
         "刂": "刀",
@@ -271,6 +273,11 @@ function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, ch
                 component.notes = (shorthand(component.char, traditionalChar) + " " + (component.notes || "")).trim();
                 component.char = changedComponents[component.char];
                 component.type = "simplified";
+            }
+            if (fragment[0] === fragment[1]) {
+                component.notes = ((component.notes || "") + ` The traditional component ${component.char} was removed for simplification.`).trim();
+                simplifiedEtymology.notes += ` The traditional component ${component.char} was removed for simplification.`;
+                component.type = "deleted";
             }
             simplifiedEtymology.components[i] = component;
         });
