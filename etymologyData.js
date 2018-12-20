@@ -145,7 +145,7 @@ semphon("昨", "日", "乍", 4, "yesterday");
 icon("亥", "12th earthly branch", "Pictograph of roots.", "b");
 semphon("孩", "子", "亥", 3, "child");
 icon("大", "big", `Pictograph of a person with outstretched arms, representing the meaning "big".`, "ob");
-icon("小", "small", "Pictograph of three small dots, perhaps representing grains of sand or rice, to convey the meaning \"small\".", "ob");
+icon("小", "small", "Pictograph of three small dots, representing grains of sand or rice, to convey the meaning \"small\".", "ob");
 icon("匕", "spoon; ladle", "Pictograph of a ladle.", "bs");
 icon("艮", "blunt", "Origin unclear. Originally written with 目 over 匕.", "s", [unknownComponent("目", [0, 4]), unknownComponent("匕", [4])]);
 semphon("很", "彳", "艮", 3, "very");
@@ -625,6 +625,36 @@ semsem("原", "厂", "泉", 2, "original; source; former", `Depicts a spring (�
 semphon("源", "氵", "原", 3, "source; origin", "", false, true);
 phonsem("愿", "原", "心", 10, "sincere; (simp.) hope; wish", simplifyMerge("愿", "願", "hope; wish"));
 phonsem("願", "原", "頁", 10, "hope; wish", "The 頁 (head) component is used because wishes originate from the brain.");
+icon("先", "first; early", `Depicts a person (人) stepping forward (止) leading the way.`, "ob", [iconComponent("止", [0, 4]), iconComponent("人", [4])]);
+icon("老", "old", "Pictograph of an old person with long hair bent over and leaning on a cane.", "obs", [iconComponent(O, [0, 2], "Depicts long hair."), iconComponent(O, [2, 4], "Depicts an old man bent over."), iconComponent(O, [4], "Depicts a cane.")]);
+semsem("名", "夕", "口", 3, "name; fame", `Traditionally explained as identifying youself at night (夕) by saying (口) your name (名) because is too dark for others to see you.`);
+semphon("字", "宀", "子", 3, "letter; symbol; word", `The 宀 (roof) component is based on the original meaning "raise; nurture". The menaing later shifted to "educate", "word", and "writing".`);
+icon("少", "less; few", `Pictograph of four small dots, representing grains of sand or rice, to convey the meaning "less". Similar to 小.`, "obs");
+icon("系", "system; link; connection", "Pictograph of a hand (又) holding a group of threads (糸) that are connected together (系).", "bs", [iconComponent("又", [0, 1]), iconComponent("糸", [1])]);
+semphon("係", "亻", "系", 2, "connect; tie; bind");
+icon("服", "clothes; take; eat; obey; serve", "Pictograph of a person being served a plate.", "bs", [iconComponent(O, [0, 4], "Depicts a plate."), iconComponent("卩", [4, 6]), iconComponent("又", [6])]);
+icon("卯", "mortise; 4th earthly branch", "Origin unclear. Variously explained as a mortise (a slot cut into a piece of wood), and knives used for sacrificing animals.", "obs");
+phonsem("留", "卯", "田", 5, "stay; keep", "", true);
+icon("坐", "sit", "Pictograph of two people (人) sitting on the ground (土).", "s", [iconComponent("人", [0, 2]), iconComponent("人", [2, 4]), iconComponent("土", [4]),]);
+icon("因", "because; reason", "Pictograph of clothing surrounding (囗) a person (人), now written as 裀. The current meaning is a phonetic loan.", "bs", [iconComponent("囗", [0, 2, 5], "Depicts clothing surrounding a person."), iconComponent("大", [2, 5], "Depicts a person.")]);
+addEtymology("裀", "undergarment; mat", `Phonosemantic compound. 衤 represents the meaning and 因 represents the sound. Originally written as 因, a pictograph of clothing surrounding a person.`);
+semphon("律", "彳", "聿", 3, "law");
+icon("示", "show; reveal", `Origin unclear. Most likely depicts some object of spiritual significance. Most often explained as an altar or a memorial tablet.`, "os");
+phonsem("視", "礻", "見", 4, "look at; inspect");
+simp("视", "視", [[4], [0, 4]], { 見: "见" });
+icon("𠂤", "heap; pile; buttocks", "Pictograph of buttocks.", "ob");
+icon("帀", "circle; surround; everywhere", "Origin unclear.");
+addEtymology("師", "teacher; master; expert", "Origin unclear.", [unknownComponent("𠂤", [0, 6]), unknownComponent("帀", [6])]);
+simp("师", "師", [[0, 2], [2]], {}, { "𠂤": "刂" });
+addEtymology("帥", "handsome; smart; commander", `Originally a pictograph of two hands pulling a rod, based on the original meaning "lead; command". The meaning later shifted to "handsome". The purpose of the 巾 (cloth) is unclear. It possibly represents a special cloth worn by commanders.`, [iconComponent(O, [0, 6], "Depicts something being pulled by two hands. Unrelated to the 𠂤 (heap; pile; buttocks) component even though it looks identical in the modern form."), unknownComponent("巾", [6], "Possibly represents a special cloth worn by a commander.")], "bs");
+simp("帅", "帥", [[0, 2], [2]], {}, { [O]: "刂" });
+semphon("景", "日", "京", 4, "bright; scenery");
+phonsem("影", "景", "彡", 12, "shadow; image; picture", "The 彡 component depicts lines of shadow.");
+phonsem("進", "隹", "辶", 8, "go forward; advance", "", true);
+phonsem("进", "井", "辶", 4, "go forward; advance", simplified("進"));
+icon("立", "stand; establish", `Pictograph of a person standing on the ground.`, "obs");
+semphon("站", "立", "占", 5, "station; stop; stand");
+semphon("爸", "父", "巴", 4, "dad; father");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -632,12 +662,11 @@ for (let direction in radicals) {
     }
 }
 
-// 先东西老名字叫少
-// 系服坐因律师视影进站
-// 爸买医写动脑喝客漂亮
+// 医写动脑喝客漂亮
 // 第院岁热飞身地方块姐
 // 新冷静公司外习惯校思
-// 店商杯场边狗表准备体
+// 店商杯场边狗表准备体 // Alexis reading 12/20/2018
+
 // 喂旅馆于其实员永远北
 // 路眼睛头汉堡玩笑努桌
 // 试处理幸运色菜报张消
