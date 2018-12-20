@@ -136,7 +136,7 @@ icon("貝", "shell", "Pictograph of a cowrie shell. In ancient China such shells
 simp("贝", "貝");
 icon("朋", "friend", `Pictograph of two strings of objects mounted together. Originally meant "pair", later the meaning shifted to "friend". The modern form is visually similar to 月 (moon) but the meaning is not related.`, "bs")
 icon("友", "friend", "Pictograph of two hands togther to convey the meaning \"friend\".", "bs", [iconComponent("又", [0, 2], "Also serves as a phonetic component."), iconComponent("又", [2], "Also serves as a phonetic component.")]);
-icon("沒", "drown; not have", `Pictograph of a hand reaching in the water to grab something. Later the meaning shifted to "drown". This meaning is only used when the character is pronouned "mò". When pronounced "méi" (which is much more common), it means "not have". This meaning is a phonetic loan, unrelated to the original meaning.`, "s", [iconComponent("氵", [0, 3]), iconComponent("又", [5])])
+icon("沒", "drown; not have", `Pictograph of a hand reaching in the water to grab something. Later the meaning shifted to "drown". This meaning is only used when the character is pronouned "mò". When pronounced "méi" (which is much more common), it means "not have". This meaning is a phonetic loan, unrelated to the original meaning.`, "s", [iconComponent("氵", [0, 3]), iconComponent(O, [3, 5], "Depicts an object beneath the surface of the water."), iconComponent("又", [5])]);
 simp("没", "沒");
 icon("田", "field", "Pictograph of a field.");
 semsem("男", "田", "力", 5, "male", "Traditionally males (男) were the people who plowed (力) the fields (田).");
@@ -529,7 +529,7 @@ simp("国", "國", [[0, 2, 7], [2, 7]], {}, { 或: "玉" });
 icon("中", "middle; center", `A line passing through the middle of a box, representing the meaning "middle".`);
 phonsem("床", "广", "木", 3, "bed");
 icon("母", "mother", `Pictograph of a woman kneeling, with two dots representing the two nipples that mothers use to feed their young.`, "obs");
-icon("每", "each; every", "Pictograph of a woman (母) with a hairpin in her hair. Original represented a young woman who had reached marriagable age. The current meaning is a phonetic loan.", "obs", [iconComponent(O, [0, 2], "Depicts a hairpin."), iconComponent("母", [2])]);
+icon("每", "each; every", "Pictograph of a woman (母) with a hairpin in her hair. In ancient China, women of marriagable age wore a hairpin. Based on the original meaning \"young woman\" The current meaning is a phonetic loan.", "ob", [iconComponent(O, [0, 2], "Depicts a hairpin."), iconComponent("母", [2])]);
 icon("央", "beg; finish; middle", "Pictograph of a person (大) with a cangue (torture device for punishing criminals) around his neck. People wearing such devices were not able to reach their mouth with their own hands, and were forced to beg for food.", "os", [iconComponent(O, [0, 2], "Depicts a cangue (torture device for punishing criminals worn around the neck)."), iconComponent("大", [2], "Here used as a pictograph of a person")]);
 semphon("英", "艹", "央", 3, "blossom; outstanding; hero");
 phonsem("吾", "五", "口", 4, "(archaic) I; me");
@@ -545,7 +545,7 @@ phonsem("够", "句", "多", 5, "enough");
 icon("用", "use", `Originally a pictograph of a bucket with a handle on the right side. The current meaning "use" is a phonetic loan.`, "bs");
 icon("元", "first; primary; currency unit", `Pictograph of a person with two lines added at the head area, representing the meaning the meaning "head" or "first".`, "ob");
 semphon("完", "宀", "元", 3, "complete; finish", "The 宀 component is used because putting on a roof completes the process of constructing a building.");
-icon("戊", "fifth Heavenly stem; battle-axe", "Pictograph of an axe. Similar to 戈.", "obs");
+icon("戊", "fifth Heavenly stem; battle-axe", "Pictograph of an axe. Similar to 戈 and 戌.", "obs");
 phonsem("成", "丁", "戊", [[2, 3], [0, 2, 3]], "complete; succeed", `The 戊 (axe) component is used to represent defending a city. Based on the original meaning "city", now written as 城. The meaning later shifted to "build", "accomplish", and "complete".`, true);
 semphon("城", "土", "成", 3, "city; city walls");
 icon("入", "enter; go in", "Origin unclear. Variously explained a a pictograph of an entrance to a tent, or an arrow pointing forward.", "ob");
@@ -593,14 +593,44 @@ semphon("燃", "火", "然", 4, "ignite; burn");
 icon("壬", "ninth Heavenly stem", "Origin unclear.", "obs");
 semphon("任", "亻", "壬", 2, "assign; appoint; responsibility", "", false);
 semphon("何", "亻", "可", 2, "what; how; why");
+icon("西", "west", "Origin unclear. Variously explained as a bag or bird's nest.", "ob");
+icon("鹵", "salt", "Pictograph of a bag of salt.", "bs");
+simp("卤", "鹵");
+icon("戌", "11th earthly branch", "Pictograph of an axe. Similar to 戈 and 戊.", "obs");
+addEtymology("咸", "all; together; (simp.) salty", `Depicts a massacre with a weapon (戌), based on the original meaning "slaughter; terminate". The meaning later shifted to "finish", "complete", and "all". ` + simplifyMerge("咸", "鹹", "salty"), [meaningComponent("戌", [0, 3, 6]), unknownComponent("口", [3, 6], "Likely used to distinguish this character from 戌.")], "obs");
+semphon("鹹", "鹵", "咸", 11, "salty");
+phonsem("感", "咸", "心", 9, "feel; touch; emotion", "", true);
+icon("射", "shoot", "Depicts a hand pulling back a bowstring with an arrow to shoot.", "bs", [iconComponent(O, [0, 7], "Depicts a bow and arrow. Originally unrelated to 身 (body), but later written the same."), iconComponent("寸", [7], "Depicts a hand.")]);
+icon("身", "body", `Pictograph of a person with an protruding midsection. The protruding midsection is variously explained as (1) representing the main part of a person's body, or (2) as representing a pregnant woman that has a body inside her body.`, "bs");
+semphon("謝", "言", "射", 7, "thanks");
+simp("谢", "謝", [[0, 2], [2]], { 言: "讠" });
+icon("失", "lose", "Pictograph of something falling out of the hand.", "s", [iconComponent("手", [0, 3, 4]), iconComponent(O, [3, 4], "Depicts an object falling out of the hand.")]);
+icon("妻", "wife", "Pictograph of a hand grabbing a woman's hair. In ancient China, women of marriagable age wore hairpins (compare with 每).", "bs", [iconComponent(O, [0, 1, 4, 5], "Depicts a hairpin."), iconComponent("又", [1, 4], "Depicts a hand grabbing the woman's hair."), iconComponent("女", [5])]);
+icon("辛", "hard; laborious; suffering", "Pictograph of a chisel-like tool used to tatoo the face of criminals as punishment (see 黑).", "bs");
+semsem("妾", "辛", "女", 5, "concubine", `Depicts a woman (女) with a damaged reputation (辛 is a pictograph of a tool used to tatoo the face of criminals as punishment).`);
+semphon("接", "扌", "妾", 3, "recieve; meet; connect");
+icon("且", "moreover", `Originally a pictograph of a sacrificial altar. The current meaning "moreover" is a phonetic loan.`, "ob");
+phonsem("助", "且", "力", 5, "help", "", true);
+semphon("種", "禾", "重", 5, "seed; grow; type");
+semphon("种", "禾", "中", 5, "seed; grow; type", simplified("種"));
+icon("分", "separate; divide", `Depicts a knife ( 刀 ) being used to cut two things apart (八).`, "", [iconComponent("八", [0, 2], "Depicts two things being separated."), iconComponent("刀", [2])]);
+semphon("童", "辛", "重", [[0, 5, 7, 8, 9, 10], [4]], "child", `Based on the original meaning "young servant boy". The meaning later shifted to "child".`);
+semphon("鐘", "金", "童", 8, "clock; bell");
+semphon("钟", "钅", "中", 5, "clock; bell", simplified("鐘"));
+icon("冓", "meet; confluence", "Pictograph of two fish facing each other.", "bs");
+semphon("講", "言", "冓", 7, "speak; explain", "", true);
+semphon("讲", "讠", "井", 2, "speak; explain", simplified("講"));
+icon("泉", "spring of water", "Pictograph of water flowing out of a spring.", "os", [iconComponent(O, [0, 5], "Depicts a spring. Unrelated to 白 (white)."), iconComponent("水", [5])]);
+semsem("原", "厂", "泉", 2, "original; source; former", `Depicts a spring (泉) originating (原) from a cliff (厂).`);
+semphon("源", "氵", "原", 3, "source; origin", "", false, true);
+phonsem("愿", "原", "心", 10, "sincere; (simp.) hope; wish", simplifyMerge("愿", "願", "hope; wish"));
+phonsem("願", "原", "頁", 10, "hope; wish", "The 頁 (head) component is used because wishes originate from the brain.");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
         icon(char, etymologies[radicals[direction][char]].definition, radicalNote(char));
     }
 }
-
-// 感戌 咸鹹 鹵卤 谢謝 射 失 接妾 妻 助且 种種重 愿願 讲講冓 分 钟鐘童
 
 // 先东西老名字叫少
 // 系服坐因律师视影进站
