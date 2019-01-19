@@ -655,6 +655,24 @@ phonsem("进", "井", "辶", 4, "go forward; advance", simplified("進"));
 icon("立", "stand; establish", `Pictograph of a person standing on the ground.`, "obs");
 semphon("站", "立", "占", 5, "station; stop; stand");
 semphon("爸", "父", "巴", 4, "dad; father");
+icon("殳", "spear", "Pictograph of a hand holding a spear.", "obs", [iconComponent(O, [0, 2], "Depicts a spear."), iconComponent("又", [2], "Depicts a hand.")]);
+addEtymology("殹", "(archaic) [particle]", "Original meaning unclear.", [unknownComponent(O, [0, 7], "Seems to depict an arrow in a container."), unknownComponent("殳", [7])]);
+icon("酉", "10th earthly branch", "Pictograph of a container for wine.", "obs");
+semphon("酒", "氵", "酉", 3, "alcoholic drink", "The 酉 component is a pictograph of a container for wine, so it also serves as a meaning component.", false, true);
+phonsem("醫", "殹", "酉", 11, "medicine", "The 酉 component is a pictograph of a container for wine, which is sometimes used for medicinal purposes.");
+simp("医", "醫", [[0, 0], [0]]);
+icon("舄", "shoe, slipper", `Pictograph of a bird with its two wings opened. Based on the original meaning "magpie", now written as 鵲. The current meaning "shoe" is a phonetic loan.`, "bs");
+phonsem("鵲", "昔", "鳥", 8, "magpie", "Originally written as 舄.");
+simp("鹊", "鵲", [[8], [0, 8]], { 鳥: "鸟" });
+semphon("寫", "宀", "舄", 3, "write", "The contribution of the 宀 (roof) component to the meaning is unclear. Perhaps used since writing is typically done indoors.");
+simp("写", "寫", [[0, 2], [2]], {}, { 舄: "与" }, true);
+icon("牙", "tooth", "Pictograph of teeth.", "bs");
+semphon("與", "舁", "牙", [[0, 4, 7], [4, 7]], "and; together; take part", "", true);
+simp("与", "與", [[0, 0], [0]]);
+icon("云", "cloud", "Pictograph of clouds.", "o");
+semphon("雲", "雨", "云", 8, "cloud", "", false, true);
+phonsem("動", "重", "力", 9, "move");
+simp("动", "動", [[4], [0, 4]], {}, { 重: "云" });
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -662,7 +680,10 @@ for (let direction in radicals) {
     }
 }
 
-// 医写动脑喝客漂亮
+
+//  动動 脑腦 喝 客 漂 亮
+// 
+
 // 第院岁热飞身地方块姐
 // 新冷静公司外习惯校思
 // 店商杯场边狗表准备体 // Alexis reading 12/20/2018
