@@ -42,14 +42,15 @@ function getFragments(leftStrokes, isReversed) {
 }
 
 function semsem(char, left, right, leftStrokes, definition, notes, images) {
+    let fragments = getFragments(leftStrokes);
     addEtymology(char, definition, notes, [{
         type: "meaning",
         char: left,
-        fragment: [0, leftStrokes]
+        fragment: fragments.left
     }, {
         type: "meaning",
         char: right,
-        fragment: [leftStrokes]
+        fragment: fragments.right
     }], images);
 }
 
