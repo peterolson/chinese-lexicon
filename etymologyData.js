@@ -1,5 +1,5 @@
 icon(O, "characterless component", "Placeholder for components that are unknown objects or for which a character does not exist.");
-
+icon("覀", "[character component]", "覀 is a character component that does not have any meaning on its own. Represents two hands grabbing a waist in the character 要.")
 semsem("好", "女", "子", 3, "good; to like, love", "It is good (好) for a woman (女) and her child (子) to be together.");
 icon("女", "woman; female", "Pictograph of a woman. Depicts a stick-figure with breasts sitting or squatting down.", "obs");
 icon("子", "son; child", "Pictograph of a small child with its two arms outstretched.", "bs");
@@ -545,7 +545,7 @@ phonsem("够", "句", "多", 5, "enough");
 icon("用", "use", `Originally a pictograph of a bucket with a handle on the right side. The current meaning "use" is a phonetic loan.`, "bs");
 icon("元", "first; primary; currency unit", `Pictograph of a person with two lines added at the head area, representing the meaning the meaning "head" or "first".`, "ob");
 semphon("完", "宀", "元", 3, "complete; finish", "The 宀 component is used because putting on a roof completes the process of constructing a building.");
-icon("戊", "fifth Heavenly stem; battle-axe", "Pictograph of an axe. Similar to 戈 and 戌.", "obs");
+icon("戊", "fifth Heavenly stem; battle-axe", "Pictograph of an axe. Similar to 戈, 戉, and 戌.", "obs");
 phonsem("成", "丁", "戊", [[2, 3], [0, 2, 3]], "complete; succeed", `The 戊 (axe) component is used to represent defending a city. Based on the original meaning "city", now written as 城. The meaning later shifted to "build", "accomplish", and "complete".`, true);
 semphon("城", "土", "成", 3, "city; city walls");
 icon("入", "enter; go in", "Origin unclear. Variously explained a a pictograph of an entrance to a tent, or an arrow pointing forward.", "ob");
@@ -673,6 +673,43 @@ icon("云", "cloud", "Pictograph of clouds.", "o");
 semphon("雲", "雨", "云", 8, "cloud", "", false, true);
 phonsem("動", "重", "力", 9, "move");
 simp("动", "動", [[4], [0, 4]], {}, { 重: "云" });
+icon("囟", "top of skull; fontanel", "Pictograph of the top part of the skull.", "s");
+icon("川", "river", "Pictograph of a river.", "obs");
+addEtymology("腦", "brain; mind; head", "The brain is part of the body (⺼) composed of a system of pathways (巛) located inside of the skull (囟).", [meaningComponent("⺼", [0, 4]), iconComponent("巛", [4, 7], "Here used to represent the system of neural pathways in the brain, similar to a system of rivers."), iconComponent("囟", [7])]);
+simp("脑", "腦", [[0, 4], [4, 4], [4]]);
+icon("曰", "speak; say", "Pictograph of a line, representing speech, coming out of a mouth (口).", "o", [iconComponent("口", [0, 2, 3]), iconComponent(O, [2, 3], "Represents a line of speech coming out of the mouth.")]);
+icon("丐", "beggar", "Origin unclear. Possibly depicts a beggar holding his hand out.", "bs");
+icon("匃", "beggar", "Variant form of 丐. Origin unclear. Possibly depicts a beggar holding his hand out.", "丐:bs");
+semphon("曷", "曰", "匃", 4, "why; how; what", "", true);
+semphon("喝", "口", "曷", 3, "drink");
+icon("各", "each; every", `Pictograph of a foot (夂) entering an opening, (口), the opposite of 出 (exit). Based on the original meaning "enter", unrelated to the current meaning "each", which is a phonetic loan.`, "ob", [iconComponent("夂", [0, 3]), iconComponent("口", [3])]);
+semphon("客", "宀", "各", 3, "guest; customer");
+addEtymology("票", "ticket; ballot", "Origin unclear.", [unknownComponent("覀", [0, 6]), unknownComponent("示", [6])]);
+semphon("漂", "氵", "票", 3, "float; drift; elegant");
+phonsem("亮", "京", "人", 7, "bright; clear; reveal", "Depicts a person (人) in a high place (京).", true, true, "s");
+icon("阜", "mound; abundant", "Origin unclear. Possibly represents stepping stones on a mountain.", "s");
+semphon("院", "阝", "完", 2, "courtyard; institution");
+icon("弟", "younger brother", `Pictograph of a rope wrapped around a weapon. Relation to current meaning "younger brother" unclear.`, "bs", [iconComponent("戈", [0, 2, 5], "Depicts a weapon."), iconComponent(O, [2, 5], "Depicts a rope.")]);
+semphon("第", "⺮", "弟", 6, "order; rank");
+icon("步", "step", "Picrograph of one foot in front of another, depicting footsteps.", "obs", [iconComponent("止", [0, 4]), iconComponent("止", [4])]);
+icon("戉", "battle-axe", "Pictograph of a battle-axe, similar to 戈, 戊, and 戌. Now written as 鉞.", "obs");
+semphon("鉞", "金", "戉", 8, "battle-axe", "Originally written as 戉.", false, true);
+simp("钺", "鉞", [[0, 5], [5]], { 金: "钅" });
+semphon("歲", "步", "戉", [[0, 4, 6, 10], [4, 6, 10]], "years (of age)");
+simp("岁", "歲", [[0, 3], [3]], {}, { 步: "山", 戉: "夕" }, true);
+semphon("塊", "土", "鬼", 3, "lump; chunk; piece");
+simp("块", "塊", [[0, 3], [3]], { 鬼: "夬" });
+semphon("地", "土", "也", 3, "earth; ground; [particle]", "", true);
+semphon("姐", "女", "且", 3, "older sister");
+icon("丮", "catch", "Pictograph of a person with both hands outstretched.", "b");
+icon("埶", "skill; art", "Pictograph of a person making a craft with both hands.", "ob", [iconComponent(O, [0, 8], "Depicts some sort of craft."), iconComponent("丮", [8], "Depicts a person holding out both hands.")]);
+phonsem("熱", "埶", "灬", 11, "hot", "", true);
+icon("㚔", "shackles; handcuffs", "Pictograph of shackles.", "o");
+icon("執", "execute; grasp", "Pictograph of a person with hands (丮) bound by shackles (㚔).", "ob", [iconComponent("㚔", [0, 8]), iconComponent("丮", [8], "Depicts a person with two hands outstretched.")]);
+simp("执", "執", [[0, 3], [3]], {}, { 㚔: "扌" });
+simp("热", "熱", [[6], [0, 6]], {}, { 埶: "执" });
+icon("飛", "fly", `Pictograph of a flying bird.`, "bs");
+simp("飞", "飛");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -680,11 +717,6 @@ for (let direction in radicals) {
     }
 }
 
-
-//  动動 脑腦 喝 客 漂 亮
-// 
-
-// 第院岁热飞身地方块姐
 // 新冷静公司外习惯校思
 // 店商杯场边狗表准备体 // Alexis reading 12/20/2018
 
@@ -710,82 +742,3 @@ for (let direction in radicals) {
 
 // common components
 //阝阝鳥鸟衤酉马禾车馬貝米車隹宀頁广礻飠饣欠穴页巾攵羊耳令雨非舟方衣各歹者工且革莫圭青皿鬼台气尚占肖田票羽辟艮合比冫牛交走昜俞包亥乍巴皮斤丁甫龙弓卑娄分昆扁奇尞尧此耒毛里周吾可见吉屯灬干召句由其果堇齒加
-
-// common chars
-`么	477969	557804	6227	1	126
-上	1069575	236451	6240	1	129
-会	734888	321488	6242	1	130
-那	638538	365024	6239	1	130
-和	1010465	155937	6224	1	146
-大	1054064	135159	6237	1	148
-对	703632	191793	6236	1	149
-时	833532	162611	6240	1	149
-没	428146	293874	6241	1	149
-去	476270	232346	6241	1	154
-生	682031	162725	6237	1	155
-里	537795	190694	6241	1	157
-想	368819	247453	6241	1	160
-出	755256	129404	6239	1	160
-下	621185	153565	6239	1	160
-看	424616	213974	6239	1	160
-什	267869	307184	6239	1	162
-都	439568	180587	6237	1	165
-很	284252	219622	6240	1	172
-样	398149	161409	6237	1	172
-现	433960	137777	6240	1	175
-中	1104541	69745	6167	1	175
-家	509790	112387	6236	1	177
-起	424933	127575	6238	1	178
-天	419884	127053	6234	1	179
-多	481689	104049	6236	1	181
-开	377012	126802	6242	1	181
-些	400528	113122	6229	1	184
-小	410987	99468	6229	1	188
-点	300800	128025	6237	1	188
-作	542791	68168	6143	1	199
-前	381431	75236	6219	1	200
-面	425180	67015	6200	1	202
-做	175580	136328	6229	1	203
-话	240067	99879	6226	1	204
-回	239243	92711	6233	1	206
-见	269080	85723	6220	1	207
-果	246831	91471	6216	1	207
-吗	91639	253338	6136	1	209
-年	601887	54824	6051	1	210
-明	309873	69749	6202	1	211
-怎	112294	129740	6236	1	218
-再	179607	78039	6230	1	221
-打	186146	79262	6203	1	222
-太	180490	80890	6200	1	222
-关	302473	55693	6152	1	223
-分	419382	48396	6077	1	223
-听	148988	81570	6221	1	226
-先	210628	71253	6128	1	227
-西	243619	59024	6124	1	229
-同	437611	42995	6029	1	230
-女	185188	76693	6088	1	232
-觉	132041	81155	6180	1	233
-本	388118	41063	6000	1	237
-呢	112185	77341	6196	1	238
-机	339823	48902	5953	1	239
-认	191866	54322	6063	1	244
-高	293542	40044	6001	1	246
-候	124865	58337	6169	1	247
-老	223050	52688	5950	1	249
-到	965035	290231	6243	2	250
-东	206238	44037	6035	1	251
-为	1039036	249231	6241	2	256
-名	198481	43229	5995	1	256
-就	771108	313793	6243	2	258
-谢	37550	120668	6144	1	261
-电	183834	60278	5807	1	262
-爱	108167	65256	5978	1	262
-工	317532	44548	5692	1	264
-哪	60708	59479	6176	1	267
-学	464261	41964	5516	1	268
-国	985350	40712	5187	1	272
-谁	61528	52864	6153	1	273
-住	138503	38482	5967	1	273
-叫	110131	41269	5999	1	275
-少	183018	28266	5879	1	282
-欢	55294	57817	6024	1	283`
