@@ -765,7 +765,28 @@ semphon("體", "骨", "豊", 10, "body; form", "", true);
 semsem("体", "亻", "本", 2, "body; form", "Simplified form of 體. The foundation (本) of a person (亻) is their body (体).");
 icon("備", "prepare; equip", "Pictograph of a container for holding arrows, which helped in preparation for battle. The 亻 (person) component was added later.", "ob", [meaningComponent("亻", [0, 2]), iconComponent(O, [2, 6], "Depicts two arrows."), iconComponent(O, [6], "Depicts a container for holding arrows.")]);
 simp("备", "備", [[0, 0], [0, 3], [3]]);
-
+icon("畏", "fear", "Pictograph of a ghost wielding a stick, which is a fearful sight to behold.", "obs", [iconComponent("鬼", [0, 6, 7]), iconComponent("卜", [6, 7], "Depicts a stick.")]);
+semphon("喂", "口", "畏", 3, "feed; hey; hello");
+icon("旅", "trip; travel", "Pictograph of soldiers marching beneath a flag. The original meaning was \"army brigade\", but later shifted to \"travel\".", "bs", [iconComponent(O, [0, 6], "Depicts a flag"), iconComponent("人", [6, 8]), iconComponent("人", [8])]);
+addEtymology("官", "governmental; official", "Depicts a knowledgeable person (師) under a roof (宀).", [meaningComponent("宀", [0, 3]), meaningComponent("師", [3], "𠂤 is used here as an abbreviation of 師.")]);
+semphon("館", "飠", "官", 8, "building; shop");
+simp("馆", "館", [[0, 3], [3]], { 飠: "饣" });
+icon("烏", "crow", "Pictograph of a crow. Similar to 鳥.", "bs");
+simp("乌", "烏");
+icon("於", "in; from; by", "Originally a variant form of 烏 (crow). The current use as a function word is a phonetic loan.", "bs");
+icon("于", "in; from; by", "Pictograph of a musical wind instrument. The current meaning is a phonetic loan. In traditional characters 於 is typically used instead of 于.", "bs");
+semsem("實", "宀", "貫", 3, "real; true; fruit", `貫 is a pictograph of a string of money. Based on the original meaning "thrive; plentiful". The meaning later shifted to "real", "true", and "fruit".`);
+simp("实", "實", [[0, 3], [3]], {}, { 貫: "头" });
+icon("鼎", "ancient cooking pot", "Pictograph of an ancient cooking pot with two handles and three or four legs.", "obs");
+icon("員", "person; employee; member", `Depicts the round opening (口) of a cooking pot (鼎). Based on the original meaning "round", now written as 圓. The current meaning is a phonetic loan.`, "obs", [iconComponent("口", [0, 3], "Depicts the round opening of a cooking pot."), iconComponent("鼎", [3], "貝 is used here as an abbreviation of 鼎, a cooking pot.")]);
+semphon("圓", "囗", "員", [[0, 2, 12], [2, 12]], "round; circle", "Originally written as 員.");
+simp("员", "員", [[0, 3], [3]], { 鼎: "贝" });
+simp("圆", "圓", [[0, 2, 9], [2, 9]], { 員: "员" });
+icon("永", "long; forever; eternal", "Pictograph of a long river with a tributary.", "bs");
+phonsem("遠", "袁", "辶", 10, "far; distant");
+phonsem("远", "元", "辶", 4, "far; distant", simplified("遠"));
+icon("北", "north", `Pictograph of two people standing back-to-back. Based on the original meaning "back", now written as 背. The current meaning "north" is a phonetic loan.`, "o", [iconComponent("人", [0, 3], "Depicts a person facing left."), iconComponent("人", [3], "Depicts a person facing right.")]);
+phonsem("背", "北", "⺼", 5, "back", "Originally written as 北, a pictograph of two people standing back-to-back.", false, true);
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -773,8 +794,6 @@ for (let direction in radicals) {
     }
 }
 
-
-// 喂旅馆于其实员永远北
 // 路眼睛头汉堡玩笑努桌
 // 试处理幸运色菜报张消
 // 息或干租乐啊放教猫零
