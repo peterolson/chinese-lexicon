@@ -199,7 +199,7 @@ semphon("葉", "艹", "枼", 4, "leaf");
 semphon("題", "頁", "是", 9, "topic; problem", obsoleteMeaning("forehead"), true, false, true);
 simp("题", "題");
 semsem("什", "亻", "十", 2, "what", obsoleteMeaning("group of ten soldiers"));
-icon("幺", "tiny; one", "Pictograph of a single twisted thread.", "b");
+icon("幺", "(thread); tiny; one", "Pictograph of a single twisted thread.", "b");
 icon("林", "woods; forest", "Combination of two trees (木).", "", [iconComponent("木", [0, 4]), iconComponent("木", [4])]);
 icon("森", "forest", "Combination of three trees (木).", "", [iconComponent("木", [0, 4]), iconComponent("木", [4, 8]), iconComponent("木", [8])]);
 icon("𣏟", "hemp", "Pictograph of hemp leaves. Visually similar to 林 but not related.");
@@ -372,7 +372,7 @@ semphon("跟", "足", "艮", 7, "follow; together with; heel");
 semphon("吧", "口", "巴", 3, "[suggestion particle]");
 icon("己", "self", "Origin unclear.");
 icon("已", "already; finish", "Origin unclear.");
-icon("自", "self; from; since", "Pictograph of a nose. Original form of 鼻 (nose). In China, when people point to themselves, they typically point to their nose.", "obs");
+icon("自", "(nose); self; from; since", "Pictograph of a nose. Original form of 鼻 (nose). In China, when people point to themselves, they typically point to their nose.", "obs");
 icon("走", "walk; go", "Pictograph of a person swaying their arms while walking.", "bs", [iconComponent(O, [0, 3], "Depicts a person swaying their arms."), meaningComponent("龰", [3])]);
 semphon("起", "走", "己", 7, "rise; get up");
 icon("㐅", "five", "Archaic variant of 五 (five).");
@@ -427,7 +427,7 @@ simp("请", "請", [[0, 2], [2]], { 言: "讠" });
 semphon("找", "扌", "戈", 3, "find; look for", "", true);
 icon("正", "straight; correct", `Pictograph of a foot (止) heading toward a city. Based on the original meaning "go on a military campaign", now written as 征. The meaning later shifted to "power", "rule" (政), and "correct" (正).`, "ob", [iconComponent(O, [0, 1], "Depicts a city."), iconComponent("止", [1])]);
 semphon("征", "彳", "正", 3, "journey; campaign; attack", "Originally written as 正.");
-phonsem("政", "正", "攵", 5);
+phonsem("政", "正", "攵", 5, "government; politics");
 icon("从", "from; follow", "Pictograph of one person following another.", "s");
 icon("從", "from; follow", "Originally a pictograph of one person following another (从).  Later the 彳 and 止 components were added to indicate movement.", "b", [iconComponent("彳", [0, 3]), iconComponent("从", [3, 7], "Depicts one person following another."), iconComponent("止", [7])]);
 icon("它", "it", "Pictograph of a snake, now written as 蛇. The current use as a pronoun is a phonetic loan.", "ob");
@@ -440,7 +440,7 @@ simp("经", "經", [[0, 3], [3]], { 糹: "纟" });
 icon("丙", "3rd heavenly stem", "Origin unclear. Variously explained as a table or pedestal, or a fish tail.", "obs");
 icon("兩", "two", "Combination of two 丙 characters. The significance of 丙 is unclear.");
 simp("两", "兩");
-icon("車", "car; vehicle", "Pictograph of a chariot.", "obs");
+icon("車", "chariot; car; vehicle", "Pictograph of a chariot.", "obs");
 simp("车", "車", null, {}, {}, true);
 icon("年", "year", "Pictograph of a person (卩) harvesting grain (禾). The harvest season is a yearly event. The components are not obvious in the modern form.", "obs", [iconComponent("禾", [0, 2, 4, 5]), iconComponent("卩", [2, 4, 5])]);
 icon("牛", "cow", "Pictograph of the head of a cow.", "ob");
@@ -665,7 +665,7 @@ icon("舄", "shoe, slipper", `Pictograph of a bird with its two wings opened. Ba
 phonsem("鵲", "昔", "鳥", 8, "magpie", "Originally written as 舄.");
 simp("鹊", "鵲", [[8], [0, 8]], { 鳥: "鸟" });
 semphon("寫", "宀", "舄", 3, "write", "The contribution of the 宀 (roof) component to the meaning is unclear. Perhaps used since writing is typically done indoors.");
-simp("写", "寫", [[0, 2], [2]], {}, { 舄: "与" }, true);
+simp("写", "寫", [[0, 2], [2]], { 宀: "冖" }, { 舄: "与" }, true);
 icon("牙", "tooth", "Pictograph of teeth.", "bs");
 semphon("與", "舁", "牙", [[0, 4, 7], [4, 7]], "and; together; take part", "", true);
 simp("与", "與", [[0, 0], [0]]);
@@ -747,7 +747,7 @@ simp("场", "場", [[0, 3], [3]], {}, {}, true);
 semphon("鼻", "自", "畀", 6, "nose", "Originally written as 自, a pictograph of a nose. The sound component 畀 was added later.");
 icon("畀", "give; confer", "Originally a pictograph of an arrow with a large arrowhead. Unrelated to the current meaning \"give; confer\", which is a phonetic loan.", "bs");
 addEtymology("邊", "side; edge", "Phonosemantic compound with two sound components and two meaning components. 辶 and 方 represent the meaning, while 自 and 丙 represent the sound.",
-    [soundComponent("鼻", [0, 6], "自 was the original form of 鼻 (bí; nose)."), soundComponent("丙", [6, 11]), meaningComponent("方", [11, 15]), meaningComponent("辶", [15])]);
+    [soundComponent("自", [0, 6], "自 was the original form of 鼻 (bí; nose)."), soundComponent("丙", [6, 11]), meaningComponent("方", [11, 15]), meaningComponent("辶", [15])]);
 simp("边", "邊", [[0, 0], [0, 0], [0, 2], [2]], {}, { 方: "力" });
 semphon("狗", "犭", "句", 3, "dog", "", true);
 icon("毛", "fur; hair; feather", "Pictograph of a feather.", "b");
@@ -756,7 +756,7 @@ semphon("錶", "金", "表", 8, "wristwatch");
 icon("隼", "falcon", "Pictograph of a falcon.", "s", [iconComponent("隹", [0, 8]), iconComponent(O, [8], "Likely depicts the tail of a falcon.")]);
 semphon("準", "氵", "隼", 3, "standard; accurate", "The 氵 (water) component is used because level tools that ensure flatness take advantage of water having a flat surface.");
 simp("准", "準", [[0, 2], [2]], {}, { "氵": "冫", "隼": "隹" });
-icon("玨", "gems mounted together", "Duplication of the 玉 (jade) character.", "", [iconComponent("玉", [0, 4]), iconComponent("玉", [4])]);
+icon("玨", "gems mounted together", "Duplication of the 玉 (jade) character.", "", [iconComponent("𤣩", [0, 4]), iconComponent("𤣩", [4])]);
 semsem("豊", "玨", "壴", [[0, 6], [5]], "ceremonial vessel", "Depicts a decoration (玨) and a drum (壴) used for ceremonial purposes. Original form of 禮 (gift; ceremony).", "os");
 semphon("禮", "礻", "豊", 4, "gift; ceremony", "Originally written as 豊.", false, true);
 icon("乚", "[simplified component]", "Component used in simplified characters.");
@@ -787,6 +787,66 @@ phonsem("遠", "袁", "辶", 10, "far; distant");
 phonsem("远", "元", "辶", 4, "far; distant", simplified("遠"));
 icon("北", "north", `Pictograph of two people standing back-to-back. Based on the original meaning "back", now written as 背. The current meaning "north" is a phonetic loan.`, "o", [iconComponent("人", [0, 3], "Depicts a person facing left."), iconComponent("人", [3], "Depicts a person facing right.")]);
 phonsem("背", "北", "⺼", 5, "back", "Originally written as 北, a pictograph of two people standing back-to-back.", false, true);
+semphon("路", "足", "各", 7, "road; street; path", "", true);
+semphon("眼", "目", "艮", 5, "eye");
+semphon("睛", "目", "青", 5, "eye; eyeball");
+icon("保", "protect; defend", "Pictograph of a person carrying a child on their back.", "obs", [iconComponent("亻", [0, 2]), iconComponent("子", [2, 7]), unknownComponent(O, [7], "The purpose of these two strokes is unclear. Possibly represents two hands carrying the child.")]);
+phonsem("堡", "保", "土", 9, "fortress; castle", "", false, true);
+semphon("玩", "𤣩", "元", 4, "play; have fun");
+icon("夭", "die prematurely; tender; gentle", "Pictograph of a person walking. Connection to meaning unclear.", "os");
+semphon("笑", "⺮", "夭", 6, "smile; laugh", `The connection between 竹 (bamboo) and 笑 (laugh) is unclear.`);
+icon("奴", "slave", "Depicts a hand behind a woman slave's back forcing her to work.", "s", [iconComponent("女", [0, 3], "Depicts a woman slave. Also serves as a phonetic component."), iconComponent("又", [3], "Depicts a hand forcing a slave to do work.")]);
+phonsem("努", "奴", "力", 5, "exert; strive", "", false, true);
+icon("卓", "outstanding", "Pictograph of a person standing erect with something above the head. The significance of the object above the head is unclear.", "bs");
+phonsem("桌", "卓", "木", [[0, 8], [6]], "table");
+icon("虍", "tiger head", "Pictograph of the head of a tiger. Top component of 虎 (tiger).", "obs");
+icon("虎", "tiger", "Pictograph of a tiger.", "obs", [iconComponent("虍", [0, 6], "Depicts the head of a tiger."), iconComponent(O, [6], "Depicts the body of a tiger.")]);
+icon("弋", "shoot", "Pictograph of a post for tethering animals, now written as 杙. The current meaning is a phonetic loan.", "bs");
+addEtymology("杙", "post for tethering animals", "Phonosemantic compound. 木 represents the meaning and 弋 represents the sound. Originally written as 弋.");
+semphon("式", "工", "弋", [[1, 4], [0, 1, 4]], "type; style; form; pattern", "", true);
+semphon("試", "言", "式", 7, "test; try");
+simp("试", "試", [[0, 2], [2]], { "言": "讠" });
+semphon("處", "夂", "虎", [[6, 9], [0, 6, 9]], "reside; live; place; location");
+simp("处", "處", [[0, 3], [3]], {}, { 虎: "卜" });
+semphon("理", "𤣩", "里", 4, "texture; essence; truth; reason; logic; handle");
+semsem("幸", "夭", "屰", 3, "fortune; lucky", "Fortune (幸) is the opposite (屰) of misfortune (夭).", "s");
+semsem("軍", "冖", "車", 2, "army; military");
+simp("军", "軍", [[0, 2], [2]], { 車: "车" });
+phonsem("運", "軍", "辶", 9, "move; transport");
+phonsem("运", "云", "辶", 4, "move; transport", simplified("運"));
+icon("色", "color", `Depicts a kneeling person (卩) being held down by a knife (刀). Based on the original meaning "restrain", now written as 抑. The current meaning "color" is a phonetic loan.`, "s", [iconComponent("刀", [0, 2, 3, 4]), iconComponent("卩", [2, 3, 4])]);
+icon("爪", "(hand); claw; paw; foot", `Pictograph of an animal paw. Usually means "hand" when used as a component in other characters.`, "bs");
+icon("印", "print; stamp; engrave", `Pictograph of a kneeling person (卩) being held down by a hand (爪). Based on the original meaning "restrain", now written as 抑. The meaning later shifted to "push down", "stamp", and "print".`, "bs", [iconComponent("爪", [0, 3]), iconComponent("卩", [3])]);
+semphon("抑", "扌", "印", 3, "restrain; keep down", "Originally written as 印 or 色.");
+icon("采", "pick; pluck; gather; color", "Pictograph of a hand (爪) picking fruit from a tree (木).", "obs", [iconComponent("爪", [0, 4]), iconComponent("木", [4])]);
+semphon("菜", "艹", "采", 3, "vegetable; food; dish; cuisine");
+icon("報", "announce; report; recompense", `Pictograph of a kneeling person (卩) being forced by a hand (又) into shackles (㚔). Based on the original meaning "punish". The meaning later shifted to "revenge", "recompense", "report", and "announce".`, "b",
+    [iconComponent("㚔", [0, 8]), iconComponent("卩", [8, 10]), iconComponent("又", [10])]);
+simp("报", "報", [[0, 3], [3, 5], [5]], {}, { "㚔": "扌" });
+semphon("張", "弓", "長", 3, "open; spread; sheet");
+simp("张", "張", [[0, 3], [3]], { 長: "长" });
+semsem("肖", "小", "月", 3, "resemble; similar", "Depicts the moon (月) getting smaller (小) and disappearing as part of the lunar cycle. Based on the original meaning \"decrease; disappear\", now written as 消. The meaning later shifted to \"resemble; similar\".");
+semphon("消", "氵", "肖", 3, "disappear; vanish");
+icon("息", "breath; news; interest", "Pictograph of air going into the nose (自). The lines representing breath were later reanalyzed as 心 (heart).", "os", [iconComponent("自", [0, 6], "自 was the original form of 鼻 (bí; nose)."), iconComponent("心", [6], "Used here to represent lines of breath.")]);
+icon("干", "shield; concern; (simp.) dry; tree trunk; do", "Pictograph of a shild. " + simplifyMerge("干", "乾", "dry") + " " + simplifyMerge("干", "幹", "tree trunk; do"), "obs");
+icon("倝", "dawn", "Pictograph of rays of light shining from the horizon early in the morning (早).", "bs", [meaningComponent("早", [2, 8]), iconComponent(O, [0, 2, 8], "Depicts rays of light on the horizon.")]);
+icon("乙", "2nd heavenly stem", "Origin unclear.");
+addEtymology("乾", "dry", "倝 is used to represent the sound. The purpose of the 乙 component is unclear.", [soundComponent("倝", [0, 10]), unknownComponent("乙", [10])]);
+addEtymology("幹", "do; tree trunk", "Both 倝 and 干 serve as sound components.", [soundComponent("倝", [0, 10]), soundComponent("干", [10])]);
+semphon("租", "禾", "且", 5, "hire; rent; lease", `Based on the original meaning "land tax". The meaning later shifted to "rent" and "hire".`, true);
+icon("樂", "happy; music", "Pictograph of an ancient wooden stringed musical instrument.", "bs", [iconComponent("幺", [5, 8], "Depicts a string."), iconComponent("白", [0, 5], "The modern form looks like 白 (white), but here it is likely just a variant of 幺 (string)."), iconComponent("幺", [8, 11], "Depicts a string."), iconComponent("木", [11], "Depicts the wooden base of a musical instrument.")]);
+simp("乐", "樂", [[0, 1], [1, 1], [1, 2], [1]], {}, {}, true);
+semphon("阿", "阝", "可", 2, "[syllable used before kinship terms]", `Based on the original meaning "big mountain". The current meaning is a phonetic loan.`, true);
+semphon("啊", "口", "阿", 3, "ah; oh; [particle]");
+phonsem("放", "方", "攵", 4, "put; place; let go");
+semsem("孝", "老", "子", 4, "filial piety; obedience", "Filial piety (孝) is the respect that the young (子) must have for their elders (老).");
+phonsem("教", "孝", "攵", 7, "teach; religion");
+semsem("苗", "艹", "田", 3, "sprout", "Sprouts are plants (艹) that rise from the field (田).");
+icon("豸", "beast; insect", "Pictograph of some sort of beast or insect.", "os");
+semphon("貓", "豸", "苗", 7, "cat");
+semphon("猫", "犭", "苗", 3, "cat", simplified("貓"));
+semphon("零", "雨", "令", 8, "zero; extra; remainder", `Based on the original meaning "to fall (of rain/snow)". The meaning later shifted to "scattered", "fragment", "fraction", "remainder", and "zero".`);
+
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -794,9 +854,6 @@ for (let direction in radicals) {
     }
 }
 
-// 路眼睛头汉堡玩笑努桌
-// 试处理幸运色菜报张消
-// 息或干租乐啊放教猫零
 // 随便之带送参加解茶丈
 // 夫安椅号记主办室结束
 // 穿变特礼物总被位务无
