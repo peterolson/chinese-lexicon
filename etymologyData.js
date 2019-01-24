@@ -846,7 +846,28 @@ icon("豸", "beast; insect", "Pictograph of some sort of beast or insect.", "os"
 semphon("貓", "豸", "苗", 7, "cat");
 semphon("猫", "犭", "苗", 3, "cat", simplified("貓"));
 semphon("零", "雨", "令", 8, "zero; extra; remainder", `Based on the original meaning "to fall (of rain/snow)". The meaning later shifted to "scattered", "fragment", "fraction", "remainder", and "zero".`);
-
+icon("右", "right", "Pictograph of a right hand. The 口 (mouth) component was added later to distinguish the character from 又.", "bs", [iconComponent("又", [0, 2], "Depicts a right hand. Also serves as a phonetic component."), meaningComponent("口", [2], "Added to distinguish the character from 又.")]);
+icon("左", "left", `Pictograph of a left hand. The 工 (work) component was added later to represent the meaning "help; assist", now written as 佐.`, "bs", [iconComponent("𠂇", [0, 2]), meaningComponent("工", [2])]);
+icon("𠂇", "left hand", "Original form of 左 (left).", "左:b");
+semphon("佐", "亻", "左", 2, "help; assist");
+addEtymology("隋", "Sui dynasty", "Origin unclear.", [meaningComponent("阝", [0, 2]), soundComponent("左", [2, 7], obsoleteSound("隋", "左")), unknownComponent("⺼", [7])]);
+phonsem("迶", "有", "辶", 6, "walk");
+phonsem("隨", "隋", "辶", [[0, 11], [11]], "follow; comply; according to...");
+simp("陏", "隋", [[0, 2], [2, 2], [2]]);
+simp("随", "隨", [[8], [0, 8]], {}, { 隋: "陏" });
+semsem("便", "亻", "更", 2, "convenient; defecate", "When uncomfortable, a person (亻) will change (更) to a more convenient (便) position.");
+icon("之", "[particle]", "Pictograph of a foot, phonetically and visually similar to 止, which also a pictograph of a foot.", "obs");
+icon("帶", "band; belt; carry; bring", "Pictograph of a belt clasp.", "os");
+simp("带", "帶");
+icon("送", "deliver; carry; present", "Depicts walking (辶) while carrying a present in both hands.", "s", [meaningComponent("辶", [6]), iconComponent(O, [0, 3], "Depicts some object being carried."), iconComponent("廾", [3, 6])]);
+semsem("加", "力", "口", 2, "add; plus", "Depicts making noises with the mouth (口) while exerting strength (力). Based on the original meaning \"exert strength\". The meaning later shifted to \"raise; increase; add\"");
+icon("參", "Three Stars constellation; join; participate", "Depicts three stars joined together; in Chinese astronomy 參 is a constellation of three stars. 彡 is a sound component.", "bs", [iconComponent(O, [0, 8], "Depicts three stars joined together"), soundComponent("彡", [8])]);
+simp("参", "參", [[0, 5], [5]]);
+addEtymology("解", "divide; separate; explain", "Depicts separating (解) the horns (角) from a cow (牛) using a knife (刀).", [iconComponent("角", [0, 7]), iconComponent("刀", [7, 9]), iconComponent("牛", [9])]);
+icon("余", "extra; remaining", `Pictograph of a small shelter. Based on the original meaning "residence", now written as 舍. The current meaning is a phonetic loan.`, "obs");
+phonsem("舍", "余", "口", 5, "residence; give up; abandon", mouthedNote, true, false);
+semphon("茶", "艹", "余", 3, "tea", "", true);
+semsem("丈", "十", "又", [[0, 2], [1]], "length unit (~3 meters); husband; man", "Depicts 10 (十) hand-lengths (又): 丈 is a traditional Chinese unit of length equivalent to about 3 meters.", "s");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -854,7 +875,6 @@ for (let direction in radicals) {
     }
 }
 
-// 随便之带送参加解茶丈
 // 夫安椅号记主办室结束
 // 穿变特礼物总被位务无
 // 拿向跑通球提算病苹步
@@ -871,4 +891,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//阝阝鳥鸟衤酉马禾车馬貝米車隹宀頁广礻飠饣欠穴页巾攵羊耳令雨非舟方衣各歹者工且革莫圭青皿鬼台气尚占肖田票羽辟艮合比冫牛交走昜俞包亥乍巴皮斤丁甫龙弓卑娄分昆扁奇尞尧此耒毛里周吾可见吉屯灬干召句由其果堇齒加
+//穴 革 莫 圭 皿 辟 俞 包 皮 甫 龙 卑 娄 昆 扁 奇 尞尧 耒 周 吉 屯 召 由 堇 齒
