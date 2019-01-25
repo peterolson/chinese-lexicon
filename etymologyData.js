@@ -868,6 +868,24 @@ icon("余", "extra; remaining", `Pictograph of a small shelter. Based on the ori
 phonsem("舍", "余", "口", 5, "residence; give up; abandon", mouthedNote, true, false);
 semphon("茶", "艹", "余", 3, "tea", "", true);
 semsem("丈", "十", "又", [[0, 2], [1]], "length unit (~3 meters); husband; man", "Depicts 10 (十) hand-lengths (又): 丈 is a traditional Chinese unit of length equivalent to about 3 meters.", "s");
+icon("夫", "man; husband", `Pictograph of a man. The top horizontal stroke is traditionally explained as a hairpin which was only worn by adults.`, "o", [iconComponent(O, [0, 1], "Depicts a hairpin."), iconComponent("大", [1], "Pictograph of a person standing up.")]);
+semsem("安", "宀", "女", 3, "safe; calm; peaceful; content", `Variously explained as (1) a woman is what makes a home feel peaceful, or (2) a woman feels safe under the shelter of a roof.`);
+semphon("奇", "大", "可", 3, "wonderful; strange; surprising; unusual", "", true);
+semphon("椅", "木", "奇", 4, "chair");
+icon("丂", "breath", "Wavy line depicting breath.", "b");
+semphon("号", "口", "丂", 3, "roar; cry; number", simplified("號"), false, true);
+phonsem("號", "号", "虎", 5, "roar; cry; number", "", false, true);
+semphon("記", "言", "己", 7, "record; remember; note");
+simp("记", "記", [[0, 2], [2]], { 言: "讠" });
+icon("辡", "dispute; argue; discuss - biàn", "Old variant form of 辯. Duplicate of 辛 (laborious; suffering) - possibly used because disputes are often unpleasant.");
+semphon("辯", "言", "辡", [[7, 14], [0, 7, 14]], "dispute; argue; discuss", "", false, true);
+simp("辩", "辯", [[7, 9], [0, 7, 9]], { 言: "讠" });
+semphon("辦", "力", "辡", [[7, 9], [0, 7, 9]], "do; manage; deal with");
+simp("办", "辦", [[0, 2], [2]]);
+semsem("吉", "士", "口", 3, "lucky; auspicious", `Based on the original meaning "authority" or "respect" given to scholars (士). The meaning later shifted to "lucky".`);
+semphon("結", "糹", "吉", 6, "knot; tie; bind; sturdy; produce");
+simp("结", "結", [[0, 3], [3]], { 糹: "纟" });
+icon("束", "bind; bunch", `Pictograph of a bag tied at both ends.`, "bs");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -875,8 +893,8 @@ for (let direction in radicals) {
     }
 }
 
-// 夫安椅号记主办室结束
 // 穿变特礼物总被位务无
+
 // 拿向跑通球提算病苹步
 // 考虑像刚混蛋且死清楚
 // 游戏哥界共求部受活弟
