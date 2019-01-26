@@ -886,14 +886,38 @@ semsem("吉", "士", "口", 3, "lucky; auspicious", `Based on the original meani
 semphon("結", "糹", "吉", 6, "knot; tie; bind; sturdy; produce");
 simp("结", "結", [[0, 3], [3]], { 糹: "纟" });
 icon("束", "bind; bunch", `Pictograph of a bag tied at both ends.`, "bs");
+icon("穴", "cave; hole", "Pictograph of an opening to a cave.", "s");
+semsem("穿", "穴", "牙", 5, "wear; dress; pierce; pass through", `Based on the meaning "to pierce through". Meaning later extended to "to thread", "to string together", and "to wear".`);
+semphon("特", "牛", "寺", 4, "special; unique", "", true);
+icon("勿", "do not", `Depicts a knife (刀) cutting things apart, based on the original meaning "to cut apart", now written as 刎.`, "bs", [iconComponent("刀", [1, 3]), iconComponent(O, [0, 1, 3], "Depicts the object being cut apart.")]);
+phonsem("刎", "勿", "刂", 4, "cut across (throat)", "", true);
+semphon("物", "牛", "勿", 4, "thing; object", `Based on the original meaning "variety", depicting the variety of colors on a cow. Later the meaning shifted to "things".`);
+semsem("位", "亻", "立", 2, "position; location", "Depicts a person (亻) standing (立) in a specific location.");
+icon("革", "animal hide; leather", "Pictograph of animal hide laying flat.", "bs");
+icon("無", "not have; none", `Originally a pictograph of a person (大) dancing with ornamental leather hides (革) hanging from his arms, conveying the meaning "dance". Later, two feet (舛) were added to the bottom of the character to form 舞 (dance), and 無 was borrowed for its sound to represent the meaning "not".`, "bs",
+    [iconComponent("大", [0, 3], "Depicts a person."), iconComponent("革", [3, 5, 7, 10], "Depicts ornamental leather hanging from a person's arm."), iconComponent("革", [5, 8, 10], "Depicts ornamental leather hanging from a person's arm.")]);
+icon("舛", "(two feet); mistaken; contradictory", "Pictograph of two feet facing opposite directions.", "s", [iconComponent("夂", [0, 3], "Depicts a foot facing the left."), iconComponent("止", [3], "Depicts a foot facing the right.")]);
+phonsem("舞", "無", "舛", 8, "dance");
+simp("无", "無", [[0, 2], [1, 3], [1, 2, 3]], {}, {}, true);
+icon("皮", "skin; leather", "Pictograph of a hand (又) peeling off the skin from an animal.", "bs", [iconComponent(O, [0, 3], "Depicts an animal with its skin being peeled off."), iconComponent("又", [3])]);
+semphon("被", "衤", "皮", 5, "quilt; [passive particle]");
+icon("矛", "spear; lance; pike", "Pictograph of a spear.", "bs");
+addEtymology("務", "affair; business; matter", "Phonosemantic compount. 矛 represents the sound, while 攵 and 力 both represent the meaning.", [soundComponent("矛", [0, 5], obsoleteSound("務", "矛")), meaningComponent("攵", [5, 9]), meaningComponent("力", [9])]);
+simp("务", "務", [[0, 0], [0, 3], [3]]);
+icon("囪", "window; chimney", "Pictograph of a window.", "s");
+icon("囱", "window; chimney", "Variant form of 囪, which is a pictograph of a window.", "囪:s");
+phonsem("悤", "囱", "心", 7, "hurried; hasty");
+semphon("總", "糹", "悤", 6, "always; assemble; gather", `Based on the meaning "put together", since thread (糹) is used to put things together.`);
+simp("总", "總", [[0, 1], [1]]);
+addEtymology("䜌", "chaotic - luán", "Phonosemantic compound. Two threads (糸 + 糸) represent the meaning and 言 represents the sound.");
+phonsem("變", "䜌", "夂", 19, "change; become different", "", true);
+simp("变", "變", [[6], [0, 6]]);
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
         icon(char, etymologies[radicals[direction][char]].definition, radicalNote(char));
     }
 }
-
-// 穿变特礼物总被位务无
 
 // 拿向跑通球提算病苹步
 // 考虑像刚混蛋且死清楚
@@ -909,4 +933,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//穴 革 莫 圭 皿 辟 俞 包 皮 甫 龙 卑 娄 昆 扁 奇 尞尧 耒 周 吉 屯 召 由 堇 齒
+//  莫 圭 皿 辟 俞 包 甫 龙 卑 娄 昆 扁 尞尧 耒 周 屯 召 由 堇 齒
