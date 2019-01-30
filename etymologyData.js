@@ -912,6 +912,31 @@ simp("总", "總", [[0, 1], [1]]);
 addEtymology("䜌", "chaotic - luán", "Phonosemantic compound. Two threads (糸 + 糸) represent the meaning and 言 represents the sound.");
 phonsem("變", "䜌", "夂", 19, "change; become different", "", true);
 simp("变", "變", [[6], [0, 6]]);
+semsem("拿", "合", "手", 6, "hold; take", "Depicts bringing the hands (手) together (合) to hold (拿) something.");
+icon("皀", "seed; kernel; grain", "Pictograph of a food vessel for holding grain.", "obs");
+icon("鄉", "countryside; native place; hometown", `Pictograph of two people facing each other, kneeling down to share a meal. Based on the original meaning "feast" or "offer food", now written as 饗. The meaning later shifted to "hometown".`, "bs",
+    [iconComponent("卩", [0, 3], "Depicts a kneeling person facing right."), iconComponent("皀", [3, 9], "Pictograph of a food vessel for holding grain."), iconComponent("卩", [9], "Depicts a kneeling person facing left.")]);
+phonsem("饗", "鄉", "食", 11, "offer food and drinks; entertain", "Originally written as 鄉.");
+simp("乡", "鄉", [[0, 3], [3, 3], [3, 3]]);
+phonsem("飨", "乡", "食", 3, "offer food and drinks; entertain", simplified("饗"));
+icon("向", "towards; facing; direction", `Depicts a mouth (口) in a closed space (宀) making an echo sound. Based on the original meaning "echo; sound", now written as 響. The current meaning is a phonetic loan.`, "s", [iconComponent("宀", [0, 3]), iconComponent("口", [3])]);
+phonsem("響", "鄉", "音", 11, "echo; sound; noise", "Originally written as 向.");
+semphon("响", "口", "向", 3, "echo; sound; noise", "Originally written as 向. " + simplified("響"));
+icon("包", "cover; wrap; hold", `Pictograph of an unborn baby contained inside its mother.`, "os");
+semphon("跑", "足", "包", 7, "run");
+addEtymology("甬", "path with walls on both sides", "Originally depicted a bell. The current meaning is a phonetic loan.", [iconComponent(O, [0, 2], "Depicts a bell."), soundComponent("用", [2])], "b");
+phonsem("通", "甬", "辶", 7, "go through; connect");
+icon("求", "seek; request; beseech", `Pictograph of a crawling insect. The current meaning "seek" or "beg" is a phonetic loan.`, "s");
+semphon("球", "𤣩", "求", 4, "ball; sphere");
+semphon("提", "扌", "是", 3, "carry; lift; raise; mention", "", true);
+icon("具", "tool; device; equipment", `Depicts two hands (廾) handling a cooking pot (鼎).`, "bs", [iconComponent("鼎", [0, 6]), iconComponent("廾", [5])]);
+semsem("算", "⺮", "具", 6, "calculate; count; regard as", "Depicts an abacus, a tool (具) made from bamboo (⺮) for performing calculations.");
+semphon("病", "疒", "丙", 5, "sick; ill");
+addEtymology("頻", "frequency", "Origin unclear. 步 (step) is possibly a meaning component alluding to frequent steps.", [unknownComponent("步", [0, 7]), unknownComponent("頁", [7])]);
+simp("频", "頻", [[0, 7], [7]], { 頁: "页" });
+icon("平", "flat; level; calm", "Origin unclear.", "b");
+semphon("蘋", "艹", "頻", 4, "apple");
+semphon("苹", "艹", "平", 3, "apple", simplified("蘋"));
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -919,7 +944,6 @@ for (let direction in radicals) {
     }
 }
 
-// 拿向跑通球提算病苹步
 // 考虑像刚混蛋且死清楚
 // 游戏哥界共求部受活弟
 // 害怕标根简单声班近条
@@ -933,4 +957,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//  莫 圭 皿 辟 俞 包 甫 龙 卑 娄 昆 扁 尞尧 耒 周 屯 召 由 堇 齒
+//  莫 圭 皿 辟 俞 甫 龙 卑 娄 昆 扁 尞尧 耒 周 屯 召 由 堇 齒
