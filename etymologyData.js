@@ -313,7 +313,7 @@ icon("使", "cause; use; instruct", shiDescription, "obs", [meaningComponent("�
 icon("事", "matter; work; affair", shiDescription, "obs", [unknownComponent(O, [0, 4, 7], shiObject), iconComponent("又", [4, 7], "Depicts a hand.")]);
 phonsem("您", "你", "心", 7, "you", "", false, true);
 icon("𡈼", "stand upright (tǐng)", "Pictograph of a person standing upright.", "o");
-icon("廴", "long stride", "Depicts a long stride.", "s");
+icon("廴", "long stride", "Depicts a long stride. ", "s");
 phonsem("廷", "𡈼", "廴", 4, "palace courtyard");
 semphon("挺", "扌", "廷", 3, "erect; stick out");
 icon("直", "straight", "Pictograph of a straight line coming from the eye, depicting somone looking straight at something. An additional stroke was added at the bottom for unkown reasons.", "obs", [iconComponent(O, [0, 2], "Depicts a straight line"), iconComponent("目", [2, 7]), unknownComponent(O, [7], unknownComonentNote())]);
@@ -839,7 +839,7 @@ simp("乐", "樂", [[0, 1], [1, 1], [1, 2], [1]], {}, {}, true);
 semphon("阿", "阝", "可", 2, "[syllable used before kinship terms]", `Based on the original meaning "big mountain". The current meaning is a phonetic loan.`, true);
 semphon("啊", "口", "阿", 3, "ah; oh; [particle]");
 phonsem("放", "方", "攵", 4, "put; place; let go");
-semsem("孝", "老", "子", 4, "filial piety; obedience", "Filial piety (孝) is the respect that the young (子) must have for their elders (老).");
+semsem("孝", "耂", "子", 4, "filial piety; obedience", "Filial piety (孝) is the respect that the young (子) must have for their elders (老).");
 phonsem("教", "孝", "攵", 7, "teach; religion");
 semsem("苗", "艹", "田", 3, "sprout", "Sprouts are plants (艹) that rise from the field (田).");
 icon("豸", "beast; insect", "Pictograph of some sort of beast or insect.", "os");
@@ -937,6 +937,22 @@ simp("频", "頻", [[0, 7], [7]], { 頁: "页" });
 icon("平", "flat; level; calm", "Origin unclear.", "b");
 semphon("蘋", "艹", "頻", 4, "apple");
 semphon("苹", "艹", "平", 3, "apple", simplified("蘋"));
+semphon("考", "耂", "丂", 4, "check; test; examine", `Based on the original meaning "elderly father". The meaning later shifted to "examine" and "test".`);
+phonsem("慮", "虍", "思", 6, "think over; consider", "", true);
+simp("虑", "慮", [[6], [0, 6]], {}, { "思": "心" });
+semphon("像", "亻", "象", 2, "resemble; look like");
+phonsem("岡", "网", "山", 5, "ridge; mound");
+simp("冈", "岡", [[4, 4], [0, 4]]);
+phonsem("剛", "岡", "刂", 8, "hard; firm; just; exactly");
+simp("刚", "剛", [[4], [0, 4]], { "岡": "冈" });
+addEtymology("昆", "elder brother", "Origin unclear.", [unknownComponent("日", [0, 4]), unknownComponent("比", [4])]);
+semphon("混", "氵", "昆", 3, "mix; muddle; confused");
+icon("疋", "foot", "Pictograph of a foot.", "足:os");
+semsem("延", "疋", "廴", 4, "prolong; delay");
+phonsem("蛋", "延", "虫", 5, "egg", "", true);
+phonsem("清", "氵", "青", 3, "clear; quiet; pure");
+semphon("楚", "林", "疋", 8, "distinct; clear", `Based on the original meaning "bush". The meaning later shifted to "distinct" and "clear".`, true);
+icon("死", "die; death", "Depicts the carcass (歹) of a person (人).", "b", [iconComponent("歹", [0, 4]), iconComponent("人", [4])]);
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -944,7 +960,6 @@ for (let direction in radicals) {
     }
 }
 
-// 考虑像刚混蛋且死清楚
 // 游戏哥界共求部受活弟
 // 害怕标根简单声班近条
 // 保证跳照片卖介药休除
@@ -957,4 +972,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//  莫 圭 皿 辟 俞 甫 龙 卑 娄 昆 扁 尞尧 耒 周 屯 召 由 堇 齒
+//  莫 圭 皿 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 周 屯 召 由 堇 齒
