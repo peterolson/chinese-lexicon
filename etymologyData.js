@@ -767,7 +767,8 @@ icon("備", "prepare; equip", "Pictograph of a container for holding arrows, whi
 simp("备", "備", [[0, 0], [0, 3], [3]]);
 icon("畏", "fear", "Pictograph of a ghost wielding a stick, which is a fearful sight to behold.", "obs", [iconComponent("鬼", [0, 6, 7]), iconComponent("卜", [6, 7], "Depicts a stick.")]);
 semphon("喂", "口", "畏", 3, "feed; hey; hello");
-icon("旅", "trip; travel", "Pictograph of soldiers marching beneath a flag. The original meaning was \"army brigade\", but later shifted to \"travel\".", "bs", [iconComponent(O, [0, 6], "Depicts a flag"), iconComponent("人", [6, 8]), iconComponent("人", [8])]);
+icon("㫃", "flag", "Pictograph of a flag.", "bs");
+icon("旅", "trip; travel", "Pictograph of soldiers marching beneath a flag. The original meaning was \"army brigade\", but later shifted to \"travel\".", "bs", [iconComponent("㫃", [0, 6], "Depicts a flag"), iconComponent("人", [6, 8]), iconComponent("人", [8])]);
 addEtymology("官", "governmental; official", "Depicts a knowledgeable person (師) under a roof (宀).", [meaningComponent("宀", [0, 3]), meaningComponent("師", [3], "𠂤 is used here as an abbreviation of 師.")]);
 semphon("館", "飠", "官", 8, "building; shop");
 simp("馆", "館", [[0, 3], [3]], { 飠: "饣" });
@@ -953,6 +954,20 @@ phonsem("蛋", "延", "虫", 5, "egg", "", true);
 phonsem("清", "氵", "青", 3, "clear; quiet; pure");
 semphon("楚", "林", "疋", 8, "distinct; clear", `Based on the original meaning "bush". The meaning later shifted to "distinct" and "clear".`, true);
 icon("死", "die; death", "Depicts the carcass (歹) of a person (人).", "b", [iconComponent("歹", [0, 4]), iconComponent("人", [4])]);
+addEtymology("斿", "tassel; decoration on lower edge of flag", "Depicts a child (子) holding a flag (㫃).", [meaningComponent("㫃", [0, 6]), meaningComponent("子", [6])]);
+semphon("游", "氵", "斿", 3, "travel; walk; tour");
+addEtymology("哥", "older brother", "Duplicate of 可, which has a similar sound.", [soundComponent("可", [0, 5]), soundComponent("可", [5])]);
+semphon("界", "田", "介", 5, "boundary; limit; world");
+icon("共", "common; share; together", `Pictograph of two hands sharing an object.`, "bs", [iconComponent(O, [0, 3], "Depicts an object being shared by two hands."), iconComponent("廾", [3])]);
+icon("咅", "spit out; poh (spitting onomatopoeia)", "Depicts spit coming out of a mouth (口).", "", [iconComponent(O, [0, 5], "Depicts spit."), iconComponent("口", [5], "mouth")]);
+phonsem("部", "咅", "⻏", 8, "department; division; part");
+addEtymology("受", "receive; accept", "Depicts something being passed from one hand to another hand. Originally the middle component was the phonetic 舟 (boat), but it was later abbreviated.",
+    [iconComponent("又", [0, 4]), soundComponent("舟", [4, 6]), iconComponent("又", [6])], "bs");
+semphon("活", "氵", "舌", 3, "live; alive; work", "", true);
+addEtymology("䖒", "ancient bean-shaped earthenware - xī", "Phonosemantic compound. 虍 (hū; tiger) represents the sound and 豆 (bean) represents the meaning.");
+phonsem("戲", "䖒", "戈", 13, "play; trick; drama");
+simp("戏", "戲", [[2], [0, 2]], {}, { "䖒": "又" });
+
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -960,7 +975,6 @@ for (let direction in radicals) {
     }
 }
 
-// 游戏哥界共求部受活弟
 // 害怕标根简单声班近条
 // 保证跳照片卖介药休除
 // 千万迎管红亲周选择慢
