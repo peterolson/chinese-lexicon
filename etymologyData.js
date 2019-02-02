@@ -967,6 +967,18 @@ semphon("活", "氵", "舌", 3, "live; alive; work", "", true);
 addEtymology("䖒", "ancient bean-shaped earthenware - xī", "Phonosemantic compound. 虍 (hū; tiger) represents the sound and 豆 (bean) represents the meaning.");
 phonsem("戲", "䖒", "戈", 13, "play; trick; drama");
 simp("戏", "戲", [[2], [0, 2]], {}, { "䖒": "又" });
+icon("皿", "dish; vessel", "Pictograph of a container for holding food.", "obs");
+icon("盍", "why not", `Pictograph of a lid (去) on top of a container (皿). Based on the original meaning "lid", now written as 蓋. The current meaning is a phonetic loan.`, "s", [iconComponent("去", [0, 5], "Here used to graphically represent a lid with a handle. Unrelated to the verb \"go\"."), iconComponent("皿", [5])]);
+semphon("蓋", "艹", "盍", 4, "lid; top; cover");
+simp("盖", "蓋", [[0, 3], [3]]);
+icon("害", "harm", `Pictograph of a lid over a container. Based on the original meaning "lid", now written as 蓋. The current meaning is a phonetic loan.`, "bs");
+semphon("怕", "忄", "白", 3, "fear; be afraid");
+semphon("標", "木", "票", 4, "mark; sign; label");
+simp("标", "標", [[0, 4], [4]], {}, { "票": "示" });
+semphon("根", "木", "艮", 4, "root; basis");
+icon("單", "single; list; form", `Pictograph of a hunting or military trap constructed from two rocks and a net. The current meaning "single" is a phonetic loan.`, "obs");
+simp("单", "單");
+phonsem("近", "斤", "辶", 4, "near; close");
 
 
 for (let direction in radicals) {
@@ -975,7 +987,8 @@ for (let direction in radicals) {
     }
 }
 
-// 害怕标根简单声班近条
+//  声聲 班 条條
+// 
 // 保证跳照片卖介药休除
 // 千万迎管红亲周选择慢
 // 平舞花懂洗票注计划担
@@ -986,4 +999,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//  莫 圭 皿 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 周 屯 召 由 堇 齒
+//  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 周 屯 召 由 堇 齒
