@@ -957,6 +957,7 @@ icon("死", "die; death", "Depicts the carcass (歹) of a person (人).", "b", [
 addEtymology("斿", "tassel; decoration on lower edge of flag", "Depicts a child (子) holding a flag (㫃).", [meaningComponent("㫃", [0, 6]), meaningComponent("子", [6])]);
 semphon("游", "氵", "斿", 3, "travel; walk; tour");
 addEtymology("哥", "older brother", "Duplicate of 可, which has a similar sound.", [soundComponent("可", [0, 5]), soundComponent("可", [5])]);
+icon("介", "introduce; lie between", "Pictograph of a person between two lines.", "os", [iconComponent("人", [0, 2]), iconComponent(O, [2], "Depicts two things the person is standing between.")]);
 semphon("界", "田", "介", 5, "boundary; limit; world");
 icon("共", "common; share; together", `Pictograph of two hands sharing an object.`, "bs", [iconComponent(O, [0, 3], "Depicts an object being shared by two hands."), iconComponent("廾", [3])]);
 icon("咅", "spit out; poh (spitting onomatopoeia)", "Depicts spit coming out of a mouth (口).", "", [iconComponent(O, [0, 5], "Depicts spit."), iconComponent("口", [5], "mouth")]);
@@ -979,7 +980,28 @@ semphon("根", "木", "艮", 4, "root; basis");
 icon("單", "single; list; form", `Pictograph of a hunting or military trap constructed from two rocks and a net. The current meaning "single" is a phonetic loan.`, "obs");
 simp("单", "單");
 phonsem("近", "斤", "辶", 4, "near; close");
-
+icon("声", "sound; voice", "Remmant of the character 磬 (chime stones). Pictograph of a musical stone chime. Simplified form of 聲.", "磬:ob");
+icon("殸", "chime stones; musical stone", "Variant form of 磬. Pictograph of a hand striking a musical stone chime with a stick.", "磬:ob", [iconComponent("声", [0, 7], "Depicts a hanging stone chime."), iconComponent("殳", [7], "Depicts a hand holding a stick.")])
+icon("磬", "chime stones; musical stone", "Pictograph of a hand striking a musical stone chime with a stick.", "obs", [iconComponent("声", [0, 7], "Depicts a hanging stone chime."), iconComponent("殳", [7, 11], "Depicts a hand holding a stick."), meaningComponent("石", [11])]);
+phonsem("聲", "殸", "耳", 11, "sound; voice", "", true, true);
+icon("班", "team; class; squad; shift", `Depicts a knife (刂) cutting a gem into two halves (玨), based on the original meaning "to divide". The meaning later shifted to "division", "group", and "team".`, "", [iconComponent("玨", [0, 4, 6]), iconComponent("刂", [4, 6])]);
+icon("攸", "distant; far", "Origin unclear. Seems to originally depict a person (亻) being beaten (攵).", "bs", [iconComponent("亻", [0, 2]), unknownComponent(O, [2, 3], "Significance unclear."), iconComponent("攵", [3])]);
+phonsem("條", "攸", "木", 7, "item; long thin thing");
+simp("条", "條", [[3], [0, 3]], {}, { 攸: "夂" });
+semphon("登", "舛", "豆", 5, "climb up; ascend; enter", "Depicts climbing up with two feet (舛).", true);
+semphon("證", "言", "登", 7, "proof; demonstrate");
+semphon("证", "讠", "正", 2, "proof; demonstrate", simplified("證"));
+icon("兆", "omen; foretell", "Pictograph of cracks in a shell used in ancient China for fortune-telling.", "os");
+semphon("跳", "足", "兆", 7, "jump");
+phonsem("召", "刀", "口", 2, "call together; summon; convene");
+semphon("昭", "日", "召", 4, "bright; clear");
+phonsem("照", "昭", "灬", 9, "shine; reflect", "", false, true);
+semphon("約", "糹", "勺", 6, "make appointment; invite; approximately", `Based on the original meaning "to bind". The meaning later shifted to "restrain", "keep under control", "appointment", and "approximately".`, true);
+simp("约", "約", [[0, 3], [3]], { 糹: "纟" });
+semphon("藥", "艹", "樂", 4, "medicine", "", true);
+semphon("药", "艹", "约", 3, "medicine", simplified("藥"));
+semsem("休", "亻", "木", 2, "rest", "Depicts a person (亻) leaning on a tree (木) to rest (休).");
+semphon("除", "阝", "余", 2, "remove; exclude; except");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -987,9 +1009,6 @@ for (let direction in radicals) {
     }
 }
 
-//  声聲 班 条條
-// 
-// 保证跳照片卖介药休除
 // 千万迎管红亲周选择慢
 // 平舞花懂洗票注计划担
 // 查数妻奇怪空职业歌并
@@ -999,4 +1018,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 周 屯 召 由 堇 齒
+//  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 周 屯 由 堇 齒
