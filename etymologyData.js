@@ -1002,6 +1002,25 @@ semphon("藥", "艹", "樂", 4, "medicine", "", true);
 semphon("药", "艹", "约", 3, "medicine", simplified("藥"));
 semsem("休", "亻", "木", 2, "rest", "Depicts a person (亻) leaning on a tree (木) to rest (休).");
 semphon("除", "阝", "余", 2, "remove; exclude; except");
+semphon("千", "一", "亻", [[1, 2], [0, 1, 2]], "thousand");
+icon("万", "ten thousand", "Origin unclear. Simplified form of 萬.");
+icon("萬", "ten thousand", "Originally a pictograph of a scorpion. The current meaning is a phonetic loan.", "bs")
+icon("卬", "lofty; high", "Origin unclear. Depicts a person standing (人) and a person kneeling (卩).", "s", [iconComponent("人", [0, 2], "Depicts a person standing upright."), iconComponent("卩", [2], "Depicts a person kneeling.")]);
+phonsem("迎", "卬", "辶", 4, "welcome; meet");
+semphon("管", "⺮", "官", 6, "manage; take care of; care about", `Originally a musical instrument made of bamboo. The meaning "to manage" is a phonetic loan.`);
+semphon("紅", "糹", "工", 6, "red");
+simp("红", "紅", [[0, 3], [3]], { 糹: "纟" });
+icon("周", "Zhou dynasty; circle; cycle (simp.) week", `Originally a pictograph of engraved jade, now written as 琱. ${mouthedNote} ${simplifyMerge("周", "週", "week")}`, "obs");
+phonsem("週", "周", "辶", 8, "week");
+addEtymology("琱", "engrave jade", `Phonosemantic compound. 𤣩 represents the meaning and 周 represents the sound.`);
+icon("巽", "obey", "Depicts two people kneeling (卩) together in obedience.", "", [iconComponent("卩", [0, 3], "Depicts a person kneeling."), iconComponent("卩", [3, 6], "Depicts a person kneeling."), meaningComponent("共", [6])]);
+phonsem("選", "巽", "辶", 12, "choose");
+phonsem("选", "先", "辶", 6, "choose", simplified("選"));
+icon("曼", "long; vast; handsome", "Depicts a hand (又) covering (冃) the eye (目) to gaze far away into the distance.", "bs", [iconComponent("冃", [0, 4]), iconComponent("目", [4, 9]), iconComponent("又", [9])]);
+semphon("慢", "忄", "曼", 3, "slow");
+icon("睪", "spy on", "Depicts using the eye (目) to subdue (㚔) someone.", "s", [meaningComponent("目", [0, 5]), meaningComponent("㚔", [5])]);
+semphon("擇", "扌", "睪", 3, "select; choose", "", true);
+simp("择", "擇", [[0, 3], [3]], {}, {}, true);
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -1009,7 +1028,6 @@ for (let direction in radicals) {
     }
 }
 
-// 千万迎管红亲周选择慢
 // 平舞花懂洗票注计划担
 // 查数妻奇怪空职业歌并
 // 性坏利原牛包护入左右
@@ -1018,4 +1036,4 @@ for (let direction in radicals) {
 // 奶指
 
 // common components
-//  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 周 屯 由 堇 齒
+//  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 屯 由 堇 齒
