@@ -1021,6 +1021,27 @@ semphon("慢", "忄", "曼", 3, "slow");
 icon("睪", "spy on", "Depicts using the eye (目) to subdue (㚔) someone.", "s", [meaningComponent("目", [0, 5]), meaningComponent("㚔", [5])]);
 semphon("擇", "扌", "睪", 3, "select; choose", "", true);
 simp("择", "擇", [[0, 3], [3]], {}, {}, true);
+semphon("洗", "氵", "先", 3, "wash; bathe", "", true);
+semphon("計", "言", "十", 7, "calculate; count", "", true);
+simp("计", "計", [[0, 2], [2]], { 言: "讠" });
+semphon("注", "氵", "主", 3, "pour into; concentrate; pay attentention; (simp.) register", simplifyMerge("注", "註", "register; comment"));
+semphon("註", "言", "主", 7, "register; comment");
+semphon("董", "艹", "重", 3, "supervise; direct");
+semphon("懂", "忄", "董", 3, "understand");
+icon("畫", "draw; picture; painting", "Pictograph of a hand holding a writing utensil (聿) and drawing something.", "obs", [iconComponent("聿", [0, 5]), iconComponent(O, [5], "Depicts a picture being drawn.")]);
+simp("画", "畫", [[0, 1], [1]], {}, {}, true);
+phonsem("劃", "畫", "刂", 12, "cut; slash; draw line");
+phonsem("划", "戈", "刂", 4, "row; paddle; calculate; (simp.) cut; slash; draw line", simplifyMerge("划", "劃", "cut; slash; draw line"), true);
+icon("詹", "verbose; talk too much", "Origin unclear.", "", [unknownComponent(O, [0, 6]), meaningComponent("言", [6])]);
+semphon("擔", "扌", "詹", 3, "carry; bear; take responsibility");
+semphon("担", "扌", "旦", 3, "carry; bear; take responsibility", simplified("擔"));
+icon("旨", "delicious; decree", "Depicts a spoon (匕) going into the mouth (口), conveying the original meaning \"delicious\".", "obs", [iconComponent("匕", [0, 2]), iconComponent("口", [2])]);
+semphon("指", "扌", "旨", 3, "finger; point");
+icon("化", "change; transform", `Pictograph of a right-side up person and an upside-down person, depicting the meaning "turn around" or "transform".`, "ob", [iconComponent("亻", [0, 2]), iconComponent("匕", [2], "Used here to depict an upside-down person.")]);
+semphon("花", "艹", "化", 3, "flower");
+icon("華", "magnificent; flourishing; China", `Pictograph of a flower. Originally used to mean "flower", now written as 花. The meaning later shifted to "blossoming", "flourishing" and "magnificent". The 艹 (grass) component was added in Seal script.`, "bs", [meaningComponent("艹", [0, 4]), iconComponent(O, [4], "Pictograph of a flower.")]);
+addEtymology("华", "magnificent; flourishing; China", simplified("華") + " 化 is used here to represent the sound. The bottom component is a remnant from the traditional character 華.", [soundComponent("化", [0, 4]), simplifiedComponent("華", [4], "Remnant from the bottom of the traditional character 華.")]);
+
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -1028,12 +1049,11 @@ for (let direction in radicals) {
     }
 }
 
-// 平舞花懂洗票注计划担
 // 查数妻奇怪空职业歌并
-// 性坏利原牛包护入左右
+// 性坏利原牛奶护入左右
 // 恢复满风容易纸调船唱
 // 建议妹似乎酒化旁轻节
-// 奶指
+// 
 
 // common components
 //  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 屯 由 堇 齒
