@@ -1041,7 +1041,22 @@ icon("化", "change; transform", `Pictograph of a right-side up person and an up
 semphon("花", "艹", "化", 3, "flower");
 icon("華", "magnificent; flourishing; China", `Pictograph of a flower. Originally used to mean "flower", now written as 花. The meaning later shifted to "blossoming", "flourishing" and "magnificent". The 艹 (grass) component was added in Seal script.`, "bs", [meaningComponent("艹", [0, 4]), iconComponent(O, [4], "Pictograph of a flower.")]);
 addEtymology("华", "magnificent; flourishing; China", simplified("華") + " 化 is used here to represent the sound. The bottom component is a remnant from the traditional character 華.", [soundComponent("化", [0, 4]), simplifiedComponent("華", [4], "Remnant from the bottom of the traditional character 華.")]);
-
+semphon("查", "木", "且", 4, "check; investigate; look up; hawthorn tree", `Based on the original meaning "hawthorn tree". The meaning "check; look up" is a phonetic loan.`, true);
+semphon("空", "穴", "工", 5, "empty; air; sky; space");
+semphon("職", "耳", "戠", 6, "office; duty");
+semphon("职", "耳", "只", 6, "office; duty", simplified("職"));
+phonsem("歌", "哥", "欠", 10, "song");
+icon("並", "also; furthermore; simultaneously, join", "Depits two people standing (立) side-by-side.", "bs", [iconComponent("立", [0, 1, 2, 4, 5, 6, 7]), iconComponent("立", [1, 3, 4, 5, 6])]);
+simp("并", "並", [[0, 1, 2, 5], [1, 4, 5]]);
+icon("業", "business; industry; occupation; job", "Origin unclear.", "bs");
+simp("业", "業");
+semsem("呈", "口", "王", 3, "present to a superior; petition", "Depicts speaking (口) to an authority (王).");
+semphon("聖", "耳", "呈", 6, "sage; saint; sacred");
+simp("圣", "聖", [[0, 2], [2]], {}, { 耳: "又", 呈: "土" });
+semphon("怪", "忄", "圣", 3, "strange; odd; bewildering", "", true);
+icon("婁", "Lou (surname)", "Origin unclear.", "", [unknownComponent(O, [0, 8]), unknownComponent("女", [8])]);
+phonsem("數", "婁", "攵", 11, "number; count", "", true);
+simp("数", "數", [[9], [0, 9]]);
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -1049,7 +1064,6 @@ for (let direction in radicals) {
     }
 }
 
-// 查数妻奇怪空职业歌并
 // 性坏利原牛奶护入左右
 // 恢复满风容易纸调船唱
 // 建议妹似乎酒化旁轻节
