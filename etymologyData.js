@@ -1057,6 +1057,10 @@ semphon("怪", "忄", "圣", 3, "strange; odd; bewildering", "", true);
 icon("婁", "Lou (surname)", "Origin unclear.", "", [unknownComponent(O, [0, 8]), unknownComponent("女", [8])]);
 phonsem("數", "婁", "攵", 11, "number; count", "", true);
 simp("数", "數", [[9], [0, 9]]);
+semphon("性", "忄", "生", 3, "nature; character; sex");
+semsem("利", "禾", "刂", 5, "benefit; profit; advantage", `Depicts harvesting grain (禾) with a blade (刂). Harvest was the main source of profit in agricultural societies.`);
+icon("乃", "thus; so; be", "Origin unclear.", "ob");
+semphon("奶", "女", "乃", 3, "milk; breast");
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -1064,9 +1068,10 @@ for (let direction in radicals) {
     }
 }
 
-// 性坏利原牛奶护入左右
+// 坏壞 护護
+// 褱 蒦
 // 恢复满风容易纸调船唱
-// 建议妹似乎酒化旁轻节
+// 建议妹似乎酒旁轻节
 // 
 
 // common components
