@@ -435,7 +435,8 @@ semphon("蛇", "虫", "它", 6, "snake", "Originally written as 它.");
 icon("同", "same; together", "Pictograph of a bucket or tube, now written as 筒. " + mouthedNote, "obs", [iconComponent(O, [0, 3], "Depicts a bucket or tube. This meaning is now represented by 筒."), meaningComponent("口", [3])]);
 semphon("筒", "⺮", "同", 6, "tube; cylinder", "Originally written as 同.");
 phonsem("意", "音", "心", 9, "idea; thought; wish");
-icon("經", "pass through; undergo; classics", "Pictograph of a loom for weaving. In a loom threads have to pass through each other.", "bs", [meaningComponent("糹", [0, 6]), iconComponent(O, [6], "Depicts a loom.")]);
+icon("巠", "loom", "Pictograph of a loom.", "b");
+icon("經", "pass through; undergo; classics", "Pictograph of a loom for weaving. In a loom threads have to pass through each other.", "bs", [meaningComponent("糹", [0, 6]), iconComponent("巠", [6], "Depicts a loom.")]);
 simp("经", "經", [[0, 3], [3]], { 糹: "纟" });
 icon("丙", "3rd heavenly stem", "Origin unclear. Variously explained as a table or pedestal, or a fish tail.", "obs");
 icon("兩", "two", "Combination of two 丙 characters. The significance of 丙 is unclear.");
@@ -578,7 +579,6 @@ icon("离", "mythical beast; (simp.) leave; depart; away from", "Pictograph of a
 phonsem("離", "离", "隹", 10, "leave; depart; away from", "The 隹 (bird) component alludes to a bird flying away.");
 icon("鬼", "ghost; demon", "Pictograph of a human-like being with an unnatural head and a tail.", "obs", [iconComponent(O, [0, 5], "Depicts the head of a ghost/demon."), iconComponent("人", [5, 7]), iconComponent(O, [7], "Depicts a tail.")]);
 semphon("魑", "鬼", "离", 9, "mountain demon");
-icon("美", "beautiful", "Pictograph of a person with ornamental headwar.", "obs", [iconComponent(O, [0, 6], "Depicts ornamental headwear."), iconComponent("大", [6], "Used here as a pictograph of a person.")]);
 icon("長", "long; grow; elder", "Pictograph of a person with long hair.", "obs");
 simp("长", "長", null, {}, {}, true);
 icon("丱", "two tufts of hair; young", "Pictograph of a child's hairstyle with two tufts.");
@@ -1061,6 +1061,34 @@ semphon("性", "忄", "生", 3, "nature; character; sex");
 semsem("利", "禾", "刂", 5, "benefit; profit; advantage", `Depicts harvesting grain (禾) with a blade (刂). Harvest was the main source of profit in agricultural societies.`);
 icon("乃", "thus; so; be", "Origin unclear.", "ob");
 semphon("奶", "女", "乃", 3, "milk; breast");
+icon("褱", "carry in the bosom; wrap; conceal", "Depicts holding someone crying into your chest, with the eye (目) and water (水) components located at chest-level inside the clothing (衣) component.", "b",
+    [iconComponent("衣", [0, 2, 12]), iconComponent("目", [2, 7]), iconComponent("水", [7, 12], "Depicts tears coming out of the eyes.")]);
+semphon("壞", "土", "褱", 3, "bad; spoiled; broken");
+simp("坏", "壞", [[0, 3], [3]], {}, { 褱: "不" });
+addEtymology("蒦", "[phonetic component]", "Origin unclear.", [unknownComponent("艹", [0, 3]), unknownComponent("隻", [3])]);
+semphon("護", "言", "蒦", 7, "protect");
+simp("户", "戶");
+semphon("护", "扌", "户", 3, "protect", simplified("護"));
+semsem("建", "聿", "廴", 6, "establish; set up; build", "Depicts the process of setting something up. The 聿 component here is used to depict a hand holding up a wooden post, rather than a writing utensil.");
+icon("未", "not yet; not", `Similar to 木, with extra branches added. Based on the original meaning "tree trunk", now written as 枚. The current meaning is a phonetic loan.`, "b");
+semsem("枚", "木", "攵", 4, "trunk; whip; piece; [measure word]", "Depicts a hand (攵) holding a piece of wood (木).");
+icon("末", "end; tip; final", "Similar to 木, with an extra line at the top. Depicts the tip of a tree.", "s");
+semphon("妹", "女", "未", 3, "younger sister");
+semphon("似", "亻", "以", 2, "resemble; appear; similar", "", true);
+icon("乎", "[archaic particle]", `Depicts air flowing from breath. Based on the original meaning "exhale", now written as 呼. The current meaning is a phonetic loan.`, "b", [iconComponent(O, [0, 3], "Depicts air coming out of the mouth."), meaningComponent("丂", [3])]);
+semphon("呼", "口", "乎", 3, "call out; breathe out; shout");
+addEtymology("旁", "beside; side", "方 (fāng; square; side) is both a meaning and a sound component. The meaning of the top part of the character is unclear.", [unknownComponent(O, [0, 6], "Meaning unclear."), soundComponent("方", [6], "Also serves as a meaning component.")]);
+semphon("輕", "車", "巠", 7, "light; easy; reckless");
+simp("轻", "輕", [[0, 4], [4]], { 車: "车" });
+let sheepNote = `In ancient China sheep (羊) were associated with goodness and fortune, which is why 羊 is a component in characters like 美 (beautiful), 祥 (auspicious), 善 (benevolent), and 義 (justice).`;
+icon("美", "beautiful", "Pictograph of a person with ornamental headwar resembling sheep horns. ", "obs",
+    [iconComponent("羊", [0, 6], "Depicts ornamental headwear resembling sheep horns."), iconComponent("大", [6], "Used here as a pictograph of a person.")]);
+semphon("義", "羊", "我", 6, "justice; righteousness; meaning", sheepNote);
+addEtymology("善", "good; virtuous; benevolent", "Composed of two 言 (speech) components and 羊 (sheep). " + sheepNote, [meaningComponent("羊", [0, 6]), meaningComponent("言", [6, 7, 8]), meaningComponent("言", [7])], "bs");
+semphon("祥", "礻", "羊", 4, "auspicious", sheepNote, false, true);
+simp("义", "義", [[0, 1], [1]], {}, {}, true);
+semphon("議", "言", "義", 7, "comment; discuss; suggest");
+simp("议", "議", [[0, 2], [2]], { 言: "讠", "義": "义" });
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -1068,10 +1096,12 @@ for (let direction in radicals) {
     }
 }
 
-// 坏壞 护護
-// 褱 蒦
+// 节節
+// 即
+
 // 恢复满风容易纸调船唱
-// 建议妹似乎酒旁轻节
+// 灰 
+
 // 
 
 // common components
