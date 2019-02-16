@@ -1089,20 +1089,43 @@ semphon("祥", "礻", "羊", 4, "auspicious", sheepNote, false, true);
 simp("义", "義", [[0, 1], [1]], {}, {}, true);
 semphon("議", "言", "義", 7, "comment; discuss; suggest");
 simp("议", "議", [[0, 2], [2]], { 言: "讠", "義": "义" });
+semsem("即", "皀", "卩", 5, "namely; be the same as; prompt", `Depicts a kneeling person (卩) approaching a vessel of food (皀). Based on the original meaning "come to eat", which later shifted to "approach", "be near", and "be the same".`);
+semphon("節", "⺮", "即", 6, "bamboo joint; festival; holiday");
+simp("节", "節", [[0, 3], [3]], {}, { "⺮": "艹", "即": "卩" });
+semsem("灰", "又", "火", 2, `ash; gray`, `After a fire (火) burns down, the left over ash (灰) can be touched with the hands (又).`);
+semphon("恢", "忄", "灰", 3, "restore; recover");
+icon("复", "return; repeat; restore", `Pictograph of a foot going toward a house, representing the meaning "to return home".`, "s", [iconComponent(O, [0, 6]), iconComponent("夂", [6])]);
+semphon("復", "彳", "复", 3, "return; repeat; restore", "Originally written as 复.", false, true);
+semphon("複", "衤", "复", 5, "double; repeat; duplicate");
+icon("襾", "cover", "Pictograph of a cover.", "s");
+semphon("覆", "襾", "復", 6, "cover; overflow");
+addEtymology("㒼", "sealed; blocked - mán", "Origin unclear. The top part may depict a cap or seal, and 兩 is possibly a phonetic component.", [iconComponent(O, [0, 3], "May depict a cap or seal."), soundComponent("兩", [3], "May be an outdated sound component.")]);
+semphon("滿", "氵", "㒼", 3, "fill; full; satistied");
+simp("满", "滿");
+icon("鳳", "phoenix", "Pictograph of a mythical Chinese bird, similar to a phoenix. The bottom part of the character was later adapted to look similar to 鳥 (bird).", "obs", [iconComponent(O, [0, 3], "Depicts the head and back of a phoenix."), iconComponent("鳥", [3])]);
+simp("凤", "鳳", [[0, 2], [2]], {}, { 鳥: "又" });
+icon("風", "wind", "Originally written the same as 鳳 (phoenix) because the two characters sounded the same. Later the bottom part of the character was adapted to depict a gust of wind instead of a bird.", "os", [soundComponent("鳳", [0, 2], "Only a remnant of this character is used."), iconComponent(O, [2], "Depicts a gust of wind.")]);
+simp("风", "風", [[0, 2], [2]], { 鳳: "凤" });
+semphon("容", "宀", "公", 3, "hold; contain; tolerate");
+semphon("船", "舟", "公", 6, "boat; ship", "", true);
+icon("益", "increase; benefit; profit", `Depicts food or drink filling up a container (皿). Based on the original meaning "overflow", now written as 溢. The meaning later shifted to "increase" and "benefit".`, "b", [iconComponent(O, [0, 5], "Depicts food or drink filling up its container."), iconComponent("皿", [5], "Depicts a vessel for holding food or drink.")]);
+semphon("溢", "氵", "益", 3, "overflow", "Originally written as 益.");
+icon("易", "easy; amiable; change", `Upside-down version of 益 (increase; benefit), which depicts food or drink filling up a container (皿). Originally was the same character as 益, but the meaning later shifted to "easy".`, "益:bs",
+    [iconComponent("皿", [0, 4], "Depicts a vessel for holding food or drink."), iconComponent(O, [4], "Depicts food or drink filling up its container.")]);
+semphon("調", "言", "周", 7, "tone; accent; adjust");
+simp("调", "調", [[0, 2], [2]], { "言": "讠" });
+icon("氏", "clan; family", "Origin unclear. Variously explained as a man bowing down or a spoon.", "ob");
+semphon("紙", "糹", "氏", 6, "paper");
+simp("纸", "紙", [[0, 3], [3]], { "糹": "纟" });
+icon("昌", "flourishing; prosperous", `Duplication of the 日 (sun) character, meaning "sunlight". The meaning later shifted to "beautiful" and "flourishing".`, "s", [iconComponent("日", [0, 4]), iconComponent("日", [4])]);
+semphon("唱", "口", "昌", 3, "sing");
+
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
         icon(char, etymologies[radicals[direction][char]].definition, radicalNote(char));
     }
 }
-
-// 节節
-// 即
-
-// 恢复满风容易纸调船唱
-// 灰 
-
-// 
 
 // common components
 //  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 屯 由 堇 齒
