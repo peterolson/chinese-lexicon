@@ -268,6 +268,7 @@ icon("寸", "inch; thumb; (hand)", "Pictograph of a hand with a line marking a s
 icon("對", "correct; pair; match", "Origin unclear. Appears to be a hand using some sort of tool, possibly a rake or a hoe.", "obs", [unknownComponent(O, [0, 11], "Possibly a rake or hoe."), iconComponent("寸", [11], "Used here to represent a hand.")]);
 icon("对", "correct; pair; match", simplified("對") + "Origin unclear. Appears to be a hand using some sort of tool, possibly a rake or a hoe.", "對:obs", [simplifiedComponent("又", [0, 2], "Shorthand for the left component of 對, possibly depicting a rake or hoe."), iconComponent("寸", [2], "Used here to represent a hand.")]);
 semphon("答", "⺮", "合", 6, "answer; agree", "The significance of the ⺮ (bamboo) component is unclear.", true);
+semphon("荅", "艹", "合", 3, "answer; agree", "Variant of 答. The significance of the 艹 (grass) component is unclear.", true);
 icon("巾", "cloth; towel", "Pictograph of a cloth hanging downwards.", "b");
 icon("冃", "hat", "Represents a hat. Top component form of 冒.")
 icon("冒", "hat", "Pictograph of a hat over an eye. Old way of writing 帽 (hat).", "bs", [iconComponent("冃", [0, 4]), iconComponent("目", [4])]);
@@ -397,7 +398,7 @@ phonsem("和", "禾", "口", 5, "and; together; harmony", mouthedNote);
 icon("工", "work; craft", "Pictograph of a carpenter's tool.", "ob");
 icon("弓", "bow (archery)", "Pictograph of a curved bow.", "bs");
 icon("發", "send out; to issue", `Depicts a person standing on their two feet, pulling back a bowstring, about to shoot an arrow. Conveys the meaning "shoot; send out".`, "os", [iconComponent("止", [0, 2], "Left foot. Mirror image of 止."), iconComponent("止", [2, 5], "Right foot."), iconComponent("弓", [5, 8]), iconComponent(O, [8, 10], "Depicts a bowstring being pulled back."), iconComponent("又", [10])]);
-icon("髮", "hair", "Originally a combination of 首 (head) and 犬 (dog), both of which are hairy. Later the 首 (head) component was separated into the separate components 镸 (long) and 彡 (hair).", "bs", [iconComponent("镸", [0, 7]), iconComponent("彡", [7, 10]), iconComponent("犬", [10])]);
+icon("髮", "hair", "Originally a combination of 首 (head) and 犬 (dog), both of which are hairy. Later the 首 (head) component was changed to 髟 (hairy).", "bs", [meaningComponent("髟", [0, 10]), meaningComponent("犬", [10])]);
 icon("发", "send out; hair", "Simplified form of both 發 (send out; to issue) and 髮 (hair). Derived from 犬 (dog), the bottom component of 髮.");
 icon("生", "be born; life", "Pictograph of a sprout emerging from the ground.", "obs");
 icon("网", "net", "Pictograph of a net.", "o");
@@ -506,7 +507,7 @@ simp("难", "難", [[2], [0, 2]], {}, { 堇: "又" }, true);
 icon("必", "certainly; must", "Pictograph of a weapon, now written as 柲. The current meaning is a phonetic loan.", "b");
 addEtymology("柲", "bamboo weapon handle", `Phonosemantic compound. 木 represents the meaning and 必 represents the sound. Originally written as 必, a pictograph of a weapon.`);
 icon("須", "must", "Pictograph of a person with a bearded face. The current meaning is a phonetic loan.", "ob", [iconComponent("彡", [0, 3]), iconComponent("頁", [3], "Depicts a head.")]);
-icon("鬚", "beard", "Originally written as 須, a pictograph of a person with a bearded face. The components 镸 (long) 彡 (hair) were added later.", "", [iconComponent("镸", [0, 7]), iconComponent("彡", [7, 10]), soundComponent("須", [10])]);
+icon("鬚", "beard", "Originally written as 須, a pictograph of a person with a bearded face. The 髟 component (hairy) was added later.", "", [meaningComponent("髟", [0, 10]), soundComponent("須", [10])]);
 simp("须", "須", [[0, 3], [3]], { 頁: "页" }, {}, false, "鬚", "beard");
 icon("角", "horn; corner; angle", "Pictograph of a horn.", "obs");
 semphon("确", "石", "角", 5, "solid; firm; real; true");
@@ -1119,6 +1120,85 @@ semphon("紙", "糹", "氏", 6, "paper");
 simp("纸", "紙", [[0, 3], [3]], { "糹": "纟" });
 icon("昌", "flourishing; prosperous", `Duplication of the 日 (sun) character, meaning "sunlight". The meaning later shifted to "beautiful" and "flourishing".`, "s", [iconComponent("日", [0, 4]), iconComponent("日", [4])]);
 semphon("唱", "口", "昌", 3, "sing");
+icon("缶", "pottery", "Pictograph of a pot with a lid.", "os");
+semsem("髟", "镸", "彡", 7, "hair; shaggy", "Depicts long (镸) hair (彡).");
+icon("齒", "tooth", "Pictograph of a mouth full of teeth. The sound component 止 was added later.", "os", [soundComponent("止", [0, 4]), iconComponent(O, [4], "Depicts a mouth full of teeth.")]);
+simp("齿", "齒");
+icon("耒", "plow", "Pictograph of a farming tool used to make furrows in the ground.", "s");
+icon("鹿", "deer", "Pictograph of a deer.", "obs");
+icon("尢", "lame", "Pictograph of a person with bent legs.", "b");
+icon("龍", "dragon", "Pictograph of a dragon curled up.", "obs");
+simp("龙", "龍", [], {}, {}, true);
+icon("鼠", "rat; mouse", "Pictograph of a rat.", "obs");
+icon("釆", "sow; scatter", "Pictograph of a farming tool for sowing seeds.", "b");
+icon("杀", "kill; murder", simplified("殺") + " Depicts a person being impaled in the head.", "bs");
+icon("殺", "kill; murder", "Depicts a person being impaled in the head (杀) with a spear (殳).", "", [iconComponent("杀", [0, 6]), iconComponent("殳", [6])]);
+icon("斗", "dipper; ladle; unit of dry measure; (simp.) fight, struggle", "Pictograph of a cup or dipper. " + simplifyMerge("斗", "鬥", "fight, struggle"), "b");
+icon("鬥", "fight; struggle", "Pictograph of two people wrestling each other.", "os");
+icon("谷", "valley", "Pictograph of the valley between two mountains.", "b");
+icon("戎", "weapons", "Pictograph of an axe, similar to 戈.", "ob");
+icon("敖", "ramble; rove", "Pictograph of a person roving about.", "bs", [iconComponent(O, [0, 6], "Depicts a person roving about."), meaningComponent("攵", [6])]);
+icon("劦", "unending exertion of energy", "Triple of 力 (strength; power).", "", [iconComponent("力", [0, 2]), iconComponent("力", [2, 4]), iconComponent("力", [4])]);
+icon("尺", "unit of length", "Origin unclear.", "bs");
+icon("予", "give; I", "Origin unclear.", "s");
+addEtymology("野", "field; plain; wild", "Phonosemantic compound. 田 and 土 represent the meaning, and 予 represents the sound.",
+    [meaningComponent("田", [0, 4]), meaningComponent("土", [4, 7]), soundComponent("予", [7])]);
+icon("凡", "(plate); ordinary; commonplace", "Originally a pictograph of a plate or dish. The current meaning is a phonetic loan.", "bs");
+icon("丹", "red; pellet", "Origin unclear.", "b");
+icon("享", "enjoy; benefit", `Originally a pictograph of a temple or a shrine. The meaning later shifted to "festive" and "enjoy".`, "s");
+icon("朿", "stab", "Pictograph of a thorned weapon.", "ob");
+icon("民", "people; citizen; nationality", "Pictograph of a line going into the eye. Relation to current meaning unclear.", "bs");
+icon("瓜", "melon; gourd; squash", "Pictograph of a melon hanging from a vine.", "b");
+addEtymology("众", "many; crowd; multitude", "Triple of 人 (person), depicts many people together. " + simplified("眾"), [iconComponent("人", [0, 2]), iconComponent("人", [2, 4]), iconComponent("人", [4])]);
+addEtymology("眾", "many; crowd; multitude", "Depicts a crowd (众) under someone's gaze (目).", [iconComponent("目", [0, 5]), iconComponent("众", [5])]);
+icon("血", "blood", "Depicts a drop of blood in a container (皿).", "o", [iconComponent(O, [0, 1], "Depicts a drop of blood."), iconComponent("皿", [1])]);
+
+// 莫圭俞甫屯由朱尧佥尞
+// 辟僉甲柬堯監半仓倉龙
+// 卒龍旬敝弗夋奄扁畐亢
+// 支及内区辰秋娄區宗䍃
+// common phonetic
+
+// 罷罢 筆笔 畢倉 仓蟲 竄窜 達黨 
+// 斷断 隊队 歸归 龜龟 匯汇 夾夹
+// 薦荐 盡尽 舉举 殻壳 歷历 麗丽
+// 靈灵 劉盧 卢録 录黽 黾聶 聂寧
+// 豈岂 遷窮 穷 嗇啬 殺杀 審屬 属 
+// 雙双 嵗 孫孙 獻献 尋寻 亞亚 嚴严
+// 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
+// 産产 齒齿 芻刍 監监 龍龙 娄 侖仑 
+// 羅罗 農农 齊齐 僉佥 乔 區区
+// 壽寿 肅肃 堯尧 專专
+// from simplified character chart
+
+// 终差鸡半贵极内敢底度
+// 由演阴谋段汽肯换抱歉
+// 市制伤图级讨论傻瓜脸
+// 代停克尽历婚集继颜突
+// 顾遇急宜季举改紧警察
+// 楼况检双连虽传弄毒品
+// 份祝篮街流赛普往低及
+// 假杀密费危险练区般南
+// 境支笔糟香迟断激技术
+// 负责附引则园嘴功卡辆
+// 深阳强烧盘展血腿朵价
+// 观健康旧层队乱哭镜释
+// 料科搬疑甜吸育转甚专
+// 民舒亚典严鞋恐梦矩验
+// 击导蓝误预裤糖疼弃饿
+// 坚夏扫曾斯宣仔犯油爷
+// 养俩武器宝绿叔众春类
+// 拜托压杂获供某质志邮
+// 福竟困宾厨顿恶概帝抓
+// 骗招付派社座丽群胖唯
+// 替赢局治疗丢权统遍产
+// 既棒啤剩判熟悉秋置刷
+// 袋稍微夜澡绩罪戴承冬
+// 列裙团秀碗握散枪签博
+// 温暖形录输瘦念威胁尊
+// 锻炼萄葡例姨族奖降闭
+// 富矮折挂互抽称缺
+// top 1000 done
 
 
 for (let direction in radicals) {
@@ -1126,6 +1206,3 @@ for (let direction in radicals) {
         icon(char, etymologies[radicals[direction][char]].definition, radicalNote(char));
     }
 }
-
-// common components
-//  莫 圭 辟 俞 甫 龙 卑 娄 扁 尞尧 耒 屯 由 堇 齒
