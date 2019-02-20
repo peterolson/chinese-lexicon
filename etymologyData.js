@@ -1152,10 +1152,31 @@ icon("瓜", "melon; gourd; squash", "Pictograph of a melon hanging from a vine."
 addEtymology("众", "many; crowd; multitude", "Triple of 人 (person), depicts many people together. " + simplified("眾"), [iconComponent("人", [0, 2]), iconComponent("人", [2, 4]), iconComponent("人", [4])]);
 addEtymology("眾", "many; crowd; multitude", "Depicts a crowd (众) under someone's gaze (目).", [iconComponent("目", [0, 5]), iconComponent("众", [5])]);
 icon("血", "blood", "Depicts a drop of blood in a container (皿).", "o", [iconComponent(O, [0, 1], "Depicts a drop of blood."), iconComponent("皿", [1])]);
+icon("莫", "none; do not", `Depicts the sun (日) shining through vegetation (艸). Based on the original meaning "sunset", now written as 暮. The current meaning is a phonetic loan.`, "bs",
+    [iconComponent("艹", [0, 3]), iconComponent("日", [3, 7]), iconComponent("艸", [7])]);
+phonsem("暮", "莫", "日", 10, "sunset; evening", "Originally written as 莫.");
+icon("圭", "jade tablet", "Duplication of 土 (earth). Origin unclear.", "", [unknownComponent("土", [0, 3]), unknownComponent("土", [3])]);
+icon("由", "cause; from; due to", "Origin unclear.");
+icon("屯", "assemble; garrison; difficult", "Origin unclear.", "b");
+icon("朱", "red pigment (vermilion)", `Based on the original meaning "tree trunk", now written as 株. Derivative of 木 (tree). The current meaning is a phonetic loan.`, "bs", [iconComponent("木", [2])]);
+semphon("株", "木", "朱", 4, "tree trunk; stump", "Originally written as 朱.");
+icon("兀", "erect; towering", "Pictograph of a platform that makes things taller.");
+icon("堯", "Emperor Yao", `Depicts a mound of dirt (土) on top of a platorm (兀), representing the meaning "tall; lofty", later used to describe the legendary Emperor Yao.`, "os",
+    [iconComponent("土", [0, 3]), iconComponent("土", [3, 6]), iconComponent("土", [6, 9]), iconComponent("兀", [9])]);
+simp("尧", "堯", [[0, 1], [1, 2], [2, 3], [3]]);
+icon("僉", "all", "Depicts multiple people (人) opening their mouths (口) to speak together, representing the meaning \"together\" or \"all\".", "s",
+    [iconComponent(O, [0, 3], "Depicts speech coming out of the mouth."), iconComponent("口", [3, 6]), iconComponent("口", [6, 9]), iconComponent("人", [9, 11]), iconComponent("人", [11])]);
+simp("佥", "僉", [[0, 3], [3, 5], [5, 6], [6], [6]]);
+icon("尞", "burn; set on fire - liáo", `Original form of 燎 (burn; set on fire). Originally written as 木 (wood) with several dots around it, representing flame. The 日 (sun) and 火 (fire) components were added later.`, "obs",
+    [iconComponent("木", [0, 3]), iconComponent(O, [3, 5], "Depicts dots of flame."), meaningComponent("日", [5, 9]), meaningComponent("火", [9])]);
+semphon("燎", "火", "尞", 4, "burn; set on fire", "", false, true);
+icon("屮", "sprout", "Half of 艸 (grass).");
+icon("甫", "barely; just now", "Pictograph of something sprouting (屮) from a field (田), depicting a garden or orchard, now written as 圃. The current meaning is a phonetic loan.", "o", [iconComponent("屮", [0, 1, 5]), iconComponent("田", [1, 6])]);
+semphon("圃", "囗", "甫", [[0, 2, 9], [2, 9]], "garden; orchard", "Originally written as 甫.");
+icon("俞", "surname Yu", "Origin unclear.");
 
-// 莫圭俞甫屯由朱尧佥尞
-// 辟僉甲柬堯監半仓倉龙
-// 卒龍旬敝弗夋奄扁畐亢
+// 辟甲柬堯監半仓倉
+// 卒旬敝弗夋奄扁畐亢
 // 支及内区辰秋娄區宗䍃
 // common phonetic
 
