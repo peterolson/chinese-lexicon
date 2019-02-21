@@ -1174,8 +1174,16 @@ icon("屮", "sprout", "Half of 艸 (grass).");
 icon("甫", "barely; just now", "Pictograph of something sprouting (屮) from a field (田), depicting a garden or orchard, now written as 圃. The current meaning is a phonetic loan.", "o", [iconComponent("屮", [0, 1, 5]), iconComponent("田", [1, 6])]);
 semphon("圃", "囗", "甫", [[0, 2, 9], [2, 9]], "garden; orchard", "Originally written as 甫.");
 icon("俞", "surname Yu", "Origin unclear.");
+icon("䇂", "sickle", "Pictograph of a curved knife-like object.");
+icon("辟", "ruler; law; punish", "Depicts punishing a kneeling person (卩) with a curved knife (䇂).", "b", [iconComponent("卩", [0, 3]), iconComponent("䇂", [6], "Depicts a curved knife used to punish criminals."), meaningComponent("口", [3, 6])]);
+icon("甲", "first heavenly stem", "Pictograph of a turtle shell.", "b");
+icon("柬", "letter; card", "Two dots added to 束 (bind; bunch). Origin unclear.");
+icon("半", "half", "Depicts cutting a cow (牛) into two halves (八).", "s", [iconComponent("八", [0, 2], "Depicts splitting into two halves."), iconComponent("牛", [2])]);
+icon("倉", "granary; barn; storehouse", "Depicts things being stored together (合) behind a door (戶).", "s", [iconComponent("合", [0, 3, 7]), iconComponent("戶", [3, 7])]);
+simp("仓", "倉", [[0, 2], [2]]);
+icon("監", "supervise; inspect", "Pictograph of a person leaning over to look at his own reflection on a plate.", "obs", [iconComponent("目", [0, 6]), iconComponent("人", [6, 9]), iconComponent("皿", [9])]);
+simp("监", "監", [[0, 2], [2, 5], [5]]);
 
-// 辟甲柬堯監半仓倉
 // 卒旬敝弗夋奄扁畐亢
 // 支及内区辰秋娄區宗䍃
 // common phonetic
@@ -1187,9 +1195,9 @@ icon("俞", "surname Yu", "Origin unclear.");
 // 豈岂 遷窮 穷 嗇啬 殺杀 審屬 属 
 // 雙双 嵗 孫孙 獻献 尋寻 亞亚 嚴严
 // 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
-// 産产 齒齿 芻刍 監监 龍龙 娄 侖仑 
+// 産产 齒齿 芻刍 娄 侖仑 
 // 羅罗 農农 齊齐 僉佥 乔 區区
-// 壽寿 肅肃 堯尧 專专
+// 壽寿 肅肃 專专
 // from simplified character chart
 
 // 终差鸡半贵极内敢底度
