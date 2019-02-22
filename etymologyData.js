@@ -1183,8 +1183,22 @@ icon("倉", "granary; barn; storehouse", "Depicts things being stored together (
 simp("仓", "倉", [[0, 2], [2]]);
 icon("監", "supervise; inspect", "Pictograph of a person leaning over to look at his own reflection on a plate.", "obs", [iconComponent("目", [0, 6]), iconComponent("人", [6, 9]), iconComponent("皿", [9])]);
 simp("监", "監", [[0, 2], [2, 5], [5]]);
+icon("卒", "soldier; servant; finish", "A cross shape (十) added to clothes (衣). Origin unclear.", "b", [unknownComponent("衣", [0, 6]), unknownComponent("十", [6])]);
+icon("寅", "3rd earthly branch", "Originally a pictograph of an arrow (矢). Later two hand components (爪) were added on the sides.", "ob", [iconComponent("矢", [0, 4, 7, 8, 9]), iconComponent("爪", [4, 5, 6, 7, 8, 9]), iconComponent("爪", [5, 7, 8, 9])]);
+addEtymology("螾", "earthworm - yǐn", `Phonosemantic compound. 虫 represents the meaning and 寅 represents the sound.`);
+addEtymology("旬", "ten-day period; period of time", "Originally a pictograph of an earthworm, now written as 螾, used here since the word for earthworm sounded similar to 旬. Later the meaning component (日) was added.",
+    [soundComponent("螾", [0, 2], "Depicts an earthworm."), meaningComponent("日", [2])], "ob");
+icon("敝", "ruined; shabby", "Depicts shabby clothes that have been beaten down.", "", [iconComponent(O, [0, 7], "Depicts ruined clothes."), meaningComponent("攵", [7])]);
+icon("弗", "not", "A curved shape crossed out by two lines.", "b");
+icon("允", "just; fair; allow", "Pictograph of a person nodding their head in agreement.", "obs", [iconComponent(O, [0, 2], "Depicts a person's head."), iconComponent("人", [2])]);
+phonsem("夋", "允", "夂", 4, "dawdle; flat-footed - qūn");
+semsem("奄", "大", "电", 3, "sudden; abrupt; surround; cover", "Lightning (电) is a big (大) and sudden and abrupt phenomenon.");
+icon("冊", "book", "Pictograph of strips of bamboo strung together. In ancient China writing was done on bamboo strips.", "ob");
+simp("册", "冊");
+icon("扁", "flat; tablet", "Pictograph of a tablet affixed to a door.", "", [iconComponent("户", [0, 4]), iconComponent("冊", [4], "Depicts a flat thing affixed to a door.")]);
+icon("畐", "full; filled - fú", "Pictograph of a container full of something.", "bs");
+icon("亢", "high; firm; overbearing", "Pictograph of a person with a line through their legs. Original meaning unclear.", "bs");
 
-// 卒旬敝弗夋奄扁畐亢
 // 支及内区辰秋娄區宗䍃
 // common phonetic
 
