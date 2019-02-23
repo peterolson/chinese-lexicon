@@ -640,7 +640,7 @@ icon("坐", "sit", "Pictograph of two people (人) sitting on the ground (土)."
 icon("因", "because; reason", "Pictograph of clothing surrounding (囗) a person (人), now written as 裀. The current meaning is a phonetic loan.", "bs", [iconComponent("囗", [0, 2, 5], "Depicts clothing surrounding a person."), iconComponent("大", [2, 5], "Depicts a person.")]);
 addEtymology("裀", "undergarment; mat", `Phonosemantic compound. 衤 represents the meaning and 因 represents the sound. Originally written as 因, a pictograph of clothing surrounding a person.`);
 semphon("律", "彳", "聿", 3, "law");
-icon("示", "show; reveal", `Origin unclear. Most likely depicts some object of spiritual significance. Most often explained as an altar or a memorial tablet.`, "os");
+icon("示", "(spiritual); show; reveal", `Origin unclear. Most likely depicts some object of spiritual significance. Most often explained as an altar or a memorial tablet.`, "os");
 phonsem("視", "礻", "見", 4, "look at; inspect");
 simp("视", "視", [[4], [0, 4]], { 見: "见" });
 icon("𠂤", "heap; pile; buttocks", "Pictograph of buttocks.", "ob");
@@ -1056,8 +1056,9 @@ semphon("聖", "耳", "呈", 6, "sage; saint; sacred");
 simp("圣", "聖", [[0, 2], [2]], {}, { 耳: "又", 呈: "土" });
 semphon("怪", "忄", "圣", 3, "strange; odd; bewildering", "", true);
 icon("婁", "Lou (surname)", "Origin unclear.", "", [unknownComponent(O, [0, 8]), unknownComponent("女", [8])]);
+simp("娄", "婁", [[0, 6], [6]], {}, { [O]: "米" });
 phonsem("數", "婁", "攵", 11, "number; count", "", true);
-simp("数", "數", [[9], [0, 9]]);
+simp("数", "數", [[9], [0, 9]], { 婁: "娄" });
 semphon("性", "忄", "生", 3, "nature; character; sex");
 semsem("利", "禾", "刂", 5, "benefit; profit; advantage", `Depicts harvesting grain (禾) with a blade (刂). Harvest was the main source of profit in agricultural societies.`);
 icon("乃", "thus; so; be", "Origin unclear.", "ob");
@@ -1198,9 +1199,17 @@ simp("册", "冊");
 icon("扁", "flat; tablet", "Pictograph of a tablet affixed to a door.", "", [iconComponent("户", [0, 4]), iconComponent("冊", [4], "Depicts a flat thing affixed to a door.")]);
 icon("畐", "full; filled - fú", "Pictograph of a container full of something.", "bs");
 icon("亢", "high; firm; overbearing", "Pictograph of a person with a line through their legs. Original meaning unclear.", "bs");
-
-// 支及内区辰秋娄區宗䍃
-// common phonetic
+icon("支", "support; raise; sustain", "Pictograph of a hand (又) lifting a piece of bamboo (个).", "s", [iconComponent("个", [0, 2], "Depicts a piece of bamboo being lifted,"), iconComponent("又", [2])]);
+icon("及", "and; extend; reach; in time for", "Pictograph of a hand (又) reaching to grab a person (人).", "obs", [iconComponent("人", [0, 2]), iconComponent("又", [1])]);
+icon("內", "inside", "Depicts an entrance (入) to a hall (冂).", "", [iconComponent("入", [2]), iconComponent("冂", [0, 2])]);
+simp("内", "內");
+icon("品", "article; product; commodity; kind; grade; character", "Triple of 口. Depicts a variety of utensils together.", "", [iconComponent("口", [0, 3]), iconComponent("口", [3, 6]), iconComponent("口", [6])]);
+icon("區", "area; region", "Depicts a group of things (品) in an enclosed area.", "", [iconComponent(O, [0, 1, 10], "Depicts an enclosed area."), iconComponent("品", [1, 10], "Depicts a group of things.")]);
+simp("区", "區", [[0, 1, 3], [1, 3]]);
+icon("辰", "5th earthly branch", "Pictograph of an ancient farming tool.", "obs");
+icon("秋", "fall; autumn", "Originally a pictograph of a cricket, since cricket chirps indicate the beginning of autumn. Later the character was reanalyzed as 禾 (grain) + 火 (fire), perhaps alluding to the red color of leaves during autumn.", "obs", [iconComponent("禾", [0, 5]), iconComponent("火", [5])]);
+semsem("宗", "宀", "示", 3, "school; sect; clan; ancestral; temple", "Depicts a spiritual (示) edifice (宀), such as an ancestral shrine.");
+phonsem("䍃", "⺼", "缶", 4, "vase; pitcher", "", true, false, "s");
 
 // 罷罢 筆笔 畢倉 仓蟲 竄窜 達黨 
 // 斷断 隊队 歸归 龜龟 匯汇 夾夹
