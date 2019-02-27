@@ -100,7 +100,7 @@ icon("今", "today", "Pictograph of sounds coming out of the mouth. " + soundLoa
 semphon("吟", "口", "今", 3, "chant; recite; moan");
 semphon("金", "王", "今", [[0, 2, 5, 7], [2, 5, 7]], "metal; gold", "王 is used here because it originally was a pictograph of an axe head, which is made from metal.", false, false, true, "b");
 icon("心", "heart", "Pictograph of a heart.", "bs");
-icon("虫", "worm; bug", "Pictograph of a worm.", "s");
+icon("虫", "bug; insect; worm", "Pictograph of a worm.", "s");
 icon("目", "eye", "Pictograph of an eye.", "obs");
 icon("魚", "fish", "Pictograph of a fish.", "obs");
 simp("鱼", "魚");
@@ -1210,8 +1210,22 @@ icon("辰", "5th earthly branch", "Pictograph of an ancient farming tool.", "obs
 icon("秋", "fall; autumn", "Originally a pictograph of a cricket, since cricket chirps indicate the beginning of autumn. Later the character was reanalyzed as 禾 (grain) + 火 (fire), perhaps alluding to the red color of leaves during autumn.", "obs", [iconComponent("禾", [0, 5]), iconComponent("火", [5])]);
 semsem("宗", "宀", "示", 3, "school; sect; clan; ancestral; temple", "Depicts a spiritual (示) edifice (宀), such as an ancestral shrine.");
 phonsem("䍃", "⺼", "缶", 4, "vase; pitcher", "", true, false, "s");
+semsem("罷", "网", "能", 5, "stop; cease; dismiss", "Depicts stopping something from being able (能) to continue with a net (网).");
+simp("罢", "罷", [[0, 5], [5]], {}, { 能: "去" });
+semsem("筆", "⺮", "聿", 6, "pen; brush; pencil", "Depicts a utensil for writing (聿) made from bamboo (⺮).");
+simp("笔", "筆", [[0, 6], [6]], {}, { 聿: "毛" });
+semsem("竄", "穴", "鼠", 5, "scuttle; scurry off; flee", "Depicts a mouse (鼠) scurrying out of a hole (穴).");
+semphon("窜", "穴", "串", 5, "scuttle; scurry off; flee", simplified("竄"));
+icon("畢", "whole; complete; finish", "Depicts some sort of hunting trap used in a field (田). The meaning later shifted to \"finish\".", "b", [iconComponent("田", [0, 4]), iconComponent(O, [4], "Depicts some sort of hunting trap.")]);
+addEtymology("毕", "whole; complete; finish", simplified("畢") + ` 比 represents the sound. The bottom component is a remnant from the traditional character 畢.`, [soundComponent("比", [0, 4]), simplifiedComponent("畢", [4], "Remnant from the traditional character 畢.")]);
+icon("蟲", "bug; insect; worm", "Triple of 虫.", "", [iconComponent("虫", [0, 6]), iconComponent("虫", [6, 12]), iconComponent("虫", [12])]);
+phonsem("羍", "大", "羊", 3, "little lamb");
+phonsem("達", "羍", "辶", 9, "attain; reach");
+phonsem("达", "大", "辶", 3, "attain; reach", simplified("達"));
+phonsem("黨", "尚", "黑", 8, "party; association; club");
+simp("党", "黨", [[8], [0, 8]], {}, { 黑: "儿" });
 
-// 罷罢 筆笔 畢倉 仓蟲 竄窜 達黨 
+
 // 斷断 隊队 歸归 龜龟 匯汇 夾夹
 // 薦荐 盡尽 舉举 殻壳 歷历 麗丽
 // 靈灵 劉盧 卢録 录黽 黾聶 聂寧
@@ -1249,7 +1263,7 @@ phonsem("䍃", "⺼", "缶", 4, "vase; pitcher", "", true, false, "s");
 // 列裙团秀碗握散枪签博
 // 温暖形录输瘦念威胁尊
 // 锻炼萄葡例姨族奖降闭
-// 富矮折挂互抽称缺
+// 富矮折挂互抽称缺凸凹
 // top 1000 done
 
 
