@@ -1204,7 +1204,8 @@ icon("及", "and; extend; reach; in time for", "Pictograph of a hand (又) reach
 icon("內", "inside", "Depicts an entrance (入) to a hall (冂).", "", [iconComponent("入", [2]), iconComponent("冂", [0, 2])]);
 simp("内", "內");
 icon("品", "article; product; commodity; kind; grade; character", "Triple of 口. Depicts a variety of utensils together.", "", [iconComponent("口", [0, 3]), iconComponent("口", [3, 6]), iconComponent("口", [6])]);
-icon("區", "area; region", "Depicts a group of things (品) in an enclosed area.", "", [iconComponent(O, [0, 1, 10], "Depicts an enclosed area."), iconComponent("品", [1, 10], "Depicts a group of things.")]);
+icon("匚", "enclosed area");
+icon("區", "area; region", "Depicts a group of things (品) in an enclosed area.", "", [iconComponent("匚", [0, 1, 10], "Depicts an enclosed area."), iconComponent("品", [1, 10], "Depicts a group of things.")]);
 simp("区", "區", [[0, 1, 3], [1, 3]]);
 icon("辰", "5th earthly branch", "Pictograph of an ancient farming tool.", "obs");
 icon("秋", "fall; autumn", "Originally a pictograph of a cricket, since cricket chirps indicate the beginning of autumn. Later the character was reanalyzed as 禾 (grain) + 火 (fire), perhaps alluding to the red color of leaves during autumn.", "obs", [iconComponent("禾", [0, 5]), iconComponent("火", [5])]);
@@ -1224,9 +1225,22 @@ phonsem("達", "羍", "辶", 9, "attain; reach");
 phonsem("达", "大", "辶", 3, "attain; reach", simplified("達"));
 phonsem("黨", "尚", "黑", 8, "party; association; club");
 simp("党", "黨", [[8], [0, 8]], {}, { 黑: "儿" });
+icon("斷", "break; cut off", "Depicts cutting off threads with an axe (斤)", "", [iconComponent(O, [0, 14], "Depicts silk threads."), iconComponent("斤", [14])]);
+simp("断", "斷", [[0, 7], [7]]);
+addEtymology("㒸", "obey; comply", "Origin unclear.", [unknownComponent("八", [0, 2]), soundComponent("豕", [2])]);
+semphon("隊", "阝", "㒸", 2, "squadron; team; group");
+simp("队", "隊", [[0, 2], [2]], {}, { 㒸: "人" });
+icon("帚", "broom", "Pictograph of a hand sweeping with a broom.", "obs", [iconComponent("又", [0, 3], "Depicts a hand holding a broom."), iconComponent("巾", [5], "Depicts the bristles of a broom.")]);
+addEtymology("歸", "return; go back", "Origin unclear.", [unknownComponent("𠂤", [0, 6]), unknownComponent("止", [6, 10]), unknownComponent("帚", [10])]);
+simp("归", "歸", [[0, 2], [2, 2], [2]], { "帚": "彐" }, { "𠂤": "刂" });
+icon("龜", "tortoise; turtle", "Pictograph of a tortoise.", "obs");
+simp("龟", "龜");
+semphon("淮", "氵", "隹", 3, "name of a river");
+semphon("匯", "匚", "淮", [[0, 1, 12], [1, 12]], "converge; flow together; send money");
+simp("汇", "匯", [[3], [0, 3]], {}, { "淮": "氵" });
+icon("夾", "press from both sides; place between; sandwich", "Pictograph of a person (大) being pushed by people on both sides.", "b", [iconComponent("大", [0, 3], "Depicts a standing person being pushed from both sides."), iconComponent("人", [3, 5], "Depicts a person pushing from the left."), iconComponent("人", [5, 7], "Depicts a person pushing from the right.")]);
+simp("夹", "夾", [[0, 1, 4], [1, 2, 3, 4], [2, 4]]);
 
-
-// 斷断 隊队 歸归 龜龟 匯汇 夾夹
 // 薦荐 盡尽 舉举 殻壳 歷历 麗丽
 // 靈灵 劉盧 卢録 录黽 黾聶 聂寧
 // 豈岂 遷窮 穷 嗇啬 殺杀 審屬 属 
