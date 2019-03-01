@@ -1240,14 +1240,29 @@ semphon("匯", "匚", "淮", [[0, 1, 12], [1, 12]], "converge; flow together; se
 simp("汇", "匯", [[3], [0, 3]], {}, { "淮": "氵" });
 icon("夾", "press from both sides; place between; sandwich", "Pictograph of a person (大) being pushed by people on both sides.", "b", [iconComponent("大", [0, 3], "Depicts a standing person being pushed from both sides."), iconComponent("人", [3, 5], "Depicts a person pushing from the left."), iconComponent("人", [5, 7], "Depicts a person pushing from the right.")]);
 simp("夹", "夾", [[0, 1, 4], [1, 2, 3, 4], [2, 4]]);
+icon("廌", "unicor", "Pictograph of a mythical animal similar to a unicorn.", "os");
+semphon("薦", "艹", "廌", 4, "recommend", `Based on the original meaning "straw mat". The current meaning is a phonetic loan.`, true);
+phonsem("存", "才", "子", 3, "exist; keep; survive", "", true);
+semphon("荐", "艹", "存", 3, "recommend", simplified("薦") + ` Based on the original meaning "straw mat". The current meaning is a phonetic loan.`);
+icon("盡", "use up; finish; exhaust; entirely", "Pictograph of scrubbing dishes clean after one is finished eating.", "os", [iconComponent("又", [0, 3], "Depicts a hand cleaning dishes."), iconComponent(O, [3, 9], "Depicts a brush used to clean dishes."), iconComponent("皿", [9], "Depicts a dish for holding food.")]);
+simp("尽", "盡", [[0, 2, 3, 4], [2, 3, 4], [4, 4]]);
+phonsem("舉", "與", "手", 13, "lift; hold up");
+simp("举", "舉", [[6], [0, 6]], {}, { 與: "兴" });
+icon("壳", "shell; crust", "Origin unclear.");
+icon("殼", "shell; crust", "Origin unclear.", "", [unknownComponent("壳", [0, 8]), unknownComponent("殳", [8])]);
+icon("厤", "experience; undergo", "Original form of 歷. Origin unclear.", "", [unknownComponent("厂", [0, 2]), unknownComponent("禾", [2, 7]), unknownComponent("禾", [7])]);
+phonsem("歷", "厤", "止", 12, "experience; undergo");
+phonsem("曆", "厤", "日", 12, "calendar");
+addEtymology("历", "experience; undergo; calendar", simplified("歷") + " " + simplifyMerge("历", "曆", "calendar"), [simplifiedComponent("厂", [0, 2], "Simplified shorthand of the traditional 厤 component."), soundComponent("力", [2])]);
+icon("麗", "beautiful", "Pictograph of a deer (鹿) with two beautiful antlers.", "b", [iconComponent(O, [0, 8], "Depicts two beautiful antlers on the head of a deer."), iconComponent("鹿", [8])]);
+simp("丽", "麗", [[0, 7], [7, 7]]);
 
-// 薦荐 盡尽 舉举 殻壳 歷历 麗丽
 // 靈灵 劉盧 卢録 录黽 黾聶 聂寧
 // 豈岂 遷窮 穷 嗇啬 殺杀 審屬 属 
 // 雙双 嵗 孫孙 獻献 尋寻 亞亚 嚴严
 // 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
 // 産产 齒齿 芻刍 娄 侖仑 
-// 羅罗 農农 齊齐 僉佥 乔 區区
+// 羅罗 農农 齊齐 僉佥 乔
 // 壽寿 肅肃 專专
 // from simplified character chart
 
