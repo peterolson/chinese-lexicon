@@ -801,7 +801,6 @@ icon("奴", "slave", "Depicts a hand behind a woman slave's back forcing her to 
 phonsem("努", "奴", "力", 5, "exert; strive", "", false, true);
 icon("卓", "outstanding", "Pictograph of a person standing erect with something above the head. The significance of the object above the head is unclear.", "bs");
 phonsem("桌", "卓", "木", [[0, 8], [6]], "table");
-icon("虍", "tiger head", "Pictograph of the head of a tiger. Top component of 虎 (tiger).", "obs");
 icon("虎", "tiger", "Pictograph of a tiger.", "obs", [iconComponent("虍", [0, 6], "Depicts the head of a tiger."), iconComponent(O, [6], "Depicts the body of a tiger.")]);
 icon("弋", "shoot", "Pictograph of a post for tethering animals, now written as 杙. The current meaning is a phonetic loan.", "bs");
 addEtymology("杙", "post for tethering animals", "Phonosemantic compound. 木 represents the meaning and 弋 represents the sound. Originally written as 弋.");
@@ -1256,14 +1255,32 @@ phonsem("曆", "厤", "日", 12, "calendar");
 addEtymology("历", "experience; undergo; calendar", simplified("歷") + " " + simplifyMerge("历", "曆", "calendar"), [simplifiedComponent("厂", [0, 2], "Simplified shorthand of the traditional 厤 component."), soundComponent("力", [2])]);
 icon("麗", "beautiful", "Pictograph of a deer (鹿) with two beautiful antlers.", "b", [iconComponent(O, [0, 8], "Depicts two beautiful antlers on the head of a deer."), iconComponent("鹿", [8])]);
 simp("丽", "麗", [[0, 7], [7, 7]]);
+icon("霝", "drops of rain", "Pictograph of drops of rain.", "ob", [meaningComponent("雨", [0, 8]), iconComponent(O, [8], "Depicts three falling raindrops.")]);
+icon("巫", "wizard; witch; shaman", "Depicts some sort of object used by shamans. The exact nature of this object is unclear.", "b");
+phonsem("靈", "霝", "巫", 17, "spiritual; spirit; clever; smart");
+simp("灵", "靈", [[3], [0, 3]], {}, { 霝: "彐", "巫": "火" });
+addEtymology("劉", "surname Liu", `Based on the original meaning "battle-axe". The current meaning is a phonetic loan.`, [soundComponent("卯", [0, 5], obsoleteSound("劉", "卯")), meaningComponent("金", [5, 13]), meaningComponent("刂", [13])]);
+simp("刘", "劉", [[0, 0], [0, 4], [4]], {}, { 金: "文" });
+addEtymology("盧", "rice vessel; black", "Phonosemantic compound. 虍 represents the sound, and the remainder of the character is a pictograph of a vessel for cooking rice.", [soundComponent("虍", [0, 6], obsoleteSound("盧", "虎")), iconComponent(O, [6, 11], "Depicts a pot full of rice."), meaningComponent("皿", [11])], "os");
+simp("卢", "盧", [[0, 2], [2], [2, 2]]);
+icon("彔", "carve wood", "Pictograph of a water well. Relation to current meaning unclear.", "o", [iconComponent(O, [0, 3], "Depicts the top part of a well used to raise and lower the bucket of water."), iconComponent("水", [3])]);
+semphon("錄", "金", "彔", 8, "copy; record");
+simp("录", "錄", [[0, 0], [0]]);
+icon("黽", "toad", "Pictograph of a toad.", "o");
+simp("黾", "黽");
+icon("聶", "whisper", "Triple of 耳 (ear).", "", [iconComponent("耳", [0, 6]), iconComponent("耳", [6, 12]), iconComponent("耳", [12])]);
+icon("聂", "whisper", simplified("聶") + " Triple of 耳 (ear).", "", [iconComponent("耳", [0, 6]), simplifiedComponent("又", [6, 8], "Shorthand for the traditional component 耳."), simplifiedComponent("又", [8], "Shorthand for the traditional component 耳.")]);
+addEtymology("寧", "peaceful; prefer", "Phonosemantic compound. 丁 represents the sound and the other components represent the meaning.",
+    [meaningComponent("宀", [0, 3]), meaningComponent("心", [3, 7]), meaningComponent("皿", [7, 12]), soundComponent("丁", [12])]);
+simp("宁", "寧", [[0, 3], [3, 3], [3, 3], [3]]);
 
-// 靈灵 劉盧 卢録 录黽 黾聶 聂寧
+// 寧
 // 豈岂 遷窮 穷 嗇啬 殺杀 審屬 属 
 // 雙双 嵗 孫孙 獻献 尋寻 亞亚 嚴严
 // 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
 // 産产 齒齿 芻刍 娄 侖仑 
 // 羅罗 農农 齊齐 僉佥 乔
-// 壽寿 肅肃 專专
+// 壽寿 肅肃 專专 凸凹
 // from simplified character chart
 
 // 终差鸡半贵极内敢底度
@@ -1292,7 +1309,7 @@ simp("丽", "麗", [[0, 7], [7, 7]]);
 // 列裙团秀碗握散枪签博
 // 温暖形录输瘦念威胁尊
 // 锻炼萄葡例姨族奖降闭
-// 富矮折挂互抽称缺凸凹
+// 富矮折挂互抽称缺
 // top 1000 done
 
 
