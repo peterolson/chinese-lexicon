@@ -1273,13 +1273,28 @@ icon("聂", "whisper", simplified("聶") + " Triple of 耳 (ear).", "", [iconCom
 addEtymology("寧", "peaceful; prefer", "Phonosemantic compound. 丁 represents the sound and the other components represent the meaning.",
     [meaningComponent("宀", [0, 3]), meaningComponent("心", [3, 7]), meaningComponent("皿", [7, 12]), soundComponent("丁", [12])]);
 simp("宁", "寧", [[0, 3], [3, 3], [3, 3], [3]]);
+icon("豈", "how", "Origin unclear.", "", [unknownComponent("山", [0, 3]), unknownComponent("豆", [3])]);
+addEtymology("岂", "how", "Simplified form of 豈. Origin unclear. The simplified component 己 represents the sound.", [unknownComponent("山", [0, 3]), soundComponent("己", [3])]);
+icon("遷", "move; shift; change", "Origin unclear.", "", [unknownComponent("覀", [0, 6]), meaningComponent("舁", [6, 11], "Depicts raising something with two hands."), meaningComponent("辶", [11])]);
+phonsem("迁", "千", "辶", 3, "move; shift; change", simplified("遷"))
+semphon("穹", "穴", "弓", 5, "vault; dome");
+semphon("窮", "身", "穹", [[5, 12], [0, 5, 12]], "poor; destitute");
+simp("穷", "窮", [[5], [0, 5]], {}, { 身: "力", 穹: "穴" });
+icon("嗇", "stingy", `Pictograph of wheat (麥) being stored in a granary. Based on the original meaning "harvest; hoard". The meaning later shifted to "stingy".`, "os", [iconComponent("麥", [0, 7]), iconComponent(O, [7], "Depicts a place for storing grain.")]);
+simp("啬", "嗇", [[0, 5], [5]], { 麥: "麦" });
+icon("審", "examine; investigate", "Origin unclear.", "", [unknownComponent("宀", [0, 3]), unknownComponent("采", [3, 10]), unknownComponent("田", [10])]);
+semphon("审", "宀", "申", 3, "examine; investigate", simplified("審"));
+icon("尾", "tail", "Depicts fur (毛) protruding from the posterior of an animal.", "s", [iconComponent(O, [0, 3], "Depicts the posterior of an animal."), iconComponent("毛", [3])]);
+icon("蜀", "historical name of Sichuan", "Pictograph of a silkworm. Can Cong (蠶叢), the legendary ruler of the kingdom of Shu (modern-day Sichuan), was said to have been the inventor of silk.", "o",
+    [iconComponent(O, [0, 7], "Depicts a silkworm."), meaningComponent("虫", [7])]);
+semphon("屬", "尾", "蜀", 8, "belong; category; constitute; join together");
+icon("禹", "surname Yu", "Depicts Yu the Great (21st century BC), a legendary leader who tamed the floods.", "o");
+simp("属", "屬", [[0, 3], [3]], {}, { 蜀: "禹" });
 
-// 寧
-// 豈岂 遷窮 穷 嗇啬 殺杀 審屬 属 
 // 雙双 嵗 孫孙 獻献 尋寻 亞亚 嚴严
 // 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
 // 産产 齒齿 芻刍 娄 侖仑 
-// 羅罗 農农 齊齐 僉佥 乔
+// 羅罗 農农 齊齐 乔
 // 壽寿 肅肃 專专 凸凹
 // from simplified character chart
 
