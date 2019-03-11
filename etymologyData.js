@@ -1290,8 +1290,25 @@ icon("蜀", "historical name of Sichuan", "Pictograph of a silkworm. Can Cong (�
 semphon("屬", "尾", "蜀", 8, "belong; category; constitute; join together");
 icon("禹", "surname Yu", "Depicts Yu the Great (21st century BC), a legendary leader who tamed the floods.", "o");
 simp("属", "屬", [[0, 3], [3]], {}, { 蜀: "禹" });
+addEtymology("雙", "pair; double", "Depicts a pair of birds in the hand.", [iconComponent("隹", [0, 8]), iconComponent("隹", [8, 16]), iconComponent("又", [16])]);
+addEtymology("双", "pair; double", simplified("雙") + " Depicts a pair of hands.", [iconComponent("又", [0, 2]), iconComponent("又", [2])]);
+semsem("孫", "子", "系", 3, "grandson; descendant", `Semantic compound of child (子) and 系 (relation; connection).`);
+semsem("孙", "子", "小", 3, "grandson; descendant", simplified("孫") + " A grandson is a small (小) child (子).");
+addEtymology("獻", "offer; present; donate", "Phonosemantic compound. 犬 represents the sound, and the left component is a depiction of a sacrificial offering on an altar.", [
+    iconComponent(O, [0, 16], "Depicts a sacrificial offering on an altar."), soundComponent("犬", [16])
+], "ob");
+icon("南", "south", "Depicts the front of a house. In some regions of ancient China, houses were typically built to face the south.", "ob");
+simp("献", "獻", [[0, 9], [9]], {}, { [O]: "南" });
+icon("尋", "look for; search; seek", "Pictograph of two outstretched arms searching for something.", "os");
+simp("寻", "尋");
+icon("亞", "Asia; second; next to", "Originally depicted a common Chinese architectural shape. Relation to current meaning unclear.", "b");
+simp("亚", "亞");
+icon("甘", "sweet", "Pictograph of something sweet inside the mouth (口).", "o", [iconComponent("口", [0, 3, 4]), iconComponent(O, [3, 4], "Depicts something sweet inside the mouth.")]);
+semphon("敢", "爭", "甘", [[0, 2, 7], [2, 7]], "dare; bold; have confidence");
+icon("喦", "talkative", "Pictograph of three mouths (口) linked together.");
+semphon("嚴", "喦", "敢", 8, "strict; severe", `Based on the original meaning "boast". The meaning later shifted to "extremely" and "severe".`);
+simp("严", "嚴", [[0, 7], [7, 7]]);
 
-// 雙双 嵗 孫孙 獻献 尋寻 亞亚 嚴严
 // 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
 // 産产 齒齿 芻刍 娄 侖仑 
 // 羅罗 農农 齊齐 乔
