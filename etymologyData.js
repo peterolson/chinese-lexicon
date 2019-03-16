@@ -1308,9 +1308,12 @@ semphon("敢", "爭", "甘", [[0, 2, 7], [2, 7]], "dare; bold; have confidence")
 icon("喦", "talkative", "Pictograph of three mouths (口) linked together.");
 semphon("嚴", "喦", "敢", 8, "strict; severe", `Based on the original meaning "boast". The meaning later shifted to "extremely" and "severe".`);
 simp("严", "嚴", [[0, 7], [7, 7]]);
+icon("厭", "loathe; be fed up with", `Pictograph of a dog (犬) with a piece of meat (肉) in its mouth (口). Based on the original meaning "satiated". The meaning later shifted to "be fed up with" and "dislike".`, "b",
+    [iconComponent("犬", [10]), iconComponent("口", [0, 6]), iconComponent("肉", [6, 10])]);
+simp("厌", "厭", [[2], [0, 2], [2, 2]]);
 
-// 厭藝 陰阴 隱隐 猶 鄭郑 質质 賓宾 
-// 産产 齒齿 芻刍 娄 侖仑 
+// 藝艺 陰阴 隱隐 猶 鄭郑 質质 賓宾 
+// 産产 芻刍 娄 侖仑 
 // 羅罗 農农 齊齐 乔
 // 壽寿 肅肃 專专 凸凹
 // from simplified character chart
