@@ -1311,8 +1311,28 @@ simp("严", "嚴", [[0, 7], [7, 7]]);
 icon("厭", "loathe; be fed up with", `Pictograph of a dog (犬) with a piece of meat (肉) in its mouth (口). Based on the original meaning "satiated". The meaning later shifted to "be fed up with" and "dislike".`, "b",
     [iconComponent("犬", [10]), iconComponent("口", [0, 6]), iconComponent("肉", [6, 10])]);
 simp("厌", "厭", [[2], [0, 2], [2, 2]]);
+addEtymology("藝", "skill; art", "Originally written as 埶. The 艹 and 云 components were added later for unknown reasons.", [unknownComponent("艹", [0, 4]), meaningComponent("埶", [4, 15]), unknownComponent("云", [15])]);
+semphon("艺", "艹", "乙", 3, "skill; art", simplified("藝"));
+addEtymology("陰", "cloudy; overcast; Yin", "Phonosemantic compound. 今 and 云 represent the sound, while 阝 and 云 represent the meaning.", [meaningComponent("阝", [0, 2]), soundComponent("今", [2, 6]), meaningComponent("云", [6], "Also serves as a sound component.")]);
+addEtymology("阴", "cloudy; overcast; Yin", "The traditional characters 陰 (Yin) and 陽 (Yang) were simplified to 阴 and 阳. In Chinese philosophy, the moon (月) corresponds to Yin (阴) and the sun (日) corresponds to Yang (阳).",
+    [meaningComponent("阝", [0, 2]), simplifiedComponent("月", [2], "Simplified from the traditional 陰. Used here since the moon corresponds to the 'Yin' of 'Yin and Yang' in Chinese philosophy.")]);
+semphon("陽", "阝", "昜", 2, "positive; sun; Yang");
+addEtymology("阳", "positive; sun; Yang", "The traditional characters 陰 (Yin) and 陽 (Yang) were simplified to 阴 and 阳. In Chinese philosophy, the moon (月) corresponds to Yin (阴) and the sun (日) corresponds to Yang (阳).",
+    [meaningComponent("阝", [0, 2]), simplifiedComponent("日", [2], "Simplified from the traditional 陽. Used here since the sun corresponds to the 'Yang' of 'Yin and Yang' in Chinese philosophy.")]);
+icon("㥯", "cautious", "Origin unclear.", "s", [unknownComponent("爪", [0, 4]), unknownComponent("工", [4, 7]), unknownComponent("又", [7, 10]), meaningComponent("心", [10])]);
+semphon("隱", "阝", "㥯", 2, "hidden; secret");
+simp("隐", "隱", [[0, 2], [2]]);
+semphon("猶", "犭", "酉", 3, "as if; just like; yet", `Based on the original meaning "type of monkey". The current meaning is a phonetic loan.`);
+semphon("犹", "犭", "尤", 3, "as if; just like; yet", simplified("猶") + ` Based on the original meaning "type of monkey". The current meaning is a phonetic loan.`);
+icon("奠", "fix; settle; libation for the dead", "Pictograph of alchohol (酉) being poured out as a a libation for the dead.", "b", [iconComponent("酉", [0, 9]), iconComponent(O, [9], "Depicts an altar or platform that the libation is poured onto.")]);
+phonsem("鄭", "奠", "⻏", 12, "surname Zheng");
+simp("郑", "鄭", [[6], [0, 6]], {}, { "奠": "关" });
+addEtymology("賓", "guest; visitor", "Depicts someone walking (止) into a house (宀) with a gift (貝).", [iconComponent("宀", [0, 3]), iconComponent("止", [3, 7]), iconComponent("貝", [7])]);
+icon("兵", "soldier; force; weapon; army", "Pictograph of two hands (廾) holding some sort of weapon.", "ob", [iconComponent("斤", [0, 4], "Depicts some sort of weapon."), iconComponent("廾", [4], "Depicts two hands.")]);
+semphon("宾", "宀", "兵", 3, "guest; visitor", simplified("賓"));
+addEtymology("質", "character; nature", "Origin unclear.", [unknownComponent("斤", [0, 4]), unknownComponent("斤", [4, 8]), unknownComponent("貝", [8])]);
+simp("质", "質", [[0, 4], [4, 4], [4]], { "貝": "贝" });
 
-// 藝艺 陰阴 隱隐 猶 鄭郑 質质 賓宾 
 // 産产 芻刍 娄 侖仑 
 // 羅罗 農农 齊齐 乔
 // 壽寿 肅肃 專专 凸凹
