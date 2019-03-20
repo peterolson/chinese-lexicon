@@ -1332,8 +1332,16 @@ icon("兵", "soldier; force; weapon; army", "Pictograph of two hands (廾) holdi
 semphon("宾", "宀", "兵", 3, "guest; visitor", simplified("賓"));
 addEtymology("質", "character; nature", "Origin unclear.", [unknownComponent("斤", [0, 4]), unknownComponent("斤", [4, 8]), unknownComponent("貝", [8])]);
 simp("质", "質", [[0, 4], [4, 4], [4]], { "貝": "贝" });
+icon("彥", "accomplished; elegant", "Depicts being accomplished in both literature (文) and military skill (弓). 厂 is a phonetic component.", "s", [meaningComponent("文", [0, 4]), soundComponent("厂", [4, 6]), meaningComponent("弓", [6])]);
+simp("彦", "彥", [[0, 4], [4, 6], [6]]);
+phonsem("產", "彥", "生", 6, "give birth to; produce");
+simp("产", "產", [[0, 0], [0]], { 彥: "彦" });
+icon("芻", "mow; cut grass; hay", "Pictograph of a tool used for cutting grass.", "o");
+simp("刍", "芻");
+semsem("集", "隹", "木", 8, "gather; collect", "Depicts a bird (隹) gathering wood (木) to build a nest.", "o");
+addEtymology("侖", "arrange; sequence", "Depicts an arrangement of writings (冊). The origin of the top component is unclear.", [unknownComponent(O, [0, 3]), meaningComponent("冊", [3])]);
+simp("仑", "侖", [[0, 2], [2]], {}, { 冊: "匕" });
 
-// 産产 芻刍 娄 侖仑 
 // 羅罗 農农 齊齐 乔
 // 壽寿 肅肃 專专 凸凹
 // from simplified character chart
