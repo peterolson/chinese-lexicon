@@ -1206,7 +1206,7 @@ icon("品", "article; product; commodity; kind; grade; character", "Triple of �
 icon("匚", "enclosed area");
 icon("區", "area; region", "Depicts a group of things (品) in an enclosed area.", "", [iconComponent("匚", [0, 1, 10], "Depicts an enclosed area."), iconComponent("品", [1, 10], "Depicts a group of things.")]);
 simp("区", "區", [[0, 1, 3], [1, 3]]);
-icon("辰", "5th earthly branch", "Pictograph of an ancient farming tool.", "obs");
+icon("辰", "(farming tool); 5th earthly branch", "Pictograph of an ancient farming tool.", "obs");
 icon("秋", "fall; autumn", "Originally a pictograph of a cricket, since cricket chirps indicate the beginning of autumn. Later the character was reanalyzed as 禾 (grain) + 火 (fire), perhaps alluding to the red color of leaves during autumn.", "obs", [iconComponent("禾", [0, 5]), iconComponent("火", [5])]);
 semsem("宗", "宀", "示", 3, "school; sect; clan; ancestral; temple", "Depicts a spiritual (示) edifice (宀), such as an ancestral shrine.");
 phonsem("䍃", "⺼", "缶", 4, "vase; pitcher", "", true, false, "s");
@@ -1341,10 +1341,34 @@ simp("刍", "芻");
 semsem("集", "隹", "木", 8, "gather; collect", "Depicts a bird (隹) gathering wood (木) to build a nest.", "o");
 addEtymology("侖", "arrange; sequence", "Depicts an arrangement of writings (冊). The origin of the top component is unclear.", [unknownComponent(O, [0, 3]), meaningComponent("冊", [3])]);
 simp("仑", "侖", [[0, 2], [2]], {}, { 冊: "匕" });
+addEtymology("羅", "collect; gather; catch", "Depicts a net (网) for catching birds (隹). The 糹 (silk; thread) component was added later.", [meaningComponent("网", [0, 5]), meaningComponent("糹", [5, 11]), meaningComponent("隹", [11])]);
+simp("罗", "羅", [[0, 5], [5, 5], [5]], {}, { "隹": "夕" });
+addEtymology("農", "farm; peasant; agriculture", "Depicts using a farming tool (辰) in a field (田) surrounded by forest (林).",
+    [meaningComponent("田", [0, 2, 5, 6]), meaningComponent("林", [2, 5]), meaningComponent("辰", [6])], "b");
+simp("农", "農", [[0, 2], [2, 2], [2]], {}, { 田: "冖" });
+icon("齊", "even; uniform; neat", "Pictograph of stalks of millet. Possibly alludes to the even and uniform appearance of a millet field.", "obs");
+simp("齐", "齊");
+semsem("喬", "大", "高", [[0, 1, 2, 4], [1, 2, 4]], "tall", "Originally written the same as 高 (tall). The 大 component was added to distinguish the two characters.", "s");
+simp("乔", "喬", [[0, 1, 2, 4], [1, 2, 4]]);
+icon("壽", "long life; old age", "The top component is a remnant of 老 (old). The origin of the bottom component is unclear.", "bs", [meaningComponent("耂", [0, 4]), unknownComponent(O, [4], "The meaning of this component is unclear.")]);
+simp("寿", "壽", [[0, 4], [4]]);
+icon("𣶒", "deep pool; deep; profound", "Original form of 淵. Pictograph of water inside a pool.", "s");
+semsem("淵", "氵", "𣶒", 3, "deep pool; deep; profound", "Originally written as 𣶒. The left 氵 (water) component was added later.")
+simp("渊", "淵", [[0, 3], [3]]);
+semsem("肅", "聿", "𣶒", 4, "respectful; solemn", "The 𣶒 (deep; profound) component hints at the meaning. The purpose of the 聿 (writing utensil) component is unclear.");
+simp("肃", "肅");
+icon("叀", "spindle; spinning wheel", "Pictograph of a spindle.", "o");
+semsem("專", "叀", "寸", 8, "particular; purpose; special; expert", `Depicts a hand (寸) spinning a wheel (叀). Based on the original meaning "turn", now written as 轉. The current meaning is a phonetic loan.`, "s");
+semphon("轉", "車", "專", 7, "turn; transfer; revolve", "Originally written as 專. The 車 component was added later.", false, true);
+simp("专", "專", [[0, 2], [2]], {}, {}, true);
+simp("转", "轉", [[0, 4], [4]], { 車: "车", 專: "专" });
+icon("凸", "stick out; protruding; convex", "Pictograph of a bump sticking out. Opposite of 凹.");
+icon("凹", "sunken; indented; concave; hollow", "Pictograph of a concavity. Opposite of 凸.");
+phonsem("嘗", "尚", "旨", 8, "try; taste; experience");
+simp("尝", "嘗", [[5], [0, 5]], {}, { 旨: "云" });
+phonsem("虜", "虍", "男", 6, "capture; take prisoner");
+simp("虏", "虜", [[6], [0, 6]], {}, { 男: "力" });
 
-// 羅罗 農农 齊齐 乔
-// 壽寿 肅肃 專专 凸凹
-// from simplified character chart
 
 // 终差鸡半贵极内敢底度
 // 由演阴谋段汽肯换抱歉
