@@ -1368,35 +1368,53 @@ phonsem("嘗", "尚", "旨", 8, "try; taste; experience");
 simp("尝", "嘗", [[5], [0, 5]], {}, { 旨: "云" });
 phonsem("虜", "虍", "男", 6, "capture; take prisoner");
 simp("虏", "虜", [[6], [0, 6]], {}, { 男: "力" });
+semphon("抱", "扌", "包", 3, "hold; carry; hug");
+semphon("汽", "氵", "气", 3, "steam; vapor");
+addEtymology("雞", "chicken", "The left component is a pictograph of a chicken. The right component 隹 (bird) was added later.", [iconComponent(O, [0, 10], "Depicts a chicken."), meaningComponent("隹", [10])], "os");
+addEtymology("鸡", "chicken", simplified("雞") + ` The traditional left component was originally a pictograph of a chicken, but in simplified characters it was abbreviated to 又. The traditional 隹 (bird) component was replaced with 鸟, a different character for "bird".`,
+    [simplifiedComponent("又", [0, 2], "Shorthand form of the left component in the traditional character 雞."), meaningComponent("鸟", [2])], "雞:os");
+icon("兮", "(bustling); [exclamatory particle]", "Depicts two lines of air (八) coming from breath (丂).", "b", [iconComponent("八", [0, 2], "Depicts lines of air."), iconComponent("丂", [2], "Depicts breath.")]);
+phonsem("市", "之", "兮", 2, "city; market", "Alludes to the noist bustle (兮) of a city.");
+semsem("制", "木", "刂", 6, "control; regulate; manufacture", "Depicts cutting down a tree (木) with a knife (刂).", "s");
+addEtymology("傷", "injure; wound", "Phonosemantic compound. 亻 and 刀 represent the meaning and 昜 represents the sound.", [meaningComponent("亻", [0, 2]), meaningComponent("刀", [2, 4]), soundComponent("昜", [4])]);
+simp("伤", "傷", [[0, 2], [2, 4], [4]], {}, { 昜: "力" });
+semsem("冬", "夂", "冫", 3, "winter", "Winter is the season when ice (冫) is beneath your feet (夂).");
+icon("圖", "picture; drawing; map", "Pictograph of a map of territory.", "b", [meaningComponent("囗", [0, 2, 13]), iconComponent(O, [2, 13], "Depicts territory drawn on a map.")]);
+simp("图", "圖", [[0, 2, 7], [2, 7]], {}, { [O]: "冬" });
+semsem("討", "言", "寸", 7, "invite; provoke; demand; ask for; denounce", "Depicts using speech (言) and one's hands (寸) to ask for something.");
+simp("讨", "討", [[0, 2], [2]], { 言: "讠" });
+semphon("論", "言", "侖", 7, "opinion; discuss; doctrine");
+simp("论", "論", [[0, 2], [2]], { 言: "讠", 侖: "仑" });
+semphon("亭", "京", "丁", 7, "pavilion; booth; kiosk");
+semphon("停", "亻", "亭", 2, "stop; halt");
 
 
-// 终差鸡半贵极内敢底度
-// 由演阴谋段汽肯换抱歉
-// 市制伤图级讨论傻瓜脸
-// 代停克尽历婚集继颜突
-// 顾遇急宜季举改紧警察
-// 楼况检双连虽传弄毒品
-// 份祝篮街流赛普往低及
-// 假杀密费危险练区般南
-// 境支笔糟香迟断激技术
-// 负责附引则园嘴功卡辆
-// 深阳强烧盘展血腿朵价
-// 观健康旧层队乱哭镜释
-// 料科搬疑甜吸育转甚专
-// 民舒亚典严鞋恐梦矩验
-// 击导蓝误预裤糖疼弃饿
-// 坚夏扫曾斯宣仔犯油爷
-// 养俩武器宝绿叔众春类
-// 拜托压杂获供某质志邮
-// 福竟困宾厨顿恶概帝抓
-// 骗招付派社座丽群胖唯
-// 替赢局治疗丢权统遍产
-// 既棒啤剩判熟悉秋置刷
-// 袋稍微夜澡绩罪戴承冬
-// 列裙团秀碗握散枪签博
-// 温暖形录输瘦念威胁尊
-// 锻炼萄葡例姨族奖降闭
-// 富矮折挂互抽称缺
+// 婚顾连份街流赛往低假
+// 香术附园嘴功卡辆深普
+// 盘展腿朵观察健旧哭镜
+// 料搬育换导裤紧糖扫宣
+// 仔器武警春托压杂乱志
+// 厨终抓差招座群治疗贵
+// 统棒底密度谋刷袋微段
+// 夜澡戴代肯弄歉啤列裙
+// 置团秀傻境碗克握击散
+// 继博突形遇锻葡萄族奖
+// 宜获闭季互改称章况伞
+// 虽翻毒奋型祝餐庭播套
+// 铅闹针矮偶危蕉守般励
+// 竞屋引康甜糟充卫激负
+// 责则测温强价典拾售层
+// 购释乘宽科擦疑追滚甚
+// 透梦叶矩养误牌宝暖疼
+// 爆炸弃饿坚营夏曾劳幽
+// 丝泪升脏斯朝厚犯琴操
+// 爷币俩聚锁叔施素类拜
+// 塑挥弱探供废某敬款付
+// 圈烈降卷竟灭猴困库局
+// 巨阅索概席帝闪赞胸戒
+// 庆派贺社泼唯异折替赢
+// 插撒丢聘权既剩熟稍绩
+// 罪承冬瘦念威胁尊例姨
 // top 1000 done
 
 
