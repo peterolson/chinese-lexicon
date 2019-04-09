@@ -1115,7 +1115,7 @@ icon("易", "easy; amiable; change", `Upside-down version of 益 (increase; bene
     [iconComponent("皿", [0, 4], "Depicts a vessel for holding food or drink."), iconComponent(O, [4], "Depicts food or drink filling up its container.")]);
 semphon("調", "言", "周", 7, "tone; accent; adjust");
 simp("调", "調", [[0, 2], [2]], { "言": "讠" });
-icon("氏", "clan; family", "Origin unclear. Variously explained as a man bowing down or a spoon.", "ob");
+icon("氏", "clan; family", "Pictograph of a man bowing down.", "ob");
 semphon("紙", "糹", "氏", 6, "paper");
 simp("纸", "紙", [[0, 3], [3]], { "糹": "纟" });
 icon("昌", "flourishing; prosperous", `Duplication of the 日 (sun) character, meaning "sunlight". The meaning later shifted to "beautiful" and "flourishing".`, "s", [iconComponent("日", [0, 4]), iconComponent("日", [4])]);
@@ -1387,9 +1387,26 @@ semphon("論", "言", "侖", 7, "opinion; discuss; doctrine");
 simp("论", "論", [[0, 2], [2]], { 言: "讠", 侖: "仑" });
 semphon("亭", "京", "丁", 7, "pavilion; booth; kiosk");
 semphon("停", "亻", "亭", 2, "stop; halt");
+icon("氐", "low; base; root", "Depicts a man bowing down (氏) low to the ground.", "", [iconComponent("氏", [0, 4], "Depicts a man bowing down."), iconComponent(O, [4], "Depicts the ground.")]);
+semsem("昏", "氐", "日", 4, "twilight; muddle-headed", "Depicts the sun (日) down low (氐) during twilight.");
+semphon("婚", "女", "昏", 3, "marry; marriage");
+phonsem("雇", "户", "隹", 4, "employ; hire", `Originally was the name of a type of bird. The current meaning is a phonetic loan.`);
+phonsem("顧", "雇", "頁", 12, "look after; attend to");
+simp("顾", "顧", [[4], [0, 4]], { 頁: "页" });
+semsem("連", "車", "辶", 7, "link; continuous; even", "Depicts a line of man-drawn (辶) carriages (車).");
+simp("连", "連", [[0, 4], [4]], { 車: "车" });
+semphon("份", "亻", "分", 2, "[measure word]; portion; share");
+semphon("街", "行", "圭", [[0, 3, 9], [3, 9]], "street");
+addEtymology("流", "flow", "Depicts an upside-down child (子) being born headfirst with amniotic fluid flowing out.", [meaningComponent("氵", [0, 3]), iconComponent("子", [3, 7], "Depicts an upside-down child being born headfirst."), iconComponent("川", [7], "Depicts amniotic fluid flowing out during childbirth.")]);
+icon("塞", "stop up; squeeze; stuff", "Depicts two hands (廾) stuffing various objects (工) into an enclosed space (宀) and sealing it with clay (土).", "s", [iconComponent("宀", [0, 3]), iconComponent("工", [3, 6]), iconComponent("工", [3, 5, 6, 7]), iconComponent("廾", [7, 10]), iconComponent("土", [10])]);
+phonsem("賽", "塞", "貝", 10, "competition", `貝 (shell) depicts the prize for a competition - shells were used as currency in ancient China.`);
+simp("赛", "賽", [[10], [0, 10]], { 貝: "贝" });
+addEtymology("往", "go towards", "Phonosemantic compound. 彳 and 止 represent the meaning, and 王 represents the sound.", [meaningComponent("彳", [0, 3]), meaningComponent("止", [3, 4], "Abbreviated to a single stroke in the modern form."), soundComponent("王", [4])], "b");
+semphon("低", "亻", "氐", 2, "low; beneath; lower", "", false, true);
+icon("叚", "borrow", "Original form of 假. Depicts one hand (又) borrowing something from another hand (手).", "s", [iconComponent("手", [0, 5]), iconComponent(O, [5, 7], "Depicts an object being borrowed."), iconComponent("又", [7])]);
+semphon("假", "亻", "叚", 2, "fake; false; borrow", "", false, true);
 
 
-// 婚顾连份街流赛往低假
 // 香术附园嘴功卡辆深普
 // 盘展腿朵观察健旧哭镜
 // 料搬育换导裤紧糖扫宣
