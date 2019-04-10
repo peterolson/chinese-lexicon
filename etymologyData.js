@@ -1405,33 +1405,49 @@ addEtymology("往", "go towards", "Phonosemantic compound. 彳 and 止 represent
 semphon("低", "亻", "氐", 2, "low; beneath; lower", "", false, true);
 icon("叚", "borrow", "Original form of 假. Depicts one hand (又) borrowing something from another hand (手).", "s", [iconComponent("手", [0, 5]), iconComponent(O, [5, 7], "Depicts an object being borrowed."), iconComponent("又", [7])]);
 semphon("假", "亻", "叚", 2, "fake; false; borrow", "", false, true);
+semsem("香", "禾", "甘", 5, "fragrant; sweet smelling", "Represents the sweet (甘) smell of fresh grain (禾).");
+icon("朮", "glutinous millet", "Pictograph of millet.", "");
+semphon("術", "行", "朮", [[0, 3, 8], [3, 8]], "method; technique");
+simp("术", "術", [[0, 0], [0]]);
+semsem("付", "亻", "寸", 2, "pay; hand over", "Depicts a hand (寸) giving payment to a person (亻).");
+semphon("附", "阝", "付", 2, "add; attach; be close to");
+semphon("園", "囗", "袁", [[0, 2, 12], [2, 12]], "park; garden");
+semphon("园", "囗", "元", [[0, 2, 6], [2, 6]], "park; garden", simplified("園"));
+phonsem("觜", "此", "角", 6, "mouth; beak; spout", "Original form of 嘴.", true);
+semphon("嘴", "口", "觜", 3, "mouth; beak; spout", "Originally written as 觜. The 口 (mouth) component was added later.", false, true);
+phonsem("功", "工", "力", 3, "skill; merit; achievement");
+semsem("卡", "上", "下", [[0, 3], [2]], "stop; block; be stuck", "Depicts being stuck between something above (上) and something below (下).");
+semphon("輛", "車", "兩", 7, "[vehicle measure word]");
+simp("辆", "輛", [[0, 4], [4]], { "車": "车", "兩": "两" });
+icon("罙", "explore; search out -  tàn", "Depicts a person exploring inside a cave. Original form of 探.", "", [iconComponent("穴", [0, 4]), iconComponent(O, [4], "Depicts a person exploring inside a cave.")]);
+semphon("探", "扌", "罙", 3, "explore; search out", "Originally written as 罙. The 扌 (hand) component was added later.");
+semphon("深", "氵", "罙", 3, "deep");
+phonsem("普", "並", "日", 8, "general; popular; universal", "", true);
 
-
-// 香术附园嘴功卡辆深普
-// 盘展腿朵观察健旧哭镜
-// 料搬育换导裤紧糖扫宣
-// 仔器武警春托压杂乱志
-// 厨终抓差招座群治疗贵
-// 统棒底密度谋刷袋微段
-// 夜澡戴代肯弄歉啤列裙
-// 置团秀傻境碗克握击散
-// 继博突形遇锻葡萄族奖
-// 宜获闭季互改称章况伞
-// 虽翻毒奋型祝餐庭播套
-// 铅闹针矮偶危蕉守般励
-// 竞屋引康甜糟充卫激负
-// 责则测温强价典拾售层
-// 购释乘宽科擦疑追滚甚
-// 透梦叶矩养误牌宝暖疼
-// 爆炸弃饿坚营夏曾劳幽
-// 丝泪升脏斯朝厚犯琴操
-// 爷币俩聚锁叔施素类拜
-// 塑挥弱探供废某敬款付
-// 圈烈降卷竟灭猴困库局
-// 巨阅索概席帝闪赞胸戒
-// 庆派贺社泼唯异折替赢
-// 插撒丢聘权既剩熟稍绩
-// 罪承冬瘦念威胁尊例姨
+// 盘展腿朵观察健旧哭镜 24
+// 料搬育换导裤紧糖扫宣 23
+// 仔器武警春托压杂乱志 22
+// 厨终抓差招座群治疗贵 21
+// 统棒底密度谋刷袋微段 20
+// 夜澡戴代肯弄歉啤列裙 19
+// 置团秀傻境碗克握击散 18
+// 继博突形遇锻葡萄族奖 17
+// 宜获闭季互改称章况伞 16
+// 虽翻毒奋型祝餐庭播套 15
+// 铅闹针矮偶危蕉守般励 14
+// 竞屋引康甜糟充卫激负 13
+// 责则测温强价典拾售层 12
+// 购释乘宽科擦疑追滚甚 11
+// 透梦叶矩养误牌宝暖疼 10
+// 爆炸弃饿坚营夏曾劳幽 9
+// 丝泪升脏斯朝厚犯琴操 8
+// 爷币俩聚锁叔施素类拜 7
+// 塑挥弱探供废某敬款付 6
+// 圈烈降卷竟灭猴困库局 5
+// 巨阅索概席帝闪赞胸戒 4
+// 庆派贺社泼唯异折替赢 3
+// 插撒丢聘权既剩熟稍绩 2
+// 罪承冬瘦念威胁尊例姨 1
 // top 1000 done
 
 
