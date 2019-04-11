@@ -1423,8 +1423,29 @@ icon("罙", "explore; search out -  tàn", "Depicts a person exploring inside a 
 semphon("探", "扌", "罙", 3, "explore; search out", "Originally written as 罙. The 扌 (hand) component was added later.");
 semphon("深", "氵", "罙", 3, "deep");
 phonsem("普", "並", "日", 8, "general; popular; universal", "", true);
+phonsem("般", "凡", "殳", 6, "sort; kind; class", "The original 凡 component was later reanalyzed as 舟 (boat).");
+phonsem("盤", "般", "皿", 10, "plate; dish; tray");
+simp("盘", "盤", [[6], [0, 6]], {}, { 般: "舟" });
+addEtymology("展", "spread out; open", "Origin unclear.", [meaningComponent("尸", [0, 3]), unknownComponent(O, [3], "The meaning of this component is unclear.")]);
+icon("退", "retreat; move back", "Originally a pictograph of a foot (止) retreating back to a safe place. The 辶 (walk) component was added later.", "os", [iconComponent(O, [0, 4], "Depicts a safe place."), iconComponent("止", [4, 6], "Depicts a foot retreating to a safe place."), meaningComponent("辶", [6])]);
+semphon("腿", "⺼", "退", 4, "leg");
+icon("朵", "flower; [measure word]", "Pictograph of a flower.", "s");
+phonsem("觀", "雚", "見", 18, "look at; watch; observe");
+simp("观", "觀", [[2], [0, 2]], { "見": "见" }, { "雚": "又" });
+icon("祭", "offer sacrifice", "Depicts a hand (又) offering meat (⺼) as a sacrifice to a deity (示).", "", [iconComponent("⺼", [0, 4], "Depicts sacrificial meat."), iconComponent("又", [4, 6], "Depicts a hand offering meat as a sacrifice."), meaningComponent("示", [6])]);
+semphon("察", "宀", "祭", 3, "examine; observe", "", true);
+semphon("健", "亻", "建", 2, "healthy; invigorate; strengthen", "", false, true);
+icon("臼", "mortar", "Pictograph of a mortar: a hollow vessel used to crush ingredients.", "s");
+icon("雈", "owl", "Pictograph of an owl.", "s", [iconComponent(O, [0, 4], "Depicts the head of an owl."), iconComponent("隹", [4])]);
+semphon("舊", "雈", "臼", 12, "old", `Based on the original meaning "type of owl". The current meaning is a phonetic loan.`);
+icon("丨", "vertical line");
+simp("旧", "舊", [[0, 1], [1]], {}, { "雈": "丨", "臼": "日" });
+icon("吅", "noisy; uproarious", "Duplicate of 口 (mouth). Depicts multiple mouths making lots of noise.");
+semsem("哭", "吅", "犬", 6, "cry; weep; wail", "Depicts the howl (吅) of a dog (犬).");
+addEtymology("竟", "unexpectedly; actually", "Origin unclear.", [unknownComponent("音", [0, 9]), unknownComponent("人", [9])]);
+semphon("鏡", "釒", "竟", 8, "mirror; lens");
+simp("镜", "鏡", [[0, 5], [5]], { "釒": "钅" });
 
-// 盘展腿朵观察健旧哭镜 24
 // 料搬育换导裤紧糖扫宣 23
 // 仔器武警春托压杂乱志 22
 // 厨终抓差招座群治疗贵 21
