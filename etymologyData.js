@@ -1487,8 +1487,25 @@ icon("亂", "confusion; disorder", "Pictograph of two hands doing work with tang
 addEtymology("乱", "confusion; disorder", simplified("亂") + " The left side of 亂 was simplified to the graphically similar 舌 (tongue).", [simplifiedComponent("舌", [0, 6], "Simplified from the left side of 亂."), iconComponent(O, [6], "Depicts tangled threadwork.")]);
 phonsem("志", "士", "心", 3, "aspiration; ambition; (simp.) sign; record", simplifyMerge("志", "誌", "sign; record"));
 semphon("誌", "言", "志", 7, "sign; mark; record");
+addEtymology("尌", "stand (something) up", "Depicts a hand (寸) cultivating a plant (屮). The sound component 豆 was added later.", [iconComponent("屮", [0, 2], "Depicts a plant sprouting up."), soundComponent("豆", [2, 9], obsoleteSound("尌", "豆")), iconComponent("寸", [9], "Depicts a hand cultivating a plant.")]);
+semphon("廚", "广", "尌", 3, "kitchen");
+simp("厨", "廚", [[0, 2], [2]], { "广": "厂" });
+semphon("終", "糹", "冬", 6, "end; finish");
+simp("终", "終", [[0, 3], [3]], { "糹": "纟" });
+semphon("抓", "扌", "瓜", 3, "grab; catch");
+icon("差", "difference; mistake; fall short", `Depicts grain (麥) being rolled between the fingers in the left hand (左). Based on the original meaning "rub between fingers", now written as 搓. The meaning later shifted to "uneven" and "error".`, "b",
+    [iconComponent("麥", [0, 4]), iconComponent("左", [4])]);
+semphon("招", "扌", "召", 3, "recruit; provoke; trick");
+semphon("座", "广", "坐", 3, "seat; base", "", false, true);
+icon("尹", "administer; oversee", "Depicts a hand (又) holding a staff, held by people in positions of authority.", "b", [iconComponent("又", [0, 3]), iconComponent("丨", [3], "Depicts a staff.")]);
+phonsem("君", "尹", "口", 4, "monarch; ruler; gentleman", "", false, true);
+phonsem("群", "君", "羊", 7, "group; herd; flock");
+semphon("治", "氵", "台", 3, "rule; manage; control", `Originally referred to a body of water in Shandong province. The current meaning is a phonetic loan.`, true);
+semphon("療", "疒", "尞", 5, "treat; cure");
+semphon("疗", "疒", "了", 5, "treat; cure", simplified("療"));
+icon("貴", "expensive; precious; noble", "Pictograph of two hands carrying a shell. (Shells were used in ancient china as currency.)", "s", [iconComponent(O, [0, 5], "Depicts two hands carrying something together."), iconComponent("貝", [5], "Depicts a shell, used as currency in ancient China.")]);
+simp("贵", "貴", [[0, 5], [5]], { 貝: "贝" });
 
-// 厨终抓差招座群治疗贵 21
 // 统棒底密度谋刷袋微段 20
 // 夜澡戴代肯弄歉啤列裙 19
 // 置团秀傻境碗克握击散 18
