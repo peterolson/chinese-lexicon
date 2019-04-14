@@ -1445,8 +1445,33 @@ semsem("哭", "吅", "犬", 6, "cry; weep; wail", "Depicts the howl (吅) of a d
 addEtymology("竟", "unexpectedly; actually", "Origin unclear.", [unknownComponent("音", [0, 9]), unknownComponent("人", [9])]);
 semphon("鏡", "釒", "竟", 8, "mirror; lens");
 simp("镜", "鏡", [[0, 5], [5]], { "釒": "钅" });
+semsem("料", "米", "斗", 6, "material; stuff; grain; feed", "Depicts a dipper (斗) full of rice (米).");
+semphon("搬", "扌", "般", 3, "move; relocate");
+semphon("育", "子", "⺼", 4, "raise children; educate", "The 子 (child) component is upside-down.", true);
+icon("奐", "excellent", "Origin unclear.", "", [unknownComponent(O, [0, 6]), meaningComponent("大", [6])]);
+simp("奂", "奐", [[0, 4], [4]]);
+semphon("換", "扌", "奐", 3, "exchange; change");
+simp("换", "換", [[0, 3], [3]], { 奐: "奂" });
+phonsem("導", "道", "寸", 12, "lead; guide; direct", "", false, true);
+simp("导", "導", [[3], [0, 3]], {}, { 道: "已" });
+semphon("庫", "广", "車", 3, "storehouse", "", true);
+simp("库", "庫", [[0, 3], [3]], { "車": "车" });
+semphon("褲", "衤", "庫", 5, "pants; trousers");
+simp("裤", "褲", [[0, 5], [5]], { 庫: "库" });
+semphon("瞋", "目", "真", 5, "stare at angrily");
+icon("臣", "official; statesman", `Pictograph of an eye, similar to 目. Based on the original meaning "to glare at", now written as 瞋. The current meaning is a phonetic loan.`, "b");
+addEtymology("緊", "tight; strict; tense", "Phonosemantic compound. 臣 represents the sound, while 又 and 糸 represent the meaning.", [soundComponent("臣", [0, 6]), meaningComponent("又", [6, 8], "Depicts a hand tightening a thread."), meaningComponent("糸", [8], "Depicts a thread being tightened.")]);
+simp("紧", "緊", [[0, 2], [2, 4], [4]]);
+icon("庚", "7th heavenly stem", "Origin unclear.");
+phonsem("唐", "庚", "口", 7, "exaggerate; Tang dynasty", "", true);
+semphon("糖", "米", "唐", 6, "sugar; sweets");
+semphon("掃", "扌", "帚", 3, "sweep; clean");
+simp("扫", "掃", [[0, 3], [3]], {}, { "帚": "彐" });
+icon("亙", "extending all the way across; continuous", "Pictograph of continuously revolving circle.", "s");
+simp("亘", "亙");
+semphon("宣", "宀", "亘", 3, "declare; announce", "", true);
 
-// 料搬育换导裤紧糖扫宣 23
+
 // 仔器武警春托压杂乱志 22
 // 厨终抓差招座群治疗贵 21
 // 统棒底密度谋刷袋微段 20
