@@ -1470,9 +1470,24 @@ simp("扫", "掃", [[0, 3], [3]], {}, { "帚": "彐" });
 icon("亙", "extending all the way across; continuous", "Pictograph of continuously revolving circle.", "s");
 simp("亘", "亙");
 semphon("宣", "宀", "亘", 3, "declare; announce", "", true);
+semphon("仔", "亻", "子", 2, "young");
+addEtymology("器", "utensil; tool", "Origin unclear.", [unknownComponent("口", [0, 3]), unknownComponent("口", [3, 6]), unknownComponent("犬", [6, 10]), unknownComponent("口", [10, 13]), unknownComponent("口", [13, 16])]);
+semsem("武", "戈", "止", [[0, 2, 6], [2, 6]], "Depicts marching (止) with a weapon (戈).");
+icon("茍", "cautious; circumspect", "Pictograph of a person kneeling down in respect.", "b");
+semsem("敬", "茍", "攵", 8, "respect; venerate", "Depicts kneeling (茍) and extending one's hands 攵 in respect.");
+phonsem("警", "敬", "言", 12, "alert; warn; police");
+phonsem("春", "屯", "日", 5, "spring");
+icon("乇", "blade of grass", "Origin unclear. Traditionally explained as a pictograph of a blade of grass.");
+semphon("托", "扌", "乇", 3, "prop; support; rest; trust");
+phonsem("壓", "厭", "土", 14, "press; push down; pressure");
+simp("压", "壓", [[2, 5], [0, 2, 5]], { 厭: "厌" });
+semphon("雜", "衣", "集", [[0, 6], [6]], "mixed; miscellaneous");
+simp("杂", "雜", [[0, 2], [2]], {}, { 衣: "九", 集: "木" });
+icon("亂", "confusion; disorder", "Pictograph of two hands doing work with tangled threads.", "bs", [iconComponent("爪", [0, 4]), iconComponent("又", [10, 12]), iconComponent(O, [4, 10, 12], "Depicts tangled threadwork.")]);
+addEtymology("乱", "confusion; disorder", simplified("亂") + " The left side of 亂 was simplified to the graphically similar 舌 (tongue).", [simplifiedComponent("舌", [0, 6], "Simplified from the left side of 亂."), iconComponent(O, [6], "Depicts tangled threadwork.")]);
+phonsem("志", "士", "心", 3, "aspiration; ambition; (simp.) sign; record", simplifyMerge("志", "誌", "sign; record"));
+semphon("誌", "言", "志", 7, "sign; mark; record");
 
-
-// 仔器武警春托压杂乱志 22
 // 厨终抓差招座群治疗贵 21
 // 统棒底密度谋刷袋微段 20
 // 夜澡戴代肯弄歉啤列裙 19
