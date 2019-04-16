@@ -1505,8 +1505,28 @@ semphon("療", "疒", "尞", 5, "treat; cure");
 semphon("疗", "疒", "了", 5, "treat; cure", simplified("療"));
 icon("貴", "expensive; precious; noble", "Pictograph of two hands carrying a shell. (Shells were used in ancient china as currency.)", "s", [iconComponent(O, [0, 5], "Depicts two hands carrying something together."), iconComponent("貝", [5], "Depicts a shell, used as currency in ancient China.")]);
 simp("贵", "貴", [[0, 5], [5]], { 貝: "贝" });
+addEtymology("充", "fill; satisfy", "Origin unclear. The 子 (child) component is upside-down.", [unknownComponent("子", [0, 4]), unknownComponent("儿", [4])]);
+semphon("統", "糹", "充", 6, "gather; unite");
+simp("统", "統", [[0, 3], [3]], { "糹": "纟" });
+semphon("奉", "廾", "丰", [[2, 5], [0, 2, 5]], "offer tribute; present", "", false, false, false, "s");
+semphon("棒", "木", "奉", 4, "stick; club; wornderful");
+semphon("底", "广", "氐", 3, "bottom; end; background");
+semphon("宓", "宀", "必", 3, "still; silent");
+phonsem("密", "宓", "山", 8, "secret");
+phonsem("度", "石", "又", 7, "measure; degree", "", true);
+semphon("梅", "木", "每", 4, "plum");
+semsem("某", "甘", "木", 5, "some; such-and-such", `Depicts a sweet (甘) fruit in a tree (木). Based on the original meaning "plum", now written as 梅. The current meaning is a phonetic loan.`);
+semphon("謀", "言", "某", 7, "plan; scheme");
+simp("谋", "謀", [[0, 2], [2]], { 言: "讠" });
+addEtymology("刷", "brush; scrub", "The left component is a pictograph of a brush. The 刂 (knife) component indicates that it is a tool/utensil.", [iconComponent(O, [0, 6], "Depicts a brush."), meaningComponent("刂", [6])]);
+semphon("代", "亻", "弋", 2, "act on behalf; replace", "", true);
+phonsem("袋", "代", "衣", 5, "bag; sack");
+addEtymology("微", "tiny; slightly", "Origin unclear.", [unknownComponent("彳", [0, 3]), unknownComponent("美", [3, 9], "Side view of 美, a person with ornamental headwar resembling sheep horns."), unknownComponent("攵", [9])]);
+icon("段", "section; stage; length", `Pictograph of a hand holding a forging hammer (殳) and hitting a stone (石). Based on the original meaning "forge", now written as 鍛. The current meaning is a phonetic loan.`, "b", [iconComponent("石", [0, 5]), iconComponent("殳", [5], "Here depicts a hand holding a hammer.")]);
+semphon("鍛", "金", "段", 8, "forge");
+simp("锻", "鍛", [[0, 5], [5]], { 金: "钅" });
 
-// 统棒底密度谋刷袋微段 20
+
 // 夜澡戴代肯弄歉啤列裙 19
 // 置团秀傻境碗克握击散 18
 // 继博突形遇锻葡萄族奖 17
