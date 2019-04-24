@@ -1525,9 +1525,25 @@ addEtymology("微", "tiny; slightly", "Origin unclear.", [unknownComponent("彳"
 icon("段", "section; stage; length", `Pictograph of a hand holding a forging hammer (殳) and hitting a stone (石). Based on the original meaning "forge", now written as 鍛. The current meaning is a phonetic loan.`, "b", [iconComponent("石", [0, 5]), iconComponent("殳", [5], "Here depicts a hand holding a hammer.")]);
 semphon("鍛", "金", "段", 8, "forge");
 simp("锻", "鍛", [[0, 5], [5]], { 金: "钅" });
+icon("亦", "also", `Pictograph of a person, with two dots at the armpits. Based on the original meaning "armpit", now written as 腋. The current meaning is a phonetic loan.`, "o",
+    [iconComponent("大", [0, 4], "Depicts a person."), iconComponent(O, [4], "Indicates the location of the armpits.")]);
+phonsem("夜", "亦", "夕", [[0, 4, 7], [4, 7]], "night");
+semphon("腋", "⺼", "夜", 4, "armpit", "Originally written as 亦.");
+semsem("喿", "品", "木", 9, "chirping of birds", "Depicts three mouths (品) of birds chirping atop a tree (木).");
+semphon("澡", "氵", "喿", 3, "bath; shower");
+semsem("災", "宀", "火", 3, "disaster; calamity", "Depicts a fire (火) burning a building (宀).");
+semsem("灾", "宀", "火", 3, "disaster; calamity", "Depicts a fire (火) burning a building (宀).");
+addEtymology("𢦔", "disaster; calamity", `Archaic variant of 灾. Phonosemantic compound. 才 (cái) represents the sound and 戈 (weapon) represents the meaning, alluding to a war calamity.`);
+addEtymology("戴", "put on; wear", `Depicts a pair of hands (共) putting something on top of the head. The 𢦔 component represents the sound.`, [soundComponent("𢦔", [0, 3, 14]), iconComponent(O, [3, 8], "Depicts something put on top of the head."), iconComponent("共", [8, 14], "Depicts two hands putting something on top of the head.")], "s");
+semsem("肯", "冎", "肉", 4, `Based on the origin meaning "meat (肉) attached to a bone (冎)". The current meaning is a phonetic loan. The 冎 (bone) component was later reanalyzed as 止 (foot).`);
+semsem("弄", "玉", "廾", 4, "handle; play with; fix", `Depicts a pair of hands (廾) playing with a jade object (玉).`);
+icon("兼", "double; twice", `Depicts a hand (又) holding two stalks of grain (禾).`, "s", [iconComponent("禾", [0, 1, 2, 3, 6, 7, 8, 9]), iconComponent("禾", [1, 3, 7, 8, 9]), iconComponent("又", [3, 6])]);
+phonsem("歉", "兼", "欠", 10, "apologize; regret");
+icon("卑", "low; base", "Pictograph of a hand holding the base of an object.", "s");
+semphon("啤", "口", "卑", 3, "beer", "", true);
+phonsem("列", "歹", "刂", 4, "arrange; line up; series", "", true);
+semphon("裙", "衤", "君", 5, "skirt");
 
-
-// 夜澡戴代肯弄歉啤列裙 19
 // 置团秀傻境碗克握击散 18
 // 继博突形遇锻葡萄族奖 17
 // 宜获闭季互改称章况伞 16
