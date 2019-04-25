@@ -73,7 +73,7 @@ simp("儿", "兒");
 icon("兄", "elder brother", "Pictograph of a mouth on top of a person, representing an older brother giving orders.", "obs", [iconComponent("口", [0, 3]), iconComponent("人", [3])]);
 icon("兌", "exchange", "Pictograph of words coming out of the mouth of a person, representing negotiation of an exchange.", "obs", [iconComponent("八", [0, 2], "Represents words coming out of the mouth."), iconComponent("口", [2, 5]), iconComponent("人", [5])]);
 simp("兑", "兌");
-icon("八", "eight", "Pictograph of two lines facing away from each other. " + soundLoan("eight", "separate", "别"), "b");
+icon("八", "eight; (separate)", "Pictograph of two lines facing away from each other. " + soundLoan("eight", "separate", "别"), "b");
 semphon("说", "讠", "兑", 2, "speak; say");
 semphon("說", "言", "兌", 7, "speak; say");
 icon("力", "strength; power", "Pictograph of a plow, representing strength", "bs");
@@ -1543,8 +1543,28 @@ icon("卑", "low; base", "Pictograph of a hand holding the base of an object.", 
 semphon("啤", "口", "卑", 3, "beer", "", true);
 phonsem("列", "歹", "刂", 4, "arrange; line up; series", "", true);
 semphon("裙", "衤", "君", 5, "skirt");
+semphon("置", "网", "直", 5, "install; place; put");
+semphon("團", "囗", "專", [[0, 2, 13], [2, 13]], "ball; circle; group");
+simp("团", "團", [[0, 2, 5], [2, 5]], {}, { 專: "才" });
+addEtymology("秀", "elegant; refined; bloom", `Based on the original meaning "to blossom/bloom". The 禾 (plant) component depicts a blossoming plant. The purpose of the bottom 乃 component is unclear.`,
+    [meaningComponent("禾", [0, 5]), unknownComponent("乃", [5])]);
+icon("凶", "vicious; ominous", "Pictograph of a trap in the ground.");
+semsem("兇", "凶", "卩", 4, "terrible; fierce", "Depicts a vicious (凶) person (卩).");
+addEtymology("傻", "stupid; foolish", "Origin unclear. Possibly a combination of 亻 (person) 囟 (head) 八 (separate) and 夂 (foot).", [
+    meaningComponent("亻", [0, 2]), meaningComponent("囟", [2, 8]), meaningComponent("八", [8, 10]), meaningComponent("夂", [10])]);
+semphon("境", "土", "竟", 3, "boundary; region; place");
+semsem("夗", "夕", "卩", 3, "turn over when asleep", "Depicts a person (卩) turning around at night (夕) in their sleep.");
+semphon("宛", "宀", "夗", 3, "crooked; winding");
+semphon("碗", "石", "宛", 5, "bowl; cup");
+icon("克", "be able to; overcome; subdue", "Pictograph of a person (人) carrying a heavy weight on their back.", "s", [iconComponent(O, [0, 5], "Depicts a heavy load being carried on the back."), iconComponent("人", [5])]);
+addEtymology("屋", "house; room", `Origin unclear. 尸 might be used here because it looks similar to 户 (door). 至 might be used here because it is a component in 室 (room).`,
+    [unknownComponent("尸", [0, 3], "Possibly used here since it is similar to 户 (door)."), unknownComponent("至", [3], "Possibly used here as a remnant of 室 (room).")]);
+semphon("握", "扌", "屋", 3, "hold; grasp");
+addEtymology("擊", "hit; strike", "Depicts a hand (手) hitting something with a spear (殳).", [unknownComponent(O, [0, 9], `Possibly depicts a part of a chariot (車) being attacked.`), iconComponent("殳", [9, 13]), iconComponent("手", [13])]);
+simp("击", "擊", [[0], [0, 0], [0, 0]]);
+addEtymology("散", "scatter; break apart", "Depicts hitting (攵) bamboo (竹) to break it apart. The purpose of the 月 component is unclear.", [meaningComponent("竹", [0, 4]), unknownComponent("月", [4, 8]), meaningComponent("攵", [8])]);
 
-// 置团秀傻境碗克握击散 18
+
 // 继博突形遇锻葡萄族奖 17
 // 宜获闭季互改称章况伞 16
 // 虽翻毒奋型祝餐庭播套 15
