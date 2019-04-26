@@ -343,7 +343,7 @@ icon("吏", "government official", shiDescription, "obs", [unknownComponent(O, [
 icon("使", "cause; use; instruct", shiDescription, "obs", [meaningComponent("亻", [0, 2]), unknownComponent(O, [2, 7], shiObject), iconComponent("又", [7], "Depicts a hand.")]);
 icon("事", "matter; work; affair", shiDescription, "obs", [unknownComponent(O, [0, 4, 7], shiObject), iconComponent("又", [4, 7], "Depicts a hand.")]);
 phonsem("您", "你", "心", 7, "you", "", false, true);
-icon("𡈼", "stand upright (tǐng)", "Pictograph of a person standing upright.", "o");
+icon("𡈼", "stand upright", "Pictograph of a person standing upright.", "o");
 icon("廴", "long stride", "Depicts a long stride. ", "s");
 phonsem("廷", "𡈼", "廴", 4, "palace courtyard");
 semphon("挺", "扌", "廷", 3, "erect; stick out");
@@ -386,7 +386,7 @@ semphon("殘", "歹", "戔", 4, "destroy; injure");
 simp("残", "殘");
 semphon("錢", "金", "戔", 8, "money");
 simp("钱", "錢", [[0, 5], [5]]);
-icon("䧹", "eagle (yīng)", "Pictograph of an eagle perched on a branch. Original form of 鷹.", "o", [iconComponent("爿", [0, 5], "Depicts a branch."), iconComponent("隹", [5])]);
+icon("䧹", "eagle", "Pictograph of an eagle perched on a branch. Original form of 鷹.", "o", [iconComponent("爿", [0, 5], "Depicts a branch."), iconComponent("隹", [5])]);
 icon("片", "slice; thin piece", "Pictograph of a slice of a tree, taken from the right half of 木 (tree).");
 icon("爿", "piece of wood", "Mirror image of 片 (slice; thin piece). Pictograph of a slice of a tree, taken from the left half of 木 (tree).")
 icon("鳥", "bird", "Pictograph of a bird.", "obs");
@@ -613,7 +613,7 @@ semphon("魑", "鬼", "离", 9, "mountain demon");
 icon("長", "long; grow; elder", "Pictograph of a person with long hair.", "obs");
 simp("长", "長", null, {}, {}, true);
 icon("丱", "two tufts of hair; young", "Pictograph of a child's hairstyle with two tufts.");
-icon("𢇇", "weave threads - guān", "Depicts weaving threads (𢆶) through a weaving shuttle (丱).");
+icon("𢇇", "weave threads", "Depicts weaving threads (𢆶) through a weaving shuttle (丱).");
 semphon("關", "門", "𢇇", 8, "shut; turn off; involve");
 simp("关", "關", [[0, 0], [0]], {}, { "𢇇": "关" }, true);
 semphon("聯", "耳", "𢇇", 6, "connect; join; unite", "Depicts earrings joined to the ear.", true);
@@ -908,7 +908,7 @@ semphon("号", "口", "丂", 3, "roar; cry; number", simplified("號"), false, t
 phonsem("號", "号", "虎", 5, "roar; cry; number", "", false, true);
 semphon("記", "言", "己", 7, "record; remember; note");
 simp("记", "記", [[0, 2], [2]], { 言: "讠" });
-icon("辡", "dispute; argue; discuss - biàn", "Old variant form of 辯. Duplicate of 辛 (laborious; suffering) - possibly used because disputes are often unpleasant.");
+icon("辡", "dispute; argue; discuss", "Old variant form of 辯. Duplicate of 辛 (laborious; suffering) - possibly used because disputes are often unpleasant.");
 semphon("辯", "言", "辡", [[7, 14], [0, 7, 14]], "dispute; argue; discuss", "", false, true);
 simp("辩", "辯", [[7, 9], [0, 7, 9]], { 言: "讠" });
 semphon("辦", "力", "辡", [[7, 9], [0, 7, 9]], "do; manage; deal with");
@@ -940,7 +940,7 @@ icon("囱", "window; chimney", "Variant form of 囪, which is a pictograph of a 
 phonsem("悤", "囱", "心", 7, "hurried; hasty");
 semphon("總", "糹", "悤", 6, "always; assemble; gather", `Based on the meaning "put together", since thread (糹) is used to put things together.`);
 simp("总", "總", [[0, 1], [1]]);
-addEtymology("䜌", "chaotic - luán", "Phonosemantic compound. Two threads (糸 + 糸) represent the meaning and 言 represents the sound.");
+addEtymology("䜌", "chaotic", "Phonosemantic compound. Two threads (糸 + 糸) represent the meaning and 言 represents the sound.");
 phonsem("變", "䜌", "夂", 19, "change; become different", "", true);
 simp("变", "變", [[6], [0, 6]]);
 semsem("拿", "合", "手", 6, "hold; take", "Depicts bringing the hands (手) together (合) to hold (拿) something.");
@@ -995,7 +995,7 @@ phonsem("部", "咅", "⻏", 8, "department; division; part");
 addEtymology("受", "receive; accept", "Depicts something being passed from one hand to another hand. Originally the middle component was the phonetic 舟 (boat), but it was later abbreviated.",
     [iconComponent("又", [0, 4]), soundComponent("舟", [4, 6]), iconComponent("又", [6])], "bs");
 semphon("活", "氵", "舌", 3, "live; alive; work", "", true);
-addEtymology("䖒", "ancient bean-shaped earthenware - xī", "Phonosemantic compound. 虍 (hū; tiger) represents the sound and 豆 (bean) represents the meaning.");
+addEtymology("䖒", "ancient bean-shaped earthenware", "Phonosemantic compound. 虍 (hū; tiger) represents the sound and 豆 (bean) represents the meaning.");
 phonsem("戲", "䖒", "戈", 13, "play; trick; drama");
 simp("戏", "戲", [[2], [0, 2]], {}, { "䖒": "又" });
 icon("皿", "dish; vessel", "Pictograph of a container for holding food.", "obs");
@@ -1130,7 +1130,7 @@ semphon("復", "彳", "复", 3, "return; repeat; restore", "Originally written a
 semphon("複", "衤", "复", 5, "double; repeat; duplicate");
 icon("襾", "cover", "Pictograph of a cover.", "s");
 semphon("覆", "襾", "復", 6, "cover; overflow");
-addEtymology("㒼", "sealed; blocked - mán", "Origin unclear. The top part may depict a cap or seal, and 兩 is possibly a phonetic component.", [iconComponent(O, [0, 3], "May depict a cap or seal."), soundComponent("兩", [3], "May be an outdated sound component.")]);
+addEtymology("㒼", "sealed; blocked", "Origin unclear. The top part may depict a cap or seal, and 兩 is possibly a phonetic component.", [iconComponent(O, [0, 3], "May depict a cap or seal."), soundComponent("兩", [3], "May be an outdated sound component.")]);
 semphon("滿", "氵", "㒼", 3, "fill; full; satistied");
 simp("满", "滿");
 icon("鳳", "phoenix", "Pictograph of a mythical Chinese bird, similar to a phoenix. The bottom part of the character was later adapted to look similar to 鳥 (bird).", "obs", [iconComponent(O, [0, 3], "Depicts the head and back of a phoenix."), iconComponent("鳥", [3])]);
@@ -1197,7 +1197,7 @@ simp("尧", "堯", [[0, 1], [1, 2], [2, 3], [3]]);
 icon("僉", "all", "Depicts multiple people (人) opening their mouths (口) to speak together, representing the meaning \"together\" or \"all\".", "s",
     [iconComponent(O, [0, 3], "Depicts speech coming out of the mouth."), iconComponent("口", [3, 6]), iconComponent("口", [6, 9]), iconComponent("人", [9, 11]), iconComponent("人", [11])]);
 simp("佥", "僉", [[0, 3], [3, 5], [5, 6], [6], [6]]);
-icon("尞", "burn; set on fire - liáo", `Original form of 燎 (burn; set on fire). Originally written as 木 (wood) with several dots around it, representing flame. The 日 (sun) and 火 (fire) components were added later.`, "obs",
+icon("尞", "burn; set on fire", `Original form of 燎 (burn; set on fire). Originally written as 木 (wood) with several dots around it, representing flame. The 日 (sun) and 火 (fire) components were added later.`, "obs",
     [iconComponent("木", [0, 3]), iconComponent(O, [3, 5], "Depicts dots of flame."), meaningComponent("日", [5, 9]), meaningComponent("火", [9])]);
 semphon("燎", "火", "尞", 4, "burn; set on fire", "", false, true);
 icon("屮", "sprout", "Half of 艸 (grass).");
@@ -1221,12 +1221,12 @@ addEtymology("旬", "ten-day period; period of time", "Originally a pictograph o
 icon("敝", "ruined; shabby", "Depicts shabby clothes that have been beaten down.", "", [iconComponent(O, [0, 7], "Depicts ruined clothes."), meaningComponent("攵", [7])]);
 icon("弗", "not", "A curved shape crossed out by two lines.", "b");
 icon("允", "just; fair; allow", "Pictograph of a person nodding their head in agreement.", "obs", [iconComponent(O, [0, 2], "Depicts a person's head."), iconComponent("人", [2])]);
-phonsem("夋", "允", "夂", 4, "dawdle; flat-footed - qūn");
+phonsem("夋", "允", "夂", 4, "dawdle; flat-footed");
 semsem("奄", "大", "电", 3, "sudden; abrupt; surround; cover", "Lightning (电) is a big (大) and sudden and abrupt phenomenon.");
 icon("冊", "book", "Pictograph of strips of bamboo strung together. In ancient China writing was done on bamboo strips.", "ob");
 simp("册", "冊");
 icon("扁", "flat; tablet", "Pictograph of a tablet affixed to a door.", "", [iconComponent("户", [0, 4]), iconComponent("冊", [4], "Depicts a flat thing affixed to a door.")]);
-icon("畐", "full; filled - fú", "Pictograph of a container full of something.", "bs");
+icon("畐", "full; filled", "Pictograph of a container full of something.", "bs");
 icon("亢", "high; firm; overbearing", "Pictograph of a person with a line through their legs. Original meaning unclear.", "bs");
 icon("支", "support; raise; sustain", "Pictograph of a hand (又) lifting a piece of bamboo (个).", "s", [iconComponent("个", [0, 2], "Depicts a piece of bamboo being lifted,"), iconComponent("又", [2])]);
 icon("及", "and; extend; reach; in time for", "Pictograph of a hand (又) reaching to grab a person (人).", "obs", [iconComponent("人", [0, 2]), iconComponent("又", [1])]);
@@ -1449,7 +1449,7 @@ phonsem("功", "工", "力", 3, "skill; merit; achievement");
 semsem("卡", "上", "下", [[0, 3], [2]], "stop; block; be stuck", "Depicts being stuck between something above (上) and something below (下).");
 semphon("輛", "車", "兩", 7, "[vehicle measure word]");
 simp("辆", "輛", [[0, 4], [4]], { "車": "车", "兩": "两" });
-icon("罙", "explore; search out -  tàn", "Depicts a person exploring inside a cave. Original form of 探.", "", [iconComponent("穴", [0, 4]), iconComponent(O, [4], "Depicts a person exploring inside a cave.")]);
+icon("罙", "explore; search out", "Depicts a person exploring inside a cave. Original form of 探.", "", [iconComponent("穴", [0, 4]), iconComponent(O, [4], "Depicts a person exploring inside a cave.")]);
 semphon("探", "扌", "罙", 3, "explore; search out", "Originally written as 罙. The 扌 (hand) component was added later.");
 semphon("深", "氵", "罙", 3, "deep");
 phonsem("普", "並", "日", 8, "general; popular; universal", "", true);
@@ -7406,6 +7406,58 @@ semphon("薄", "艹", "溥", 3, `thin, slight; meager, weak; poor, stingy`);
 semphon("洶", "氵", "匈", 3, `turbulent, torrential, restless`);
 // 4597	簿: bù 溥 pǔ	⺮ bamboo; flute
 semphon("簿", "⺮", "溥", 6, `register, notebook, account book`);
+
+let pinyins = {
+    "◎": "xx",
+    "覀": "xx",
+    "冎": "guǎ|gua",
+    "𢆶": "yōu|you",
+    "𣏟": "má|ma",
+    "枼": "yè|ye",
+    "𡈼": "tǐng|ting",
+    "䧹": "yīng|ying",
+    "屰": "nì|ni",
+    "㡿": "chì|chi",
+    "𢇇": "guān|guan",
+    "𠂤": "duī|dui",
+    "㚔": "niè|nie",
+    "㫃": "yǎn|yan",
+    "𠂇": "zuǒ|zuo",
+    "辡": "biàn|bian",
+    "䜌": "luán|luan",
+    "䖒": "xī|xi",
+    "㒼": "mán|man",
+    "尞": "liáo|liao",
+    "䇂": "qiān|qian",
+    "夋": "qūn|qun",
+    "畐": "fú|fu",
+    "𣶒": "yuān|yuan",
+    "叀": "zhuān|zhuan",
+    "罙": "tàn|tan",
+    "𢦔": "zāi|zai",
+    "龰": "zhǐ|zhi",
+    "灬": "huǒ|huo",
+    "⺗": "xīn|xin",
+    "⺼": "ròu|rou",
+    "钅": "jīn|jin",
+    "釒": "jīn|jin",
+    "犭": "quǎn|quan",
+    "纟": "mì|mi",
+    "糹": "mì|mi",
+    "衤": "yī|yi",
+    "𤣩": "yù|yu",
+    "礻": "shì|shi",
+    "阝": "fù|fu",
+    "⻏": "yì|yi",
+    "攵": "pū|pu",
+    "耂": "lǎo|lao",
+}
+
+for (let char in pinyins) {
+    let [formatted, searchable] = pinyins[char].split("|");
+    etymologies[char].pinyin = formatted;
+    etymologies[char].searchablePinyin = searchable || formatted;
+}
 
 if (typeof module !== "undefined") {
     module.exports = etymologies;
