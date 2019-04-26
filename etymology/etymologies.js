@@ -1,3 +1,33 @@
+if (typeof require !== "undefined") {
+    ({
+        etymologies,
+        addEtymology,
+        semsem,
+        semphon,
+        phonsem,
+        icon,
+        meaningComponent,
+        soundComponent,
+        simplifiedComponent,
+        iconComponent,
+        unknownComponent,
+        shiftMeaning,
+        obsoleteMeaning,
+        obsoleteSound,
+        alsoMeaning,
+        soundLoan,
+        simplifyMerge,
+        cursive,
+        shorthand,
+        simp,
+        simplified,
+        unknownComonentNote,
+        radicals,
+        radicalNote,
+        O
+    } = require("./etymologyCommands"));
+}
+
 icon(O, "characterless component", "Placeholder for components that are unknown objects or for which a character does not exist.");
 icon("覀", "[character component]", "覀 is a character component that does not have any meaning on its own. Represents two hands grabbing a waist in the character 要.")
 semsem("好", "女", "子", 3, "good; to like, love", "It is good (好) for a woman (女) and her child (子) to be together.");
@@ -7376,3 +7406,7 @@ semphon("薄", "艹", "溥", 3, `thin, slight; meager, weak; poor, stingy`);
 semphon("洶", "氵", "匈", 3, `turbulent, torrential, restless`);
 // 4597	簿: bù 溥 pǔ	⺮ bamboo; flute
 semphon("簿", "⺮", "溥", 6, `register, notebook, account book`);
+
+if (typeof module !== "undefined") {
+    module.exports = etymologies;
+}

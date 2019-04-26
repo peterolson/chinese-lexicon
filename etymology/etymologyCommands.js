@@ -1,3 +1,7 @@
+if (typeof require !== "undefined") {
+    etymologyImages = require("./etymologyImages");
+}
+
 let O = "◎";
 
 let etymologies = {};
@@ -296,4 +300,34 @@ function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, ch
         simplifiedEtymology.images = (simplifiedEtymology.images || []).concat(getImages("tc", traditionalChar));
     }
     etymologies[simplifiedChar] = simplifiedEtymology;
+}
+
+if (typeof module !== "undefined") {
+    module.exports = {
+        etymologies,
+        addEtymology,
+        semsem,
+        semphon,
+        phonsem,
+        icon,
+        meaningComponent,
+        soundComponent,
+        simplifiedComponent,
+        iconComponent,
+        unknownComponent,
+        shiftMeaning,
+        obsoleteMeaning,
+        obsoleteSound,
+        alsoMeaning,
+        soundLoan,
+        simplifyMerge,
+        cursive,
+        shorthand,
+        simp,
+        simplified,
+        unknownComonentNote,
+        radicals,
+        radicalNote,
+        O
+    }
 }

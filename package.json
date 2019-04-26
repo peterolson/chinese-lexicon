@@ -1,0 +1,28 @@
+{
+  "name": "chinese-lexicon",
+  "version": "1.0.0",
+  "description": "Chinese lexicon containing definitions, character origins, and statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterolson/chinese-lexicon.git"
+  },
+  "keywords": [
+    "chinese",
+    "lexicon",
+    "dictionary",
+    "character",
+    "origins",
+    "statistics",
+    "gloss"
+  ],
+  "author": "Peter Olson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterolson/chinese-lexicon/issues"
+  },
+  "homepage": "https://github.com/peterolson/chinese-lexicon#readme"
+}
