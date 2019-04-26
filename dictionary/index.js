@@ -1,7 +1,7 @@
 let fs = require("fs");
 let formatPinyin = require("./formatPinyin");
 
-let lines = String(fs.readFileSync("./dictionary/cedict_ts.u8")).split("\r\n");
+let lines = String(require("./cedict")).split("\n");
 
 function formatDefinition(text) {
     return text.replace(/\[[ A-Za-z:0-9]+\]/g, x => `[${formatPinyin(x.slice(1, -1))}]`);

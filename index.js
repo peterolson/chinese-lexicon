@@ -87,7 +87,3 @@ function search(term, limit) {
     return index.search(term).slice(0, limit).map(x => ({ ...x, ...entries[x.ref] }));
 
 }
-
-console.log(search("Hello", 1));
-console.log(search("cowboy", 2));
-console.log(search("weishenme", 3));
