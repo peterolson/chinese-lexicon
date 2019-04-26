@@ -37,6 +37,11 @@ for (let char in etymologies) {
     }
 }
 
+function getBoost(x) {
+    if (!x) return 0;
+    return Math.log(x + 1);
+}
+
 for (let entry of entries) {
     let { simp, trad } = entry;
     if (simp in etymologies) {
@@ -46,15 +51,21 @@ for (let entry of entries) {
         entry.tradEtymology = etymologies[trad];
     }
     entry.statistics = getStatistics(entry);
+    let { hskLevel, movieWordCount, movieCharCount, bookWordCount, bookCharCount, pinyinFrequency } = entry.statistics;
+    entry.boost = (7 - hskLevel) + getBoost(movieWordCount) + getBoost(movieCharCount) + getBoost(bookWordCount) + getBoost(bookCharCount) + getBoost(pinyinFrequency);
 }
 
-function getBoost(x) {
-    if (!x) return 0;
-    return Math.log(x + 1);
+for (let word in simpDict) {
+    simpDict[word].sort((a, b) => b.boost - a.boost);
 }
+
+for (let word in tradDict) {
+    tradDict[word].sort((a, b) => b.boost - a.boost);
+}
+
 
 console.log("Building search index...");
-
+/*
 let index = lunr(function () {
     this.field("simp");
     this.field("trad");
@@ -65,8 +76,7 @@ let index = lunr(function () {
     for (let i = 0; i < entries.length; i++) {
         let entry = entries[i];
         let etymology = (((entry.simpEtymology || {}).notes || "") + " " + ((entry.tradEtymology || {}).notes || "")).trim();
-        let { hskLevel, movieWordCount, movieCharCount, bookWordCount, bookCharCount, pinyinFrequency } = entry.statistics;
-        let boost = (7 - hskLevel) + getBoost(movieWordCount) + getBoost(movieCharCount) + getBoost(bookWordCount) + getBoost(bookCharCount) + getBoost(pinyinFrequency);
+        let boost = entry.boost;
         this.add({
             id: i,
             simp: entry.simp,
@@ -78,12 +88,26 @@ let index = lunr(function () {
                 boost
             });
     }
-});
+});*/
 
 console.log("Ready!");
 
 function search(term, limit) {
     limit = limit || 100;
     return index.search(term).slice(0, limit).map(x => ({ ...x, ...entries[x.ref] }));
-
 }
+
+function getEntries(word) {
+    let matchingEntries = simpDict[word] || tradDict[word];
+    return matchingEntries || [];
+}
+
+let getGloss = require("./gloss")(getEntries);
+
+module.exports = {
+    simpDict,
+    tradDict,
+    getEntries,
+    getGloss,
+    search
+};
