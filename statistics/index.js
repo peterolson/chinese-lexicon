@@ -12,8 +12,10 @@ let bookWordFrequencies = require("./bookWordFrequency");
 let bookWordCount = 16560059569;
 
 let getHSKLevel = require("./hsk");
+let pinyinFrequency = require("./pinyinFrequency");
 
-function getStatistics(word) {
+function getStatistics(entry) {
+    let word = entry.simp;
     let statistics = {
         hskLevel: getHSKLevel(word)
     };
@@ -22,6 +24,11 @@ function getStatistics(word) {
     if (word.length === 1) {
         addStatistic(statistics, movieCharFrequencies, "movieChar", word, movieCharCount, movieContextCount);
         addStatistic(statistics, bookCharFrequencies, "bookChar", word, bookCharCount);
+    }
+    if (pinyinFrequency[entry.trad + entry.pinyin]) {
+        statistics.pinyinFrequency = +pinyinFrequency[entry.trad + entry.pinyin];
+    } else if (pinyinFrequency[entry.simp + entry.pinyin]) {
+        statistics.pinyinFrequency = +pinyinFrequency[entry.simp + entry.pinyin];
     }
     return statistics;
 }

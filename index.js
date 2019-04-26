@@ -1,3 +1,5 @@
+console.log("Importing data...");
+
 let etymologies = require("./etymology");
 let entries = require("./dictionary");
 let getStatistics = require("./statistics");
@@ -5,6 +7,8 @@ let lunr = require("lunr");
 
 let simpDict = {};
 let tradDict = {};
+
+console.log("Combining data...");
 
 for (let entry of entries) {
     let { simp, trad } = entry;
@@ -41,9 +45,15 @@ for (let entry of entries) {
     if (trad !== simp && trad in etymologies) {
         entry.tradEtymology = etymologies[trad];
     }
-    entry.statistics = getStatistics(simp);
-    console.log(simp, entry.statistics);
+    entry.statistics = getStatistics(entry);
 }
+
+function getBoost(x) {
+    if (!x) return 0;
+    return Math.log(x + 1);
+}
+
+console.log("Building search index...");
 
 let index = lunr(function () {
     this.field("simp");
@@ -55,6 +65,8 @@ let index = lunr(function () {
     for (let i = 0; i < entries.length; i++) {
         let entry = entries[i];
         let etymology = (((entry.simpEtymology || {}).notes || "") + " " + ((entry.tradEtymology || {}).notes || "")).trim();
+        let { hskLevel, movieWordCount, movieCharCount, bookWordCount, bookCharCount, pinyinFrequency } = entry.statistics;
+        let boost = (7 - hskLevel) + getBoost(movieWordCount) + getBoost(movieCharCount) + getBoost(bookWordCount) + getBoost(bookCharCount) + getBoost(pinyinFrequency);
         this.add({
             id: i,
             simp: entry.simp,
@@ -62,10 +74,20 @@ let index = lunr(function () {
             pinyin: entry.searchablePinyin,
             definition: entry.definitions.join("; "),
             etymology
-        });
+        }, {
+                boost
+            });
     }
 });
 
-console.log(index.search("love").slice(0, 10).map(x => entries[x.ref]));
-console.log(index.search("sad").slice(0, 10).map(x => entries[x.ref]));
-console.log(index.search("buttocks").slice(0, 10).map(x => entries[x.ref]));
+console.log("Ready!");
+
+function search(term, limit) {
+    limit = limit || 100;
+    return index.search(term).slice(0, limit).map(x => ({ ...x, ...entries[x.ref] }));
+
+}
+
+console.log(search("Hello", 1));
+console.log(search("cowboy", 2));
+console.log(search("weishenme", 3));
