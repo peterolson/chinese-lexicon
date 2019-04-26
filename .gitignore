@@ -1,3 +1,4 @@
 /svg
 *.code-workspace
 /private
+/node_modules

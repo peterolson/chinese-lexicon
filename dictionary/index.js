@@ -15,7 +15,7 @@ for (let line of lines) {
     }
     let [head, tail] = line.split("] ");
     let [chars, pinyin] = head.split(" [");
-    let [simp, trad] = chars.split(" ");
+    let [trad, simp] = chars.split(" ");
     let definitions = tail.split("/").slice(1, -1).map(formatDefinition);
     let formattedPinyin = formatPinyin(pinyin);
     let searchablePinyin = pinyin.toLowerCase().replace(/[ 0-9]/g, "").replace(/u:/g, "v");

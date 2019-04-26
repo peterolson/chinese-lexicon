@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/peterolson/chinese-lexicon/issues"
   },
-  "homepage": "https://github.com/peterolson/chinese-lexicon#readme"
+  "homepage": "https://github.com/peterolson/chinese-lexicon#readme",
+  "dependencies": {
+    "lunr": "^2.3.6"
+  }
 }
