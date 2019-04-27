@@ -65,7 +65,7 @@ for (let word in tradDict) {
 
 
 console.log("Building search index...");
-/*
+
 let index = lunr(function () {
     this.field("simp");
     this.field("trad");
@@ -88,7 +88,7 @@ let index = lunr(function () {
                 boost
             });
     }
-});*/
+});
 
 console.log("Ready!");
 
@@ -102,12 +102,15 @@ function getEntries(word) {
     return matchingEntries || [];
 }
 
+function getEtymology(char) {
+    return etymologies[char];
+}
+
 let getGloss = require("./gloss")(getEntries);
 
 module.exports = {
-    simpDict,
-    tradDict,
     getEntries,
     getGloss,
+    getEtymology,
     search
 };
