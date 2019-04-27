@@ -1,4 +1,4 @@
-#Chinese Lexicon
+# Chinese Lexicon
 
 This repository is a lexicon of Chinese combining the following features:
 
