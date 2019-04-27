@@ -14,6 +14,8 @@ It can be installed using npm:
 
     npm install chinese-lexicon
 
+This project was built for and is used by [Dong Chinese](https://www.dong-chinese.com/).
+
 ## Methods
 
 ### `getEntries(word)`
