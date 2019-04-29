@@ -109,7 +109,7 @@ function getEtymology(char) {
 let getGloss = require("./gloss")(getEntries);
 
 module.exports = {
-    allEntries,
+    allEntries: entries,
     getEntries,
     getGloss,
     getEtymology,
