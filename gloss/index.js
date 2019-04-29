@@ -26,6 +26,7 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     for (let pattern of referencePatterns) {
         if (gloss.startsWith(pattern)) {
             let referencedWord = gloss.slice(pattern.length).split("[")[0].split("|")[0];
+            if (word === referencedWord) continue;
             let referencedEntries = getEntries(referencedWord);
             if (referencedEntries.length) {
                 return getGloss(referencedWord);
