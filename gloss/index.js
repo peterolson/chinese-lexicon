@@ -22,11 +22,15 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     }
     definitions.sort((a, b) => b.score - a.score);
     let gloss = definitions[0].definition;
-    if (gloss.startsWith("see ")) {
-        let referencedWord = gloss.slice(4).split("[")[0].split("|")[0];
-        let referencedEntries = getEntries(referencedWord);
-        if (referencedEntries.length) {
-            return getGloss(referencedWord);
+    let referencePatterns = ["see ", "variant of "];
+    for (let pattern of referencePatterns) {
+        if (gloss.startsWith(pattern)) {
+            let referencedWord = gloss.slice(pattern.length).split("[")[0].split("|")[0];
+            let referencedEntries = getEntries(referencedWord);
+            if (referencedEntries.length) {
+                return getGloss(referencedWord);
+            }
+            break;
         }
     }
     return gloss;
