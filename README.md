@@ -173,3 +173,7 @@ Does a text search to find dictionary entries matching the search term (such as 
     ]
 
 The optional `limit` argument can be used to limit the number of search results returned.
+
+### `allEntries`
+
+List of all the dictionary entries in the lexicon.
