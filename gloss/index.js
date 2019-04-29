@@ -12,6 +12,7 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     if (!matchingEntries.length) return word;
     let definitions = [];
     let entry = matchingEntries[0];
+    if (!entry.definitions.length) return word;
     let index = 0;
     for (let definition of entry.definitions) {
         definitions.push({
