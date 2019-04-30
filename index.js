@@ -108,6 +108,7 @@ function isSubstringMatch(text, term) {
 }
 
 let getGloss = require("./gloss")(getEntries);
+require("./etymology/populatePinyin")(etymologies, getEntries, getGloss);
 
 module.exports = {
     allEntries: entries,
