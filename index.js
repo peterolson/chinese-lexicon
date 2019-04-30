@@ -72,7 +72,8 @@ for (let i = 0; i < entries.length; i++) {
     let definition = entry.definitions.join(" ");
     searchStrings.push({
         id: i,
-        str: `${entry.simp} ${entry.trad} ${entry.pinyin} ${definition} ${etymology}`,
+        wholeWordText: `${definition} ${etymology}`,
+        substringText: `${entry.simp} ${entry.trad} ${entry.searchablePinyin} ${entry.pinyin}`,
         boost: entry.boost
     });
 }
@@ -81,10 +82,8 @@ console.log("Ready!");
 
 function search(term, limit) {
     limit = limit || 100;
-    let searchCritera = /[A-Za-z]/.test(term) ? isWholeWordMatch : isSubstringMatch;
-
     return searchStrings
-        .filter(({ str }) => searchCritera(str, term))
+        .filter(({ wholeWordText, substringText }) => isWholeWordMatch(wholeWordText, term) || isSubstringMatch(substringText, term))
         .sort((a, b) => b.boost - a.boost)
         .slice(0, limit)
         .map(x => entries[x.id]);
