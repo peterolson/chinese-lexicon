@@ -1,6 +1,6 @@
 {
   "name": "chinese-lexicon",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Chinese lexicon containing definitions, character origins, and statistics",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,5 @@
     "url": "https://github.com/peterolson/chinese-lexicon/issues"
   },
   "homepage": "https://github.com/peterolson/chinese-lexicon#readme",
-  "dependencies": {
-    "lunr": "^2.3.6"
-  }
+  "dependencies": {}
 }

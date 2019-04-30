@@ -3,7 +3,6 @@ console.log("Importing data...");
 let etymologies = require("./etymology");
 let entries = require("./dictionary");
 let getStatistics = require("./statistics");
-let lunr = require("lunr");
 
 let simpDict = {};
 let tradDict = {};
@@ -65,36 +64,30 @@ for (let word in tradDict) {
 
 
 console.log("Building search index...");
+let searchStrings = [];
 
-let index = lunr(function () {
-    this.field("simp");
-    this.field("trad");
-    this.field("pinyin");
-    this.field("definition");
-    this.field("etymology");
-
-    for (let i = 0; i < entries.length; i++) {
-        let entry = entries[i];
-        let etymology = (((entry.simpEtymology || {}).notes || "") + " " + ((entry.tradEtymology || {}).notes || "")).trim();
-        let boost = entry.boost;
-        this.add({
-            id: i,
-            simp: entry.simp,
-            trad: entry.trad,
-            pinyin: entry.searchablePinyin,
-            definition: entry.definitions.join("; "),
-            etymology
-        }, {
-                boost
-            });
-    }
-});
+for (let i = 0; i < entries.length; i++) {
+    let entry = entries[i];
+    let etymology = (((entry.simpEtymology || {}).notes || "") + " " + ((entry.tradEtymology || {}).notes || "")).trim();
+    let definition = entry.definitions.join(" ");
+    searchStrings.push({
+        id: i,
+        str: `${entry.simp} ${entry.trad} ${entry.pinyin} ${definition} ${etymology}`,
+        boost: entry.boost
+    });
+}
 
 console.log("Ready!");
 
 function search(term, limit) {
     limit = limit || 100;
-    return index.search(term).slice(0, limit).map(x => ({ ...x, ...entries[x.ref] }));
+    let searchCritera = /[A-Za-z]/.test(term) ? isWholeWordMatch : isSubstringMatch;
+
+    return searchStrings
+        .filter(({ str }) => searchCritera(str, term))
+        .sort((a, b) => b.boost - a.boost)
+        .slice(0, limit)
+        .map(x => ({ ...x, ...entries[x.ref] }));
 }
 
 function getEntries(word) {
@@ -104,6 +97,15 @@ function getEntries(word) {
 
 function getEtymology(char) {
     return etymologies[char];
+}
+
+function isWholeWordMatch(searchOnString, searchText) {
+    searchText = searchText.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+    return searchOnString.match(new RegExp("\\b" + searchText + "\\b", "i")) != null;
+}
+
+function isSubstringMatch(text, term) {
+    return text.includes(term);
 }
 
 let getGloss = require("./gloss")(getEntries);
