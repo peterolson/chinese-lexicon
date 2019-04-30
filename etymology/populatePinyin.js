@@ -19,7 +19,7 @@ function populateComponentDetails(etymologies, getEntries, getGloss) {
 
 function getPinyin(char, getEntries) {
     let entries = getEntries(char);
-    return Array.from(new Set(entries.map(x => x.pinyin))).join("; ");
+    return Array.from(new Set(entries.map(x => x.pinyin.toLowerCase()))).join("; ");
 }
 
 module.exports = populateComponentDetails;

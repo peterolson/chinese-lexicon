@@ -23,7 +23,7 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     }
     definitions.sort((a, b) => b.score - a.score);
     let gloss = definitions[0].definition;
-    let referencePatterns = ["see ", "variant of "];
+    let referencePatterns = ["see ", "variant of ", "old variant of "];
     for (let pattern of referencePatterns) {
         if (gloss.startsWith(pattern)) {
             let referencedWord = gloss.slice(pattern.length).split("[")[0].split("|")[0];

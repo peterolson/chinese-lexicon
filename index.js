@@ -51,7 +51,7 @@ for (let entry of entries) {
     }
     entry.statistics = getStatistics(entry);
     let { hskLevel, movieWordCount, movieCharCount, bookWordCount, bookCharCount, pinyinFrequency } = entry.statistics;
-    entry.boost = (7 - hskLevel) + getBoost(movieWordCount) + getBoost(movieCharCount) + getBoost(bookWordCount) + getBoost(bookCharCount) + getBoost(pinyinFrequency);
+    entry.boost = (7 - hskLevel) + getBoost(movieWordCount) + getBoost(movieCharCount) + getBoost(bookWordCount) + getBoost(bookCharCount) + getBoost(pinyinFrequency) + entry.definitions.length;
 }
 
 for (let word in simpDict) {
@@ -112,6 +112,8 @@ require("./etymology/populatePinyin")(etymologies, getEntries, getGloss);
 
 module.exports = {
     allEntries: entries,
+    simpDict,
+    tradDict,
     getEntries,
     getGloss,
     getEtymology,
