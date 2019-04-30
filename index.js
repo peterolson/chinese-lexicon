@@ -87,7 +87,7 @@ function search(term, limit) {
         .filter(({ str }) => searchCritera(str, term))
         .sort((a, b) => b.boost - a.boost)
         .slice(0, limit)
-        .map(x => ({ ...x, ...entries[x.ref] }));
+        .map(x => entries[x.id]);
 }
 
 function getEntries(word) {
