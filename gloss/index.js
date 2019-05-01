@@ -1,7 +1,11 @@
 function scoreGloss(definition, word, index) {
     let lengthPenalty = definition.length / word.length;
     let indexPenalty = index;
-    return -lengthPenalty - indexPenalty;
+    let otherPenalty = 0;
+    if (definition.includes("CL:")) {
+        otherPenalty += 20;
+    }
+    return -lengthPenalty - indexPenalty - otherPenalty;
 }
 
 module.exports = (getEntries) => function getGloss(word, pinyin) {
