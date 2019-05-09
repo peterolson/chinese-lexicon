@@ -8,7 +8,13 @@ function scoreGloss(definition, word, index) {
     return -lengthPenalty - indexPenalty - otherPenalty;
 }
 
+let manualGlosses = {
+    "着": "[action in progress]",
+    "著": "[action in progress]"
+};
+
 module.exports = (getEntries) => function getGloss(word, pinyin) {
+    if (word in manualGlosses) return manualGlosses[word];
     let matchingEntries = getEntries(word);
     if (pinyin) {
         matchingEntries = matchingEntries.filter(x => x.pinyin === pinyin);
