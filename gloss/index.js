@@ -10,7 +10,9 @@ function scoreGloss(definition, word, index) {
 
 let manualGlosses = {
     "着": "[action in progress]",
-    "著": "[action in progress]"
+    "著": "[action in progress]",
+    "你": "you",
+    "月": "month"
 };
 
 module.exports = (getEntries) => function getGloss(word, pinyin) {
