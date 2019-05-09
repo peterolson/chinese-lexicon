@@ -1615,8 +1615,27 @@ simp("奖", "獎", [[6], [0, 6]], { 將: "将" }, { 犬: "大" });
 icon("宜", "proper; suitable", `Originally a pictograph of two pieces of meat (肉) on a table. Based on the original meaning "delicacy" or "fine food". The meaning later shifted to "proper".`, "bs",
     [iconComponent(O, [0, 3, 7], "Depicts a table."), iconComponent("⺼", [3, 7])]);
 
+// 1310	獲: huò 蒦 huò	犭 dog
+semphon("獲", "犭", "蒦", 3, `to get, to obtain, to receive, to sieze`);
+// 1311	穫: huò 蒦 huò	禾 cereal, grain, rice; plant, stalk
+semphon("穫", "禾", "蒦", 5, `reap, harvest`);
+addEtymology("获", "catch; obtain; reap; harvest", simplified("獲") + " Phonosemantic compound. 犭 represents the meaning and 蒦 represents the sound.", [meaningComponent("犭", [3, 6]), simplifiedComponent("蒦", [0, 3, 6])]);
+icon("閉", "close; shut", "Depicts a door closed shut with horizontal bars.", "s", [iconComponent("門", [0, 8]), iconComponent(O, [8], "Depicts horizontal bars used to keep the door shut.")]);
+simp("闭", "閉", [[0, 3], [3]], { 門: "门" });
+semsem("季", "禾", "子", 5, "season; youngest brother", `Based on the original meaning "young". 禾 represents short stalks of grain, 子 represents a young child.`);
+icon("互", "mutual", "Depicts two symmetric figures facing each other.", "s");
+phonsem("改", "己", "攵", 3, "change; alter", "", true);
+icon("爯", "pick up; raise", "Depicts a hand grabbing a fish.", "bs", [iconComponent("爪", [0, 4]), iconComponent("鱼", [4])]);
+semphon("稱", "禾", "爯", 5);
+simp("称", "稱", [[0, 5], [5]], {}, { "爯": "尔" });
+addEtymology("章", "chapter; section", "Origin unclear.", [unknownComponent("立", [0, 5]), unknownComponent("早", [5])]);
+semphon("況", "氵", "兄", 3, "situation");
+simp("况", "況", [[0, 2], [2]], {}, { "氵": "冫" });
+icon("傘", "umbrella", "Pictograph of an umbrella.");
+simp("伞", "傘");
+addEtymology("雖", "although", "This character originally was used to describe some sort of lizard-like animal. The current meaning is a phonetic loan.", [iconComponent("口", [0, 3]), iconComponent("虫", [3, 9]), soundComponent("隹", [9])]);
+simp("虽", "雖", [[0, 3], [3, 9], [9, 9]]);
 
-// 获闭季互改称章况伞虽 21
 // 翻毒奋型祝餐庭播套铅 20
 // 闹针矮偶危蕉守励竞引 19
 // 康甜糟卫激负责则测温 18
@@ -2034,10 +2053,6 @@ phonsem("效", "交", "攵", 6, `result, effect; effective`, simplified("傚"));
 semphon("骑", "马", "奇", 3, `to ride, to mount; cavalry`, simplified("騎"));
 // 1302	騎: qí 奇 qí	馬 horse; surname
 semphon("騎", "馬", "奇", 10, `to ride, to mount; cavalry`);
-// 1310	獲: huò 蒦 huò	犭 dog
-semphon("獲", "犭", "蒦", 3, `to get, to obtain, to receive, to sieze`);
-// 1311	穫: huò 蒦 huò	禾 cereal, grain, rice; plant, stalk
-semphon("穫", "禾", "蒦", 5, `to get, to obtain, to receive, to sieze`);
 // 1313	码: mǎ 马 mǎ	石 stone, rock, mineral
 semphon("码", "石", "马", 5, `number, numeral, symbol; yard`, simplified("碼"));
 // 1314	碼: mǎ 馬 mǎ	石 stone, rock, mineral
@@ -7406,6 +7421,23 @@ semphon("薄", "艹", "溥", 3, `thin, slight; meager, weak; poor, stingy`);
 semphon("洶", "氵", "匈", 3, `turbulent, torrential, restless`);
 // 4597	簿: bù 溥 pǔ	⺮ bamboo; flute
 semphon("簿", "⺮", "溥", 6, `register, notebook, account book`);
+
+// 2268	障: zhàng 章 zhāng	阝 place, town, city
+semphon("障", "阝", "章", 2, `to separate; shield, barricade`);
+// 4104	彰: zhāng 章 zhāng	彡 hair; sunlight
+phonsem("彰", "章", "彡", 11, `clear, manifest, obvious`);
+// 4877	蟑: zhāng 章 zhāng	虫 insect, worm; mollusk
+semphon("蟑", "虫", "章", 6, `cockroach`);
+// 5489	悸: jì 季 jì	忄 heart; mind; soul
+semphon("悸", "忄", "季", 3, `apprehensive, fearful; perturbed`);
+// 6267	瘴: zhàng 章 zhāng	疒 sickness, disease
+semphon("瘴", "疒", "章", 5, `malaria; miasma, pestilential vapor`);
+// 6404	樟: zhāng 章 zhāng	木 tree; wood, lumber; wooden
+semphon("樟", "木", "章", 4, `camphor tree`);
+// 6894	璋: zhāng 章 zhāng	王 king, ruler; royal; surname
+semphon("璋", "王", "章", 4, `jade plaything; jade ornament`);
+// 6951	漳: zhāng 章 zhāng	氵 water
+semphon("漳", "氵", "章", 3, `a river in Henan province`);
 
 let pinyins = {
     "◎": "xx",
