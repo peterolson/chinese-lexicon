@@ -7456,6 +7456,18 @@ semphon("璋", "王", "章", 4, `jade plaything; jade ornament`);
 // 6951	漳: zhāng 章 zhāng	氵 water
 semphon("漳", "氵", "章", 3, `a river in Henan province`);
 
+// 4384	潘: pān 番 fān	氵 water
+semphon("潘", "氵", "番", 3, `a river that flows into the Han; surname`);
+// 5638	蕃: fān 番 fān	艹 grass, weed, plant, herb
+semphon("蕃", "艹", "番", 3, `abundant, flourishing; barbarians, foreigners`);
+// 6098	幡: fān 番 fān	巾 cloth, curtain, handkerchief, towel
+semphon("幡", "巾", "番", 3, `pennant, banner, streamer, flag`);
+// 6230	蟠: pán 番 fān	虫 insect, worm; mollusk
+semphon("蟠", "虫", "番", 6, `to occupy; to coil; curled up, coiled`);
+
+// 5032	藩: fān 潘 pān	艹 grass, weed, plant, herb
+semphon("藩", "艹", "潘", 3, `boundary, fence, outlying border`);
+
 let pinyins = {
     "◎": "xx",
     "覀": "xx",
