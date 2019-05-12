@@ -1115,7 +1115,7 @@ let sheepNote = `In ancient China sheep (羊) were associated with goodness and 
 icon("美", "beautiful", "Pictograph of a person with ornamental headwar resembling sheep horns. ", "obs",
     [iconComponent("羊", [0, 6], "Depicts ornamental headwear resembling sheep horns."), iconComponent("大", [6], "Used here as a pictograph of a person.")]);
 semphon("義", "羊", "我", 6, "justice; righteousness; meaning", sheepNote);
-addEtymology("善", "good; virtuous; benevolent", "Composed of two 言 (speech) components and 羊 (sheep). " + sheepNote, [meaningComponent("羊", [0, 6]), meaningComponent("言", [6, 7, 8]), meaningComponent("言", [7])], "bs");
+addEtymology("善", "good; virtuous; benevolent", "Composed of two 言 (speech) components and 羊 (sheep). " + sheepNote, [meaningComponent("羊", [0, 6]), soundComponent("言", [6, 7, 8], obsoleteSound("言", "善")), soundComponent("言", [7], obsoleteSound("言", "善"))], "bs");
 semphon("祥", "礻", "羊", 4, "auspicious", sheepNote, false, true);
 simp("义", "義", [[0, 1], [1]], {}, {}, true);
 semphon("議", "言", "義", 7, "comment; discuss; suggest");
