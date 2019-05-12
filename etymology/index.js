@@ -1653,8 +1653,24 @@ semphon("播", "扌", "番", 3, "sow; spread", "", true);
 semsem("套", "大", "镸", 3, "cover; encase", "A cover has to be big (大) and long (镸) enough to wrap around what it is covering.");
 semphon("鉛", "金", "公", 8, "lead (metal)", "", true);
 simp("铅", "鉛", [[0, 5], [5]], { 金: "钅" });
+semsem("鬧", "鬥", "市", 10, "noisy", "Markets (市) and fights (鬥) are noisy.");
+simp("闹", "鬧", [[0, 3], [3]], {}, { 鬥: "门" });
+semphon("針", "金", "十", 8, "needle; injection", "", true);
+simp("针", "針", [[0, 5], [5]], { 金: "钅" });
+addEtymology("委", "entrust; send", "Origin unclear.", [unknownComponent("禾", [0, 5]), unknownComponent("女", [5])]);
+semphon("矮", "矢", "委", 5, "low; short");
+icon("危", "danger", "Depicts a person (人) standing precariously on the edge of a mountain cliff (山).", "s", [iconComponent("人", [0, 2]), iconComponent("山", [2], "Also see 厂 (cliff).")]);
+addEtymology("焦", "burnt; scorched", "Combination of 隹 (bird) and 灬 (fire). The purpose of the 隹 component is unclear.", [unknownComponent("隹", [0, 8]), meaningComponent("灬", [8])]);
+semphon("蕉", "艹", "焦", 3, "banana");
+semsem("守", "宀", "寸", 3, "guard; defent", "Depicts a hand (寸) guarding a building (宀).");
+semphon("厲", "厂", "萬", 2, "strict; severe", "", true);
+simp("厉", "厲", [[0, 2], [2]], { "萬": "万" });
+phonsem("勵", "厲", "力", 15, "encourage; urge", "力 also serves as a sound component.", false);
+simp("励", "勵", [[5], [0, 5]], { "厲": "厉" });
+icon("競", "compete", "Pictograph of two people side-by-side competing with each other.", "bs");
+simp("竞", "競");
+icon("引", "draw; pull; attract", "Pictograph of a bowstring being pulled back.", "", [iconComponent("弓", [0, 3]), iconComponent("丨", [3], "Depicts a bowstring being pulled back.")]);
 
-// 闹针矮偶危蕉守励竞引 19
 // 康甜糟卫激负责则测温 18
 // 强价典拾售层购释乘宽 17
 // 科疑追滚甚梦叶矩养误 16
@@ -7467,6 +7483,42 @@ semphon("蟠", "虫", "番", 6, `to occupy; to coil; curled up, coiled`);
 
 // 5032	藩: fān 潘 pān	艹 grass, weed, plant, herb
 semphon("藩", "艹", "潘", 3, `boundary, fence, outlying border`);
+
+// 1838	瞧: qiáo 焦 jiāo	目 eye; to look, to see; division, topic
+semphon("瞧", "目", "焦", 5, `to glance at, to look at, to see`);
+// 3403	跪: guì 危 wēi	足 foot; to attain, to satisfy; enough
+semphon("跪", "足", "危", 7, `to kneel`);
+// 4220	诡: guǐ 危 wēi	讠 words, speech; to speak, to say
+semphon("诡", "讠", "危", 2, `to cheat, to defraud; sly, treacherous`, simplified("詭"));
+// 4221	詭: guǐ 危 wēi	言 words, speech; to speak, to say
+semphon("詭", "言", "危", 7, `to cheat, to defraud; sly, treacherous`);
+// 4582	魏: wèi 委 wěi	鬼 ghost; demon; sly, mischievous
+phonsem("魏", "委", "鬼", 8, `the kingdom of Wei; surname`);
+// 4770	萎: wēi 委 wěi	艹 grass, weed, plant, herb
+semphon("萎", "艹", "委", 3, `to wither, to wilt`);
+// 4773	狩: shòu 守 shǒu	犭 dog
+semphon("狩", "犭", "守", 3, `winter hunting; a hunting dog; an imperial tour`);
+// 4824	礁: jiāo 焦 jiāo	石 stone, rock, mineral
+semphon("礁", "石", "焦", 5, `jetty, reef`);
+// 4966	蛎: lì 厉 lì	虫 insect, worm; mollusk
+semphon("蛎", "虫", "厉", 6, `oyster`, simplified("蠣"));
+// 4967	蠣: lì 厲 lì	虫 insect, worm; mollusk
+semphon("蠣", "虫", "厲", 6, `oyster`);
+// 5496	桅: wéi 危 wēi	木 tree; wood, lumber; wooden
+semphon("桅", "木", "危", 4, `a ship's mast`);
+// 5513	憔: qiáo 焦 jiāo	忄 heart; mind; soul
+semphon("憔", "忄", "焦", 3, `worn-out, haggard, emaciated`, simplified("癄"));
+// 6030	蚓: yǐn 引 yǐn	虫 insect, worm; mollusk
+semphon("蚓", "虫", "引", 6, `earthworm (2)`);
+// 6149	痿: wěi 委 wěi	疒 sickness, disease
+semphon("痿", "疒", "委", 5, `paralysis; impotence`);
+// 6359	倭: wō 委 wěi	亻 man, person; people
+semphon("倭", "亻", "委", 2, `dwarf; dwarfish, short`);
+// 6909	醮: jiào 焦 jiāo	酉 wine; wine vessel; chemical
+semphon("醮", "酉", "焦", 7, `to anoint, to perform a rite; Daoist or Buddhist ceremony`);
+
+// 5923	巍: wēi 魏 wèi	山 mountain, hill, peak
+semphon("巍", "山", "魏", 3, `high, lofty; eminent, majestic`);
 
 let pinyins = {
     "◎": "xx",
