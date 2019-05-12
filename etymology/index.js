@@ -1635,8 +1635,25 @@ icon("傘", "umbrella", "Pictograph of an umbrella.");
 simp("伞", "傘");
 addEtymology("雖", "although", "This character originally was used to describe some sort of lizard-like animal. The current meaning is a phonetic loan.", [iconComponent("口", [0, 3]), iconComponent("虫", [3, 9]), soundComponent("隹", [9])]);
 simp("虽", "雖", [[0, 3], [3, 9], [9, 9]]);
+phonsem("番", "釆", "田", 7, "foreign; [measure word]", "Original meaning unclear.");
+phonsem("翻", "番", "羽", 12, "turn over; flip through; climb over; translate");
+icon("毋", "not have; don't", "Originally written and pronounced the same as 母 (mother). Later it was slightly altered so the two characters could be distinguished.");
+addEtymology("毐", "pervert; immoral; wicked person", "Refers to someone who is not (毋) a gentleman (士). Name of an infamous person in Chinese history named Lao Ai (嫪毐).");
+semsem("毒", "屮", "毐", [[0, 1, 2, 3], [1, 2, 3]], "poison", "Depicts a plant (屮) that is wicked (毐), i.e. a poisonous plant.");
+addEtymology("奮", "exert oneself", "Origin unclear.", [unknownComponent("大", [0, 3]), unknownComponent("隹", [3, 11]), unknownComponent("田", [11])]);
+simp("奋", "奮", [[0, 3], [3, 3], [3]]);
+phonsem("刑", "井", "刂", 4, "punishment; penalty");
+phonsem("型", "刑", "土", 6, "mold; type; style");
+addEtymology("祝", "express good wishes", "Depicts a kneeling person (卩) opening their mouth (口) to offer good wishes. The 礻 component is often used in abstract/spiritual characters.",
+    [meaningComponent("礻", [0, 4]), iconComponent("口", [4, 7], "Depicts a mouth offering good wishes."), iconComponent("卩", [7], "Depicts a kneeling person opening their mouth.")]);
+addEtymology("𣦼", "damage; penetrate", `歹 (bone remnants) + 又 (hand)`);
+phonsem("餐", "𣦼", "食", 7, "meal");
+semphon("庭", "广", "廷", 3, "main hall; courtyard");
+semphon("播", "扌", "番", 3, "sow; spread", "", true);
+semsem("套", "大", "镸", 3, "cover; encase", "A cover has to be big (大) and long (镸) enough to wrap around what it is covering.");
+semphon("鉛", "金", "公", 8, "lead (metal)", "", true);
+simp("铅", "鉛", [[0, 5], [5]], { 金: "钅" });
 
-// 翻毒奋型祝餐庭播套铅 20
 // 闹针矮偶危蕉守励竞引 19
 // 康甜糟卫激负责则测温 18
 // 强价典拾售层购释乘宽 17
@@ -7483,6 +7500,7 @@ let pinyins = {
     "⻏": "yì|yi",
     "攵": "pū|pu",
     "耂": "lǎo|lao",
+    "𣦼": "cán|can"
 }
 
 for (let char in pinyins) {
