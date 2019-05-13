@@ -23,15 +23,16 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     }
     if (!matchingEntries.length) return word;
     let definitions = [];
-    let entry = matchingEntries[0];
-    if (!entry.definitions.length) return word;
-    let index = 0;
-    for (let definition of entry.definitions) {
-        definitions.push({
-            definition,
-            score: scoreGloss(definition, word, index)
-        });
-        index++;
+    for (let entry of matchingEntries) {
+        if (!entry.definitions.length) return word;
+        let index = 0;
+        for (let definition of entry.definitions) {
+            definitions.push({
+                definition,
+                score: scoreGloss(definition, word, index)
+            });
+            index++;
+        }
     }
     definitions.sort((a, b) => b.score - a.score);
     let gloss = definitions[0].definition;
