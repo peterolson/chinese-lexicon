@@ -1670,8 +1670,28 @@ simp("励", "勵", [[5], [0, 5]], { "厲": "厉" });
 icon("競", "compete", "Pictograph of two people side-by-side competing with each other.", "bs");
 simp("竞", "競");
 icon("引", "draw; pull; attract", "Pictograph of a bowstring being pulled back.", "", [iconComponent("弓", [0, 3]), iconComponent("丨", [3], "Depicts a bowstring being pulled back.")]);
+phonsem("康", "庚", "米", [[0, 7], [6]], "healthy", "", false, false, "s");
+semsem("甜", "舌", "甘", 6, "sweet", "Depicts the tongue (舌) tasting something sweet (甘).");
+addEtymology("曹", "class; generation", `Depicts a pair of baskets (東). Based on the original meaning "pair". Later the meaning shifted to "of the same generation". The purpose of the additional 口 (mouth) component is unclear.`,
+    [meaningComponent("東", [0, 7], "The character 東 was originally a pictograph of a basket. This component is a pair of 東 merged together."), unknownComponent("口", [7])], "b");
+semphon("糟", "米", "曹", 6, "coarse food; dregs; rotten");
+icon("衛", "guard; defend", "Depicts feet (止) walking around, patrolling a street intersection (行).", "obs", [iconComponent("行", [0, 3, 12], "Depicts a street intersection."), iconComponent("止", [3, 6], "Depicts a foot patrolling a street intersection."), iconComponent("口", [6, 9], "Depicts the center of a street intersection."), iconComponent("止", [9, 12], "Depicts a foot patrolling a street intersection.")]);
+addEtymology("卫", "guard; defend", "Simplified from the cursive form of the traditional character 衛. Depicts feet (止) walking around, patrolling a street intersection (行).", [], "衛:obstc");
+addEtymology("敫", "ancient musical instrument", "Origin unclear.", [unknownComponent("白", [0, 5]), unknownComponent("放", [5])]);
+semphon("激", "氵", "敫", 3, "arouse; excite");
+semsem("負", "人", "貝", 2, "bear; carry", "Depicts a person (人) carrying money (貝) on his back.");
+simp("负", "負", [[0, 2], [2]], { "貝": "贝" });
+phonsem("責", "朿", "貝", 4, "duty; responsibility");
+simp("责", "責", [[0, 4], [4]]);
+semsem("則", "鼎", "刂", 7, "principle; norm; [contrastive conjunction]", "Depicts carving inscriptions on bronzeware (鼎) with a knife (刂). Based on the original meaning \"law\". In ancient China, some legal writings were inscribed on bronzeware.", "b");
+simp("则", "則", [[0, 4], [4]]);
+semphon("測", "氵", "則", 3, "survey; measure");
+simp("测", "測", [[0, 3], [3]], { 則: "则" });
+semsem("囚", "囗", "人", [[0, 2, 4], [2, 4]], "prisoner", "Depicts a person (人) trapped inside an enclosure (囗).");
+addEtymology("𥁕", "kind; benevolent", "Depicts feeding a prisoner (囚) with a dish (皿).");
+semphon("溫", "氵", "𥁕", 3, "warm");
+simp("温", "溫");
 
-// 康甜糟卫激负责则测温 18
 // 强价典拾售层购释乘宽 17
 // 科疑追滚甚梦叶矩养误 16
 // 宝暖爆炸弃饿坚营夏曾 15
@@ -7520,6 +7540,62 @@ semphon("醮", "酉", "焦", 7, `to anoint, to perform a rite; Daoist or Buddhis
 // 5923	巍: wēi 魏 wèi	山 mountain, hill, peak
 semphon("巍", "山", "魏", 3, `high, lofty; eminent, majestic`);
 
+// 1719	邀: yāo 敫 jiǎo	辶 to walk; walking
+semphon("邀", "辶", "敫", 13, `to invite, to welcome; to intercept, to meet`);
+// 1734	積: jī 責 zé	禾 cereal, grain, rice; plant, stalk
+semphon("積", "禾", "責", 5, `to store up, to amass, to accumulate`);
+// 1829	蹟: jī 責 zé	足 foot; to attain, to satisfy; enough
+semphon("蹟", "足", "責", 7, `trace, tracks; footprints`);
+// 2524	厕: cè 则 zé	厂 cliff; factory, workshop; building
+semphon("厕", "厂", "则", 2, `toilet, washroom; to mingle`, simplified("廁"));
+// 2525	廁: cè 則 zé	广 broad, vast, wide; building, house
+semphon("廁", "广", "則", 3, `toilet, washroom; to mingle`);
+// 2598	遭: zāo 曹 cáo	辶 to walk; walking
+semphon("遭", "辶", "曹", 11, `to meet, to encounter, to come across`);
+// 2762	賴: lài 束 shù	負 load, burden; to carry, to bear
+phonsem("賴", "束", "負", 7, `to depend on, to rely on; to bilk, to deny; poor`);
+// 3005	侧: cè 则 zé	亻 man, person; people
+semphon("侧", "亻", "则", 2, `side; to slant, to lean, to incline`, simplified("側"));
+// 3006	側: cè 則 zé	亻 man, person; people
+semphon("側", "亻", "則", 2, `side; to slant, to lean, to incline`);
+// 3503	慷: kāng 康 kāng	忄 heart; mind; soul
+semphon("慷", "忄", "康", 3, `ardent, fervent; generous, magnanimous`);
+// 3636	缴: jiǎo 敫 jiǎo	纟 silk; thread
+semphon("缴", "纟", "敫", 3, `to deliver, to submit, to hand over`, simplified("繳"));
+// 3637	繳: jiǎo 敫 jiǎo	糹 silk; thread
+semphon("繳", "糹", "敫", 6, `to deliver, to submit, to hand over`);
+// 4298	嘈: cáo 曹 cáo	口 mouth; entrance, gate, opening
+semphon("嘈", "口", "曹", 3, `bustling, noisy`);
+// 4579	竅: qiào 敫 jiǎo	穴 cave, den, hole
+semphon("竅", "穴", "敫", 5, `hole, opening, aperture`);
+// 4628	槽: cáo 曹 cáo	木 tree; wood, lumber; wooden
+semphon("槽", "木", "曹", 4, `trough, manger; vat, tank; distillery`);
+// 5045	渍: zì 责 zé	氵 water
+semphon("渍", "氵", "责", 3, `to soak, to steep; dye, stains; sodden`, simplified("漬"));
+// 5046	漬: zì 責 zé	氵 water
+semphon("漬", "氵", "責", 3, `to soak, to steep; dye, stains; sodden`);
+// 5319	啧: zé 责 zé	口 mouth; entrance, gate, opening
+semphon("啧", "口", "责", 3, `interjection of approval or admiration`, simplified("嘖"));
+// 5320	嘖: zé 責 zé	口 mouth; entrance, gate, opening
+semphon("嘖", "口", "責", 3, `interjection of approval or admiration`);
+// 6490	恻: cè 则 zé	忄 heart; mind; soul
+semphon("恻", "忄", "则", 3, `anguished; sympathetic`, simplified("惻"));
+// 6491	惻: cè 則 zé	忄 heart; mind; soul
+semphon("惻", "忄", "則", 3, `anguished; sympathetic`);
+// 6522	糠: kāng 康 kāng	米 rice, millet, grain
+semphon("糠", "米", "康", 6, `chaff, bran, husk; poor`, simplified("穅"));
+
+// 2043	懶: lǎn 賴 lài	忄 heart; mind; soul
+semphon("懶", "忄", "賴", 3, `lazy, languid, listless`);
+// 5592	瀨: lài 賴 lài	氵 water
+semphon("瀨", "氵", "賴", 3, `current, rapids`);
+// 5931	籟: lài 賴 lài	⺮ bamboo; flute
+semphon("籟", "⺮", "賴", 6, `bamboo flute; flute, pipe; a musical note`);
+// 6016	癩: lài 賴 lài	疒 sickness, disease
+semphon("癩", "疒", "賴", 5, `leprosy; scabies, mange; shoddy`);
+
+
+
 let pinyins = {
     "◎": "xx",
     "覀": "xx",
@@ -7564,7 +7640,9 @@ let pinyins = {
     "⻏": "yì|yi",
     "攵": "pū|pu",
     "耂": "lǎo|lao",
-    "𣦼": "cán|can"
+    "𣦼": "cán|can",
+    "敫": "jiǎo|jiao",
+    "𥁕": "wēn|wen"
 }
 
 for (let char in pinyins) {
