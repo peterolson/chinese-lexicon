@@ -571,7 +571,7 @@ icon("丩", "entangle; gather", "Pictograph of two ropes entangled together, now
 semphon("糾", "糹", "丩", 6, "entangle; gather", "Originally written as 丩, a pictograph of two ropes entangled together.");
 simp("纠", "糾", [[0, 3], [3]], { 糹: "纟" });
 semphon("叫", "口", "丩", 3, "call; shout");
-phonsem("句", "丩", "口", 2, "sentence; phrase");
+phonsem("句", "丩", "口", 2, "sentence; phrase; hook");
 semphon("夠", "多", "句", 6, "enough");
 phonsem("够", "句", "多", 5, "enough");
 icon("用", "use", `Originally a pictograph of a bucket with a handle on the right side. The current meaning "use" is a phonetic loan.`, "bs");
@@ -1691,8 +1691,33 @@ semsem("囚", "囗", "人", [[0, 2, 4], [2, 4]], "prisoner", "Depicts a person (
 addEtymology("𥁕", "kind; benevolent", "Depicts feeding a prisoner (囚) with a dish (皿).");
 semphon("溫", "氵", "𥁕", 3, "warm");
 simp("温", "溫");
+addEtymology("強", "strong; powerful", "Origin unclear.", [meaningComponent("弓", [0, 3]), unknownComponent("虽", [3])]);
+simp("强", "強"); // simplified more strokes than traditional ??!!
+// 4252	贾: jiǎ 覀 xī	贝 sea shell; money, currency
+phonsem("贾", "襾", "贝", 6, `merchant; to buy, to trade; surname`, simplified("賈"));
+// 4253	賈: jiǎ 覀 xī	貝 sea shell; money, currency
+phonsem("賈", "襾", "貝", 6, `merchant; to buy, to trade; surname`);
+semphon("價", "亻", "賈", 2, "price; value");
+semphon("价", "亻", "介", 2, "price; value", simplified("價"));
+addEtymology("典", "canon; law; work of scholarship", "Depicts a book (冊) on a table.", [iconComponent("冊", [0, 5]), iconComponent(O, [5], "Depicts a table.")]);
+semphon("拾", "扌", "合", 3, "pick up; collect");
+icon("雔", "pair of birds; match", "Duplicate of 隹 (bird).");
+phonsem("售", "雔", "口", 8, "sell; carry out");
+semphon("層", "尸", "曾", 3, "layer; storey; floor");
+simp("层", "層", [[0, 3], [3]], {}, { 曾: "云" });
+// 1775	購: gòu 冓 gòu	貝 sea shell; money, currency
+semphon("購", "貝", "冓", 7, `to buy, to purchase`);
+simp("购", "購", [[0, 4], [4]], {}, { 冓: "勾" });
+// 1125	釋: shì 睪 yì	釆 to distinguish; to pick, to gather, to collect
+semphon("釋", "釆", "睪", 7, `to explain, to interpret; to release`);
+simp("释", "釋", [[0, 7], [7]]);
+icon("乘", "ascend; mount; ride", "Pictograph of a person (人) who has climbed up a tree (木).", "ob", [iconComponent("人", [0, 1, 3, 8]), iconComponent("木", [1, 3, 8])]);
+icon("萈", "goat", "Pictograph of a goat.", "s");
+semphon("寬", "宀", "萈", 3, "wide; broad");
+semphon("莧", "艹", "見", 4, "amaranth plant");
+simp("苋", "莧", [[0, 3], [3]], { 見: "见" });
+simp("宽", "寬", [[0, 3], [3]], {}, { "萈": "苋" });
 
-// 强价典拾售层购释乘宽 17
 // 科疑追滚甚梦叶矩养误 16
 // 宝暖爆炸弃饿坚营夏曾 15
 // 劳泪升脏斯朝厚犯曲 14 
@@ -1970,8 +1995,7 @@ semphon("織", "糹", "戠", 6, `to knit, to weave; to organize, to unite`);
 semphon("灯", "火", "丁", 4, `lamp, lantern, light`, simplified("燈"));
 // 1119	燈: dēng 登 dēng	火 fire, flame; to burn; anger, rage
 semphon("燈", "火", "登", 4, `lamp, lantern, light`);
-// 1125	釋: shì 睪 yì	釆 to distinguish; to pick, to gather, to collect
-semphon("釋", "釆", "睪", 7, `to explain, to interpret; to release`);
+
 // 1126	资: zī 次 cì	贝 sea shell; money, currency
 phonsem("资", "次", "贝", 6, `wealth, property, capital`, simplified("資"));
 // 1127	資: zī 次 cì	貝 sea shell; money, currency
@@ -2454,8 +2478,7 @@ semphon("銷", "釒", "肖", 8, `to fuse, to melt; to market, to sell`);
 semphon("钥", "钅", "月", 5, `lock, key`, simplified("鑰"));
 // 1773	匙: chí shī 是 shì	匕 spoon, ladle; knife, dirk
 phonsem("匙", "是", "匕", 9, `spoon; surname`);
-// 1775	購: gòu 冓 gòu	貝 sea shell; money, currency
-semphon("購", "貝", "冓", 7, `to buy, to purchase`);
+
 // 1776	垃: lā 立 lì	土 soil, earth; items made of earth
 semphon("垃", "土", "立", 3, `garbage, refuse, trash, waste`);
 // 1777	圾: jī 及 jí	土 soil, earth; items made of earth
@@ -4472,10 +4495,7 @@ semphon("狄", "犭", "火", 3, `barbarians; a tribe from northern China; surnam
 semphon("迸", "辶", "并", 6, `to gush, to burst; to crack, to split`);
 // 4249	妖: yāo 夭 yāo	女 woman, girl; female
 semphon("妖", "女", "夭", 3, `strange, weird, supernatural; bewitching, enchanting, seductive`);
-// 4252	贾: jiǎ 覀 xī	贝 sea shell; money, currency
-phonsem("贾", "覀", "贝", 6, `merchant; to buy, to trade; surname`, simplified("賈"));
-// 4253	賈: jiǎ 覀 xī	貝 sea shell; money, currency
-phonsem("賈", "覀", "貝", 6, `merchant; to buy, to trade; surname`);
+
 // 4256	楊: yáng 昜 yáng	木 tree; wood, lumber; wooden
 semphon("楊", "木", "昜", 4, `willow, poplar, aspen; surname`);
 // 4259	萝: luó 罗 luō	艹 grass, weed, plant, herb
@@ -7594,6 +7614,26 @@ semphon("籟", "⺮", "賴", 6, `bamboo flute; flute, pipe; a musical note`);
 // 6016	癩: lài 賴 lài	疒 sickness, disease
 semphon("癩", "疒", "賴", 5, `leprosy; scabies, mange; shoddy`);
 
+// 1419	剩: shèng 乘 chéng	刂 knife
+phonsem("剩", "乘", "刂", 10, `leftovers, residue, remains`);
+// 2026	构: gòu 勾 gōu	木 tree; wood, lumber; wooden
+semphon("构", "木", "勾", 4, `to compose, to make; building, frame, structure`, simplified("構"));
+// 2539	沟: gōu 勾 gōu	氵 water
+semphon("沟", "氵", "勾", 3, `ditch, drain, gutter, narrow waterway`, simplified("溝"));
+// 5632	碘: diǎn 典 diǎn	石 stone, rock, mineral
+semphon("碘", "石", "典", 5, `iodine`);
+// 5928	腆: tiǎn 典 diǎn	⺼ meat, flesh; organic compound
+semphon("腆", "⺼", "典", 4, `good, strong; prosperous; protruding`);
+// 6376	髋: kuān 宽 kuān	骨 bone; skeleton; frame, framework
+semphon("髋", "骨", "宽", 9, `hip, pelvis`, simplified("髖"));
+// 6377	髖: kuān 寬 kuān	骨 bone; skeleton; frame, framework
+semphon("髖", "骨", "寬", 10, `hip, pelvis`);
+// 6598	犟: jiàng 强 qiáng	牛 ox, cow, bull
+phonsem("犟", "强", "牛", 12, `stubborn`);
+// 6781	襁: qiǎng 强 qiáng	衤 cloth
+semphon("襁", "衤", "强", 5, `swaddling cloth`, simplified("繦"));
+
+
 
 
 let pinyins = {
@@ -7642,7 +7682,9 @@ let pinyins = {
     "耂": "lǎo|lao",
     "𣦼": "cán|can",
     "敫": "jiǎo|jiao",
-    "𥁕": "wēn|wen"
+    "𥁕": "wēn|wen",
+    "雔": "chóu|chou",
+    "萈": "huán|huan"
 }
 
 for (let char in pinyins) {
