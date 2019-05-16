@@ -1757,7 +1757,7 @@ icon("棄", "abandon; discard", "Pictograph of two hands (廾) putting a child (
 simp("弃", "棄", [[0, 4], [4, 4], [4]]);
 semphon("餓", "飠", "我", 8, "hungry");
 simp("饿", "餓", [[0, 3], [3]], { "飠": "饣" });
-phonsem("臤", "臣", "又", 6, "strong; firm", "Original form of 堅.", true);
+phonsem("臤", "臣", "又", 6, "strong; firm", "", true);
 phonsem("堅", "臤", "土", 8);
 simp("坚", "堅", [[0, 4], [4]]);
 icon("宮", "palace; temple", "Pictograph of a building with two floors.", "b", [iconComponent("宀", [0, 3]), iconComponent(O, [3], "Depicts two stacked rooms.")]);
@@ -7802,7 +7802,8 @@ let pinyins = {
     "敫": "jiǎo|jiao",
     "𥁕": "wēn|wen",
     "雔": "chóu|chou",
-    "萈": "huán|huan"
+    "萈": "huán|huan",
+    "臤": "qiān|qian"
 }
 
 for (let char in pinyins) {
