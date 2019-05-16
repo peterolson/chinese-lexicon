@@ -7653,7 +7653,44 @@ phonsem("犟", "强", "牛", 12, `stubborn`);
 // 6781	襁: qiǎng 强 qiáng	衤 cloth
 semphon("襁", "衤", "强", 5, `swaddling cloth`, simplified("繦"));
 
-
+// 1585	拒: jù 巨 jù	扌 hand
+semphon("拒", "扌", "巨", 3, `to defend, to ward off; to refuse`);
+// 1779	距: jù 巨 jù	足 foot; to attain, to satisfy; enough
+semphon("距", "足", "巨", 7, `distance, gap`);
+// 2270	礙: ài 疑 yí	石 stone, rock, mineral
+semphon("礙", "石", "疑", 5, `to block, to deter, to hinder, to obstruct`);
+// 2384	柜: guì 巨 jù	木 tree; wood, lumber; wooden
+semphon("柜", "木", "巨", 4, `cabinet, cupboard, wardrobe; shop counter`, simplified("櫃"));
+// 2685	娱: yú 吴 wú	女 woman, girl; female
+semphon("娱", "女", "吴", 3, `pleasure, enjoyment, amusement`, simplified("娛"));
+// 2686	娛: yú 吳 wú	女 woman, girl; female
+semphon("娛", "女", "吳", 3, `pleasure, enjoyment, amusement`);
+// 3150	癡: chī 疑 yí	疒 sickness, disease
+semphon("癡", "疒", "疑", 5, `silly, foolish, idiotic`);
+// 3381	擬: nǐ 疑 yí	扌 hand
+semphon("擬", "扌", "疑", 3, `to draft, to plan; to intend`);
+// 3439	凝: níng 疑 yí	冫 ice
+semphon("凝", "冫", "疑", 2, `to coagulate, to congeal; to freeze`);
+// 3980	勘: kān 甚 shén	力 strength, power; capability, influence
+phonsem("勘", "甚", "力", 9, `to investigate; to survey, to explore; to compare; to collate`);
+// 4207	斟: zhēn 甚 shén	斗 to struggle, to fight, to contend; measuring cup
+phonsem("斟", "甚", "斗", 9, `to deliberate, to gauge; to pour wine or tea`);
+// 4715	炬: jù 巨 jù	火 fire, flame; to burn; anger, rage
+semphon("炬", "火", "巨", 4, `torch`);
+// 5631	槌: chuí 追 zhuī	木 tree; wood, lumber; wooden
+semphon("槌", "木", "追", 4, `hammer, mallet; to beat, to strike`);
+// 5831	虞: yú 吴 wú	虍 tiger
+semphon("虞", "虍", "吴", 6, `anxious, concerned, worried`);
+// 5933	蝌: kē 科 kē	虫 insect, worm; mollusk
+semphon("蝌", "虫", "科", 6, `tadpole`);
+// 6114	苣: jù 巨 jù	艹 grass, weed, plant, herb
+semphon("苣", "艹", "巨", 3, `a kind of lettuce`);
+// 6277	蜈: wú 吴 wú	虫 insect, worm; mollusk
+semphon("蜈", "虫", "吴", 6, `centipede`);
+// 6975	谌: chén 甚 shén	讠 words, speech; to speak, to say
+semphon("谌", "讠", "甚", 2, `faithful, sincere; surname`, simplified("諶"));
+// 6976	諶: chén 甚 shén	言 words, speech; to speak, to say
+semphon("諶", "言", "甚", 7, `faithful, sincere; surname`);
 
 
 let pinyins = {
