@@ -1717,8 +1717,30 @@ semphon("寬", "宀", "萈", 3, "wide; broad");
 semphon("莧", "艹", "見", 4, "amaranth plant");
 simp("苋", "莧", [[0, 3], [3]], { 見: "见" });
 simp("宽", "寬", [[0, 3], [3]], {}, { "萈": "苋" });
+semsem("科", "禾", "斗", 5, "field; branch; division", "Depicts measuring out grain (禾) with a dipper (斗).");
+icon("疑", "doubt; suspect", "Pictograph of a person holding onto a staff, looking to the side with his mouth open, doubtful of which direction to go. The 龰 (foot) component was added later to indicate movement, and the 子 component was added to hint at the sound.", "obs",
+    [iconComponent("口", [0, 2], "Here depicts the head of a person with an open mouth looking to the side."), iconComponent(O, [2, 7], "Depicts a person standing up holding onto a staff."), soundComponent("子", [7, 10], obsoleteSound("子", "疑")), meaningComponent("龰", [10])]);
+phonsem("追", "𠂤", "辶", 6, "chase after; pursue");
+semphon("袞", "衣", "公", [[0, 2, 7], [2, 7]], "imperial robe", "", true);
+simp("衮", "袞", [[0, 2, 6], [2, 6]]);
+semphon("滾", "氵", "袞", 3, "boil; roll; get lost");
+simp("滚", "滾", [[0, 3], [3]], { "袞": "衮" });
+addEtymology("甚", "very; extremely", "Origin unclear.", [unknownComponent("甘", [0, 5]), unknownComponent(O, [5], unknownComonentNote())]);
+icon("夢", "dream", "Pictograph of a person lying in bed dreaming. The 夕 (dusk) component was added later.", "os",
+    [iconComponent("爿", [0, 4], "Depicts a bed."), iconComponent("目", [4, 9], "Represents seeing something while sleeping."), iconComponent("人", [9, 11], "Depicts a person lying down and sleeping."), meaningComponent("夕", [11])]);
+addEtymology("梦", "dream", "Simplified form of 夢, which is a pictograph of a person lying in bed dreaming. 夕 (dusk) represents the meaning, and 林 is an abbreviated form of the top half of the traditional character 夢.",
+    [simplifiedComponent("林", [0, 8], "Shorthand for the top part of the traditional character 夢."), meaningComponent("夕", [8])], "夢:os");
+semphon("叶", "口", "十", 3, "be in harmony; (simp.) leaf; page", simplifyMerge("叶", "葉", "leaf; page"), true);
+icon("巨", "large; huge", `Pictograph of a carpenter's square, a tool for measuring right angles. Based on the original meaning "carpenter's square", now written as 矩. The current meaning is a phonetic loan.`, "bs");
+semphon("矩", "矢", "巨", 5, "carpenter's square; rule; pattern", "Originally written as 巨.");
+// 1261	養: yǎng 羊 yáng	食 food; to eat
+phonsem("養", "羊", "食", 6, `to raise, to rear, to bring up; to support`);
+simp("养", "養", [[5], [0, 6]], {}, { 食: "介" });
+icon("吳", "clamorous", "Pictograph of a person (大) standing up, yelling with an open mouth (口).", "b", [iconComponent("口", [0, 3]), iconComponent("大", [3])]);
+simp("吴", "吳", [[0, 3], [3]]);
+semphon("誤", "言", "吳", 7, "mistake; error");
+simp("误", "誤", [[0, 2], [2]], { 言: "讠", 吳: "吴" });
 
-// 科疑追滚甚梦叶矩养误 16
 // 宝暖爆炸弃饿坚营夏曾 15
 // 劳泪升脏斯朝厚犯曲 14 
 // 琴爷币俩聚锁叔施素类 13
@@ -2110,8 +2132,6 @@ semphon("油", "氵", "由", 3, `oil, fat, grease, lard; oil paints`);
 semphon("纪", "纟", "己", 3, `discipline, age; period, era; record, annal`, simplified("紀"));
 // 1258	紀: jì 己 jǐ	糹 silk; thread
 semphon("紀", "糹", "己", 6, `discipline, age; period, era; record, annal`);
-// 1261	養: yǎng 羊 yáng	食 food; to eat
-phonsem("養", "羊", "食", 6, `to raise, to rear, to bring up; to support`);
 // 1262	弹: dàn 单 dān	弓 bow; curved, arched
 semphon("弹", "弓", "单", 3, `bullet, pellet, shell; elastic, springy`, simplified("彈"));
 // 1263	彈: dàn 單 dān	弓 bow; curved, arched
