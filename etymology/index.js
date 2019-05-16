@@ -602,7 +602,7 @@ icon("冰", "ice", "Pictograph of ice cubes (冫) next to a river of water (水)
 semphon("決", "氵", "夬", 3, "decide; determine", `Based on the original meaning "burst open". The meaning later shifted to "clear", "cut off", "decide" and "judge".`, true, true);
 simp("决", "決", [[0, 2], [2]], {}, { 氵: "冫" });
 semphon("星", "日", "生", 4, "star; celestial object");
-icon("其", "its; their; that", "Pictograph of a basket, now written as 箕. The current meaning is a phonetic loan.", "s");
+icon("其", "(basket); its; their; that", "Pictograph of a basket, now written as 箕. The current meaning is a phonetic loan.", "s");
 semphon("箕", "⺮", "其", 6, "winnow basket", "Originally written as 其, a pictograph of a basket.");
 phonsem("期", "其", "月", 8, "period of time");
 icon("比", "compare", `Pictograph of two people side-by-side, conveying the meaning "to put together", "match", or "compare".`, "bs", [iconComponent("人", [0, 2]), iconComponent("人", [2])]);
@@ -1740,8 +1740,36 @@ icon("吳", "clamorous", "Pictograph of a person (大) standing up, yelling with
 simp("吴", "吳", [[0, 3], [3]]);
 semphon("誤", "言", "吳", 7, "mistake; error");
 simp("误", "誤", [[0, 2], [2]], { 言: "讠", 吳: "吴" });
+icon("寶", "treasure", "Pictograph an assortment of valuable things, including jade (玉) and shells (貝), being stored safely under a roof (宀). The 缶 component represents the sound.", "b",
+    [iconComponent("宀", [0, 3]), iconComponent("𤣩", [3, 7]), soundComponent("缶", [7, 13]), iconComponent("貝", [13])]);
+simp("宝", "寶", [[0, 3], [3], [3, 3], [3, 3]], { "𤣩": "玉" });
+icon("爰", "pull by hand", "Pictograph of two hands pulling a rope.", "s", [iconComponent("爪", [0, 4]), iconComponent(O, [4, 7], "Depicts a rope being pulled."), iconComponent("又", [7])]);
+semphon("暖", "日", "爰", 4, "warm");
+icon("曾", "already; previously", `Pictograph of a cooking pot. Based on the original meaning "cauldron; cooking pot", now written as 甑. The current meaning is a phonetic loan.`, "obs");
+phonsem("甑", "曾", "瓦", 12, "caulron; rice pot", "Originally written as 曾.");
+icon("暴", "suddent; violent; cruel", "Origin unclear. Possibly represents two hands (共) laying out rice (米) to dry under the sun (日), representing the meaning \"dry out under the sun\", now written as 曝.", "s",
+    [unknownComponent("日", [0, 4]), unknownComponent("共", [4, 10]), unknownComponent("米", [10])]);
+semphon("曝", "日", "暴", 4, "to air; to sun");
+semphon("爆", "火", "暴", 4, "explode; quick fry");
+semphon("炸", "火", "乍", 4, "deep fry; explode");
+icon("棄", "abandon; discard", "Pictograph of two hands (廾) putting a child (子) in a basket (其) for the purpose of abandoning or disposing with it.", "ob",
+    [iconComponent("子", [0, 4], "Upside-down form of 子 (child)."), iconComponent("其", [4, 10]), iconComponent("廾", [10])]);
+simp("弃", "棄", [[0, 4], [4, 4], [4]]);
+semphon("餓", "飠", "我", 8, "hungry");
+simp("饿", "餓", [[0, 3], [3]], { "飠": "饣" });
+phonsem("臤", "臣", "又", 6, "strong; firm", "Original form of 堅.", true);
+phonsem("堅", "臤", "土", 8);
+simp("坚", "堅", [[0, 4], [4]]);
+icon("宮", "palace; temple", "Pictograph of a building with two floors.", "b", [iconComponent("宀", [0, 3]), iconComponent(O, [3], "Depicts two stacked rooms.")]);
+icon("熒", "glimmer; twinkle", "Pictograph of two intersection torches.", "bs", [iconComponent(O, [0, 10], "Depicts two torches"), meaningComponent("火", [10])]);
+simp("荧", "熒", [[0, 5], [5]]);
+phonsem("營", "熒", "宮", [[0, 10], [8]], "camp; barracks");
+simp("营", "營", [[3], [0, 5]], { "熒": "荧" });
+let deletedSun = iconComponent("日", [0, 0], "The sun (日) component began to be omitted for brevity during the Warring States period.")
+deletedSun.type = "deleted";
+icon("夏", "summer", "Pictograph of a person, represented by their head (頁) and feet (夂), being heated underneath the sun (日). The sun component was later omitted for brevity during the Warring States period.", "bs",
+    [deletedSun, iconComponent("頁", [0, 7]), iconComponent("夂", [7])]);
 
-// 宝暖爆炸弃饿坚营夏曾 15
 // 劳泪升脏斯朝厚犯曲 14 
 // 琴爷币俩聚锁叔施素类 13
 // 拜塑挥弱供废款圈降卷 12
@@ -7691,6 +7719,39 @@ semphon("蜈", "虫", "吴", 6, `centipede`);
 semphon("谌", "讠", "甚", 2, `faithful, sincere; surname`, simplified("諶"));
 // 6976	諶: chén 甚 shén	言 words, speech; to speak, to say
 semphon("諶", "言", "甚", 7, `faithful, sincere; surname`);
+
+// 1608	增: zēng 曾 céng	土 soil, earth; items made of earth
+semphon("增", "土", "曾", 3, `to increase; to expand; to augment; to add`);
+// 2393	缓: huǎn 爰 yuán	纟 silk; thread
+semphon("缓", "纟", "爰", 3, `slow, gradual; to postpone, to delay`, simplified("緩"));
+// 2394	緩: huǎn 爰 yuán	糹 silk; thread
+semphon("緩", "糹", "爰", 6, `slow, gradual; to postpone, to delay`);
+// 3431	赠: zèng 曾 céng	贝 sea shell; money, currency
+semphon("赠", "贝", "曾", 4, `to bestow, to confer, to present a gift`, simplified("贈"));
+// 3432	贈: zèng 曾 céng	貝 sea shell; money, currency
+semphon("贈", "貝", "曾", 7, `to bestow, to confer, to present a gift`);
+// 3567	賢: xián 臤 qiān	貝 sea shell; money, currency
+phonsem("賢", "臤", "貝", 8, `virtuous, worthy; good, able`);
+// 3638	厦: shà 夏 xià	厂 cliff; factory, workshop; building
+semphon("厦", "厂", "夏", 2, `large building; mansion`, simplified("廈"));
+// 3639	廈: shà 夏 xià	广 broad, vast, wide; building, house
+semphon("廈", "广", "夏", 3, `large building; mansion`);
+// 3775	豎: shù 豆 dòu	臤 stern; wise
+semphon("豎", "臤", "豆", 8, `perpendicular, vertical; to erect`);
+// 4287	腎: shèn 臤 qiān	⺼ meat, flesh; organic compound
+phonsem("腎", "臤", "⺼", 8, `kidney`);
+// 4402	憎: zēng 曾 céng	忄 heart; mind; soul
+semphon("憎", "忄", "曾", 3, `to abhor, to detest, to hate`);
+// 4619	僧: sēng 曾 céng	亻 man, person; people
+semphon("僧", "亻", "曾", 2, `Buddhist priest, monk`);
+// 4843	蹭: cèng 曾 céng	足 foot; to attain, to satisfy; enough
+semphon("蹭", "足", "曾", 7, `to shuffle; to procrastinate, to freeload, to dilly-dally`);
+// 5242	媛: yuàn 爰 yuán	女 woman, girl; female
+semphon("媛", "女", "爰", 3, `beauty; beautiful woman`);
+// 6427	铿: kēng 坚 jiān	钅 gold, metal; money
+semphon("铿", "钅", "坚", 5, `to strike, to beat; gong, resounding noise`, simplified("鏗"));
+// 6553	嗄: á 夏 xià	口 mouth; entrance, gate, opening
+semphon("嗄", "口", "夏", 3, `hoarse`);
 
 
 let pinyins = {
