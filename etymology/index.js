@@ -1769,8 +1769,34 @@ let deletedSun = iconComponent("日", [0, 0], "The sun (日) component began to 
 deletedSun.type = "deleted";
 icon("夏", "summer", "Pictograph of a person, represented by their head (頁) and feet (夂), being heated underneath the sun (日). The sun component was later omitted for brevity during the Warring States period.", "bs",
     [deletedSun, iconComponent("頁", [0, 7]), iconComponent("夂", [7])]);
+addEtymology("勞", "toil; labor", "Origin unclear.", [unknownComponent("熒", [0, 10]), meaningComponent("力", [10])]);
+simp("劳", "勞", [[0, 5], [5]], { "熒": "荧" });
+semsem("泪", "氵", "目", 3, "tears", simplified("淚") + " Tears are drops of water (氵) coming from the eye (目).");
+addEtymology("戾", "bend; violate; go against", "Origin unclear. Consists of door (户) and dog (犬).", [unknownComponent("户", [0, 4]), unknownComponent("犬", [4])]);
+semphon("淚", "氵", "戾", 3, "tears");
+icon("升", "ascend; rise", "Pictograph of a spoon, a utensil used to pick things up.", "bs");
+addEtymology("葬", "bury the dead; inter", "Depicts a dead body being buried beneath the grass.", [iconComponent("艹", [0, 3]), meaningComponent("死", [3, 9]), iconComponent("艹", [9])]);
+phonsem("戕", "爿", "戈", 4, "kill; injure");
+phonsem("臧", "戕", "臣", [[0, 5, 11], [5, 11]], "good; right");
+semphon("藏", "艹", "臧", 3, "conceal; hide; store");
+semphon("臟", "⺼", "藏", 4, "internal organ; viscera");
+semphon("髒", "骨", "葬", 10, "dirty; filthy");
+// 2848	壮: zhuàng 丬 qiáng	士 scholar, gentleman; soldier
+phonsem("壮", "丬", "士", 3, `big, large; robust, strong; the name of a tribe`, simplified("壯"));
+// 2849	壯: zhuàng 爿 qiáng	士 scholar, gentleman; soldier
+phonsem("壯", "爿", "士", 4, `big, large; robust, strong; the name of a tribe`);
+// 3052	莊: zhuāng 壯 zhuàng	艹 grass, weed, plant, herb
+semphon("莊", "艹", "壯", 4, `village, hamlet; villa, manor`);
+simp("庄", "莊", [[0, 3], [3]], {}, { "艹": "广", "壯": "土" });
+semphon("脏", "⺼", "庄", 4, "dirty; internal organ", "Simplified form of 髒 (dirty) and 臟 (internal organ).");
+phonsem("斯", "其", "斤", 8, "tear; cut apart", "Nowadays this character is usually only used for its sound in phonetic loans.", true);
+addEtymology("朝", "early morning; dynasty", "Depicts the early part of morning when the sun (日) can still be seen on the horizon between blades of grass (屮), and the moon (月) is still in the sky.",
+    [iconComponent("屮", [0, 2]), iconComponent("日", [2, 6]), iconComponent("屮", [6, 8]), iconComponent("月", [8])]);
+icon("厚", "strong flavor; thick; deep", "Depicts a container of wine that has been aging in a cave, thus having a strong flavor.", "b", [iconComponent("厂", [0, 2], "Depicts a cave in a cliff."), iconComponent(O, [2], "Depicts a container of wine.")]);
+icon("𢎘", "flower bud", "Pictograph of a flower bud.", "s");
+semphon("犯", "犭", "𢎘", 3, "violate; offend");
+icon("曲", "bent; crooked", "Pictograph of a bent object.", "os");
 
-// 劳泪升脏斯朝厚犯曲 14 
 // 琴爷币俩聚锁叔施素类 13
 // 拜塑挥弱供废款圈降卷 12
 // 灭猴困局巨阅索概席帝 11
@@ -3327,10 +3353,6 @@ semphon("帳", "巾", "長", 3, `tent, screen, mosquito net; debt, credit, accou
 semphon("痒", "疒", "羊", 5, `to itch; to tickle`, simplified("癢"));
 // 2847	抵: dǐ 氐 dī	扌 hand
 semphon("抵", "扌", "氐", 3, `to resist; to arrive; mortgage`);
-// 2848	壮: zhuàng 丬 qiáng	士 scholar, gentleman; soldier
-phonsem("壮", "丬", "士", 3, `big, large; robust, strong; the name of a tribe`, simplified("壯"));
-// 2849	壯: zhuàng 爿 qiáng	士 scholar, gentleman; soldier
-phonsem("壯", "爿", "士", 4, `big, large; robust, strong; the name of a tribe`);
 // 2850	佳: jiā 圭 guī	亻 man, person; people
 semphon("佳", "亻", "圭", 2, `good, auspicious; beautiful; delightful`);
 // 2851	泡: pào 包 bāo	氵 water
@@ -7261,8 +7283,6 @@ semphon("蝴", "虫", "胡", 6, `butterfly`);
 semphon("噸", "口", "頓", 3, `a metric ton`);
 // 2924	嫩: nèn 敕 chì	女 woman, girl; female
 semphon("嫩", "女", "敕", 3, `soft, delicate; young, tender`, simplified("嫰"));
-// 3052	莊: zhuāng 壯 zhuàng	艹 grass, weed, plant, herb
-semphon("莊", "艹", "壯", 4, `village, hamlet; villa, manor`);
 // 3091	惭: cán 斩 zhǎn	忄 heart; mind; soul
 semphon("惭", "忄", "斩", 3, `ashamed, humiliated; shameful`, simplified("慚"));
 // 3092	慚: cán 斬 zhǎn	忄 heart; mind; soul
@@ -7753,6 +7773,45 @@ semphon("铿", "钅", "坚", 5, `to strike, to beat; gong, resounding noise`, si
 // 6553	嗄: á 夏 xià	口 mouth; entrance, gate, opening
 semphon("嗄", "口", "夏", 3, `hoarse`);
 
+// 2414	麯: qū 曲 qū	麥 wheat, barley, oats
+semphon("麯", "麥", "曲", 11, `yeast, leaven`);
+// 2587	撕: sī 斯 sī	扌 hand
+semphon("撕", "扌", "斯", 3, `to rip, to tear; to buy cloth`);
+// 2983	潮: cháo 朝 cháo	氵 water
+semphon("潮", "氵", "朝", 3, `tide, current; damp, moist, wet`);
+// 3240	嘲: cháo 朝 cháo	口 mouth; entrance, gate, opening
+semphon("嘲", "口", "朝", 3, `to deride, to jeer at, to ridicule, to scorn`);
+// 3673	捞: lāo 劳 láo	扌 hand
+semphon("捞", "扌", "劳", 3, `to dredge up; to fish for; to scoop out of the water`, simplified("撈"));
+// 3674	撈: lāo 勞 láo	扌 hand
+semphon("撈", "扌", "勞", 3, `to dredge up; to fish for; to scoop out of the water`);
+// 3685	唠: láo 劳 láo	口 mouth; entrance, gate, opening
+semphon("唠", "口", "劳", 3, `to chat, to gossip, to jaw, to talk`, simplified("嘮"));
+// 3686	嘮: láo 勞 láo	口 mouth; entrance, gate, opening
+semphon("嘮", "口", "勞", 3, `to chat, to gossip, to jaw, to talk`);
+// 4289	桩: zhuāng 庄 zhuāng	木 tree; wood, lumber; wooden
+semphon("桩", "木", "庄", 4, `stake, post; matter, affair`, simplified("樁"));
+// 4732	赃: zāng 庄 zhuāng	贝 sea shell; money, currency
+semphon("赃", "贝", "庄", 4, `booty, loot; stolen goods; to bribe`, simplified("贓"));
+// 4733	贓: zāng 臧 zāng	貝 sea shell; money, currency
+semphon("贓", "貝", "臧", 7, `booty, loot; stolen goods; to bribe`);
+// 4827	厮: sī 斯 sī	厂 cliff; factory, workshop; building
+semphon("厮", "厂", "斯", 2, `servant; to cause a disturbance`, simplified("廝"));
+// 4828	廝: sī 斯 sī	广 broad, vast, wide; building, house
+semphon("廝", "广", "斯", 3, `servant; to cause a disturbance`);
+// 4911	嘶: sī 斯 sī	口 mouth; entrance, gate, opening
+semphon("嘶", "口", "斯", 3, `the neighing of a hoarse, gravel-voiced, hoarse`);
+// 6628	蛐: qū 曲 qū	虫 insect, worm; mollusk
+semphon("蛐", "虫", "曲", 6, `cricket; worm`);
+// 6785	痨: láo 劳 láo	疒 sickness, disease
+semphon("痨", "疒", "劳", 5, `tuberculosis`, simplified("癆"));
+// 6786	癆: láo 勞 láo	疒 sickness, disease
+semphon("癆", "疒", "勞", 5, `tuberculosis`);
+// 6798	涝: lào 劳 láo	氵 water
+semphon("涝", "氵", "劳", 3, `to inundate, to flood; torrent`, simplified("澇"));
+// 6799	澇: lào 勞 láo	氵 water
+semphon("澇", "氵", "勞", 3, `to inundate, to flood; torrent`);
+
 
 let pinyins = {
     "◎": "xx",
@@ -7803,7 +7862,8 @@ let pinyins = {
     "𥁕": "wēn|wen",
     "雔": "chóu|chou",
     "萈": "huán|huan",
-    "臤": "qiān|qian"
+    "臤": "qiān|qian",
+    "𢎘": "hàn|han"
 }
 
 for (let char in pinyins) {
