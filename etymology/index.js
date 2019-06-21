@@ -1796,8 +1796,29 @@ icon("厚", "strong flavor; thick; deep", "Depicts a container of wine that has 
 icon("𢎘", "flower bud", "Pictograph of a flower bud.", "s");
 semphon("犯", "犭", "𢎘", 3, "violate; offend");
 icon("曲", "bent; crooked", "Pictograph of a bent object.", "os");
+addEtymology("琴", "musical instrument", "The top component is a pictograph of a zither-like stringed musical instrument. 今 is a sound component.",
+    [iconComponent(O, [0, 8], "Pictograph of a stringed musical instrument similar to a zither."), soundComponent("今", [8])]);
+// 2890	耶: yé 阝 yì	耳 ear; to hear, to hear of; handle
+semphon("耶", "耳", "阝", 6, `used in transliterations`);
+// 1256	爺: yé 耶 yé	父 father, dad
+semphon("爺", "父", "耶", 4, `grandfather, old man`);
+simp("爷", "爺", [[0, 4], [4]], {}, { 耶: "卩" });
+// 1936	幣: bì 敝 bì	巾 cloth, curtain, handkerchief, towel
+phonsem("幣", "敝", "巾", 11, `currency, coins, legal tender`);
+simp("币", "幣", [[1], [0, 1]]);
+semphon("倆", "亻", "兩", 2, "two", "", false, true);
+simp("俩", "倆", [[0, 2], [2]], { 兩: "两" });
+phonsem("聚", "取", "众", 8, "congregate; assemble");
+icon("𧴪", "fragments", "Depicts small (小) fragments of shells (貝).");
+semphon("鎖", "金", "𧴪", 8, "lock");
+simp("锁", "鎖", [[0, 5], [5]]);
+phonsem("叔", "朱", "又", 6, "uncle (father's younger brother)");
+semphon("施", "㫃", "也", 6, "bestow; grant", "", true);
+icon("素", "raw silk; white; plain", "Depicts raw silk (糸). The significance of the top component is unclear.", "", [unknownComponent(O, [0, 4]), meaningComponent("糸", [4])]);
+addEtymology("類", "kind; type; class", "Depicts three different types of things that have different types, i.e. different types of rice (米), leaves (頁), and dogs (犬).",
+    [meaningComponent("米", [0, 6]), meaningComponent("犬", [6, 10]), meaningComponent("頁", [10])]);
+simp("类", "類", [[0, 6], [6, 10], [10, 10]]);
 
-// 琴爷币俩聚锁叔施素类 13
 // 拜塑挥弱供废款圈降卷 12
 // 灭猴困局巨阅索概席帝 11
 // 闪赞胸戒庆派贺社泼唯 10
@@ -2687,8 +2708,7 @@ semphon("操", "扌", "喿", 3, `to conduct, to manage, to run`, simplified("撡
 semphon("编", "纟", "扁", 3, `to knit, to weave; to arrange, to compile`, simplified("編"));
 // 1932	編: biān 扁 biǎn	糹 silk; thread
 semphon("編", "糹", "扁", 6, `to knit, to weave; to arrange, to compile`);
-// 1936	幣: bì 敝 bì	巾 cloth, curtain, handkerchief, towel
-phonsem("幣", "敝", "巾", 11, `currency, coins, legal tender`);
+
 // 1941	扩: kuò 扌 shǒu	广 broad, vast, wide; building, house
 phonsem("扩", "扌", "广", 3, `to expand, to stretch, to magnify`, simplified("擴"));
 // 1942	擴: kuò 扌 shǒu	廣 broad, vast, wide; building, house
@@ -3403,8 +3423,7 @@ phonsem("鴿", "合", "鳥", 6, `pigeon, dove; Columba species (various)`);
 semphon("拼", "扌", "并", 3, `to link, to join together; to incorporate`);
 // 2889	橡: xiàng 象 xiàng	木 tree; wood, lumber; wooden
 semphon("橡", "木", "象", 4, `chestnut oak; rubber tree; rubber`);
-// 2890	耶: yé 阝 yì	耳 ear; to hear, to hear of; handle
-semphon("耶", "耳", "阝", 6, `used in transliterations`);
+
 // 2895	伊: yī 尹 yǐn	亻 man, person; people
 semphon("伊", "亻", "尹", 2, `he she; this, that; used in transliterations`);
 // 2896	舅: jiù 臼 jiù	男 man, boy; male; baron; surname
@@ -7211,8 +7230,7 @@ phonsem("装", "壮", "衣", 6, `dress, clothes, attire; to wear, to install`, s
 phonsem("裝", "壯", "衣", 7, `dress, clothes, attire; to wear, to install`);
 // 1167	恐: kǒng 巩 gǒng	心 heart; mind; soul
 phonsem("恐", "巩", "心", 6, `fearful, apprehensive; to fear, to dread`);
-// 1256	爺: yé 耶 yé	父 father, dad
-semphon("爺", "父", "耶", 4, `grandfather, old man`);
+
 // 1364	剧: jù 居 jū	刂 knife
 phonsem("剧", "居", "刂", 8, `theatrical plays, opera, drama; severe, acute`, simplified("劇"));
 // 1412	落: luò 洛 luò	艹 grass, weed, plant, herb
@@ -7812,6 +7830,19 @@ semphon("涝", "氵", "劳", 3, `to inundate, to flood; torrent`, simplified("�
 // 6799	澇: lào 勞 láo	氵 water
 semphon("澇", "氵", "勞", 3, `to inundate, to flood; torrent`);
 
+// 2648	寂: jì 叔 shū	宀 roof; house
+semphon("寂", "宀", "叔", 3, `still, silent, quiet, desolate`);
+// 2870	督: dū 叔 shū	目 eye; to look, to see; division, topic
+phonsem("督", "叔", "目", 8, `to supervise, to oversee, to direct`);
+// 2946	椒: jiāo 叔 shū	木 tree; wood, lumber; wooden
+semphon("椒", "木", "叔", 4, `pepper, spice`);
+// 2959	骤: zhòu 聚 jù	马 horse; surname
+semphon("骤", "马", "聚", 3, `procedure; sudden, abrupt; to gallop`, simplified("驟"));
+// 2960	驟: zhòu 聚 jù	馬 horse; surname
+semphon("驟", "馬", "聚", 10, `procedure; sudden, abrupt; to gallop`);
+// 4520	淑: shū 叔 shū	氵 water
+semphon("淑", "氵", "叔", 3, `good, pure, virtuous; charming`);
+
 
 let pinyins = {
     "◎": "xx",
@@ -7863,7 +7894,8 @@ let pinyins = {
     "雔": "chóu|chou",
     "萈": "huán|huan",
     "臤": "qiān|qian",
-    "𢎘": "hàn|han"
+    "𢎘": "hàn|han",
+    "𧴪": "suǒ|suo"
 }
 
 for (let char in pinyins) {
