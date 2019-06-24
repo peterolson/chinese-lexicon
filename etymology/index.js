@@ -1818,13 +1818,35 @@ icon("素", "raw silk; white; plain", "Depicts raw silk (糸). The significance 
 addEtymology("類", "kind; type; class", "Depicts three different types of things that have different types, i.e. different types of rice (米), leaves (頁), and dogs (犬).",
     [meaningComponent("米", [0, 6]), meaningComponent("犬", [6, 10]), meaningComponent("頁", [10])]);
 simp("类", "類", [[0, 6], [6, 10], [10, 10]]);
+icon("拜", "pay respect; worship", "Depicts two hands put (手) together as a sign of respect.", "", [iconComponent("手", [0, 4]), iconComponent("手", [4])]);
+phonsem("朔", "屰", "月", 6, "new moon; first day of lunar month", "", true);
+phonsem("塑", "朔", "土", 10, "sculpt with clay; plastic");
+semphon("揮", "扌", "軍", 3, "wave; bransish; command", "", true);
+simp("挥", "揮", [[0, 3], [3]], { 軍: "军" });
+semphon("供", "亻", "共", 2, "provide; supply");
+semphon("廢", "广", "發", 3, "abandon; waste");
+simp("废", "廢", [[0, 3], [3]], { 發: "发" });
+addEtymology("款", "section; paragraph; funds", "欠 represents the sound. The significance of the left component is unclear.", [unknownComponent("士", [0, 3]), unknownComponent("示", [3, 8]), soundComponent("欠", [8])]);
+icon("卷", "roll up; scroll", "Pictograph of two hands rolling rice into a ball. 卩 (kneeling person) is a meaning component.", "s", [iconComponent("米", [0, 5]), iconComponent("廾", [3, 6]), meaningComponent("卩", [6])]);
+semphon("圈", "囗", "卷", [[0, 2, -1], [2, -1]], "circle; loop");
+addEtymology("降", "descend; fall", "Depicts two feet (止) descending down a hill (阝).", [iconComponent("阝", [0, 2], "Depicts a hill."), iconComponent("止", [2, 5], "Depicts a foot walking down a hill."), iconComponent("止", [5], "Depicts a foot walking down a hill.")]);
+semphon("姑", "女", "古", 3, "paternal aunt");
+addEtymology("滅", "extinguish; put out fire", "Depicts water (氵) being used to extinguish a fire (火). 戌 is a sound component.",
+    [meaningComponent("氵", [0, 3]), soundComponent("戌", [3, 6, 10], obsoleteSound("滅", "戌")), meaningComponent("火", [6, 10])]);
+simp("灭", "滅", [[0, 0], [0, 1], [1]], {}, { 戌: "一" });
+semphon("侯", "亻", "矦", 2, "marquis; lord");
+semphon("猴", "犭", "侯", 3, "monkey");
+semsem("困", "囗", "木", [[0, 2, -1], [2, -1]], "trap; surround", "Depicts a tree (木) being surrounded (囗).");
+semphon("局", "口", "句", [[0, 2], [2]], "narrow");
+semphon("閱", "門", "兌", 8, "inspect; review; read", "", true);
+simp("阅", "閱", [[0, 3], [3]], { 門: "门", 兌: "兑" });
+icon("索", "large rope; bind; search; demand", "Pictograph of two hands (廾) twisting together a long rope (糸).", "s", [iconComponent("廾", [0, 4], "Depicts two hands twisting a rope."), iconComponent("糸", [4])]);
 
-// 拜塑挥弱供废款圈降卷 12
-// 灭猴困局巨阅索概席帝 11
+// 既概席帝 11
 // 闪赞胸戒庆派贺社泼唯 10
-// 异折替赢插撒丢聘权既 9
+// 异折替赢插撒丢聘权 9
 // 剩熟稍绩罪承瘦念威胁 8
-// 尊姨岸奥俄载宫宋荣姑 7
+// 尊姨岸奥俄载宫宋荣弱 7
 
 // top 1000 difficulty levels done
 
@@ -5865,7 +5887,7 @@ phonsem("磐", "般", "石", 10, `boulder, large rock; firm, stable`);
 semphon("衙", "行", "吾", 6, `public office; official residence`);
 // 5599	剁: duò 朵 duǒ	刂 knife
 phonsem("剁", "朵", "刂", 6, `to chop by pounding, to hash, to mince`);
-// 5603	踱: duó 度 dù	足 foot; to attain, to satisfy; enough
+// 5603	踱: duó �� dù	足 foot; to attain, to satisfy; enough
 semphon("踱", "足", "度", 7, `to pace, to stroll, to walk slowly`);
 // 5604	笋: sǔn 尹 yǐn	⺮ bamboo; flute
 semphon("笋", "⺮", "尹", 6, `bamboo shoots`, simplified("筍"));
@@ -7843,6 +7865,23 @@ semphon("驟", "馬", "聚", 10, `procedure; sudden, abrupt; to gallop`);
 // 4520	淑: shū 叔 shū	氵 water
 semphon("淑", "氵", "叔", 3, `good, pure, virtuous; charming`);
 
+// 2018	捲: juǎn 卷 juǎn	扌 hand
+semphon("捲", "扌", "卷", 3, `curl, roll up; curly, rolled up`);
+// 4785	菇: gū 姑 gū	艹 grass, weed, plant, herb
+semphon("菇", "艹", "姑", 3, `mushroom`);
+// 5472	湃: pài 拜 bài	氵 water
+semphon("湃", "氵", "拜", 3, `turbulent, surging; the sound of waves crashing`);
+
+// 1337	睏: kùn 困 kùn	目 eye; to look, to see; division, topic
+semphon("睏", "目", "困", 5, `to surround; to besiege; surrounded, in distress; poor; tired, sleepy`);
+// 1386	侷: jú 局 jú	亻 man, person; people
+semphon("侷", "亻", "局", 2, `narrow, cramped, confined`);
+// 3283	喉: hóu 侯 hóu	口 mouth; entrance, gate, opening
+semphon("喉", "口", "侯", 3, `throat, larynx, gullet; guttural`);
+// 3778	捆: kǔn 困 kùn	扌 hand
+semphon("捆", "扌", "困", 3, `to bind, to tie, to truss up; a bundle`, simplified("綑"));
+// 4103	嗦: suo 索 suǒ	口 mouth; entrance, gate, opening
+semphon("嗦", "口", "索", 3, `to suck`);
 
 let pinyins = {
     "◎": "xx",
