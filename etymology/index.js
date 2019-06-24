@@ -1829,7 +1829,7 @@ simp("废", "廢", [[0, 3], [3]], { 發: "发" });
 addEtymology("款", "section; paragraph; funds", "欠 represents the sound. The significance of the left component is unclear.", [unknownComponent("士", [0, 3]), unknownComponent("示", [3, 8]), soundComponent("欠", [8])]);
 icon("卷", "roll up; scroll", "Pictograph of two hands rolling rice into a ball. 卩 (kneeling person) is a meaning component.", "s", [iconComponent("米", [0, 5]), iconComponent("廾", [3, 6]), meaningComponent("卩", [6])]);
 semphon("圈", "囗", "卷", [[0, 2, -1], [2, -1]], "circle; loop");
-addEtymology("降", "descend; fall", "Depicts two feet (止) descending down a hill (阝).", [iconComponent("阝", [0, 2], "Depicts a hill."), iconComponent("止", [2, 5], "Depicts a foot walking down a hill."), iconComponent("止", [5], "Depicts a foot walking down a hill.")]);
+addEtymology("降", "descend; fall", "Depicts two feet (止) descending down a hill (阝).", [iconComponent("阝", [0, 2], "Depicts a hill."), iconComponent("止", [2, 5], "Depicts a foot walking down a hill."), iconComponent("止", [5], "Depicts a foot walking down a hill.")], "o");
 semphon("姑", "女", "古", 3, "paternal aunt");
 addEtymology("滅", "extinguish; put out fire", "Depicts water (氵) being used to extinguish a fire (火). 戌 is a sound component.",
     [meaningComponent("氵", [0, 3]), soundComponent("戌", [3, 6, 10], obsoleteSound("滅", "戌")), meaningComponent("火", [6, 10])]);
