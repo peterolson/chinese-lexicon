@@ -1841,10 +1841,30 @@ semphon("局", "口", "句", [[0, 2], [2]], "narrow");
 semphon("閱", "門", "兌", 8, "inspect; review; read", "", true);
 simp("阅", "閱", [[0, 3], [3]], { 門: "门", 兌: "兑" });
 icon("索", "large rope; bind; search; demand", "Pictograph of two hands (廾) twisting together a long rope (糸).", "s", [iconComponent("廾", [0, 4], "Depicts two hands twisting a rope."), iconComponent("糸", [4])]);
+semphon("既", "皀", "旡", 5, "already; since");
+semphon("概", "木", "既", 4, "approximate; general", "", true);
+semsem("庶", "石", "灬", 7, "numerous; common people", "Depicts a stone pot (石) over a fire (灬). Based on the original meaning \"to cook; boil\", now written as 煮. The current meaning is a phonetic loan. 石 also serves as a sound component.");
+phonsem("席", "庶", "巾", 7, "woven mat; seat; banquet");
+icon("帝", "emperor", "Pictograph of firewood arranged together for the purpose of an imperial ancestral sacrifice.", "o");
+semphon("唯", "口", "隹", 3, "only");
+semphon("潑", "氵", "發", 3, "splash; spill");
+simp("泼", "潑", [[0, 3], [3]], { 發: "发" });
+semsem("社", "礻", "土", 4, "society; group; god of the land", "Originally depicted a god (礻) of the land (土). The meaning later shifted to \"society\".");
+icon("派", "clique; faction; dispatch", "Pictograph of a split in a river.", "s", [iconComponent("氵", [0, 3]), iconComponent("永", [3], "Depicts a split in a river.")]);
+semsem("閃", "門", "人", 8, "sparkle; flash; dodge; shun", "Depicts a person (人) standing in the middle of a doorway (門).");
+simp("闪", "閃", [[0, 3], [3]], { 門: "门" });
+semsem("兟", "先", "先", 6, "to advance", "Duplicate of 先 (first).");
+phonsem("贊", "兟", "貝", 12, "patronize; support; praise", "Shells (貝) were used as currency in ancient China. Used here to depict financial support.");
+simp("赞", "贊", [[12], [0, 12]], { 貝: "贝" });
+// 4730	匈: xiōng 凶 xiōng	勹 wrap
+semphon("匈", "勹", "凶", 2, `breast, chest, thorax; to clamor; Hungary`);
+semphon("胸", "⺼", "匈", 4, "chest; heart; thorax");
+semsem("戒", "戈", "廾", [[0, 1, 4], [1, 4]], "guard against; exhort", "Depicts two hands (廾) holding a weapon (戈) guarding against danger.");
+phonsem("賀", "加", "貝", 5, "congratulate");
+simp("贺", "賀", [[5], [0, 5]], { 貝: "贝" });
 
-// 既概席帝 11
-// 闪赞胸戒庆派贺社泼唯 10
-// 异折替赢插撒丢聘权 9
+
+// 异折替赢插撒丢聘权庆慶 9
 // 剩熟稍绩罪承瘦念威胁 8
 // 尊姨岸奥俄载宫宋荣弱 7
 
@@ -7579,8 +7599,7 @@ semphon("掏", "扌", "匋", 3, `to take out; to pull out; to clean out`, simpli
 semphon("缚", "纟", "尃", 3, `to tie, to bind`, simplified("縛"));
 // 3786	縛: fù 尃 fū	糹 silk; thread
 semphon("縛", "糹", "尃", 6, `to tie, to bind`);
-// 4730	匈: xiōng 凶 xiōng	勹 wrap
-semphon("匈", "勹", "凶", 2, `breast, chest, thorax; to clamor; Hungary`);
+
 // 4737	甸: diān 田 tián	勹 wrap
 semphon("甸", "勹", "田", 2, `suburbs of the capital; to govern; crops`);
 // 5416	簇: cù 族 zú	⺮ bamboo; flute
@@ -7882,6 +7901,45 @@ semphon("喉", "口", "侯", 3, `throat, larynx, gullet; guttural`);
 semphon("捆", "扌", "困", 3, `to bind, to tie, to truss up; a bundle`, simplified("綑"));
 // 4103	嗦: suo 索 suǒ	口 mouth; entrance, gate, opening
 semphon("嗦", "口", "索", 3, `to suck`);
+
+// 2679	蒂: dì 帝 dì	艹 grass, weed, plant, herb
+semphon("蒂", "艹", "帝", 3, `root cause; the stem of a fruit; the peduncle of a flower`, simplified("蔕"));
+// 2990	鑽: zuān 贊 zàn	釒 gold, metal; money
+semphon("鑽", "釒", "贊", 8, `diamond; to bore, to drill, to pierce`);
+// 3242	械: xiè 戒 jiè	木 tree; wood, lumber; wooden
+semphon("械", "木", "戒", 4, `weapons; tools; instruments`);
+// 3419	遮: zhē 庶 shù	辶 to walk; walking
+semphon("遮", "辶", "庶", 11, `to cover, to protect, to shield`);
+// 3504	慨: kǎi 既 jì	忄 heart; mind; soul
+semphon("慨", "忄", "既", 3, `sigh, regret, lament; generosity`, simplified("嘅"));
+// 3505	嘅: kǎi 既 jì	口 mouth; entrance, gate, opening
+semphon("嘅", "口", "既", 3, `the sound of a sigh`);
+// 4147	缔: dì 帝 dì	纟 silk; thread
+semphon("缔", "纟", "帝", 3, `to tie, to join; knot, connection`, simplified("締"));
+// 4148	締: dì 帝 dì	糹 silk; thread
+semphon("締", "糹", "帝", 6, `to tie, to join; knot, connection`);
+// 4160	攒: zǎn 赞 zàn	扌 hand
+semphon("攒", "扌", "赞", 3, `to save, to hoard`, simplified("攢"));
+// 4161	攢: zǎn 贊 zàn	扌 hand
+semphon("攢", "扌", "贊", 3, `to save, to hoard`);
+// 4381	溉: gài 既 jì	氵 water
+semphon("溉", "氵", "既", 3, `to water, to irrigate, to flood; to wash`);
+// 4700	蹄: tí 帝 dì	足 foot; to attain, to satisfy; enough
+semphon("蹄", "足", "帝", 7, `hoof; pig's trotter`, simplified("蹏"));
+// 4948	啼: tí 帝 dì	口 mouth; entrance, gate, opening
+semphon("啼", "口", "帝", 3, `to weep, to whimper; to howl; to crow`, simplified("嗁"));
+// 5201	谛: dì 帝 dì	讠 words, speech; to speak, to say
+semphon("谛", "讠", "帝", 2, `careful, attentive; to examine; the truth`, simplified("諦"));
+// 5202	諦: dì 帝 dì	言 words, speech; to speak, to say
+semphon("諦", "言", "帝", 7, `careful, attentive; to examine; the truth`);
+// 5370	厩: jiù 既 jì	厂 cliff; factory, workshop; building
+semphon("厩", "厂", "既", 2, `stable; barnyard`, simplified("廄"));
+// 5643	蔗: zhè 庶 shù	艹 grass, weed, plant, herb
+semphon("蔗", "艹", "庶", 3, `sugar cane`);
+// 6241	暨: jì 既 jì	旦 dawn; morning; day
+phonsem("暨", "既", "旦", 9, `and; to reach, to attain; limits, confines`);
+// 6966	瓒: zàn 赞 zàn	王 king, ruler; royal; surname
+semphon("瓒", "王", "赞", 4, `ceremonial libation cup`, simplified("瓚"));
 
 let pinyins = {
     "◎": "xx",
