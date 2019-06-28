@@ -1862,9 +1862,27 @@ semphon("胸", "⺼", "匈", 4, "chest; heart; thorax");
 semsem("戒", "戈", "廾", [[0, 1, 4], [1, 4]], "guard against; exhort", "Depicts two hands (廾) holding a weapon (戈) guarding against danger.");
 phonsem("賀", "加", "貝", 5, "congratulate");
 simp("贺", "賀", [[5], [0, 5]], { 貝: "贝" });
+icon("異", "different; other; unusual", "Pictograph of a person with an unusual head.", "b");
+phonsem("异", "已", "廾", 3, "different; other; unusual", simplified("異") + " Pictograph of a person with an unusual head.", false, false, "異:b");
+semsem("折", "扌", "斤", 3, "break off; reduce", "Depicts a hand (扌) cutting something off with an axe (斤).");
+addEtymology("替", "substitute; replace", "Depicts two standing people (夫) changing places.",
+    [iconComponent("夫", [0, 4]), iconComponent("夫", [4, 8]), meaningComponent("曰", [8])]);
+icon("𣎆", "legendary animal", "Pictograph of a legendary animal.", "b");
+phonsem("贏", "𣎆", "貝", [[0, 10, 17], [10, 17]], "win; profit", "", true);
+simp("赢", "贏", [[10, 14], [0, 10, 14]], { 貝: "贝" });
+icon("臿", "separate grain from husk", "Depicts grain being separated from its husk.", "s");
+semphon("插", "扌", "臿", 3, "insert; stick in; pierce");
+semphon("撒", "扌", "散", 3, "scatter; sprinkle", "", false, true);
+semsem("丟", "一", "去", 1, "lose; put aside; throw", "A horizontal line added to the sematically similar character 去 (leave; go).");
+simp("丢", "丟");
+addEtymology("甹", "chivalrous knight", "Origin unclear.", [unknownComponent("由", [0, 5]), unknownComponent("丂", [5])]);
+semphon("聘", "耳", "甹", 6, "employ; engage");
+// 1397	權: quán 雚 guàn	木 tree; wood, lumber; wooden
+semphon("權", "木", "雚", 4, `authority, power, right`);
+simp("权", "權", [[0, 4], [4]], {}, { "雚": "又" });
+semsem("慶", "廌", "心", [[0, 8, 12], [8, 12]], "celebrate", "Depicts a festive animal (廌) eliciting a feeling of celebration in the heart (心).");
+simp("庆", "慶", [[0, 3], [3]], {}, { "廌": "广", "心": "大" });
 
-
-// 异折替赢插撒丢聘权庆慶 9
 // 剩熟稍绩罪承瘦念威胁 8
 // 尊姨岸奥俄载宫宋荣弱 7
 
@@ -2325,8 +2343,7 @@ semphon("渴", "氵", "曷", 3, `thirsty, parched; to yearn, to pine for`);
 semphon("独", "犭", "虫", 3, `alone, independent, only, single, solitary`, simplified("獨"));
 // 1389	獨: dú 蜀 shǔ	犭 dog
 semphon("獨", "犭", "蜀", 3, `alone, independent, only, single, solitary`);
-// 1397	權: quán 雚 guàn	木 tree; wood, lumber; wooden
-semphon("權", "木", "雚", 4, `authority, power, right`);
+
 // 1400	遍: biàn 扁 biǎn	辶 to walk; walking
 semphon("遍", "辶", "扁", 9, `everywhere, all over, throughout`, simplified("徧"));
 // 1402	扰: rǎo 尤 yóu	扌 hand
@@ -7941,6 +7958,32 @@ phonsem("暨", "既", "旦", 9, `and; to reach, to attain; limits, confines`);
 // 6966	瓒: zàn 赞 zàn	王 king, ruler; royal; surname
 semphon("瓒", "王", "赞", 4, `ceremonial libation cup`, simplified("瓚"));
 
+// 2555	哲: zhé 折 zhé	口 mouth; entrance, gate, opening
+phonsem("哲", "折", "口", 7, `wise, sagacious; wise man; philosopher`, simplified("喆"));
+// 2692	潜: qián 替 tì	氵 water
+semphon("潜", "氵", "替", 3, `to hide; secret, latent, hidden`, simplified("潛"));
+// 3246	翼: yì 異 yì	羽 feather, plume; wings
+semphon("翼", "羽", "異", 6, `wings, fins; shelter`);
+// 3366	逝: shì 折 zhé	辶 to walk; walking
+semphon("逝", "辶", "折", 7, `to die, to pass away`);
+// 4537	糞: fèn 異 yì	米 rice, millet, grain
+semphon("糞", "米", "異", 6, `manure, dung; shit, excrement`);
+// 5444	冀: jì 異 yì	北 north; northern; northward
+semphon("冀", "北", "異", 5, `to hope for; to wish; Hebei province`);
+// 6019	蜇: zhē 折 zhé	虫 insect, worm; mollusk
+phonsem("蜇", "折", "虫", 7, `jellyfish`);
+// 6047	骋: chěng 甹 pīng	马 horse; surname
+semphon("骋", "马", "甹", 3, `to gallop, to hasten, to hurry`, simplified("騁"));
+// 6048	騁: chěng 甹 pīng	馬 horse; surname
+semphon("騁", "馬", "甹", 10, `to gallop, to hasten, to hurry`);
+// 6603	浙: zhè 折 zhé	氵 water
+semphon("浙", "氵", "折", 3, `the Zhejiang province; a river`, simplified("淛"));
+
+// 6674	骥: jì 冀 jì	马 horse; surname
+semphon("骥", "马", "冀", 3, `a thoroughbred horse; refined, virtuous`, simplified("驥"));
+// 6675	驥: jì 冀 jì	馬 horse; surname
+semphon("驥", "馬", "冀", 10, `a thoroughbred horse; refined, virtuous`);
+
 let pinyins = {
     "◎": "xx",
     "覀": "xx",
@@ -7992,7 +8035,8 @@ let pinyins = {
     "萈": "huán|huan",
     "臤": "qiān|qian",
     "𢎘": "hàn|han",
-    "𧴪": "suǒ|suo"
+    "𧴪": "suǒ|suo",
+    "𣎆": "luò|luo"
 }
 
 for (let char in pinyins) {
