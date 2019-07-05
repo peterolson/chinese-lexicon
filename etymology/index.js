@@ -1882,8 +1882,23 @@ semphon("權", "木", "雚", 4, `authority, power, right`);
 simp("权", "權", [[0, 4], [4]], {}, { "雚": "又" });
 semsem("慶", "廌", "心", [[0, 8, 12], [8, 12]], "celebrate", "Depicts a festive animal (廌) eliciting a feeling of celebration in the heart (心).");
 simp("庆", "慶", [[0, 3], [3]], {}, { "廌": "广", "心": "大" });
+icon("丸", "ball; pellet", "Depicts something tilted or leaning forward; i.e. something that can be turned around.", "s");
+addEtymology("孰", "who; which; what", "Origin unclear. Possibly depicts a person offering food at a temple.", [unknownComponent("享", [0, 8]), unknownComponent("丮", [8])])
+phonsem("熟", "孰", "灬", 11, "cooked; ripe; mature");
+semphon("稍", "禾", "肖", 5, "somewhat; a little");
+semphon("績", "糹", "責", 6, "spin (thread); merit; accomplishment", "", true);
+simp("绩", "績", [[0, 3], [3]], { 責: "责" });
+semphon("罪", "网", "非", 5, "guilt; crime; sin");
+icon("承", "bear; carry; hold", "Pictograph of two hands carrying a person.", "bs", [iconComponent(O, [0, 5], "Depicts a person being carried."), iconComponent("廾", [5])]);
+icon("叟", "search", "Depicts a hand (又) holding a torch (火) in a dark room (宀) looking for something. Original form of the character 搜.", "o", [iconComponent("宀", [0, 2, 3, 4]), iconComponent("火", [2, 3, 4, 7]), iconComponent("又", [7])]);
+semphon("搜", "扌", "叟", 3, "search", "Originally written as 叟.");
+semphon("瘦", "疒", "叟", 5, "thin; lose weight");
+phonsem("念", "今", "心", 4, "read; study; remember; idea", "", true);
+semsem("威", "戌", "女", [[0, 3, 6], [3, 6]], "power; might; prestige", "戌 is a pictograph of an axe, representing military power. 女 possibly alludes to the domestic power wielded by mothers-in-law in ancient China.");
+addEtymology("劦", "unending exertion", "Triple of 力 (strength).", [meaningComponent("力", [0, 2]), meaningComponent("力", [2, 4]), meaningComponent("力", [4])]);
+phonsem("脅", "劦", "⺼", 6, "flank; threaten");
+simp("胁", "脅", [[0, 4], [4]], {}, { "劦": "力" });
 
-// 剩熟稍绩罪承瘦念威胁 8
 // 尊姨岸奥俄载宫宋荣弱 7
 
 // top 1000 difficulty levels done
@@ -7983,6 +7998,35 @@ semphon("浙", "氵", "折", 3, `the Zhejiang province; a river`, simplified("�
 semphon("骥", "马", "冀", 3, `a thoroughbred horse; refined, virtuous`, simplified("驥"));
 // 6675	驥: jì 冀 jì	馬 horse; surname
 semphon("驥", "馬", "冀", 10, `a thoroughbred horse; refined, virtuous`);
+
+// 1503	唸: niàn 念 niàn	口 mouth; entrance, gate, opening
+semphon("唸", "口", "念", 3, `to recite, to read, to chant`);
+// 3133	艘: sōu 叟 sǒu	舟 boat, ship
+semphon("艘", "舟", "叟", 6, `measure word for ships or vessels`);
+// 3951	嫂: sǎo 叟 sǒu	女 woman, girl; female
+semphon("嫂", "女", "叟", 3, `sister-in-law, elder brother's wife`);
+// 5743	嗖: sōu 叟 sǒu	口 mouth; entrance, gate, opening
+semphon("嗖", "口", "叟", 3, `a whizzing sound`);
+// 6077	捻: niǎn 念 niàn	扌 hand
+semphon("捻", "扌", "念", 3, `to twist or nip with the fingers`);
+// 6225	崴: wǎi 威 wēi	山 mountain, hill, peak
+semphon("崴", "山", "威", 3, `high, lofty, precipitous; to sprain`);
+// 6320	飕: sōu 叟 sǒu	风 wind; air; customs, manners; news
+semphon("飕", "风", "叟", 4, `a chill breeze; to blow; the sound of the wind`, simplified("颼"));
+// 6321	颼: sōu 叟 sǒu	風 wind; air; customs, manners; news
+semphon("颼", "風", "叟", 9, `a chill breeze; to blow; the sound of the wind`);
+// 6453	鲶: nián 念 niàn	鱼 fish
+semphon("鲶", "鱼", "念", 8, `catfish; sheat`, simplified("鯰"));
+// 6454	鯰: nián 念 niàn	魚 fish
+semphon("鯰", "魚", "念", 11, `sheatfish`);
+// 6659	纨: wán 丸 wán	纟 silk; thread
+semphon("纨", "纟", "丸", 3, `gauze; fine white silk`, simplified("紈"));
+// 6660	紈: wán 丸 wán	糹 silk; thread
+semphon("紈", "糹", "丸", 6, `gauze; fine white silk`);
+// 6714	稔: rěn 念 niàn	禾 cereal, grain, rice; plant, stalk
+semphon("稔", "禾", "念", 5, `ripe grain; to harvest; to know well`);
+// 6955	塾: shú 孰 shú	土 soil, earth; items made of earth
+phonsem("塾", "孰", "土", 11, `village school; private tutorage`);
 
 let pinyins = {
     "◎": "xx",
