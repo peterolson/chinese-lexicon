@@ -688,7 +688,7 @@ semphon("站", "立", "占", 5, "station; stop; stand");
 semphon("爸", "父", "巴", 4, "dad; father");
 icon("殳", "spear", "Pictograph of a hand holding a spear.", "obs", [iconComponent(O, [0, 2], "Depicts a spear."), iconComponent("又", [2], "Depicts a hand.")]);
 addEtymology("殹", "(archaic) [particle]", "Original meaning unclear.", [unknownComponent(O, [0, 7], "Seems to depict an arrow in a container."), unknownComponent("殳", [7])]);
-icon("酉", "10th earthly branch", "Pictograph of a container for wine.", "obs");
+icon("酉", "10th earthly branch; (wine)", "Pictograph of a container for wine.", "obs");
 semphon("酒", "氵", "酉", 3, "alcoholic drink", "The 酉 component is a pictograph of a container for wine, so it also serves as a meaning component.", false, true);
 phonsem("醫", "殹", "酉", 11, "medicine", "The 酉 component is a pictograph of a container for wine, which is sometimes used for medicinal purposes.");
 simp("医", "醫", [[0, 0], [0]]);
@@ -1898,10 +1898,22 @@ semsem("威", "戌", "女", [[0, 3, 6], [3, 6]], "power; might; prestige", "戌 
 addEtymology("劦", "unending exertion", "Triple of 力 (strength).", [meaningComponent("力", [0, 2]), meaningComponent("力", [2, 4]), meaningComponent("力", [4])]);
 phonsem("脅", "劦", "⺼", 6, "flank; threaten");
 simp("胁", "脅", [[0, 4], [4]], {}, { "劦": "力" });
-
-// 尊姨岸奥俄载宫宋荣弱 7
-
-// top 1000 difficulty levels done
+addEtymology("酋", "tribal chief", "Depicts a container of aged wine. Meaning later shifted to \"elder\" and \"chief\".", [iconComponent(O, [0, 2], "Mark added to distinguish this character from 酉."), iconComponent("酉", [2], "Depicts a container of wine.")]);
+semsem("尊", "酋", "寸", 9, "senior; honor; respect", "Depicts a hand (寸) giving an offering to an elder (酋) as a sign of respect.");
+icon("夷", "barbarians; wipe out", "Origin unclear. Possibly depicts a string around a bow.", "b");
+semphon("姨", "女", "夷", 3, "aunt");
+addEtymology("岸", "bank; shore; beach", "The 山 (mountain) and 厂 (cliff) components hint at the landscape-related meaning. 干 represents the sound.",
+    [meaningComponent("山", [0, 3]), meaningComponent("厂", [3, 5]), soundComponent("干", [5])]);
+addEtymology("奧", "obscure; mysterious", "Origin unclear.", [meaningComponent("宀", [0, 3]), unknownComponent("釆", [3, 10]), unknownComponent("大", [10])]);
+simp("奥", "奧", [[0, 3], [3, 9], [9]], { 釆: "米" });
+semphon("俄", "亻", "我", 2, "Russia; suddenly", "", true);
+phonsem("載", "𢦔", "車", [[0, 3, 10], [3, 10]], "carry; convey; record");
+simp("载", "載", [[3, 7], [0, 3, 7]], { "車": "车" });
+simp("宫", "宮");
+addEtymology("宋", "Song dynasty", "Origin unclear.", [unknownComponent("宀", [0, 3]), unknownComponent("木", [3])]);
+addEtymology("榮", "glory; honor", "Depicts pieces of wood burning.", [iconComponent("火", [0, 8]), iconComponent(O, [8, 10], "Depicts a piece of firewood."), iconComponent("木", [10])]);
+simp("荣", "榮", [[0, 3], [3, 5], [5]], {}, { 火: "艹" });
+addEtymology("弱", "weak; inferior", "Origin unclear. Contains two bows (弓) with extra marks, perhaps indicating damage or weakness in the bows.", [iconComponent("弓", [0, 3]), iconComponent("弓", [5, 8]), unknownComponent(O, [3, 5, 8], "The purpose of these marks is unclear.")]);
 
 // 增企委构敌陈苏率兰若 6
 // 初雷洲范州沉皇抗税阵 5
@@ -8027,6 +8039,27 @@ semphon("紈", "糹", "丸", 6, `gauze; fine white silk`);
 semphon("稔", "禾", "念", 5, `ripe grain; to harvest; to know well`);
 // 6955	塾: shú 孰 shú	土 soil, earth; items made of earth
 phonsem("塾", "孰", "土", 11, `village school; private tutorage`);
+
+// 2285	噢: ō 奥 ào	口 mouth; entrance, gate, opening
+semphon("噢", "口", "奥", 3, `to moan; interjection indicating pain or sadness`);
+// 2704	蹲: dūn 尊 zūn	足 foot; to attain, to satisfy; enough
+semphon("蹲", "足", "尊", 7, `to squat, to crouch`);
+// 4247	澳: ào 奥 ào	氵 water
+semphon("澳", "氵", "奥", 3, `bay, cove, dock, inlet`);
+// 4665	溺: nì 弱 ruò	氵 water
+semphon("溺", "氵", "弱", 3, `to spoil, to pamper, to indulge; to drown`);
+// 4929	胰: yí 夷 yí	⺼ meat, flesh; organic compound
+semphon("胰", "⺼", "夷", 4, `pancreas; soap`);
+// 4945	咦: yí 夷 yí	口 mouth; entrance, gate, opening
+semphon("咦", "口", "夷", 3, `exclamation of surprise`);
+// 5070	懊: ào 奥 ào	忄 heart; mind; soul
+semphon("懊", "忄", "奥", 3, `vexed; regretful; nervous`);
+// 6284	鳟: zūn 尊 zūn	鱼 fish
+semphon("鳟", "鱼", "尊", 8, `barbel`, simplified("鱒"));
+// 6285	鱒: zūn 尊 zūn	魚 fish
+semphon("鱒", "魚", "尊", 11, `barbel`);
+// 6520	襖: ǎo 奥 ào	衤 cloth
+semphon("襖", "衤", "奥", 5, `coat, jacket, outerware`);
 
 let pinyins = {
     "◎": "xx",
