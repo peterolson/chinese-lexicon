@@ -589,7 +589,7 @@ simp("当", "當", [[3], [0, 3]], {}, { 尚: "尚", 田: "田" }, true);
 icon("廾", "two hands", "Pictograph of two hands.", "o");
 icon("開", "open", "Pictograph of two hands opening the bolt on a door.", "s", [iconComponent("門", [0, 8]), iconComponent(O, [8, 9], "Depicts a bolt on a door."), iconComponent("廾", [9])]);
 simp("开", "開", [[0, 0], [0, 1], [1]]);
-icon("申", "extend; state; explain", "Pictograph of a lightning bolt. The current meaning is a phonetic loan.", "obs");
+icon("申", "(lightning); extend; state; explain", "Pictograph of a lightning bolt. The current meaning is a phonetic loan.", "obs");
 icon("电", "electricity; lightning", "Originally a variant form of 申, a pictograph of a lightning bolt. The traditional form 電 adds the 雨 (rain) component.", "申:obs");
 semsem("電", "雨", "电", 8, "electricity, lightning", "Depicts lightning (电) during a rainstorm (雨).");
 phonsem("台", "以", "口", 2, "platform; station; (simp.) table; counter", mouthedNote + " " + simplifyMerge("台", "檯", "table; counter"), true);
@@ -887,7 +887,7 @@ phonsem("隨", "隋", "辶", [[0, 11], [11]], "follow; comply; according to...")
 simp("陏", "隋", [[0, 2], [2, 2], [2]]);
 simp("随", "隨", [[8], [0, 8]], {}, { 隋: "陏" });
 semsem("便", "亻", "更", 2, "convenient; defecate", "When uncomfortable, a person (亻) will change (更) to a more convenient (便) position.");
-icon("之", "[particle]", "Pictograph of a foot, phonetically and visually similar to 止, which also a pictograph of a foot.", "obs");
+icon("之", "[particle]; (foot)", "Pictograph of a foot, phonetically and visually similar to 止, which also a pictograph of a foot.", "obs");
 icon("帶", "band; belt; carry; bring", "Pictograph of a belt clasp.", "os");
 simp("带", "帶");
 icon("送", "deliver; carry; present", "Depicts walking (辶) while carrying a present in both hands.", "s", [meaningComponent("辶", [6]), iconComponent(O, [0, 3], "Depicts some object being carried."), iconComponent("廾", [3, 6])]);
@@ -1914,9 +1914,42 @@ addEtymology("宋", "Song dynasty", "Origin unclear.", [unknownComponent("宀", 
 addEtymology("榮", "glory; honor", "Depicts pieces of wood burning.", [iconComponent("火", [0, 8]), iconComponent(O, [8, 10], "Depicts a piece of firewood."), iconComponent("木", [10])]);
 simp("荣", "榮", [[0, 3], [3, 5], [5]], {}, { 火: "艹" });
 addEtymology("弱", "weak; inferior", "Origin unclear. Contains two bows (弓) with extra marks, perhaps indicating damage or weakness in the bows.", [iconComponent("弓", [0, 3]), iconComponent("弓", [5, 8]), unknownComponent(O, [3, 5, 8], "The purpose of these marks is unclear.")]);
+semsem("企", "人", "止", 2, "stand on tiptoe; plan project", "Depicts a person (人) standing on their feet (止).");
+phonsem("啻", "帝", "口", 9, "only");
+phonsem("敵", "啻", "攵", 11, "enemy");
+simp("敌", "敵", [[6], [0, 6]], {}, { "啻": "舌" });
+semsem("陣", "阝", "車", 2, "disposition of troops; wave; burst", "Depicts a group (阝) of soldiers in chariots (車).");
+simp("阵", "陣", [[0, 2], [2]], { "車": "车" });
+addEtymology("陳", "display; exhibit; Chen", "Originally written as 陣. The 車 (chariot) component was changed to 東 (east) to distinguish the two characters.", [
+    meaningComponent("阝", [0, 2]), unknownComponent("東", [2])]);
+simp("陈", "陳", [[0, 2], [2]], { "東": "东" });
+// 4116	稣: sū 鱼 yú	禾 cereal, grain, rice; plant, stalk
+phonsem("稣", "鱼", "禾", 8, `to revive; to rise again`, simplified("穌"));
+// 4117	穌: sū 魚 yú	禾 cereal, grain, rice; plant, stalk
+phonsem("穌", "魚", "禾", 11, `to revive; to rise again`);
+semphon("蘇", "艹", "穌", 4, "Chinese basil; revive");
+simp("苏", "蘇", [[0, 3], [3]], {}, { "穌": "办" });
+icon("率", "frequency; lead; command", "Pictograph of a rope (糸) surrounded by four dots. Originally depicted a type of rope. The meaning later shifted to \"lead\".", "b", [iconComponent("糸", [0, 5, 9]), unknownComponent(O, [5, 9])]);
+// 2427	蘭: lán 闌 lán	艹 grass, weed, plant, herb
+semphon("蘭", "艹", "闌", 4, `orchid; elegant, graceful`);
+addEtymology("兰", `orchid; elegant, graceful`, simplified("蘭") + `Phonosemantic compound. 艹 represents the meaning and 三 represents the sound.`, [simplifiedComponent("艹", [0, 2], "Simplified from the 艹 component in the traditional character 蘭."), soundComponent("三", [2])]);
+addEtymology("若", "conform to; seem; as; if", `Pictograph of a person smoothing out their hair with their hands. Based on the original meaning "smooth". The meaning later shifted to "obedient" and "conform to". The 口 (mouth) component was added later when the character became more abstract.`,
+    [iconComponent(O, [0, 3], "Depicts hair."), iconComponent("𠂇", [3, 5], "Depicts a hand smoothing out the hair."), meaningComponent("口", [5])], "os");
+semsem("初", "衤", "刀", 5, "at first; beginning", "Depicts cutting out fabric (衤) with a knife (刀), the first step in making clothes.");
+semsem("雷", "雨", "申", 8, "thunder", "Depicts rain (雨) and lightning (申) together.");
+icon("州", "region; province", "Pictograph of a region of dry land between two rivers.", "b");
+semphon("洲", "氵", "州", 3, "continent; island");
+addEtymology("乏", "short of; tired", "Line over 之 (foot), similar to how 正 (straight; correct) is a line over 止 (foot). Possibly represents the opposite of 正, since the top line in 乏 is written in the opposite direction as the top line in 正.",
+    [iconComponent("之", [1])]);
+semphon("氾", "氵", "𢎘", 3, "float");
+icon("冘", "move on; go out", "Pictograph of a person exiting a doorway.", "", [iconComponent(O, [0, 2], "Depicts a doorway"), iconComponent("人", [2])]);
+semphon("沈", "氵", "冘", 3, "liquid; pour");
+semphon("沉", "氵", "沉", 3, "liquid; pour", "Variant of 沈.");
+icon("皇", "emperor", "Depicts a decorative crown above 王 (king).", "b", [iconComponent(O, [0, 5], "Depicts a decorative crown."), meaningComponent("王", [5])]);
+semphon("抗", "扌", "亢", 3, "resist; fight");
+semphon("稅", "禾", "兌", 5, "taxes");
+simp("税", "稅", [[0, 5], [5]], { "兌": "兑" });
 
-// 增企委构敌陈苏率兰若 6
-// 初雷洲范州沉皇抗税阵 5
 // 岛欧临湾县毫移智遗鲁 4
 // 均藏端港妇谓督泽诺伦 3
 
@@ -4546,10 +4579,7 @@ phonsem("譬", "辟", "言", 13, `example; metaphor, simile`);
 semphon("霞", "雨", "叚", 8, `rosy clouds`);
 // 4114	汹: xiōng 凶 xiōng	氵 water
 semphon("汹", "氵", "凶", 3, `turbulent, torrential, restless`, simplified("洶"));
-// 4116	稣: sū 鱼 yú	禾 cereal, grain, rice; plant, stalk
-phonsem("稣", "鱼", "禾", 8, `to revive; to rise again`, simplified("穌"));
-// 4117	穌: sū 魚 yú	禾 cereal, grain, rice; plant, stalk
-phonsem("穌", "魚", "禾", 11, `to revive; to rise again`);
+
 // 4118	爹: diē 多 duō	父 father, dad
 semphon("爹", "父", "多", 4, `father, dad, daddy`);
 // 4124	筛: shāi 师 shī	⺮ bamboo; flute
@@ -7363,8 +7393,7 @@ semphon("餬", "飠", "胡", 8, `porridge, gruel, congee; paste`);
 phonsem("憑", "馮", "心", 12, `to lean on; to rely on`);
 // 2421	婆: pó 波 bō	女 woman, girl; female
 phonsem("婆", "波", "女", 8, `old woman; grandmother`);
-// 2427	蘭: lán 闌 lán	艹 grass, weed, plant, herb
-semphon("蘭", "艹", "闌", 4, `orchid; elegant, graceful`);
+
 // 2528	繁: fán 敏 mǐn	糸 silk; thread
 phonsem("繁", "敏", "糸", 11, `complex, difficult; many, diverse`, simplified("緐"));
 // 2581	攔: lán 闌 lán	扌 hand
@@ -8060,6 +8089,62 @@ semphon("鳟", "鱼", "尊", 8, `barbel`, simplified("鱒"));
 semphon("鱒", "魚", "尊", 11, `barbel`);
 // 6520	襖: ǎo 奥 ào	衤 cloth
 semphon("襖", "衤", "奥", 5, `coat, jacket, outerware`);
+
+// 1589	范: fàn 氾 fàn	艹 grass, weed, plant, herb
+semphon("范", "艹", "氾", 3, `pattern, model, example; surname`, simplified("範"));
+// 2005	烂: làn 兰 lán	火 fire, flame; to burn; anger, rage
+semphon("烂", "火", "兰", 4, `overcooked, overripe; rotten, spoiled`, simplified("爛"));
+// 2293	诺: nuò 若 ruò	讠 words, speech; to speak, to say
+semphon("诺", "讠", "若", 2, `to promise; to approve, to assent to`, simplified("諾"));
+// 2294	諾: nuò 若 ruò	言 words, speech; to speak, to say
+semphon("諾", "言", "若", 7, `to promise; to approve, to assent to`);
+// 2404	摔: shuāi 率 lǜ	扌 hand
+semphon("摔", "扌", "率", 3, `to fall, to stumble, to trip`);
+// 2471	囌: sū 蘇 sū	口 mouth; entrance, gate, opening
+semphon("囌", "口", "蘇", 3, `loquacious; to nag`);
+// 2580	拦: lán 兰 lán	扌 hand
+semphon("拦", "扌", "兰", 3, `to block, to hinder, to obstruct`, simplified("攔"));
+// 2646	惹: rě 若 ruò	心 heart; mind; soul
+phonsem("惹", "若", "心", 8, `to incite, to irritate, to offend, to vex`);
+// 2717	泛: fàn 乏 fá	氵 water
+semphon("泛", "氵", "乏", 3, `to drift, to float; broad, vast; careless, reckless`, simplified("氾"));
+// 3339	栏: lán 兰 lán	木 tree; wood, lumber; wooden
+semphon("栏", "木", "兰", 4, `fence, railing, balustrade`, simplified("欄"));
+// 3405	酬: chóu 州 zhōu	酉 wine; wine vessel; chemical
+semphon("酬", "酉", "州", 7, `to toast, to entertain; to reward, to compensate`, simplified("詶"));
+// 4250	蕾: lěi 雷 léi	艹 grass, weed, plant, herb
+semphon("蕾", "艹", "雷", 3, `flower bud`);
+// 5415	擂: léi 雷 léi	扌 hand
+semphon("擂", "扌", "雷", 3, `to rub, to grind; to use a mortar and pestle`);
+// 5608	蟀: shuài 率 lǜ	虫 insect, worm; mollusk
+semphon("蟀", "虫", "率", 6, `cricket (2)`);
+// 5633	偌: ruò 若 ruò	亻 man, person; people
+semphon("偌", "亻", "若", 2, `thus, so, like, such`);
+// 6068	镭: léi 雷 léi	钅 gold, metal; money
+semphon("镭", "钅", "雷", 5, `radium`, simplified("鐳"));
+// 6375	喏: nuò 若 ruò	口 mouth; entrance, gate, opening
+semphon("喏", "口", "若", 3, `respectful reply of assent to superiors`);
+
+// 2787	枕: zhěn 冘 yín	木 tree; wood, lumber; wooden
+semphon("枕", "木", "冘", 4, `pillow`);
+// 2834	耽: dān 冘 yín	耳 ear; to hear, to hear of; handle
+semphon("耽", "耳", "冘", 6, `to indulge; to delay`, simplified("躭"));
+// 3476	煌: huáng 皇 huáng	火 fire, flame; to burn; anger, rage
+semphon("煌", "火", "皇", 4, `bright, shining, luminous`);
+// 4264	凰: huáng 皇 huáng	几 small table; how many; a few, some
+semphon("凰", "几", "皇", 2, `female phoenix`);
+// 4653	惶: huáng 皇 huáng	忄 heart; mind; soul
+semphon("惶", "忄", "皇", 3, `anxious, nervous, uneasy`);
+// 5571	徨: huáng 皇 huáng	彳 to step with the left foot
+semphon("徨", "彳", "皇", 3, `doubtful, irresolute, vacillating`);
+// 5624	蝗: huáng 皇 huáng	虫 insect, worm; mollusk
+semphon("蝗", "虫", "皇", 6, `locust`);
+// 5626	眈: dān 冘 yín	目 eye; to look, to see; division, topic
+semphon("眈", "目", "冘", 5, `to stare at, to gaze intently; to delay, to hinder`);
+// 5859	忱: chén 冘 yín	忄 heart; mind; soul
+semphon("忱", "忄", "冘", 3, `honesty, sincerity, zeal`);
+// 7003	遑: huáng 皇 huáng	辶 to walk; walking
+semphon("遑", "辶", "皇", 9, `leisurely; hurried, anxious`);
 
 let pinyins = {
     "◎": "xx",
