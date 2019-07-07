@@ -64,7 +64,7 @@ semphon("這", "辶", "言", 7, "this", obsoleteMeaning("to meet"), true, false,
 addEtymology("这", "this", simplified("這") + obsoleteMeaning("to meet"), [meaningComponent("辶", [4]), simplifiedComponent("文", [0, 4], "Simplified from the 言 component in the traditional character 這. Used since 文 has fewer strokes while having a similar meaning and sound as 言.")]);
 icon("有", "have; hold", "Pictograph of a hand holding meat", "bs", [iconComponent("又", [0, 2]), iconComponent("⺼", [2], "Deceptively similar to the character for moon (月).")]);
 icon("又", "(hand); again", "Pictograph of a hand. " + obsoleteMeaning("right hand"), "ob");
-icon("肉", "meat", "Pictograph of a piece of meat.", "s");
+icon("肉", "meat; flesh", "Pictograph of a piece of meat.", "s");
 icon("月", "moon", "Pictograph of the moon.", "obs");
 icon("也", "also", "Origin unclear. Variously explained as a pictograph of a snake, a vulva, a funnel, a crying child, or an ideograph depicting a pause in speech.", "bs");
 semphon("他", "亻", "也", 2, "he; it", "", true);
@@ -1215,7 +1215,7 @@ icon("監", "supervise; inspect", "Pictograph of a person leaning over to look a
 simp("监", "監", [[0, 2], [2, 5], [5]]);
 icon("卒", "soldier; servant; finish", "A cross shape (十) added to clothes (衣). Origin unclear.", "b", [unknownComponent("衣", [0, 6]), unknownComponent("十", [6])]);
 icon("寅", "3rd earthly branch", "Originally a pictograph of an arrow (矢). Later two hand components (爪) were added on the sides.", "ob", [iconComponent("矢", [0, 4, 7, 8, 9]), iconComponent("爪", [4, 5, 6, 7, 8, 9]), iconComponent("爪", [5, 7, 8, 9])]);
-addEtymology("螾", "earthworm - yǐn", `Phonosemantic compound. 虫 represents the meaning and 寅 represents the sound.`);
+addEtymology("螾", "earthworm", `Phonosemantic compound. 虫 represents the meaning and 寅 represents the sound.`);
 addEtymology("旬", "ten-day period; period of time", "Originally a pictograph of an earthworm, now written as 螾, used here since the word for earthworm sounded similar to 旬. Later the meaning component (日) was added.",
     [soundComponent("螾", [0, 2], "Depicts an earthworm."), meaningComponent("日", [2])], "ob");
 icon("敝", "ruined; shabby", "Depicts shabby clothes that have been beaten down.", "", [iconComponent(O, [0, 7], "Depicts ruined clothes."), meaningComponent("攵", [7])]);
@@ -1973,10 +1973,20 @@ phonsem("遺", "貴", "辶", 12, "lose; leave behind; bequeath", "", true, true)
 simp("遗", "遺", [[9], [0, 9]], { "貴": "贵" });
 phonsem("魯", "魚", "甘", 11, "Lu; Shandong province", `Based on the original meaning "tasty". The current meaning is a phonetic loan.`, false, true);
 simp("鲁", "魯", [[8], [0, 8]], { 魚: "鱼" });
-
-// 均藏端港妇谓督泽诺伦 3
-
-// top 1000 characters in books done
+addEtymology("勻", "even; uniform", "Depicts two even parallel lines (二). The 勹 sound component is a pictograph of an earthworm, now written as 螾.", [soundComponent("螾", [0, 2]), iconComponent("二", [2])]);
+simp("匀", "勻");
+semphon("均", "土", "勻", 3, "equal; even; uniform");
+semphon("倫", "亻", "侖", 2, "order; coherence; human relationship");
+simp("伦", "倫", [[0, 2], [2]], { 侖: "仑" });
+// 2963	澤: zé 睪 yì	氵 water
+semphon("澤", "氵", "睪", 3, `marsh, swamp; brilliance, grace`, "", true);
+simp("泽", "澤", [[0, 3], [3]]);
+icon("胃", "stomach", "The top component is a pictograph of the stomach. The bottom component ⺼ (flesh) is a common component in body parts.", "s", [iconComponent(O, [0, 5], "Depicts the stomach."), meaningComponent("⺼", [5])]);
+semphon("婦", "女", "帚", 3, "woman", "The 帚 (broom) component may also be related to the meaning, since women were traditionally responsible for household chores.", true, true);
+simp("妇", "婦", [[0, 3], [3]], { 帚: "彐" });
+phonsem("巷", "共", "邑", 6, "lane; alley");
+semphon("港", "氵", "巷", 3, "harbor; port");
+icon("耑", "beginning of growth", "Pictograph of the roots and leaves of a young plant beginning to grow.", "o");
 
 // 噢私呃呆毁蠢暴狱誓瞧 2
 // 劲烂杰迪艾瑞蒂萨凯纽 1
@@ -3615,8 +3625,7 @@ phonsem("患", "串", "心", 7, `suffering; misfortune; trouble; to suffer`);
 semphon("伪", "亻", "为", 2, `false, counterfeit, bogus`, simplified("偽"));
 // 2952	偽: wěi 為 wèi	亻 man, person; people
 semphon("偽", "亻", "為", 2, `false, counterfeit, bogus`);
-// 2963	澤: zé 睪 yì	氵 water
-semphon("澤", "氵", "睪", 3, `marsh, swamp; brilliance, grace`);
+
 // 2965	徑: jìng 巠 jīng	彳 to step with the left foot
 semphon("徑", "彳", "巠", 3, `path, diameter; straight, direct`);
 // 2966	浇: jiāo 尧 yáo	氵 water
@@ -8183,6 +8192,32 @@ semphon("擼", "扌", "魯", 3, `to reprimand; to fire an employee`);
 semphon("橹", "木", "鲁", 4, `oar, scull; to row, to scull`, simplified("櫓"));
 // 6829	櫓: lǔ 魯 lǔ	木 tree; wood, lumber; wooden
 semphon("櫓", "木", "魯", 4, `oar, scull; to row, to scull`);
+
+// 1990	谓: wèi 胃 wèi	讠 words, speech; to speak, to say
+semphon("谓", "讠", "胃", 2, `to call, to say, to tell; name, title; meaning`, simplified("謂"));
+// 1991	謂: wèi 胃 wèi	言 words, speech; to speak, to say
+semphon("謂", "言", "胃", 7, `to call, to say, to tell; name, title; meaning`);
+// 5325	钧: jūn 匀 yún	钅 gold, metal; money
+semphon("钧", "钅", "匀", 5, `unit of weight equal to thirty catties; your (formal)`, simplified("鈞"));
+// 5326	鈞: jūn 匀 yún	釒 gold, metal; money
+semphon("鈞", "釒", "匀", 8, `unit of weight equal to thirty catties; your (formal)`);
+// 6645	渭: wèi 胃 wèi	氵 water
+semphon("渭", "氵", "胃", 3, `a river in Shanxi province`);
+
+// 2670	端: duān 耑 duān	立 to stand; to establish, to set up
+semphon("端", "立", "耑", 5, `end, extreme; head; beginning`);
+// 3205	瑞: ruì 耑 duān	王 king, ruler; royal; surname
+semphon("瑞", "王", "耑", 4, `auspicious; a good omen`);
+// 3307	喘: chuǎn 耑 duān	口 mouth; entrance, gate, opening
+semphon("喘", "口", "耑", 3, `to pant, to gasp, to breathe heavily`);
+// 4987	揣: chuāi 耑 duān	扌 hand
+semphon("揣", "扌", "耑", 3, `to stow in one's clothes; to estimate, to guess, to figure`);
+// 5428	踹: chuài 耑 duān	足 foot; to attain, to satisfy; enough
+semphon("踹", "足", "耑", 7, `to trample, to tread on; to kick; to crush`);
+// 5963	湍: tuān 耑 duān	氵 water
+semphon("湍", "氵", "耑", 3, `current, rapids`);
+// 6115	惴: zhuì 耑 duān	忄 heart; mind; soul
+semphon("惴", "忄", "耑", 3, `nervous, apprehensive`);
 
 let pinyins = {
     "◎": "xx",
