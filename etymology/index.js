@@ -1929,7 +1929,7 @@ phonsem("稣", "鱼", "禾", 8, `to revive; to rise again`, simplified("穌"));
 phonsem("穌", "魚", "禾", 11, `to revive; to rise again`);
 semphon("蘇", "艹", "穌", 4, "Chinese basil; revive");
 simp("苏", "蘇", [[0, 3], [3]], {}, { "穌": "办" });
-icon("率", "frequency; lead; command", "Pictograph of a rope (糸) surrounded by four dots. Originally depicted a type of rope. The meaning later shifted to \"lead\".", "b", [iconComponent("糸", [0, 5, 9]), unknownComponent(O, [5, 9])]);
+icon("率", "frequency; lead; command", "Pictograph of a rope (系) surrounded by four dots. Originally depicted a type of rope. The meaning later shifted to \"lead\".", "b", [iconComponent("系", [0, 5, 9]), unknownComponent(O, [5, 9])]);
 // 2427	蘭: lán 闌 lán	艹 grass, weed, plant, herb
 semphon("蘭", "艹", "闌", 4, `orchid; elegant, graceful`);
 addEtymology("兰", `orchid; elegant, graceful`, simplified("蘭") + `Phonosemantic compound. 艹 represents the meaning and 三 represents the sound.`, [simplifiedComponent("艹", [0, 2], "Simplified from the 艹 component in the traditional character 蘭."), soundComponent("三", [2])]);
@@ -1949,8 +1949,31 @@ icon("皇", "emperor", "Depicts a decorative crown above 王 (king).", "b", [ico
 semphon("抗", "扌", "亢", 3, "resist; fight");
 semphon("稅", "禾", "兌", 5, "taxes");
 simp("税", "稅", [[0, 5], [5]], { "兌": "兑" });
+phonsem("島", "鳥", "山", 7, "island");
+simp("岛", "島", [[4], [0, 4]], { "鳥": "鸟" });
+phonsem("歐", "區", "欠", 11, "Europe; (vomit)");
+simp("欧", "歐", [[4], [0, 4]], { "區": "区" });
+addEtymology("臥", "lie; crouch", "Origin unclear.", [unknownComponent("臣", [0, 6]), meaningComponent("人", [6])]);
+simp("卧", "臥", [[0, 6], [6]], {}, { "人": "卜" });
+semphon("臨", "監", "品", 8, "look over; descend; to face");
+simp("临", "臨", [[0, 5], [5]], { 監: "监" });
+// 3141	灣: wān 彎 wān	氵 water
+semphon("灣", "氵", "彎", 3, `bay, cove, gulf, inlet`);
+// 2495	彎: wān 䜌 luán	弓 bow; curved, arched
+phonsem("彎", "䜌", "弓", 19, `bend, curve, turn`);
+simp("弯", "彎", [[6], [0, 6]], {}, { "䜌": "亦" });
+simp("湾", "灣", [[0, 3], [3]], { 彎: "弯" });
+icon("縣", "county", "Pictograph of a severed head (首) hanging on a rope (系) from a tree (木). Based on the original meaning \"hang\" or \"suspend\". The current meaning is a phonetic loan.", "b",
+    [iconComponent("首", [0, 6]), iconComponent("木", [6, 9]), iconComponent("系", [9])]);
+simp("县", "縣", [[0, 5], [5], [6, 6]]);
+phonsem("毫", "高", "毛", 7, "hair; drawing brush; least");
+semphon("移", "禾", "多", 5, "move; shift; change", "Alludes to grain moving while it is blown by the wind.", true);
+phonsem("智", "知", "册", 8, "wisdom; knowledge", "", false, true);
+phonsem("遺", "貴", "辶", 12, "lose; leave behind; bequeath", "", true, true);
+simp("遗", "遺", [[9], [0, 9]], { "貴": "贵" });
+phonsem("魯", "魚", "甘", 11, "Lu; Shandong province", `Based on the original meaning "tasty". The current meaning is a phonetic loan.`, false, true);
+simp("鲁", "魯", [[8], [0, 8]], { 魚: "鱼" });
 
-// 岛欧临湾县毫移智遗鲁 4
 // 均藏端港妇谓督泽诺伦 3
 
 // top 1000 characters in books done
@@ -3178,8 +3201,7 @@ semphon("眠", "目", "民", 5, `sleep, shut-eye, hibernatation`);
 semphon("冻", "冫", "东", 2, `cold; to freeze, to congeal; jelly`, simplified("凍"));
 // 2493	凍: dòng 東 dōng	冫 ice
 semphon("凍", "冫", "東", 2, `cold; to freeze, to congeal; jelly`);
-// 2495	彎: wān 䜌 luán	弓 bow; curved, arched
-phonsem("彎", "䜌", "弓", 19, `bend, curve, turn`);
+
 // 2496	绳: shéng 黾 miǎn	纟 silk; thread
 semphon("绳", "纟", "黾", 3, `string, rope, cord; to control`, simplified("繩"));
 // 2497	繩: shéng 黽 miǎn	糹 silk; thread
@@ -7426,8 +7448,7 @@ semphon("撑", "扌", "掌", 3, `to support, to prop up, to brace; overflowing`,
 semphon("储", "亻", "诸", 2, `to save money, to store, to reserve; heir`, simplified("儲"));
 // 3122	儲: chǔ 諸 zhū	亻 man, person; people
 semphon("儲", "亻", "諸", 2, `to save money, to store, to reserve; heir`);
-// 3141	灣: wān 彎 wān	氵 water
-semphon("灣", "氵", "彎", 3, `bay, cove, gulf, inlet`);
+
 // 3173	癌: ái 嵒 yán	疒 sickness, disease
 semphon("癌", "疒", "嵒", 5, `cancer, carcinoma`);
 // 3340	欄: lán 闌 lán	木 tree; wood, lumber; wooden
@@ -8145,6 +8166,23 @@ semphon("眈", "目", "冘", 5, `to stare at, to gaze intently; to delay, to hin
 semphon("忱", "忄", "冘", 3, `honesty, sincerity, zeal`);
 // 7003	遑: huáng 皇 huáng	辶 to walk; walking
 semphon("遑", "辶", "皇", 9, `leisurely; hurried, anxious`);
+
+// 3539	捣: dǎo 岛 dǎo	扌 hand
+semphon("捣", "扌", "岛", 3, `to thresh, to pound; to stir, to disturb; to attack`, simplified("搗"));
+// 3540	搗: dǎo 島 dǎo	扌 hand
+semphon("搗", "扌", "島", 3, `to thresh, to pound; to stir, to disturb; to attack`);
+// 4902	噜: lū 鲁 lǔ	口 mouth; entrance, gate, opening
+semphon("噜", "口", "鲁", 3, `verbose, talkative; mumbling`, simplified("嚕"));
+// 4903	嚕: lū 魯 lǔ	口 mouth; entrance, gate, opening
+semphon("嚕", "口", "魯", 3, `verbose, talkative; mumbling`);
+// 6794	撸: lū 鲁 lǔ	扌 hand
+semphon("撸", "扌", "鲁", 3, `to reprimand; to fire an employee`, simplified("擼"));
+// 6795	擼: lū 魯 lǔ	扌 hand
+semphon("擼", "扌", "魯", 3, `to reprimand; to fire an employee`);
+// 6828	橹: lǔ 鲁 lǔ	木 tree; wood, lumber; wooden
+semphon("橹", "木", "鲁", 4, `oar, scull; to row, to scull`, simplified("櫓"));
+// 6829	櫓: lǔ 魯 lǔ	木 tree; wood, lumber; wooden
+semphon("櫓", "木", "魯", 4, `oar, scull; to row, to scull`);
 
 let pinyins = {
     "◎": "xx",
