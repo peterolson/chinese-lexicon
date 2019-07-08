@@ -4,7 +4,7 @@ This repository is a lexicon of Chinese combining the following features:
 
  - Definitions of words
  - Simplified/traditional equivalencies
- - Character etymologies (supports the 750 most common characters in movies and books)
+ - Character etymologies (supports the 1000 most common characters in movies and books)
  - Short word glosses
  - Frequency statistics
  - HSK level
