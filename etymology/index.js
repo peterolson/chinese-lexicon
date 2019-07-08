@@ -1987,11 +1987,37 @@ simp("妇", "婦", [[0, 3], [3]], { 帚: "彐" });
 phonsem("巷", "共", "邑", 6, "lane; alley");
 semphon("港", "氵", "巷", 3, "harbor; port");
 icon("耑", "beginning of growth", "Pictograph of the roots and leaves of a young plant beginning to grow.", "o");
+icon("厶", "personal; selfish", "A small circle depicting personal space or things revolving around oneself. Original form of 私.", "s");
+semphon("私", "禾", "厶", 5, "personal; selfish", "Originally written as 厶.", false, true);
+icon("厄", "distress, difficulty", "Pictograph of a harness on a horse.", "b");
+icon("戹", "distress, difficulty", "Pictograph of a harness on a horse. Variant of 厄.", "厄:b");
+semphon("呃", "口", "厄", 3, "hiccup; uh");
+semsem("呆", "口", "木", 3, "foolish; stupid", "Depicts the mouth (口) being stuck and not moving, like wood (木), representing someone speechless or unresponsive.");
+addEtymology("毀", "destroy; damage; ruin", "Depicts beating a child (兒) into the ground (土) with a weapon (殳).", [iconComponent("兒", [0, 6]), iconComponent("土", [6, 9]), iconComponent("殳", [9])]);
+simp("毁", "毀");
+addEtymology("蠢", "squirm; stupid; sluggish", "春 represents the sound. The two 虫 (bug) components represent the meaning.",
+    [soundComponent("春", [0, 9]), meaningComponent("虫", [9, 15]), meaningComponent("虫", [15])]);
+addEtymology("獄", "prison", "Depicts being between two barking (言) guard dogs (犬).", [iconComponent("犭", [0, 3]), meaningComponent("言", [3, 10]), iconComponent("犬", [10])]);
+simp("狱", "獄", [[0, 3], [3, 5], [5]], { 言: "讠" });
+phonsem("誓", "折", "言", 7, "oath; vow");
+phonsem("勁", "巠", "力", 7, "strength; energy");
+simp("劲", "勁", [[5], [0, 5]]);
+semsem("桀", "舛", "木", 6, "cruel", "Depicts tearing off legs (舛) and putting them in a tree (木) as punishment.");
+semphon("傑", "亻", "桀", 2, "hero; outstanding person");
+addEtymology("杰", "hero; outstanding person", "Simplified form of 傑. Phonosemantic compound. 亻 represents the meaning and 桀 represents the sound.",
+    [simplifiedComponent("木", [0, 4], "Shorthand for the 桀 component in the traditional character 傑."), simplifiedComponent("灬", [4], "Shorthand for the 亻 and 舛 components in the traditional character 傑.")]);
+phonsem("迪", "由", "辶", 5, "enlighten", "", true);
+icon("乂", "to mow", "Pictograph of a scissors-like tool for cutting grass.", "s");
+semphon("艾", "艹", "乂", 3, "mow grass; cut short; mugwort");
+phonsem("凱", "豈", "几", 10, "triumphant; victorious");
+simp("凯", "凱", [[6], [0, 6]], { 豈: "岂" });
+icon("丑", "clown; 2nd earthly branch; (simp.) ugly", "Pictograph of an animal's paw. " + simplifyMerge("丑", "醜", "ugly"), "o");
+semphon("紐", "糹", "丑", 6, "wrap around; turn; wrench; button");
+simp("纽", "紐", [[0, 3], [3]], { "糹": "纟" });
+icon("丫", "fork; branch", "Pictograph of a fork or branch.");
+addEtymology("薩", "Bodhisattva (Buddhism)", "Origin unclear.", [unknownComponent("艹", [0, 4]), unknownComponent("阝", [4, 6]), unknownComponent("產", [6])]);
+simp("萨", "薩", [[0, 3], [3, 5], [5]], { "產": "产" });
 
-// 噢私呃呆毁蠢暴狱誓瞧 2
-// 劲烂杰迪艾瑞蒂萨凯纽 1
-
-// top 1000 characters in movies done
 
 for (let direction in radicals) {
     for (let char in radicals[direction]) {
@@ -8218,6 +8244,29 @@ semphon("踹", "足", "耑", 7, `to trample, to tread on; to kick; to crush`);
 semphon("湍", "氵", "耑", 3, `current, rapids`);
 // 6115	惴: zhuì 耑 duān	忄 heart; mind; soul
 semphon("惴", "忄", "耑", 3, `nervous, apprehensive`);
+
+// 3740	嶽: yuè 獄 yù	山 mountain, hill, peak
+semphon("嶽", "山", "獄", 3, `mountain peak, summit`);
+// 4797	扼: è 厄 è	扌 hand
+semphon("扼", "扌", "厄", 3, `to clutch, to grasp; to choke, to strangle`, simplified("搤"));
+// 5194	篡: cuàn 算 suàn	厶 private, secret
+phonsem("篡", "算", "厶", 14, `to sieze, to usurp`, simplified("簒"));
+
+// 3053	扭: niǔ 丑 chǒu	扌 hand
+semphon("扭", "扌", "丑", 3, `to turn, to twist, to wrench; to grasp, to seize`);
+// 3163	哎: āi 艾 ài yì	口 mouth; entrance, gate, opening
+semphon("哎", "口", "艾", 3, `interjection of surprise`);
+// 4095	妞: niū 丑 chǒu	女 woman, girl; female
+semphon("妞", "女", "丑", 3, `girl`);
+// 4411	钮: niǔ 丑 chǒu	钅 gold, metal; money
+semphon("钮", "钅", "丑", 5, `button, knob; surname`, simplified("鈕"));
+// 4412	鈕: niǔ 丑 chǒu	釒 gold, metal; money
+semphon("鈕", "釒", "丑", 8, `button, knob; surname`);
+// 6680	忸: niǔ 丑 chǒu	忄 heart; mind; soul
+semphon("忸", "忄", "丑", 3, `blushing, bashful, ashamed`);
+// 7017	吖: yā 丫 yā	口 mouth; entrance, gate, opening
+semphon("吖", "口", "丫", 3, `used in transliterations`);
+
 
 let pinyins = {
     "◎": "xx",
