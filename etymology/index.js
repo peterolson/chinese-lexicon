@@ -8329,6 +8329,26 @@ for (let char in pinyins) {
     etymologies[char].searchablePinyin = searchable || formatted;
 }
 
+let canonicalForms = {};
+for (let direction in radicals) {
+    for (let char in radicals[direction]) {
+        canonicalForms[char] = radicals[direction][char];
+    }
+}
+
+let componentDict = {};
+
+for (let char in etymologies) {
+    let etymology = etymologies[char];
+    for (component of etymology.components) {
+        let componentChar = canonicalForms[component.char] || component.char;
+        componentDict[componentChar] = componentDict[componentChar] || {};
+        componentDict[componentChar][component.type] = componentDict[componentChar][component.type] || new Set();
+        componentDict[componentChar][component.type].add(char);
+    }
+}
+delete componentDict[O];
+
 if (typeof module !== "undefined") {
-    module.exports = etymologies;
+    module.exports = { etymologies, componentDict }
 }

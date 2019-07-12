@@ -54,4 +54,4 @@ function addStatistic(statistics, collection, title, word, charCount, contextCou
     }
 }
 
-module.exports = getStatistics;
+module.exports = { getStatistics, movieCharFrequencies, bookCharFrequencies };
