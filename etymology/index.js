@@ -981,7 +981,7 @@ semphon("混", "氵", "昆", 3, "mix; muddle; confused");
 icon("疋", "foot", "Pictograph of a foot.", "足:os");
 semsem("延", "疋", "廴", 4, "prolong; delay");
 phonsem("蛋", "延", "虫", 5, "egg", "", true);
-phonsem("清", "氵", "青", 3, "clear; quiet; pure");
+semphon("清", "氵", "青", 3, "clear; quiet; pure");
 semphon("楚", "林", "疋", 8, "distinct; clear", `Based on the original meaning "bush". The meaning later shifted to "distinct" and "clear".`, true);
 icon("死", "die; death", "Depicts the carcass (歹) of a person (人).", "b", [iconComponent("歹", [0, 4]), iconComponent("人", [4])]);
 addEtymology("斿", "tassel; decoration on lower edge of flag", "Depicts a child (子) holding a flag (㫃).", [meaningComponent("㫃", [0, 6]), meaningComponent("子", [6])]);
@@ -3180,7 +3180,7 @@ semphon("询", "讠", "旬", 2, `to ask about, to inquire into; to consult`, sim
 // 2420	詢: xún 旬 xún	言 words, speech; to speak, to say
 semphon("詢", "言", "旬", 7, `to ask about, to inquire into; to consult`);
 // 2425	捨: shě 扌 shǒu	舍 house, dwelling; to reside, to dwell; to abandon, to give up
-phonsem("捨", "扌", "舍", 3, `house, dwelling; to reside, to dwell; to abandon, to give up`);
+semphon("捨", "扌", "舍", 3, `house, dwelling; to reside, to dwell; to abandon, to give up`);
 // 2428	培: péi 咅 pǒu	土 soil, earth; items made of earth
 semphon("培", "土", "咅", 3, `to cultivate, to farm; to shore up`);
 // 2429	俗: sú 谷 gǔ	亻 man, person; people
