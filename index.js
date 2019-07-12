@@ -42,7 +42,10 @@ function getBoost(x) {
 }
 
 function getFrequency(char) {
-    return (+movieCharFrequencies[char] || 0) + (+bookCharFrequencies[char] || 0);
+    if (tradDict[char]) {
+        char = tradDict[char][0].simp;
+    }
+    return (+(movieCharFrequencies[char] || {}).count || 0) + (+(bookCharFrequencies[char] || {}).count || 0);
 }
 
 function getComponentUses(simp, trad, dict) {
