@@ -6,5 +6,6 @@ function assert(condition) {
 
 assert(getGloss("里") === "inside");
 assert(!getGloss("奔腾").includes("Pentium"));
+assert(getGloss("喝茶") === "to drink tea");
 
 console.log("All tests passed.");
