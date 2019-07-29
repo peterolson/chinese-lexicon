@@ -95,6 +95,14 @@ for (let i = 0; i < entries.length; i++) {
     });
 }
 
+for (let char in simpDict) {
+    simpDict[char].sort((a, b) => b.boost - a.boost);
+}
+
+for (let char in tradDict) {
+    tradDict[char].sort((a, b) => b.boost - a.boost);
+}
+
 console.log("Ready!");
 
 function search(term, limit) {
