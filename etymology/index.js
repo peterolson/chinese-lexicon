@@ -350,7 +350,7 @@ semphon("挺", "扌", "廷", 3, "erect; stick out");
 icon("直", "straight", "Pictograph of a straight line coming from the eye, depicting somone looking straight at something. An additional stroke was added at the bottom for unkown reasons.", "obs", [iconComponent(O, [0, 2], "Depicts a straight line"), iconComponent("目", [2, 7]), unknownComponent(O, [7], unknownComonentNote())]);
 addEtymology("德", "virtue; morality", "Depicts walking (彳) through life with a straight (直) heart (心) to represent the meaning \"virtue\".", [meaningComponent("彳", [0, 3]), meaningComponent("直", [3, 11]), meaningComponent("心", [11])], "bs");
 icon("耳", "ear", "Pictograph of an ear.", "obs");
-addEtymology("聽", "hear; listen", "Phonosemantic compound. 耳 (ear) represents the meaning and 𡈼 (tǐng) and 德 represent the sound. This character is unusual because it has multiple sound components.", [meaningComponent("耳", [0, 6]), soundComponent("𡈼", [6, 10]), soundComponent("德", [10], "The left 彳 (walk) component of 德 is omitted here. " + obsoleteSound("聽", "德"))]);
+addEtymology("聽", "hear; listen", "Phonosemantic compound. 耳 (ear) and 德 represent the meaning and 𡈼 (tǐng) represents the sound.", [meaningComponent("耳", [0, 6]), soundComponent("𡈼", [6, 10]), meaningComponent("德", [10], "The left 彳 (walk) component of 德 is omitted here.")]);
 icon("丁", "robust", `Pictograph of a nail, which is now written as 釘.`, "obs");
 semphon("釘", "金", "丁", 8, "nail");
 simp("钉", "釘", [[0, 5], [5]]);
