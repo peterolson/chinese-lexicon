@@ -13,7 +13,8 @@ let manualGlosses = {
     "著": "[action in progress]",
     "你": "you",
     "月": "month",
-    "里": "inside"
+    "里": "inside",
+    "么": "[particle]"
 };
 
 module.exports = (getEntries) => function getGloss(word, pinyin) {

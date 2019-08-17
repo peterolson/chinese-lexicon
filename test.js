@@ -8,5 +8,6 @@ assert(getGloss("里") === "inside");
 assert(!getGloss("奔腾").includes("Pentium"));
 assert(getGloss("喝茶") === "to drink tea");
 assert(getEntries("看")[0].pinyin === "kàn");
+assert(getGloss("么") === "[particle]");
 
 console.log("All tests passed.");
