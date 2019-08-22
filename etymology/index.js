@@ -326,7 +326,7 @@ icon("冂", "hall; platform", "Pictograph of a large room or platform. Original 
 icon("尚", "value; esteem", "Pictograph of a large room or platform.", "b", [iconComponent("冂", [0, 5]), unknownComponent("口", [5], "Likely added just to make the character look more even (with less awkward space).")]);
 icon("堂", "hall; large room", "Pictograph large room or platform rising from the ground.", "bs", [iconComponent("尚", [0, 8], "Pictograph of a large room or platform."), iconComponent("土", [8])]);
 icon("矦", "archery target", "Pictograph of an arrow (矢) hitting a target (厂).", "obs", [iconComponent("厂", [0, 4], "Here used to represent a target."), iconComponent("矢", [4])]);
-semphon("候", "亻", "矦", 3, "wait; inquire; watch", "", false, false, false, "s");
+semphon("候", "亻", "矦", 2, "wait; inquire; watch", "", false, false, false, "s");
 icon("反", "against; oppose", `Pictograph of a hand (又) climbing a cliff (厂). Based on original meaning "pull", later extended to "turn around", "oppose".`, "b", [iconComponent("厂", [0, 2]), iconComponent("又", [2])]);
 semphon("飯", "飠", "反", 8, "food; rice");
 semphon("饭", "饣", "反", 3, "food; rice");
@@ -348,7 +348,7 @@ icon("廴", "long stride", "Depicts a long stride. ", "s");
 phonsem("廷", "𡈼", "廴", 4, "palace courtyard");
 semphon("挺", "扌", "廷", 3, "erect; stick out");
 icon("直", "straight", "Pictograph of a straight line coming from the eye, depicting somone looking straight at something. An additional stroke was added at the bottom for unkown reasons.", "obs", [iconComponent(O, [0, 2], "Depicts a straight line"), iconComponent("目", [2, 7]), unknownComponent(O, [7], unknownComonentNote())]);
-addEtymology("德", "virtue; morality", "Depicts walking (彳) through life with a straight (直) heart (心) to represent the meaning \"virtue\".", [meaningComponent("彳", [0, 3]), meaningComponent("直", [3, 11]), meaningComponent("心", [11])], "bs");
+addEtymology("德", "virtue; morality", "Depicts walking (彳) through life with a straight (直) heart (心) to represent the meaning \"virtue\". 直 also serves as a phonetic component.", [meaningComponent("彳", [0, 3]), meaningComponent("直", [3, 11], "直 also serves as a phonetic component. " + obsoleteSound("德", "直")), meaningComponent("心", [11])], "bs");
 icon("耳", "ear", "Pictograph of an ear.", "obs");
 addEtymology("聽", "hear; listen", "Phonosemantic compound. 耳 (ear) and 德 represent the meaning and 𡈼 (tǐng) represents the sound.", [meaningComponent("耳", [0, 6]), soundComponent("𡈼", [6, 10]), meaningComponent("德", [10], "The left 彳 (walk) component of 德 is omitted here.")]);
 icon("丁", "robust", `Pictograph of a nail, which is now written as 釘.`, "obs");
