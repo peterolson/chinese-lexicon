@@ -25,16 +25,16 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     }
     if (!matchingEntries.length) return word;
     let definitions = [];
-    for (let entry of matchingEntries) {
-        if (!entry.definitions.length) return word;
-        let index = 0;
-        for (let definition of entry.definitions) {
-            definitions.push({
-                definition,
-                score: scoreGloss(definition, word, index)
-            });
-            index++;
-        }
+    let entry = matchingEntries.filter(x => x.definitions.length).sort((a, b) => b.boost - a.boost)[0];
+    if (!entry) return word;
+
+    let index = 0;
+    for (let definition of entry.definitions) {
+        definitions.push({
+            definition,
+            score: scoreGloss(definition, word, index, entry.boost)
+        });
+        index++;
     }
     definitions.sort((a, b) => b.score - a.score);
     let gloss = definitions[0].definition;
