@@ -659,7 +659,7 @@ phonsem("願", "原", "頁", 10, "hope; wish", "The 頁 (head) component is used
 icon("先", "first; early", `Depicts a person (人) stepping forward (止) leading the way.`, "ob", [iconComponent("止", [0, 4]), iconComponent("人", [4])]);
 icon("老", "old", "Pictograph of an old person with long hair bent over and leaning on a cane.", "obs", [iconComponent(O, [0, 2], "Depicts long hair."), iconComponent(O, [2, 4], "Depicts an old man bent over."), iconComponent(O, [4], "Depicts a cane.")]);
 semsem("名", "夕", "口", 3, "name; fame", `Traditionally explained as identifying youself at night (夕) by saying (口) your name (名) because is too dark for others to see you.`);
-semphon("字", "宀", "子", 3, "letter; symbol; word", `The 宀 (roof) component is based on the original meaning "raise; nurture". The menaing later shifted to "educate", "word", and "writing".`);
+semphon("字", "宀", "子", 3, "letter; symbol; word", `The 宀 (roof) component is based on the original meaning "raise; nurture". The meaning later shifted to "educate", "word", and "writing".`);
 icon("少", "less; few", `Pictograph of four small dots, representing grains of sand or rice, to convey the meaning "less". Similar to 小.`, "obs");
 icon("系", "system; link; connection", "Pictograph of a hand (又) holding a group of threads (糸) that are connected together (系).", "bs", [iconComponent("又", [0, 1]), iconComponent("糸", [1])]);
 semphon("係", "亻", "系", 2, "connect; tie; bind");
