@@ -2334,7 +2334,7 @@ semphon("驗", "馬", "僉", 10, `to examine, to inspect, to test, to verify`);
 // 1190	攻: gōng 工 gōng	攵 to rap, to tap; script; to let go
 phonsem("攻", "工", "攵", 3, `to accuse; to assault; to criticize`);
 // 1193	猜: cāi 青 qīng	犭 dog
-semphon("猜", "犭", "青", 3, `to guess, to&nbsp;conjecture,&nbsp;to suppose; to feel`);
+semphon("猜", "犭", "青", 3, `to guess, to conjecture, to suppose; to feel`);
 // 1194	顺: shùn 川 chuān	页 page, sheet, leaf
 phonsem("顺", "川", "页", 3, `to submit to, to obey, to go along with`, simplified("順"));
 // 1195	順: shùn 川 chuān	頁 page, sheet, leaf
@@ -2394,7 +2394,7 @@ semphon("彈", "弓", "單", 3, `bullet, pellet, shell; elastic, springy`);
 // 1264	研: yán 开 kāi	石 stone, rock, mineral
 semphon("研", "石", "开", 5, `to grind, to rub; to study, to research`);
 // 1265	究: jiū 九 jiǔ	穴 cave, den, hole
-semphon("究", "穴", "九", 5, `to dig into, to investigate;&nbsp;actually, after all`);
+semphon("究", "穴", "九", 5, `to dig into, to investigate; actually, after all`);
 // 1277	绿: lǜ 录 lù	纟 silk; thread
 semphon("绿", "纟", "录", 3, `green; chlorine`, simplified("綠"));
 // 1278	綠: lǜ 彔 lù	糹 silk; thread
@@ -2557,7 +2557,7 @@ semphon("富", "宀", "畐", 3, `abundant, ample; rich, wealthy`);
 // 1539	限: xiàn 艮 gěn	阝 place, town, city
 semphon("限", "阝", "艮", 2, `boundary, limit, line`);
 // 1542	磨: mó 麻 má	石 stone, rock, mineral
-phonsem("磨", "麻", "石", 11, `millstone;&nbsp;to grind, to polish, to rub, to wear out`);
+phonsem("磨", "麻", "石", 11, `millstone; to grind, to polish, to rub, to wear out`);
 // 1543	扔: rēng 乃 nǎi	扌 hand
 semphon("扔", "扌", "乃", 3, `to throw, to hurl, to cast away`);
 // 1544	挂: guà 圭 guī	扌 hand
@@ -2607,7 +2607,7 @@ semphon("撞", "扌", "童", 3, `to bump into, to collide, to hit, to knock agai
 // 1609	架: jià 加 jiā	木 tree; wood, lumber; wooden
 phonsem("架", "加", "木", 5, `frame, rack, stand; to prop up`);
 // 1610	孤: gū 瓜 guā	子 son, child; seed, egg; fruit; small thing
-semphon("孤", "子", "瓜", 3, `orphaned;&nbsp;alone, lonely, solidary`);
+semphon("孤", "子", "瓜", 3, `orphaned; alone, lonely, solidary`);
 // 1611	硬: yìng 更 gèng	石 stone, rock, mineral
 semphon("硬", "石", "更", 5, `firm, hard, strong; obstinate`);
 // 1615	括: kuò 舌 shé	扌 hand
@@ -2674,7 +2674,7 @@ semphon("谅", "讠", "京", 2, `to excuse, to forgive; to guess, to presume`, s
 semphon("諒", "言", "京", 7, `to excuse, to forgive; to guess, to presume`);
 // 1679	鼓: gǔ 支 zhī	壴 drum
 semphon("鼓", "壴", "支", 9, `drum; to beat, to strike; to rouse`, simplified("皷"));
-// 1683	瓶: píng 并 bìng	瓦 tile;&nbsp;pottery,&nbsp;earthenware
+// 1683	瓶: píng 并 bìng	瓦 tile; pottery, earthenware
 phonsem("瓶", "并", "瓦", 6, `bottle, jug, pitcher, vase`, simplified("缾"));
 // 1687	憾: hàn 感 gǎn	忄 heart; mind; soul
 semphon("憾", "忄", "感", 3, `regret, remorse`);
@@ -2743,7 +2743,7 @@ semphon("湯", "氵", "昜", 3, `soup, gravy, broth; hot water`);
 // 1762	忽: hū 勿 wù	心 heart; mind; soul
 phonsem("忽", "勿", "心", 4, `suddenly, abruptly; to neglect`);
 // 1763	略: lüè 各 gè	田 field, farm, arable land; cultivated
-semphon("略", "田", "各", 5, `approximate, rough; outline, summary;&nbsp;plan, plot`, simplified("畧"));
+semphon("略", "田", "各", 5, `approximate, rough; outline, summary; plan, plot`, simplified("畧"));
 // 1768	销: xiāo 肖 xiào	钅 gold, metal; money
 semphon("销", "钅", "肖", 5, `to fuse, to melt; to market, to sell`, simplified("銷"));
 // 1769	銷: xiāo 肖 xiào	釒 gold, metal; money
@@ -2895,7 +2895,7 @@ phonsem("擴", "扌", "廣", 3, `to expand, to stretch, to magnify`);
 // 1944	填: tián 真 zhēn	土 soil, earth; items made of earth
 semphon("填", "土", "真", 3, `to fill, to pad, to stuff`);
 // 1945	江: jiāng 工 gōng	氵 water
-semphon("江", "氵", "工", 3, `large river; the&nbsp;Yangtze; surname`);
+semphon("江", "氵", "工", 3, `large river; the Yangtze; surname`);
 // 1947	妙: miào 少 shǎo	女 woman, girl; female
 semphon("妙", "女", "少", 3, `mysterious, subtle; clever, exquisite, wonderful`, simplified("玅"));
 // 1955	措: cuò 昔 xī	扌 hand
@@ -3422,7 +3422,7 @@ phonsem("额", "客", "页", 9, `forehead; quota, amount`, simplified("額"));
 // 2715	額: é 客 kè	頁 page, sheet, leaf
 phonsem("額", "客", "頁", 9, `forehead; quota, amount`);
 // 2728	豔: yàn 豐 fēng	盍 what? why not?
-phonsem("豔", "豐", "盍", 18, `beautiful,&nbsp;plump, voluptuous`);
+phonsem("豔", "豐", "盍", 18, `beautiful, plump, voluptuous`);
 // 2731	涨: zhǎng 张 zhāng	氵 water
 semphon("涨", "氵", "张", 3, `flood tide; to rise in price`, simplified("漲"));
 // 2733	捡: jiǎn 佥 qiān	扌 hand
@@ -3700,7 +3700,7 @@ semphon("綱", "糹", "岡", 6, `program, outline; principle, guiding thread`);
 // 3023	揭: jiē 曷 hé	扌 hand
 semphon("揭", "扌", "曷", 3, `to lift off a cover; to reveal, to divulge; surname`);
 // 3028	泥: ní 尼 ní	氵 water
-semphon("泥", "氵", "尼", 3, `mud, earth, clay;&nbsp;plaster, paste`);
+semphon("泥", "氵", "尼", 3, `mud, earth, clay; plaster, paste`);
 // 3029	溜: liū 留 liú	氵 water
 semphon("溜", "氵", "留", 3, `to slip, to slide, to glide; slippery`);
 // 3030	杜: dù 土 tǔ	木 tree; wood, lumber; wooden
@@ -3802,9 +3802,9 @@ semphon("彌", "弓", "爾", 3, `complete, extensive, full; to fill`);
 // 3167	崩: bēng 朋 péng	山 mountain, hill, peak
 semphon("崩", "山", "朋", 3, `to rupture, to split apart; to collapse; death, demise`);
 // 3168	溃: kuì 贵 guì	氵 water
-semphon("溃", "氵", "贵", 3, `a flooding river;&nbsp;a military defeat;&nbsp;to break down, to disperse`, simplified("潰"));
+semphon("溃", "氵", "贵", 3, `a flooding river; a military defeat; to break down, to disperse`, simplified("潰"));
 // 3169	潰: kuì 貴 guì	氵 water
-semphon("潰", "氵", "貴", 3, `a flooding river;&nbsp;a military defeat;&nbsp;to break down, to disperse`);
+semphon("潰", "氵", "貴", 3, `a flooding river; a military defeat; to break down, to disperse`);
 // 3172	箭: jiàn 前 qián	⺮ bamboo; flute
 semphon("箭", "⺮", "前", 6, `arrow; a type of bamboo`);
 // 3174	桔: jú 吉 jí	木 tree; wood, lumber; wooden
@@ -4080,9 +4080,9 @@ semphon("绘", "纟", "会", 3, `to sketch, to paint, to draw`, simplified("繪"
 // 3499	繪: huì 會 huì	糹 silk; thread
 semphon("繪", "糹", "會", 6, `to sketch, to paint, to draw`);
 // 3501	顽: wán 元 yuán	页 page, sheet, leaf
-phonsem("顽", "元", "页", 4, `stubborn, recalcitrant,&nbsp;obstinate`, simplified("頑"));
+phonsem("顽", "元", "页", 4, `stubborn, recalcitrant, obstinate`, simplified("頑"));
 // 3502	頑: wán 元 yuán	頁 page, sheet, leaf
-phonsem("頑", "元", "頁", 4, `stubborn, recalcitrant,&nbsp;obstinate`);
+phonsem("頑", "元", "頁", 4, `stubborn, recalcitrant, obstinate`);
 // 3506	喻: yù 俞 yú	口 mouth; entrance, gate, opening
 semphon("喻", "口", "俞", 3, `metaphor, analogy; example; such as, like`);
 // 3508	棕: zōng 宗 zōng	木 tree; wood, lumber; wooden
@@ -4261,10 +4261,10 @@ semphon("沼", "氵", "召", 3, `lake, pond, swamp`);
 semphon("霜", "雨", "相", 8, `frost; frozen, crystallized, candied`);
 // 3731	渣: zhā 查 chá	氵 water
 semphon("渣", "氵", "查", 3, `dregs, sediment; refuse, slag`);
-// 3732	瓷: cí 次 cì	瓦 tile;&nbsp;pottery,&nbsp;earthenware
+// 3732	瓷: cí 次 cì	瓦 tile; pottery, earthenware
 phonsem("瓷", "次", "瓦", 6, `china, crockery, porcelain`);
 // 3735	奢: shē 者 zhě	大 big, great, vast, high, deep
-semphon("奢", "大", "者", 3, `exaggerated;&nbsp;extravagant, wasteful`);
+semphon("奢", "大", "者", 3, `exaggerated; extravagant, wasteful`);
 // 3741	裕: yù 谷 gǔ	衤 cloth
 semphon("裕", "衤", "谷", 5, `rich, plentiful, abundant`);
 // 3742	瞪: dèng 登 dēng	目 eye; to look, to see; division, topic
@@ -4297,7 +4297,7 @@ phonsem("聾", "龍", "耳", 16, `deaf`);
 semphon("锤", "钅", "垂", 5, `hammer`, simplified("錘"));
 // 3766	錘: chuí 垂 chuí	釒 gold, metal; money
 semphon("錘", "釒", "垂", 8, `hammer`);
-// 3768	瑟: sè 必 bì	玨 guitar strings; variant of&nbsp;珏
+// 3768	瑟: sè 必 bì	玨 guitar strings; variant of 珏
 semphon("瑟", "玨", "必", 8, `a large string instrument; to tremble, to vibrate`);
 // 3769	庇: bì 比 bǐ	广 broad, vast, wide; building, house
 semphon("庇", "广", "比", 3, `cover, shield; to protect, to shelter; to harbor`);
@@ -4450,9 +4450,9 @@ semphon("堤", "土", "是", 3, `dike`, simplified("隄"));
 // 3931	隄: dī 是 shì	阝 place, town, city
 semphon("隄", "阝", "是", 2, `dike, embankment`);
 // 3932	阁: gé 各 gè	门 gate, door, entrance, opening
-semphon("阁", "门", "各", 3, `cabinet,&nbsp;chamber, pavilion`, simplified("閣"));
+semphon("阁", "门", "各", 3, `cabinet, chamber, pavilion`, simplified("閣"));
 // 3933	閣: gé 各 gè	門 gate, door, entrance, opening
-semphon("閣", "門", "各", 8, `cabinet,&nbsp;chamber, pavilion`);
+semphon("閣", "門", "各", 8, `cabinet, chamber, pavilion`);
 // 3934	烘: hōng 共 gòng	火 fire, flame; to burn; anger, rage
 semphon("烘", "火", "共", 4, `to bake, to roast; to dry by the fire`);
 // 3935	伺: cì 司 sī	亻 man, person; people
@@ -4510,7 +4510,7 @@ semphon("闡", "門", "單", 8, `to disclose; to explain; to open`);
 // 3973	扒: bā 八 bā	扌 hand
 semphon("扒", "扌", "八", 3, `to scratch, to dig up; to crouch, to crawl`);
 // 3975	苟: gǒu 句 jù gōu	艹 grass, weed, plant, herb
-semphon("苟", "艹", "句", 3, `careless,&nbsp;frivolous, illicit; but, if only`);
+semphon("苟", "艹", "句", 3, `careless, frivolous, illicit; but, if only`);
 // 3984	饪: rèn 壬 rén	饣 food; to eat
 semphon("饪", "饣", "壬", 3, `cooked food; to cook until well-done`, simplified("飪"));
 // 3985	飪: rèn 壬 rén	飠 food; to eat
@@ -5146,9 +5146,9 @@ semphon("蝙", "虫", "扁", 6, `bat`);
 // 4656	蝠: fú 畐 fú	虫 insect, worm; mollusk
 semphon("蝠", "虫", "畐", 6, `bat`);
 // 4661	沦: lún 仑 lún	氵 water
-semphon("沦", "氵", "仑", 3, `sunk, submerged;&nbsp;to perish, to be lost`, simplified("淪"));
+semphon("沦", "氵", "仑", 3, `sunk, submerged; to perish, to be lost`, simplified("淪"));
 // 4662	淪: lún 侖 lún	氵 water
-semphon("淪", "氵", "侖", 3, `sunk, submerged;&nbsp;to perish, to be lost`);
+semphon("淪", "氵", "侖", 3, `sunk, submerged; to perish, to be lost`);
 // 4663	瑜: yú 俞 yú	王 king, ruler; royal; surname
 semphon("瑜", "王", "俞", 4, `flawless gem or jewel`);
 // 4664	懈: xiè 解 jiě	忄 heart; mind; soul
@@ -5382,9 +5382,9 @@ semphon("閘", "門", "甲", 8, `sluice, floodgate, canal lock`);
 // 4922	茵: yīn 因 yīn	艹 grass, weed, plant, herb
 semphon("茵", "艹", "因", 3, `mattress, cushion; wormwood, Skimmia japon`);
 // 4923	蒋: jiǎng 将 jiāng	艹 grass, weed, plant, herb
-semphon("蒋", "艹", "将", 3, `Hydropyrum latifalium;&nbsp;surname`, simplified("蔣"));
+semphon("蒋", "艹", "将", 3, `Hydropyrum latifalium; surname`, simplified("蔣"));
 // 4924	蔣: jiǎng 將 jiāng	艹 grass, weed, plant, herb
-semphon("蔣", "艹", "將", 4, `Hydropyrum latifalium;&nbsp;surname`);
+semphon("蔣", "艹", "將", 4, `Hydropyrum latifalium; surname`);
 // 4925	拭: shì 式 shì	扌 hand
 semphon("拭", "扌", "式", 3, `to wipe away stains with a cloth`);
 // 4933	稼: jià 家 jiā	禾 cereal, grain, rice; plant, stalk
@@ -5560,7 +5560,7 @@ semphon("瑕", "王", "叚", 4, `fault, default; a flaw in a gem`);
 // 5082	疵: cī 此 cǐ	疒 sickness, disease
 semphon("疵", "疒", "此", 5, `flaw, fault, defect; disease`);
 // 5083	黯: àn 音 yīn	黑 black; dark; evil, sinister
-semphon("黯", "黑", "音", 12, `&nbsp;black; dark; sullen, dreary`);
+semphon("黯", "黑", "音", 12, ` black; dark; sullen, dreary`);
 // 5087	缕: lǚ 娄 lóu	纟 silk; thread
 semphon("缕", "纟", "娄", 3, `strand, thread; detailed, precise`, simplified("縷"));
 // 5088	縷: lǚ 婁 lóu	糹 silk; thread
@@ -5758,7 +5758,7 @@ semphon("禄", "礻", "录", 4, `blessing, happiness, prosperity`, simplified("�
 // 5295	祿: lù 彔 lù	礻 spirit
 semphon("祿", "礻", "彔", 4, `blessing, happiness, prosperity`);
 // 5296	桐: tóng 同 tóng	木 tree; wood, lumber; wooden
-semphon("桐", "木", "同", 4, `Chinese wood-oil tree,&nbsp;Vernicia fordii`);
+semphon("桐", "木", "同", 4, `Chinese wood-oil tree, Vernicia fordii`);
 // 5298	蝎: xiē 曷 hé	虫 insect, worm; mollusk
 semphon("蝎", "虫", "曷", 6, `scorpion`, simplified("蠍"));
 // 5301	颐: yí 臣 chén	页 page, sheet, leaf
@@ -6028,13 +6028,13 @@ semphon("芹", "艹", "斤", 3, `celery`);
 // 5581	剌: lá 束 shù	刂 knife
 phonsem("剌", "束", "刂", 7, `to slash, to cut in two; to contradict`);
 // 5582	叩: kòu 口 kǒu	卩 seal; kneeling person
-phonsem("叩", "口", "卩", 3, `to ask; to bow, to kowtow;&nbsp;to knock`, simplified("敂"));
+phonsem("叩", "口", "卩", 3, `to ask; to bow, to kowtow; to knock`, simplified("敂"));
 // 5590	孜: zī 子 zi	攵 to rap, to tap; script; to let go
 phonsem("孜", "子", "攵", 3, `diligent, hard-working`);
 // 5594	劾: hé 亥 hài	力 strength, power; capability, influence
 phonsem("劾", "亥", "力", 6, `to look into; to impeach, to charge`);
 // 5595	磐: pán 般 bān	石 stone, rock, mineral
-phonsem("磐", "般", "石", 10, `boulder, large rock;&nbsp;firm, stable`);
+phonsem("磐", "般", "石", 10, `boulder, large rock; firm, stable`);
 // 5596	衙: yá 吾 wú	行 to go, to walk, to move; professional
 semphon("衙", "行", "吾", 6, `public office; official residence`);
 // 5599	剁: duò 朵 duǒ	刂 knife
@@ -6275,9 +6275,9 @@ semphon("熠", "火", "習", 4, `bright, sparkling`);
 semphon("诃", "讠", "可", 2, `to scold loudly, to curse, to abuse`, simplified("訶"));
 // 5825	訶: hē 可 kě	言 words, speech; to speak, to say
 semphon("訶", "言", "可", 7, `to scold loudly, to curse, to abuse`);
-// 5828	琵: pí 比 bǐ	玨 guitar strings; variant of&nbsp;珏
+// 5828	琵: pí 比 bǐ	玨 guitar strings; variant of 珏
 semphon("琵", "玨", "比", 8, `a guitar-like instrument (1)`);
-// 5829	琶: pá 巴 bā	玨 guitar strings; variant of&nbsp;珏
+// 5829	琶: pá 巴 bā	玨 guitar strings; variant of 珏
 semphon("琶", "玨", "巴", 8, `a guitar-like instrument (2)`);
 // 5830	糜: mí 麻 má	米 rice, millet, grain
 phonsem("糜", "麻", "米", 11, `rice gruel, congee; mashed`);
@@ -6440,7 +6440,7 @@ semphon("蚌", "虫", "丰", 6, `oysters, mussels; mother-of-pearl`);
 // 5992	岐: qí 支 zhī	山 mountain, hill, peak
 semphon("岐", "山", "支", 3, `to diverge, to branch; the name of a mountain`);
 // 5996	柚: yòu 由 yóu	木 tree; wood, lumber; wooden
-semphon("柚", "木", "由", 4, `grapefruit,&nbsp;pomelo`);
+semphon("柚", "木", "由", 4, `grapefruit, pomelo`);
 // 5997	琅: láng 良 liáng	王 king, ruler; royal; surname
 semphon("琅", "王", "良", 4, `pure, white; carnelian`, simplified("瑯"));
 // 5998	瑯: láng 郎 láng	王 king, ruler; royal; surname
@@ -6886,9 +6886,9 @@ semphon("吡", "口", "比", 3, `to blame`);
 // 6456	庖: páo 包 bāo	广 broad, vast, wide; building, house
 semphon("庖", "广", "包", 3, `kitchen; cooking, cuisine`);
 // 6457	荟: huì 会 huì	艹 grass, weed, plant, herb
-semphon("荟", "艹", "会", 3, `abundant,&nbsp;flourishing`, simplified("薈"));
+semphon("荟", "艹", "会", 3, `abundant, flourishing`, simplified("薈"));
 // 6458	薈: huì 會 huì	艹 grass, weed, plant, herb
-semphon("薈", "艹", "會", 4, `abundant,&nbsp;flourishing`);
+semphon("薈", "艹", "會", 4, `abundant, flourishing`);
 // 6459	龛: kān 合 hé	龙 dragon; symbol of the emperor
 phonsem("龛", "合", "龙", 6, `niche, shrine`, simplified("龕"));
 // 6460	龕: kān 合 hé	龍 dragon; symbol of the emperor
@@ -7060,7 +7060,7 @@ semphon("恫", "忄", "同", 3, `fearful, pained, sorrowful`);
 // 6653	硷: jiǎn 佥 qiān	石 stone, rock, mineral
 semphon("硷", "石", "佥", 5, `alkaline, alkali, lye, salt`, simplified("礆"));
 // 6655	湘: xiāng 相 xiāng	氵 water
-semphon("湘", "氵", "相", 3, `Hunan province; the&nbsp;Xiangjiang river`);
+semphon("湘", "氵", "相", 3, `Hunan province; the Xiangjiang river`);
 // 6665	敕: chì 束 shù	攵 to rap, to tap; script; to let go
 phonsem("敕", "束", "攵", 7, `an imperial order or decree`, simplified("勅"));
 // 6669	钴: gǔ 古 gǔ	钅 gold, metal; money
@@ -7250,9 +7250,9 @@ semphon("荃", "艹", "全", 3, `aromatic herb; fine cloth`);
 // 6876	浚: jùn 夋 qūn	氵 water
 semphon("浚", "氵", "夋", 3, `to dredge`, simplified("濬"));
 // 6878	鲫: jì 即 jí	鱼 fish
-semphon("鲫", "鱼", "即", 8, `crucian carp;&nbsp;Carassius auratus`, simplified("鯽"));
+semphon("鲫", "鱼", "即", 8, `crucian carp; Carassius auratus`, simplified("鯽"));
 // 6879	鯽: jì 即 jí	魚 fish
-semphon("鯽", "魚", "即", 11, `crucian carp;&nbsp;Carassius auratus`);
+semphon("鯽", "魚", "即", 11, `crucian carp; Carassius auratus`);
 // 6880	沂: yí 斤 jīn	氵 water
 semphon("沂", "氵", "斤", 3, `a river in southeast Shandong`);
 // 6885	焘: dào 寿 shòu	灬 fire
@@ -7378,7 +7378,7 @@ semphon("呣", "口", "母", 3, `interjection or exclamation indicating a questi
 // 7011	啁: zhāo 周 zhōu	口 mouth; entrance, gate, opening
 semphon("啁", "口", "周", 3, `to chirp, to twitter`);
 // 7016	豇: jiāng 工 gōng	豆 beans, peas; bean-shaped
-semphon("豇", "豆", "工", 7, `kidney bean;&nbsp;black-eyed pea`);
+semphon("豇", "豆", "工", 7, `kidney bean; black-eyed pea`);
 // 7018	鸮: xiāo 号 hào	鸟 bird
 phonsem("鸮", "号", "鸟", 5, `owl`, simplified("鴞"));
 // 7019	鴞: xiāo 号 hào	鳥 bird
@@ -7552,9 +7552,9 @@ phonsem("鲨", "沙", "鱼", 7, `shark`, simplified("鯊"));
 // 4587	鯊: shā 沙 shā	魚 fish
 phonsem("鯊", "沙", "魚", 7, `shark`);
 // 4612	悯: mǐn 闵 mǐn	忄 heart; mind; soul
-semphon("悯", "忄", "闵", 3, `to pity, to sympathize with;&nbsp;to grieve for`, simplified("憫"));
+semphon("悯", "忄", "闵", 3, `to pity, to sympathize with; to grieve for`, simplified("憫"));
 // 4613	憫: mǐn 閔 mǐn	忄 heart; mind; soul
-semphon("憫", "忄", "閔", 3, `to pity, to sympathize with;&nbsp;to grieve for`);
+semphon("憫", "忄", "閔", 3, `to pity, to sympathize with; to grieve for`);
 // 4637	嗜: shì 耆 qí	口 mouth; entrance, gate, opening
 semphon("嗜", "口", "耆", 3, `addicted to, fond of, with a weakness for`);
 // 4669	纜: lǎn 覽 lǎn	糹 silk; thread
@@ -7946,7 +7946,7 @@ semphon("厦", "厂", "夏", 2, `large building; mansion`, simplified("廈"));
 // 3639	廈: shà 夏 xià	广 broad, vast, wide; building, house
 semphon("廈", "广", "夏", 3, `large building; mansion`);
 // 3775	豎: shù 豆 dòu	臤 stern; wise
-semphon("豎", "臤", "豆", 8, `perpendicular,&nbsp;vertical; to erect`);
+semphon("豎", "臤", "豆", 8, `perpendicular, vertical; to erect`);
 // 4287	腎: shèn 臤 qiān	⺼ meat, flesh; organic compound
 phonsem("腎", "臤", "⺼", 8, `kidney`);
 // 4402	憎: zēng 曾 céng	忄 heart; mind; soul
