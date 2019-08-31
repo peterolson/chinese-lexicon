@@ -13,7 +13,8 @@ for (let line of lines) {
     if (line[0] === "#") {
         continue;
     }
-    let [head, tail] = line.split("] ");
+    let head = line.split("] ")[0];
+    let tail = line.split("] ").slice(1).join("] ");
     let [chars, pinyin] = head.split(" [");
     let [trad, simp] = chars.split(" ");
     let definitions = tail.split("/").slice(1, -1).map(formatDefinition);

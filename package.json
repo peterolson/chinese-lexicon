@@ -1,6 +1,6 @@
 {
   "name": "chinese-lexicon",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "Chinese lexicon containing definitions, character origins, and statistics",
   "main": "index.js",
   "scripts": {
