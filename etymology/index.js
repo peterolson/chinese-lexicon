@@ -722,7 +722,7 @@ icon("阜", "mound; abundant", "Origin unclear. Possibly represents stepping sto
 semphon("院", "阝", "完", 2, "courtyard; institution");
 icon("弟", "younger brother", `Pictograph of a rope wrapped around a weapon. Relation to current meaning "younger brother" unclear.`, "bs", [iconComponent("戈", [0, 2, 5], "Depicts a weapon."), iconComponent(O, [2, 5], "Depicts a rope.")]);
 semphon("第", "⺮", "弟", 6, "order; rank");
-icon("步", "step", "Picrograph of one foot in front of another, depicting footsteps.", "obs", [iconComponent("止", [0, 4]), iconComponent("止", [4])]);
+icon("步", "step", "Pictograph of one foot in front of another, depicting footsteps.", "obs", [iconComponent("止", [0, 4]), iconComponent("止", [4])]);
 icon("戉", "battle-axe", "Pictograph of a battle-axe, similar to 戈, 戊, and 戌. Now written as 鉞.", "obs");
 semphon("鉞", "金", "戉", 8, "battle-axe", "Originally written as 戉.", false, true);
 simp("钺", "鉞", [[0, 5], [5]], { 金: "钅" });
