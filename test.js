@@ -13,5 +13,3 @@ assert(getGloss("吗") === `(question particle for "yes-no" questions)`);
 assert(getGloss("外面") === `outside`);
 
 console.log("All tests passed.");
-
-console.log(getEntries("可")[0].statistics.topWords);
