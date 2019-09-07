@@ -69007,12 +69007,18 @@ let data = `的	1682530	6243
 克利斯多	2	1`;
 
 let movieWordFrequencies = {};
+let movieCharTopWords = {};
 
 let rank = 0;
 for (let line of data.split("\n")) {
     rank++;
     let [char, count, contexts] = line.split("\t");
+    count = +count;
     movieWordFrequencies[char] = { count, contexts, rank };
+    for (let c of new Set(char.split(""))) {
+        movieCharTopWords[c] = movieCharTopWords[c] || [];
+        movieCharTopWords[c].push({ word: char, count });
+    }
 }
 
-module.exports = movieWordFrequencies;
+module.exports = { movieWordFrequencies, movieCharTopWords };

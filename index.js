@@ -103,8 +103,6 @@ for (let char in tradDict) {
     tradDict[char].sort((a, b) => b.boost - a.boost);
 }
 
-console.log("Ready!");
-
 function search(term, limit) {
     limit = limit || 100;
     return searchStrings
@@ -134,6 +132,14 @@ function isSubstringMatch(text, term) {
 
 let getGloss = require("./gloss")(getEntries);
 require("./etymology/populatePinyin")(etymologies, getEntries, getGloss);
+
+for (let entry of entries) {
+    let { simp } = entry;
+    if (simp.length > 1) continue;
+    entry.statistics.topWords = entry.statistics.topWords.filter(x => x.word in simpDict).map(x => ({ ...x, trad: simpDict[x.word][0].trad, gloss: getGloss(x.word) }));
+}
+
+console.log("Ready!");
 
 module.exports = {
     allEntries: entries,

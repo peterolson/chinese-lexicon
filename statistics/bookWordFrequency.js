@@ -76007,12 +76007,18 @@ let data = `的	943370349
 儓	11`;
 
 let bookWordFrequencies = {};
+let bookCharTopWords = {};
 
 let rank = 0;
 for (let line of data.split("\n")) {
     rank++;
     let [char, count] = line.split("\t");
+    count = +count;
     bookWordFrequencies[char] = { count, rank };
+    for (let c of new Set(char.split(""))) {
+        bookCharTopWords[c] = bookCharTopWords[c] || [];
+        bookCharTopWords[c].push({ word: char, count });
+    }
 }
 
-module.exports = bookWordFrequencies;
+module.exports = { bookWordFrequencies, bookCharTopWords };
