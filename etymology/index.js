@@ -1054,7 +1054,7 @@ simp("择", "擇", [[0, 3], [3]], {}, {}, true);
 semphon("洗", "氵", "先", 3, "wash; bathe", "", true);
 semphon("計", "言", "十", 7, "calculate; count", "", true);
 simp("计", "計", [[0, 2], [2]], { 言: "讠" });
-semphon("注", "氵", "主", 3, "pour into; concentrate; pay attentention; (simp.) register", simplifyMerge("注", "註", "register; comment"));
+semphon("注", "氵", "主", 3, "pour into; concentrate; pay attention; (simp.) register", simplifyMerge("注", "註", "register; comment"));
 semphon("註", "言", "主", 7, "register; comment");
 semphon("董", "艹", "重", 3, "supervise; direct");
 semphon("懂", "忄", "董", 3, "understand");
