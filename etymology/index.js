@@ -2018,6 +2018,11 @@ icon("丫", "fork; branch", "Pictograph of a fork or branch.");
 addEtymology("薩", "Bodhisattva (Buddhism)", "Origin unclear.", [unknownComponent("艹", [0, 4]), unknownComponent("阝", [4, 6]), unknownComponent("產", [6])]);
 simp("萨", "薩", [[0, 3], [3, 5], [5]], { "產": "产" });
 
+//	斩: zhǎn 车 chē	斤 a catty (about 500 grams); an axe; keen, shrewd
+semsem("斩", "车", "斤", 4, `to chop, to cut, to sever; to behead`, simplified("斬") + " Beheading is a military action (车 - chariot) performed with an axe (斤).");
+// 3839	斬: zhǎn 車 chē	斤 a catty (about 500 grams); an axe; keen, shrewd
+semsem("斬", "車", "斤", 7, `to chop, to cut, to sever; to behead`, "Beheading is a military action (車 - chariot) performed with an axe (斤).");
+
 // 優劇勝徵據極樣煙確範絕衝趕適鐵陸階顯餘
 
 // to review: 一七万三上下不与专且世业东两严並个中临为主丽举久么之乎乐九也习乡书买乱亂了予争事二于云互五亚些亞亡交亦产京亮亲人什仅今介从他付代令以件价份企众会伤伦似但位低住体何余作你使來供便俄保信倫假做健備傷價儿元充先光克免兒党入內全兩八公六兰共关兴兵其具养内再写军农决况准几出击分划列刘则初別利别制則前劉力功加务动劳務勞包化北区医區十千升午半华单南占卡卫印危即厂历压原去县参參又及友双反发取受变口古句另只可台史右叶司各合吉同名后向君听告员周命品員哥唐商善喜單器嚴四回因团困国图國圖團土圣在坏坐坚執堂堅報壓士声处备复外多夜夢大天太夫央失头奇奥奧女她好如妇姑委威婦子字孙学孫學它守安宋宗官定宝实客宣宫宮害容密實審寫寶对寻导封射将將專尋對導小少尔尚尼尽局层屋展属屬山岁岛岸島州工左巨差己已巴市布师希帝带師席帮帶幫干平年并幸幹幾广应度座庭康建开异式引弟強强归当录形往待律後得從微德心必志忙快念思怪总息您愛感慮應成我或戶户所手才托执找承抓抗护报招择拿指挥探揮擊支改敌敢散文斗料断斯新斷方於施旁旅族无既日旧早时明易春是晚普景智更書曾最會月有朋服望朝木未本术机杀杂权束条来東林果某查标條梦楚業榮樂機次欢欧款歐止正此步武歲歸死段殺母每毒比毛毫民气氣水永求汉沉沒没治況法泽洲派流深游準溫滅满漢火灭灵炸点為热無營爭爱父爾片牙率玉王现班現甚生產用田由电男画留畫異疑疗發白的皇皮益监盡監目直相看真眾着石示礼社票离科称移稅税稱穿突立竟章笑笔第筆等答算米类系約素索紧經緊縣繼约经继网罗罪羅美習老者而耳联聖聯聽肯育能脑腦臨自至與興舊般船良色节花苏若荣莫获華营萬葉藝蘇虑號虽血行術衛衣表裡西要見親覺见观觉角解言討記訴話論讀變讨记论证诉话读象負責貴買賣質负责质贵走足身車軍车轻辦農边过还这连追退送連週遗遺還邊那鄉酒采里重野金錄錯错長长門開間關门间队阳阴阵陈降陣除陰陳陽随隨难集雖雙雜雨雲雷電需靈青静靜非面革音須類须風风飛飞食首香馬马高鬥魚魯鱼鲁麗黃黄黑龍龙
@@ -4372,10 +4377,7 @@ semphon("掷", "扌", "郑", 3, `to throw, to hurl, to fling, to cast`, simplifi
 semphon("擲", "扌", "鄭", 3, `to throw, to hurl, to fling, to cast`);
 // 3837	雌: cí 此 cǐ	隹 short-tailed bird; sparrow
 phonsem("雌", "此", "隹", 6, `female; feminine; gentle, soft`);
-// 3838	斩: zhǎn 车 chē	斤 a catty (about 500 grams); an axe; keen, shrewd
-phonsem("斩", "车", "斤", 4, `to chop, to cut, to sever; to behead`, simplified("斬"));
-// 3839	斬: zhǎn 車 chē	斤 a catty (about 500 grams); an axe; keen, shrewd
-phonsem("斬", "車", "斤", 7, `to chop, to cut, to sever; to behead`);
+
 // 3843	劈: pī 辟 pì	刀 knife; old coin; measure
 phonsem("劈", "辟", "刀", 13, `to chop, to cut apart; to split`);
 // 3844	橙: chéng 登 dēng	木 tree; wood, lumber; wooden
