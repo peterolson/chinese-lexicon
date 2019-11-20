@@ -1,4 +1,4 @@
-let { getGloss, getEntries } = require("./index");
+let { getGloss, getEntries, allEntries } = require("./index");
 
 function assert(condition) {
     if (!condition) throw new Error("Test failed.");
@@ -11,5 +11,6 @@ assert(getEntries("看")[0].pinyin === "kàn");
 assert(getGloss("么") === "[particle]");
 assert(getGloss("吗") === `(question particle for "yes-no" questions)`);
 assert(getGloss("外面") === `outside`);
+assert(getGloss("右") === `right (-hand)`);
 
 console.log("All tests passed.");

@@ -1,6 +1,6 @@
 function scoreGloss(definition, word, index) {
     let lengthPenalty = definition.length / word.length;
-    let indexPenalty = index;
+    let indexPenalty = index * 2;
     let otherPenalty = 0;
     if (definition.includes("CL:")) {
         otherPenalty += 20;
