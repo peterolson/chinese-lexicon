@@ -1400,9 +1400,10 @@ phonsem("虜", "虍", "男", 6, "capture; take prisoner");
 simp("虏", "虜", [[6], [0, 6]], {}, { 男: "力" });
 semphon("抱", "扌", "包", 3, "hold; carry; hug");
 semphon("汽", "氵", "气", 3, "steam; vapor");
-addEtymology("雞", "chicken", "The left component is a pictograph of a chicken. The right component 隹 (bird) was added later.", [iconComponent(O, [0, 10], "Depicts a chicken."), meaningComponent("隹", [10])], "os");
-addEtymology("鸡", "chicken", simplified("雞") + ` The traditional left component was originally a pictograph of a chicken, but in simplified characters it was abbreviated to 又. The traditional 隹 (bird) component was replaced with 鸟, a different character for "bird".`,
-    [simplifiedComponent("又", [0, 2], "Shorthand form of the left component in the traditional character 雞."), meaningComponent("鸟", [2])], "雞:os");
+addEtymology("奚", "slave", "Pictograph of a hand holding a rope tied to a slave.", [iconComponent("爪", [0, 4]), iconComponent("幺", [4, 7]), iconComponent("大", [7], "Depicts a person.")], "b");
+addEtymology("雞", "chicken", "Originally was a pictograph of a chicken. Later changed to a phonosemantic compound of 奚 and 隹 (bird).", [soundComponent("奚", [0, 10]), meaningComponent("隹", [10])], "os");
+addEtymology("鸡", "chicken", simplified("雞") + `Originally was a pictograph of a chicken. Later changed to a phonosemantic compound of 奚 and 隹 (bird). The traditional 隹 (bird) component was replaced with 鸟, a different character for "bird".`,
+    [simplifiedComponent("又", [0, 2], "Shorthand form of the 奚 component in the traditional character 雞."), meaningComponent("鸟", [2])], "雞:os");
 icon("兮", "(bustling); [exclamatory particle]", "Depicts two lines of air (八) coming from breath (丂).", "b", [iconComponent("八", [0, 2], "Depicts lines of air."), iconComponent("丂", [2], "Depicts breath.")]);
 phonsem("市", "之", "兮", 2, "city; market", "Alludes to the noist bustle (兮) of a city.");
 semsem("制", "木", "刂", 6, "control; regulate; manufacture", "Depicts cutting down a tree (木) with a knife (刂).", "s");
@@ -1761,7 +1762,7 @@ phonsem("臤", "臣", "又", 6, "strong; firm", "", true);
 phonsem("堅", "臤", "土", 8);
 simp("坚", "堅", [[0, 4], [4]]);
 icon("宮", "palace; temple", "Pictograph of a building with two floors.", "b", [iconComponent("宀", [0, 3]), iconComponent(O, [3], "Depicts two stacked rooms.")]);
-icon("熒", "glimmer; twinkle", "Pictograph of two intersection torches.", "bs", [iconComponent(O, [0, 10], "Depicts two torches"), meaningComponent("火", [10])]);
+icon("熒", "glimmer; twinkle", "Pictograph of an intersection of two torches.", "bs", [iconComponent(O, [0, 10], "Depicts two torches"), meaningComponent("火", [10])]);
 simp("荧", "熒", [[0, 5], [5]]);
 phonsem("營", "熒", "宮", [[0, 10], [8]], "camp; barracks");
 simp("营", "營", [[3], [0, 5]], { "熒": "荧" });
@@ -8272,6 +8273,13 @@ semphon("鈕", "釒", "丑", 8, `button, knob; surname`);
 semphon("忸", "忄", "丑", 3, `blushing, bashful, ashamed`);
 // 7017	吖: yā 丫 yā	口 mouth; entrance, gate, opening
 semphon("吖", "口", "丫", 3, `used in transliterations`);
+
+// 3723	溪: xī 奚 xī	氵 water
+semphon("溪", "氵", "奚", 3, `brook, creek, stream`, simplified("谿"));
+// 3724	谿: xī 奚 xī	谷 valley, gorge, ravine
+phonsem("谿", "奚", "谷", 10, `valley, gorge; mountain stream`);
+// 5003	蹊: qī 奚 xī	足 foot; to attain, to satisfy; enough
+semphon("蹊", "足", "奚", 7, `trail, footpath`);
 
 
 
