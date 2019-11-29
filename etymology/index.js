@@ -265,7 +265,7 @@ semphon("故", "攵", "古", 5, "happening; instance; reason", "", false, false,
 addEtymology("做", "make; do", "Originally was written the same as 作 (work). The 夂 (foot; movement) component was added later to distinguish the characters. The middle component 乍 was corrupted to look like 古, which caused later writers to reanalyze 做 as a compound of 亻and 故.", [meaningComponent("作", [0, 7], "Also serves as a phonetic component. In the modern form, 乍 is corrupted to look like 古."), meaningComponent("夂", [7])], "s");
 phonsem("怎", "作", "心", 5, "how");
 icon("羊", "sheep; goat", "Pictograph of the horns on a sheep.", "obs");
-semphon("样", "木", "羊", 4, "way; shape; manner");
+semphon("样", "木", "羊", 4, "way; shape; manner", simplified("樣"));
 phonsem("都", "者", "⻏", 8, "all; large city, capital", `Based on the meaning "large city, capital", which is the meaning when pronounced "dū". When pronounced "dōu", it has the unrelated meaning "all", etymologically related to 多 (many).`, true);
 icon("可", "be willing; allow", `The right component is a pictograph of an axe handle, now written as 柯 (kē). 口 (mouth) was added later to indicate that the character is only "mouthed", i.e. only used for its phonetic value.`, "b", [meaningComponent("口", [1, 4]), iconComponent(O, [0, 1, 4], "Depicts an axe handle.")]);
 semphon("柯", "木", "可", 4, "axe handle; stalk");
@@ -551,7 +551,7 @@ icon("非", "not", "Pictograph of two wings facing opposite directions.", "s");
 phonsem("裳", "尚", "衣", 8, "lower garment", "Originally used interchangeably with 常.");
 phonsem("常", "尚", "巾", 8, "often; ordinary", `Based on the original meaning, "lower garment", now written as 裳. The current meaning is a phonetic loan.`);
 semsem("喜", "壴", "口", 9, "Depicts merriment from beating on a drum (壴) and singing with the mouth (口).");
-icon("雚", "stork; heron", "Pictograph of a stork", "obs", [iconComponent("隹", [9])]);
+semphon("雚", "雈", "吅", [[0, 3, 9], [3, 9]], "stork; heron");
 phonsem("歡", "雚", "欠", 18, "joyous; happy", "欠 (yawn) is a pictograph of a person with an open mouth. Likely used here to represent a person joyfully laughing.");
 simp("欢", "歡", [[2], [0, 2]], {}, { 雚: "又" });
 semphon("法", "氵", "去", 3, "law; method; way", "The water (氵) component is used to represent the way water follows a defined path e.g. in rivers.");
@@ -2024,7 +2024,17 @@ semsem("斩", "车", "斤", 4, `to chop, to cut, to sever; to behead`, simplifie
 // 3839	斬: zhǎn 車 chē	斤 a catty (about 500 grams); an axe; keen, shrewd
 semsem("斬", "車", "斤", 7, `to chop, to cut, to sever; to behead`, "Beheading is a military action (車 - chariot) performed with an axe (斤).");
 
-// 優劇勝徵據極樣煙確範絕衝趕適鐵陸階顯餘
+semphon("樣", "木", "羕", 4, "way; shape; manner");
+phonsem("羕", "羊", "永", 6, "eternal; flow of a long river");
+addEtymology("憂", "sad, grieving; melancholy, grief", "Originally composed of 頁 (head) and 又 (hand), depicting covering one's face in sorrow. The semantic 心 (heart) component was added later.",
+    [iconComponent("頁", [0, 8]), meaningComponent("心", [8, 12]), iconComponent("又", [12])]);
+semphon("優", "亻", "憂", 2, "superior; elegant");
+phonsem("豦", "虍", "豕", 6, "wild boar; fight");
+phonsem("劇", "豦", "刂", 13, "play; drama; acute; severe");
+addEtymology("朕", "the sovereign; I (royal)", `Originally depicted two hands (廾) holding an object (丨) to patch up a hole in a boat (舟), representing the meaning "seam; crack". Since cracks in bones were used for fortune-telling in ancient China, the meaning shifted later to "omen; sign" and "sovereign".`, null, "b");
+phonsem("勝", "朕", "力", 10, "victory; success; beat");
+
+// 徵據極煙確範絕衝趕適鐵陸階顯餘
 
 // to review: 一七万三上下不与专且世业东两严並个中临为主丽举久么之乎乐九也习乡书买乱亂了予争事二于云互五亚些亞亡交亦产京亮亲人什仅今介从他付代令以件价份企众会伤伦似但位低住体何余作你使來供便俄保信倫假做健備傷價儿元充先光克免兒党入內全兩八公六兰共关兴兵其具养内再写军农决况准几出击分划列刘则初別利别制則前劉力功加务动劳務勞包化北区医區十千升午半华单南占卡卫印危即厂历压原去县参參又及友双反发取受变口古句另只可台史右叶司各合吉同名后向君听告员周命品員哥唐商善喜單器嚴四回因团困国图國圖團土圣在坏坐坚執堂堅報壓士声处备复外多夜夢大天太夫央失头奇奥奧女她好如妇姑委威婦子字孙学孫學它守安宋宗官定宝实客宣宫宮害容密實審寫寶对寻导封射将將專尋對導小少尔尚尼尽局层屋展属屬山岁岛岸島州工左巨差己已巴市布师希帝带師席帮帶幫干平年并幸幹幾广应度座庭康建开异式引弟強强归当录形往待律後得從微德心必志忙快念思怪总息您愛感慮應成我或戶户所手才托执找承抓抗护报招择拿指挥探揮擊支改敌敢散文斗料断斯新斷方於施旁旅族无既日旧早时明易春是晚普景智更書曾最會月有朋服望朝木未本术机杀杂权束条来東林果某查标條梦楚業榮樂機次欢欧款歐止正此步武歲歸死段殺母每毒比毛毫民气氣水永求汉沉沒没治況法泽洲派流深游準溫滅满漢火灭灵炸点為热無營爭爱父爾片牙率玉王现班現甚生產用田由电男画留畫異疑疗發白的皇皮益监盡監目直相看真眾着石示礼社票离科称移稅税稱穿突立竟章笑笔第筆等答算米类系約素索紧經緊縣繼约经继网罗罪羅美習老者而耳联聖聯聽肯育能脑腦臨自至與興舊般船良色节花苏若荣莫获華营萬葉藝蘇虑號虽血行術衛衣表裡西要見親覺见观觉角解言討記訴話論讀變讨记论证诉话读象負責貴買賣質负责质贵走足身車軍车轻辦農边过还这连追退送連週遗遺還邊那鄉酒采里重野金錄錯错長长門開間關门间队阳阴阵陈降陣除陰陳陽随隨难集雖雙雜雨雲雷電需靈青静靜非面革音須類须風风飛飞食首香馬马高鬥魚魯鱼鲁麗黃黄黑龍龙
 
@@ -8335,7 +8345,8 @@ let pinyins = {
     "臤": "qiān|qian",
     "𢎘": "hàn|han",
     "𧴪": "suǒ|suo",
-    "𣎆": "luò|luo"
+    "𣎆": "luò|luo",
+    "羕": "yàng|yang"
 }
 
 for (let char in pinyins) {
