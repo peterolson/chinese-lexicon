@@ -2033,8 +2033,30 @@ phonsem("豦", "虍", "豕", 6, "wild boar; fight");
 phonsem("劇", "豦", "刂", 13, "play; drama; acute; severe");
 addEtymology("朕", "the sovereign; I (royal)", `Originally depicted two hands (廾) holding an object (丨) to patch up a hole in a boat (舟), representing the meaning "seam; crack". Since cracks in bones were used for fortune-telling in ancient China, the meaning shifted later to "omen; sign" and "sovereign".`, null, "b");
 phonsem("勝", "朕", "力", 10, "victory; success; beat");
-
-// 徵據極煙確範絕衝趕適鐵陸階顯餘
+phonsem("適", "啻", "辶", 11, "match, comfortable; just");
+semphon("旱", "日", "干", 4, "drought; dry land");
+semphon("趕", "走", "旱", 7, "to pursue, to overtake; to hurry; to expel");
+semphon("衝", "行", "重", [[0, 3, 12], [3, 12]], "thoroughfare; straight ahead");
+addEtymology("絕", "to cut, to sever; to break off, to terminate", "Depicts a knife (刀) cutting between threads (絲).", [iconComponent("絲", [0, 6, 8]), iconComponent("刀", [6, 8])], "bs");
+semphon("範", "車", "笵", [[6, 13], [0, 6, 13]], "pattern; model; example");
+addEtymology("鐵", "iron; arms; weapons", "", [meaningComponent("金", [0, 8]), meaningComponent("戈", [8, 11, 18]), soundComponent("呈", [11, 18], obsoleteSound("鐵", "呈"))]);
+icon("圥", "plant", "Depicts some sort of plant or mushroom mentioned in ancient literature.");
+phonsem("坴", "圥", "土", 5, "clod of earth; land");
+semphon("陸", "阝", "坴", 2, "shore; land; continent");
+semphon("餘", "飠", "余", 8, "extra; surplus");
+addEtymology("顯", "make visible; reveal", "Depicts the head of a person (頁) looking carefully at small threads (絲) which are made visible by the sun (日).",
+    [iconComponent("日", [0, 4]), iconComponent("絲", [4, 14]), iconComponent("頁", [14])]);
+addEtymology("皆", "all; every", "Origin unclear.", [unknownComponent("比", [0, 4]), unknownComponent("白", [4])]);
+semphon("階", "阝", "皆", 2, "rank; step; stairs");
+addEtymology("垔", "restrain; dam", "Origin unclear.", [unknownComponent("西", [0, 6]), unknownComponent("土", [6])]);
+semphon("煙", "火", "垔", 4, "smoke; tobacco");
+icon("亟", "urgent; repeatedly", `Originally a pictograph of a person with lines at the top and bottom, depicting the original meaning "extremity". Later the 口 (mouth) and 又 (hand) components were added for unknown reasons.`,
+    "ob", [unknownComponent("口", [2, 5]), iconComponent(O, [0, 2, 7], "Depicts a person with lines at the top and bottom."), unknownComponent("又", [5, 7])]);
+semphon("極", "木", "亟", 4, "extremely; pole");
+semphon("據", "扌", "豦", 3, "according to; seize; occupy");
+icon("寉", "crane (bird)", "Archaic variant of 鶴.");
+phonsem("鶴", "寉", "鳥", 10, "crane (bird)");
+semphon("確", "石", "寉", 5, "solid; firm; real");
 
 // to review: 一七万三上下不与专且世业东两严並个中临为主丽举久么之乎乐九也习乡书买乱亂了予争事二于云互五亚些亞亡交亦产京亮亲人什仅今介从他付代令以件价份企众会伤伦似但位低住体何余作你使來供便俄保信倫假做健備傷價儿元充先光克免兒党入內全兩八公六兰共关兴兵其具养内再写军农决况准几出击分划列刘则初別利别制則前劉力功加务动劳務勞包化北区医區十千升午半华单南占卡卫印危即厂历压原去县参參又及友双反发取受变口古句另只可台史右叶司各合吉同名后向君听告员周命品員哥唐商善喜單器嚴四回因团困国图國圖團土圣在坏坐坚執堂堅報壓士声处备复外多夜夢大天太夫央失头奇奥奧女她好如妇姑委威婦子字孙学孫學它守安宋宗官定宝实客宣宫宮害容密實審寫寶对寻导封射将將專尋對導小少尔尚尼尽局层屋展属屬山岁岛岸島州工左巨差己已巴市布师希帝带師席帮帶幫干平年并幸幹幾广应度座庭康建开异式引弟強强归当录形往待律後得從微德心必志忙快念思怪总息您愛感慮應成我或戶户所手才托执找承抓抗护报招择拿指挥探揮擊支改敌敢散文斗料断斯新斷方於施旁旅族无既日旧早时明易春是晚普景智更書曾最會月有朋服望朝木未本术机杀杂权束条来東林果某查标條梦楚業榮樂機次欢欧款歐止正此步武歲歸死段殺母每毒比毛毫民气氣水永求汉沉沒没治況法泽洲派流深游準溫滅满漢火灭灵炸点為热無營爭爱父爾片牙率玉王现班現甚生產用田由电男画留畫異疑疗發白的皇皮益监盡監目直相看真眾着石示礼社票离科称移稅税稱穿突立竟章笑笔第筆等答算米类系約素索紧經緊縣繼约经继网罗罪羅美習老者而耳联聖聯聽肯育能脑腦臨自至與興舊般船良色节花苏若荣莫获華营萬葉藝蘇虑號虽血行術衛衣表裡西要見親覺见观觉角解言討記訴話論讀變讨记论证诉话读象負責貴買賣質负责质贵走足身車軍车轻辦農边过还这连追退送連週遗遺還邊那鄉酒采里重野金錄錯错長长門開間關门间队阳阴阵陈降陣除陰陳陽随隨难集雖雙雜雨雲雷電需靈青静靜非面革音須類须風风飛飞食首香馬马高鬥魚魯鱼鲁麗黃黄黑龍龙
 
@@ -8164,7 +8186,7 @@ semphon("鱒", "魚", "尊", 11, `barbel`);
 semphon("襖", "衤", "奥", 5, `coat, jacket, outerware`);
 
 // 1589	范: fàn 氾 fàn	艹 grass, weed, plant, herb
-semphon("范", "艹", "氾", 3, `pattern, model, example; surname`, simplified("範"));
+semphon("范", "艹", "氾", 3, `pattern, model, example; surname Fan`, simplified("範"));
 // 2005	烂: làn 兰 lán	火 fire, flame; to burn; anger, rage
 semphon("烂", "火", "兰", 4, `overcooked, overripe; rotten, spoiled`, simplified("爛"));
 // 2293	诺: nuò 若 ruò	讠 words, speech; to speak, to say
@@ -8292,6 +8314,38 @@ phonsem("谿", "奚", "谷", 10, `valley, gorge; mountain stream`);
 semphon("蹊", "足", "奚", 7, `trail, footpath`);
 
 
+// 1403	擾: rǎo 憂 yōu	扌 hand
+semphon("擾", "扌", "憂", 3, `to poke, to disturb, to annoy, to agitate`);
+// 3147	腾: téng 朕 zhèn	马 horse; surname
+phonsem("腾", "朕", "马", 10, `to fly, to soar; to gallop, to prance; rising, steaming`, simplified("騰"));
+// 3222	桿: gān 旱 hàn	木 tree; wood, lumber; wooden
+semphon("桿", "木", "旱", 4, `cane, pole, stick`);
+// 3634	谐: xié 皆 jiē	讠 words, speech; to speak, to say
+semphon("谐", "讠", "皆", 2, `to joke, to jest; to harmonize, to agree`, simplified("諧"));
+// 3635	諧: xié 皆 jiē	言 words, speech; to speak, to say
+semphon("諧", "言", "皆", 7, `to joke, to jest; to harmonize, to agree`);
+// 4087	捍: hàn 旱 hàn	扌 hand
+semphon("捍", "扌", "旱", 3, `to defend, to guard; to ward off`, simplified("扞"));
+// 4102	睦: mù 坴 lù	目 eye; to look, to see; division, topic
+semphon("睦", "目", "坴", 5, `amiable, friendly, peaceful`);
+// 4592	悍: hàn 旱 hàn	忄 heart; mind; soul
+semphon("悍", "忄", "旱", 3, `courageous, brave; violent`, simplified("猂"));
+// 5247	焊: hàn 旱 hàn	火 fire, flame; to burn; anger, rage
+semphon("焊", "火", "旱", 4, `to solder, to weld`, simplified("釬"));
+// 5249	銲: hàn 旱 hàn	釒 gold, metal; money
+semphon("銲", "釒", "旱", 8, `to solder, to weld; greaves`);
+// 5644	偕: xié 皆 jiē	亻 man, person; people
+semphon("偕", "亻", "皆", 2, `together, accompanied by; in order`);
+// 5804	揩: kāi 皆 jiē	扌 hand
+semphon("揩", "扌", "皆", 3, `to wipe, to rub, to dust, to clean`);
+// 5898	甄: zhēn 垔 yīn	瓦 tile; pottery, earthenware
+phonsem("甄", "垔", "瓦", 9, `to grade, to examine, to discern; surname`);
+// 5910	漾: yàng 羕 yàng	氵 water
+semphon("漾", "氵", "羕", 3, `to ripple, to undulate; to bob on the waves`);
+// 6242	噱: jué 豦 jù	口 mouth; entrance, gate, opening
+semphon("噱", "口", "豦", 3, `to laugh heartily`);
+// 6902	遽: jù 豦 jù	辶 to walk; walking
+phonsem("遽", "豦", "辶", 13, `rapid, sudden, unexpected`);
 
 let pinyins = {
     "◎": "xx",
@@ -8346,7 +8400,9 @@ let pinyins = {
     "𢎘": "hàn|han",
     "𧴪": "suǒ|suo",
     "𣎆": "luò|luo",
-    "羕": "yàng|yang"
+    "羕": "yàng|yang",
+    "圥": "lù|lu",
+    "寉": "què|que"
 }
 
 for (let char in pinyins) {
