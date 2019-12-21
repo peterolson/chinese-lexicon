@@ -80,21 +80,6 @@ for (let entry of entries) {
     entry.usedAsComponentIn = { simp: getComponentUses(simp, trad, simpDict), trad: getComponentUses(simp, trad, tradDict) };
 }
 
-console.log("Building search index...");
-let searchStrings = [];
-
-for (let i = 0; i < entries.length; i++) {
-    let entry = entries[i];
-    let etymology = (((entry.simpEtymology || {}).notes || "") + " " + ((entry.tradEtymology || {}).notes || "")).trim();
-    let definition = entry.definitions.join(" ");
-    searchStrings.push({
-        id: i,
-        wholeWordText: `${definition} ${etymology}`,
-        substringText: `${entry.simp} ${entry.trad} ${entry.searchablePinyin} ${entry.pinyin}`,
-        boost: entry.boost
-    });
-}
-
 for (let char in simpDict) {
     simpDict[char].sort((a, b) => b.boost - a.boost);
 }
@@ -105,11 +90,12 @@ for (let char in tradDict) {
 
 function search(term, limit) {
     limit = limit || 100;
-    return searchStrings
-        .filter(({ wholeWordText, substringText }) => isWholeWordMatch(wholeWordText, term) || isSubstringMatch(substringText, term))
+    return entries
+        .filter(({ definitions, simp, trad, searchablePinyin, pinyin }) =>
+            isWholeWordMatch(definitions.join(" "), term) ||
+            isSubstringMatch(simp, term) || isSubstringMatch(trad, term) || isSubstringMatch(simp, searchablePinyin) || isSubstringMatch(simp, pinyin))
         .sort((a, b) => b.boost - a.boost)
-        .slice(0, limit)
-        .map(x => entries[x.id]);
+        .slice(0, limit);
 }
 
 function getEntries(word) {
@@ -122,11 +108,13 @@ function getEtymology(char) {
 }
 
 function isWholeWordMatch(searchOnString, searchText) {
+    if (!searchOnString) return false;
     searchText = searchText.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     return searchOnString.match(new RegExp("\\b" + searchText + "\\b", "i")) != null;
 }
 
 function isSubstringMatch(text, term) {
+    if (!text) return false;
     return text.includes(term);
 }
 

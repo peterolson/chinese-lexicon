@@ -1,4 +1,4 @@
-let { getGloss, getEntries, allEntries } = require("./index");
+let { getGloss, getEntries, allEntries, search } = require("./index");
 
 function assert(condition) {
     if (!condition) throw new Error("Test failed.");
