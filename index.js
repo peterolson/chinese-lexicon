@@ -93,7 +93,7 @@ function search(term, limit) {
     return entries
         .filter(({ definitions, simp, trad, searchablePinyin, pinyin }) =>
             isWholeWordMatch(definitions.join(" "), term) ||
-            isSubstringMatch(simp, term) || isSubstringMatch(trad, term) || isSubstringMatch(simp, searchablePinyin) || isSubstringMatch(simp, pinyin))
+            isSubstringMatch(simp, term) || isSubstringMatch(trad, term) || isSubstringMatch(searchablePinyin, term) || isSubstringMatch(pinyin, term))
         .sort((a, b) => b.boost - a.boost)
         .slice(0, limit);
 }
