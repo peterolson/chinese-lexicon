@@ -89,11 +89,12 @@ for (let char in tradDict) {
 }
 
 function search(term, limit) {
+    term = term.toLowerCase();
     limit = limit || 100;
     return entries
-        .filter(({ definitions, simp, trad, searchablePinyin, pinyin }) =>
+        .filter(({ definitions, simp, trad, searchablePinyin, pinyin, pinyinTones }) =>
             isWholeWordMatch(definitions.join(" "), term) ||
-            isSubstringMatch(simp, term) || isSubstringMatch(trad, term) || isSubstringMatch(searchablePinyin, term) || isSubstringMatch(pinyin, term))
+            isSubstringMatch(simp, term) || isSubstringMatch(trad, term) || isSubstringMatch(searchablePinyin, term) || isSubstringMatch(pinyinTones, term) || isSubstringMatch(pinyin.toLowerCase(), term))
         .sort((a, b) => b.boost - a.boost)
         .slice(0, limit);
 }

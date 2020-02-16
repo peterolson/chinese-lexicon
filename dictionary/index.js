@@ -20,7 +20,8 @@ for (let line of lines) {
     let definitions = tail.split("/").slice(1, -1).map(formatDefinition);
     let formattedPinyin = formatPinyin(pinyin);
     let searchablePinyin = pinyin.toLowerCase().replace(/[ 0-9]/g, "").replace(/u:/g, "v");
-    entries.push({ simp, trad, definitions, pinyin: formattedPinyin, searchablePinyin });
+    let pinyinTones = pinyin.toLowerCase().replace(/ /g, "");
+    entries.push({ simp, trad, definitions, pinyin: formattedPinyin, searchablePinyin, pinyinTones });
 }
 
 module.exports = entries;
