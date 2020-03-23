@@ -1759,7 +1759,7 @@ simp("弃", "棄", [[0, 4], [4, 4], [4]]);
 semphon("餓", "飠", "我", 8, "hungry");
 simp("饿", "餓", [[0, 3], [3]], { "飠": "饣" });
 phonsem("臤", "臣", "又", 6, "strong; firm", "", true);
-phonsem("堅", "臤", "土", 8);
+phonsem("堅", "臤", "土", 8, "strong; solid");
 simp("坚", "堅", [[4], [0, 4]]);
 icon("宮", "palace; temple", "Pictograph of a building with two floors.", "b", [iconComponent("宀", [0, 3]), iconComponent(O, [3], "Depicts two stacked rooms.")]);
 icon("熒", "glimmer; twinkle", "Pictograph of an intersection of two torches.", "bs", [iconComponent(O, [0, 10], "Depicts two torches"), meaningComponent("火", [10])]);
