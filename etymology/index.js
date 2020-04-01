@@ -365,7 +365,7 @@ icon("而", "and; but; yet", "Originally a pictograph of a beard, now written as
 icon("彡", "hair", "Pictograph of strands of hair.")
 addEtymology("耏", "beard", "Phonosemantic compound. 而 represents the sound and 彡 (hair) represents the meaning.");
 addEtymology("需", "require; need", `Originally was a pictograph of a person standing under the rain (雨), representing the meaning "to get wet", now written as 濡.
-The current meaning is a phonetic loan. The person component was later replaced with the phonetic component 而.`, [iconComponent("雨", [0, 8]), soundComponent("而", [8], obsoleteSound("需", "而"))], "bs")
+The current meaning is a phonetic loan. The person component was later replaced with the phonetic component 而. Due to historical phonetic shifts, 需 and 而 no longer sound similar.`, [iconComponent("雨", [0, 8]), soundComponent("而", [8], obsoleteSound("需", "而"))], "bs")
 addEtymology("濡", "beard", "Phonosemantic compound. 氵 (water) represents the meaning and 需 represents the sound.");
 icon("豆", "bean; (bowl)", "Pictograph of a stemmed bowl. Current meaning is a phonetic loan.", "obs");
 icon("丰", "abundant; fertile", "Pictograph of a growing plant.", "bs");
