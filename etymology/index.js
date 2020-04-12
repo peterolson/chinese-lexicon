@@ -1822,7 +1822,7 @@ simp("类", "類", [[0, 6], [6, 10], [10, 10]]);
 icon("拜", "pay respect; worship", "Depicts two hands put (手) together as a sign of respect.", "", [iconComponent("手", [0, 4]), iconComponent("手", [4])]);
 phonsem("朔", "屰", "月", 6, "new moon; first day of lunar month", "", true);
 phonsem("塑", "朔", "土", 10, "sculpt with clay; plastic");
-semphon("揮", "扌", "軍", 3, "wave; bransish; command", "", true);
+semphon("揮", "扌", "軍", 3, "wave; brandish; command", "", true);
 simp("挥", "揮", [[0, 3], [3]], { 軍: "军" });
 semphon("供", "亻", "共", 2, "provide; supply");
 semphon("廢", "广", "發", 3, "abandon; waste");
