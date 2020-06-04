@@ -95,7 +95,26 @@ function search(term, limit) {
         .filter(({ definitions, simp, trad, searchablePinyin, pinyin, pinyinTones }) =>
             isWholeWordMatch(definitions.join(" "), term) ||
             isSubstringMatch(simp, term) || isSubstringMatch(trad, term) || isSubstringMatch(searchablePinyin, term) || isSubstringMatch(pinyinTones, term) || isSubstringMatch(pinyin.toLowerCase(), term))
-        .sort((a, b) => b.boost - a.boost)
+        .map(entry => {
+            let { definitions, simp, trad, searchablePinyin, pinyin, pinyinTones } = entry;
+            let relevance = 1;
+            let definitionsCount = definitions.length;
+            for (let i = 0; i < definitionsCount; i++) {
+                let definition = definitions[i];
+                if (isWholeWordMatch(definition, term)) {
+                    relevance += 10 / (i + 1);
+                }
+                if (isSubstringMatch(definition, term)) {
+                    relevance += 1 / (i + 1);
+                }
+            }
+            if (isWholeWordMatch(simp, term) || isWholeWordMatch(trad, term) || isWholeWordMatch(searchablePinyin, term) || isWholeWordMatch(pinyinTones, term) || isWholeWordMatch(pinyin.toLowerCase(), term)) {
+                relevance += 10;
+            }
+            entry.relevance = relevance;
+            return entry;
+        })
+        .sort((a, b) => (b.boost * b.relevance) - (a.boost * a.relevance))
         .slice(0, limit);
 }
 
