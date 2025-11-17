@@ -1,3 +1,5 @@
+**Converted to ESM with dual build (esm, cjs legacy require)**
+
 # Chinese Lexicon
 
 This repository is a lexicon of Chinese combining the following features:
