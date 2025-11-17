@@ -1,6 +1,4 @@
-if (typeof require !== "undefined") {
-    etymologyImages = require("./etymologyImages");
-}
+import etymologyImages from "./etymologyImages.js";
 
 let O = "◎";
 
@@ -303,32 +301,30 @@ function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, ch
     etymologies[simplifiedChar] = simplifiedEtymology;
 }
 
-if (typeof module !== "undefined") {
-    module.exports = {
-        etymologies,
-        addEtymology,
-        semsem,
-        semphon,
-        phonsem,
-        icon,
-        meaningComponent,
-        soundComponent,
-        simplifiedComponent,
-        iconComponent,
-        unknownComponent,
-        shiftMeaning,
-        obsoleteMeaning,
-        obsoleteSound,
-        alsoMeaning,
-        soundLoan,
-        simplifyMerge,
-        cursive,
-        shorthand,
-        simp,
-        simplified,
-        unknownComonentNote,
-        radicals,
-        radicalNote,
-        O
-    }
-}
+export {
+    etymologies,
+    addEtymology,
+    semsem,
+    semphon,
+    phonsem,
+    icon,
+    meaningComponent,
+    soundComponent,
+    simplifiedComponent,
+    iconComponent,
+    unknownComponent,
+    shiftMeaning,
+    obsoleteMeaning,
+    obsoleteSound,
+    alsoMeaning,
+    soundLoan,
+    simplifyMerge,
+    cursive,
+    shorthand,
+    simp,
+    simplified,
+    unknownComonentNote,
+    radicals,
+    radicalNote,
+    O
+};

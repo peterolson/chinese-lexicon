@@ -1123,6 +1123,4 @@ function svg(text) {
     return `url("data:image/svg+xml;charset=utf8,${encodeURIComponent(text)}")`;
 }
 
-if (typeof module !== "undefined") {
-    module.exports = etymologyImages;
-}
+export default etymologyImages;

@@ -9945,4 +9945,4 @@ for (let line of data.split("\n")) {
     bookCharFrequencies[char] = { count, rank };
 }
 
-module.exports = bookCharFrequencies;
+export default bookCharFrequencies;

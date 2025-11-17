@@ -3372,4 +3372,4 @@ for (let line of data.split("\n")) {
     movieCharFrequencies[char] = { count, contexts, rank };
 }
 
-module.exports = movieCharFrequencies;
+export default movieCharFrequencies;

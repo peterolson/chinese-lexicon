@@ -16,6 +16,17 @@ It can be installed using npm:
 
 This project was built for and is used by [Dong Chinese](https://www.dong-chinese.com/).
 
+## Usage
+
+Dual Distribution
+
+ESM
+```js
+import { getGloss, getEntries, allEntries, search } from 'chinese-lexicon'
+```
+
+CommonJS (`require()`) also still works.
+
 ## Methods
 
 ### `getEntries(word)`
