@@ -1,3 +1,5 @@
+**Converted to ESM with dual build (esm, cjs legacy require)**
+
 # Chinese Lexicon
 
 This repository is a lexicon of Chinese combining the following features:
@@ -15,6 +17,17 @@ It can be installed using npm:
     npm install chinese-lexicon
 
 This project was built for and is used by [Dong Chinese](https://www.dong-chinese.com/).
+
+## Usage
+
+Dual Distribution
+
+ESM
+```js
+import { getGloss, getEntries, allEntries, search } from 'chinese-lexicon'
+```
+
+CommonJS (`require()`) also still works.
 
 ## Methods
 

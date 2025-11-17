@@ -1,7 +1,7 @@
-let fs = require("fs");
-let formatPinyin = require("./formatPinyin");
+import formatPinyin from "./formatPinyin.js";
+import cedict from "./cedict.js";
 
-let lines = String(require("./cedict")).split("\n");
+let lines = String(cedict).split("\n");
 
 function formatDefinition(text) {
     return text.replace(/\[[ A-Za-z:0-9]+\]/g, x => `[${formatPinyin(x.slice(1, -1))}]`);
@@ -24,4 +24,4 @@ for (let line of lines) {
     entries.push({ simp, trad, definitions, pinyin: formattedPinyin, searchablePinyin, pinyinTones });
 }
 
-module.exports = entries;
+export default entries;

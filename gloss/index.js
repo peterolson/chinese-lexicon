@@ -18,7 +18,7 @@ let manualGlosses = {
     "的": "[possessive particle]"
 };
 
-module.exports = (getEntries) => function getGloss(word, pinyin) {
+export default (getEntries) => function getGloss(word, pinyin) {
     if (word in manualGlosses) return manualGlosses[word];
     let matchingEntries = getEntries(word);
     if (pinyin) {

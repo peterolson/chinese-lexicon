@@ -69021,4 +69021,4 @@ for (let line of data.split("\n")) {
     }
 }
 
-module.exports = { movieWordFrequencies, movieCharTopWords };
+export { movieWordFrequencies, movieCharTopWords };

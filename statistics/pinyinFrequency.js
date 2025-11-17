@@ -1,6 +1,6 @@
 // From kHanyuPinlu field in UniHan database, Unicode version: 11.0.0
 
-module.exports = {
+export default {
     "一yī": "32747",
     "丁dīng": "16",
     "七qī": "950",

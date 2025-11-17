@@ -76021,4 +76021,4 @@ for (let line of data.split("\n")) {
     }
 }
 
-module.exports = { bookWordFrequencies, bookCharTopWords };
+export { bookWordFrequencies, bookCharTopWords };

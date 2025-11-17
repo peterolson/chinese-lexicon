@@ -2,8 +2,12 @@
   "name": "chinese-lexicon",
   "version": "1.0.42",
   "description": "Chinese lexicon containing definitions, character origins, and statistics",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +29,19 @@
     "url": "https://github.com/peterolson/chinese-lexicon/issues"
   },
   "homepage": "https://github.com/peterolson/chinese-lexicon#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rollup": "^4.53.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  }
 }

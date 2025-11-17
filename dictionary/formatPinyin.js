@@ -43,4 +43,4 @@ function formatPinyin(text) {
     return text.split(" ").map((x, i) => formatPinyinSyllable(x, i === 0)).join("\u200B");
 }
 
-module.exports = formatPinyin;
+export default formatPinyin;

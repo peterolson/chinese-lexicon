@@ -39,4 +39,4 @@ function getHSKLevel(text) {
     return maxDifficulty;
 }
 
-module.exports = getHSKLevel;
+export default getHSKLevel;

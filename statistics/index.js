@@ -1,18 +1,18 @@
-let movieCharFrequencies = require("./movieCharFrequency");
+import movieCharFrequencies from "./movieCharFrequency.js";
 let movieCharCount = 46841097;
 let movieContextCount = 6243;
 
-let { movieWordFrequencies, movieCharTopWords } = require("./movieWordFrequency");
+import { movieWordFrequencies, movieCharTopWords } from "./movieWordFrequency.js";
 let movieWordCount = 33546516;
 
-let bookCharFrequencies = require("./bookCharFrequency");
+import bookCharFrequencies from "./bookCharFrequency.js";
 let bookCharCount = 193504018;
 
-let { bookWordFrequencies, bookCharTopWords } = require("./bookWordFrequency");
+import { bookWordFrequencies, bookCharTopWords } from "./bookWordFrequency.js";
 let bookWordCount = 16560059569;
 
-let getHSKLevel = require("./hsk");
-let pinyinFrequency = require("./pinyinFrequency");
+import getHSKLevel from "./hsk.js";
+import pinyinFrequency from "./pinyinFrequency.js";
 
 function getStatistics(entry) {
     let word = entry.simp;
@@ -80,4 +80,4 @@ function addTopWords(statistics, char) {
     statistics.topWords = Object.keys(combinedWords).map(word => ({ word, share: combinedWords[word] })).sort((a, b) => b.share - a.share).slice(0, 25);
 }
 
-module.exports = { getStatistics, movieCharFrequencies, bookCharFrequencies };
+export { getStatistics, movieCharFrequencies, bookCharFrequencies };
